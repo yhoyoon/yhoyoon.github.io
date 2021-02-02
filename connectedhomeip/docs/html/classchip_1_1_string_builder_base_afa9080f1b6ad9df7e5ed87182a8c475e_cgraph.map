@@ -1,0 +1,4 @@
+<map id="chip::StringBuilderBase::Add" name="chip::StringBuilderBase::Add">
+<area shape="rect" id="node1" title="Append a null terminated string." alt="" coords="5,13,212,39"/>
+<area shape="rect" id="node2" href="$classchip_1_1_encoding_1_1_buffer_writer_base.html#ac3260a411901cb510df2837dc10ce8dc" title="Append a null terminated string, exclude the null terminator This does NOT care about endianess." alt="" coords="260,5,464,47"/>
+</map>

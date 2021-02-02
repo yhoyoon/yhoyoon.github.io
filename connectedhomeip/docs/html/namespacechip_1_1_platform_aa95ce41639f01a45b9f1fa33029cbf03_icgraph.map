@@ -1,0 +1,7 @@
+<map id="chip::Platform::MemoryAllocatorInit" name="chip::Platform::MemoryAllocatorInit">
+<area shape="rect" id="node1" title=" " alt="" coords="481,56,736,83"/>
+<area shape="rect" id="node2" href="$namespacechip_1_1_platform.html#a93cd137a84802c233858f319af2551a7" title="This function is called by CHIP layer to initialize memory and resources required for proper function..." alt="" coords="237,56,433,83"/>
+<area shape="rect" id="node3" href="$_c_h_i_p_platform_memory_8h.html#acb24756b087d7d7eeb13f86ee1c165ba" title=" " alt="" coords="5,5,189,32"/>
+<area shape="rect" id="node4" href="$_c_h_i_p_device_controller-_j_n_i_8cpp.html#aac186441c8ba05258b9e1ee3e8e669f8" title=" " alt="" coords="49,56,145,83"/>
+<area shape="rect" id="node5" href="$_chip_device_controller-_script_binding_8cpp.html#a3c1dffc327c53cd1cb73306917b08bc6" title=" " alt="" coords="27,107,168,133"/>
+</map>

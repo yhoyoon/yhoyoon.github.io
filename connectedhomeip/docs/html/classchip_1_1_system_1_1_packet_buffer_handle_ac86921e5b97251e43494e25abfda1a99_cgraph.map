@@ -1,0 +1,12 @@
+<map id="chip::System::PacketBufferHandle::CloneData" name="chip::System::PacketBufferHandle::CloneData">
+<area shape="rect" id="node1" title="Creates a copy of the data in this packet." alt="" coords="5,165,203,207"/>
+<area shape="rect" id="node2" href="$classchip_1_1_system_1_1_packet_buffer.html#a9ac3f03ccf49d369aebc939d0b7b5edb" title="Get the length, in bytes, of data in a packet buffer." alt="" coords="251,5,448,47"/>
+<area shape="rect" id="node3" href="$classchip_1_1_system_1_1_packet_buffer_handle.html#a63e13c201b8c13dc611111e3ec3612da" title="Test whether this PacketBufferHandle is empty, or owns a PacketBuffer." alt="" coords="251,71,448,112"/>
+<area shape="rect" id="node4" href="$classchip_1_1_system_1_1_packet_buffer_handle.html#adc3a31edbd06aa4b92b28547ccc34204" title="Allocates a packet buffer with initial contents." alt="" coords="251,136,448,177"/>
+<area shape="rect" id="node8" href="$classchip_1_1_system_1_1_packet_buffer_handle.html#a14279153678fbc4c48e95ba4b8e96856" title="Construct an empty PacketBufferHandle." alt="" coords="742,195,947,236"/>
+<area shape="rect" id="node9" href="$classchip_1_1_system_1_1_packet_buffer.html#a6c5ef0d9c23c1a9f63d2620f9b4d470d" title="Return the next buffer in a buffer chain." alt="" coords="251,253,448,295"/>
+<area shape="rect" id="node10" href="$classchip_1_1_system_1_1_packet_buffer.html#a1ccfaa7a1054db388a2f1ceba4501e17" title="Get a pointer to the start of data in a buffer." alt="" coords="251,319,448,360"/>
+<area shape="rect" id="node5" href="$_c_h_i_p_device_controller-_j_n_i_8cpp.html#ab52833322402f0f0f1cb68f5ee5d1292" title=" " alt="" coords="555,85,634,111"/>
+<area shape="rect" id="node6" href="$classchip_1_1_system_1_1_packet_buffer_handle.html#adae85f17934c799aeb07b0a3664c3a2f" title="Allocates a packet buffer." alt="" coords="496,136,693,177"/>
+<area shape="rect" id="node7" href="$namespacechip_1_1_platform.html#abcb5d3dbb8c986f9d6e84c7dcd3e8db7" title="This function is called by the CHIP layer to allocate a block of memory of &quot;size&quot; bytes." alt="" coords="741,143,948,170"/>
+</map>

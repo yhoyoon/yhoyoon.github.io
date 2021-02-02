@@ -1,0 +1,9 @@
+<map id="chip_ime_AppendCommand_Scenes_AddScene" name="chip_ime_AppendCommand_Scenes_AddScene">
+<area shape="rect" id="node1" title=" " alt="" coords="5,123,209,165"/>
+<area shape="rect" id="node2" href="$classchip_1_1_controller_1_1_scenes_cluster.html#ac9856329571c8418d2aa764cacf21368" title=" " alt="" coords="257,90,432,131"/>
+<area shape="rect" id="node7" href="$classchip_1_1_controller_1_1_cluster_base.html#a8394ee44c584199389891a9b66a04d1c" title=" " alt="" coords="257,155,432,197"/>
+<area shape="rect" id="node3" href="$namespacechip_1_1_t_l_v.html#a1cce8b65c58e738964d3dc935e94af37" title="Generates the API representation for of context&#45;specific TLV tag." alt="" coords="487,5,648,32"/>
+<area shape="rect" id="node4" href="$classchip_1_1_controller_1_1_device.html#acd5827eb0d9b94083b9002c18fb2088f" title=" " alt="" coords="480,57,655,98"/>
+<area shape="rect" id="node5" href="$classchip_1_1_controller_1_1_cluster_base.html#a0b4d305c88f002f417ca466b3ff47741" title="Send the command, contained into the associate buffer, to the device." alt="" coords="480,122,655,163"/>
+<area shape="rect" id="node6" href="$classchip_1_1_controller_1_1_device.html#a831fd9089dfb26d9e92d7bae6e632311" title="Send the command in internal command sender." alt="" coords="480,187,655,229"/>
+</map>

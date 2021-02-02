@@ -1,0 +1,7 @@
+<map id="chip::Controller::DoorLockCluster::SetPin" name="chip::Controller::DoorLockCluster::SetPin">
+<area shape="rect" id="node1" title=" " alt="" coords="5,90,196,131"/>
+<area shape="rect" id="node2" href="$namespacechip_1_1_t_l_v.html#a1cce8b65c58e738964d3dc935e94af37" title="Generates the API representation for of context&#45;specific TLV tag." alt="" coords="251,5,412,32"/>
+<area shape="rect" id="node3" href="$classchip_1_1_controller_1_1_device.html#acd5827eb0d9b94083b9002c18fb2088f" title=" " alt="" coords="244,57,419,98"/>
+<area shape="rect" id="node4" href="$classchip_1_1_controller_1_1_cluster_base.html#a0b4d305c88f002f417ca466b3ff47741" title="Send the command, contained into the associate buffer, to the device." alt="" coords="244,122,419,163"/>
+<area shape="rect" id="node5" href="$classchip_1_1_controller_1_1_device.html#a831fd9089dfb26d9e92d7bae6e632311" title="Send the command in internal command sender." alt="" coords="244,187,419,229"/>
+</map>

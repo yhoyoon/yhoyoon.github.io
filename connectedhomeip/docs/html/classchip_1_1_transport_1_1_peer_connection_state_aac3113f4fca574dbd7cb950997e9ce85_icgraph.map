@@ -1,0 +1,6 @@
+<map id="chip::Transport::PeerConnectionState::GetSecureSession" name="chip::Transport::PeerConnectionState::GetSecureSession">
+<area shape="rect" id="node1" title=" " alt="" coords="252,71,480,112"/>
+<area shape="rect" id="node2" href="$namespacechip_1_1_secure_message_codec.html#a8c74f179b64643d01e43d3ea231ef3b7" title="Decrypt the message, perform message integrity check, and decode the payload header." alt="" coords="5,5,204,47"/>
+<area shape="rect" id="node3" href="$namespacechip_1_1_secure_message_codec.html#ab4b26d118b04e9a3aeecd8ea55c82b72" title="Attach payload header to the message and encrypt the message buffer using key from the connection sta..." alt="" coords="5,71,204,112"/>
+<area shape="rect" id="node4" href="$classchip_1_1_secure_session_mgr.html#a73f56b6894673360488af9d71ebfb1bf" title="Establish a new pairing with a peer node." alt="" coords="17,136,193,177"/>
+</map>

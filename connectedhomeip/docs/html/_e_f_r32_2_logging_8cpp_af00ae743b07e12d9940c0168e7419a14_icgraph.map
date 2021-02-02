@@ -1,0 +1,5 @@
+<map id="PrintLog" name="PrintLog">
+<area shape="rect" id="node1" title="Print a log message to RTT." alt="" coords="132,31,207,57"/>
+<area shape="rect" id="node2" href="$_e_f_r32_2_logging_8cpp.html#aea87dfa0993635e332323ac77ea9f159" title="General&#45;purpose logging function." alt="" coords="5,5,84,32"/>
+<area shape="rect" id="node3" href="$_e_f_r32_2_logging_8cpp.html#af0933b5924e6f5418c2f3366b206260c" title="LwIP log output function." alt="" coords="7,56,82,83"/>
+</map>

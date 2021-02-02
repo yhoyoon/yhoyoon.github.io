@@ -1,0 +1,6 @@
+<map id="mdns::Minimal::QueryReplyFilter::Accept" name="mdns::Minimal::QueryReplyFilter::Accept">
+<area shape="rect" id="node1" title="Returns true if specified answer should be sent back as a reply." alt="" coords="5,71,208,112"/>
+<area shape="rect" id="node2" href="$classmdns_1_1_minimal_1_1_query_data.html#a3a0f9c9a2adef59d300854a45efb64c6" title=" " alt="" coords="256,5,453,47"/>
+<area shape="rect" id="node3" href="$classmdns_1_1_minimal_1_1_query_data.html#a888706838d8abeb4a126aff88068c591" title=" " alt="" coords="256,71,453,112"/>
+<area shape="rect" id="node4" href="$classmdns_1_1_minimal_1_1_query_data.html#a228a0292a694f2339125b2f6ddeabc90" title=" " alt="" coords="256,136,453,177"/>
+</map>

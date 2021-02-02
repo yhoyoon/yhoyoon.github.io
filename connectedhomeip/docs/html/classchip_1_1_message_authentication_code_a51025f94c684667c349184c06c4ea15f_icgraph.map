@@ -1,0 +1,5 @@
+<map id="chip::MessageAuthenticationCode::GetTag" name="chip::MessageAuthenticationCode::GetTag">
+<area shape="rect" id="node1" title=" " alt="" coords="451,5,661,47"/>
+<area shape="rect" id="node2" href="$classchip_1_1_secure_session.html#a4790d6827623e8ffde65c0a325e54e6b" title="Decrypt the input data using keys established in the secure channel." alt="" coords="252,5,403,47"/>
+<area shape="rect" id="node3" href="$namespacechip_1_1_secure_message_codec.html#a8c74f179b64643d01e43d3ea231ef3b7" title="Decrypt the message, perform message integrity check, and decode the payload header." alt="" coords="5,5,204,47"/>
+</map>

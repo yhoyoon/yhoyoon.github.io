@@ -1,0 +1,4 @@
+<map id="chip::TransportMgrBase::Init" name="chip::TransportMgrBase::Init">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,180,47"/>
+<area shape="rect" id="node2" href="$classchip_1_1_transport_1_1_base.html#aa4b08338ce3f34d333c916a008910932" title="Sets the message receive handler and associated argument." alt="" coords="228,5,440,47"/>
+</map>

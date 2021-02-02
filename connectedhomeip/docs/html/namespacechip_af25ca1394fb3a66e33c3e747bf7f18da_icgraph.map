@@ -1,0 +1,5 @@
+<map id="chip::FormatCHIPError" name="chip::FormatCHIPError">
+<area shape="rect" id="node1" title="Given a CHIP error, returns a human&#45;readable NULL&#45;terminated C string describing the error." alt="" coords="263,46,428,73"/>
+<area shape="rect" id="node2" href="$namespacechip.html#a742bd0319b9d21abf37e45db9fc5322b" title="Register a text error formatter for CHIP core errors." alt="" coords="5,5,215,47"/>
+<area shape="rect" id="node3" href="$classchip_1_1_shell_1_1_shell.html#aa8d01ac5af17c57720dabe3ddcd8c68a" title="Main loop for shell." alt="" coords="45,71,175,112"/>
+</map>

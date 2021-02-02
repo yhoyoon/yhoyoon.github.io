@@ -1,0 +1,12 @@
+<map id="chip::BitFlags::Set" name="chip::BitFlags::Set">
+<area shape="rect" id="node1" title=" " alt="" coords="519,261,657,287"/>
+<area shape="rect" id="node2" href="$classchip_1_1_bit_flags.html#a35d3a0c4501a24d2fcc79627322929fd" title=" " alt="" coords="266,5,457,47"/>
+<area shape="rect" id="node3" href="$namespacechip_1_1_secure_message_codec.html#ab4b26d118b04e9a3aeecd8ea55c82b72" title="Attach payload header to the message and encrypt the message buffer using key from the connection sta..." alt="" coords="5,188,204,229"/>
+<area shape="rect" id="node4" href="$classchip_1_1_payload_header.html#a1e3f1141f766be6adad2727dab195ada" title=" " alt="" coords="283,123,439,164"/>
+<area shape="rect" id="node5" href="$classchip_1_1_packet_header.html#af8e16e0b05b6c0a4dcf2faded41b5c70" title=" " alt="" coords="275,188,447,229"/>
+<area shape="rect" id="node6" href="$classchip_1_1_payload_header.html#afe2a49a236a0f4810d45aeb624af50be" title="Set the Initiator flag bit." alt="" coords="283,253,439,295"/>
+<area shape="rect" id="node7" href="$classchip_1_1_payload_header.html#ab1db08c890c5424508ebcb3dba0b6125" title="Set the NeedsAck flag bit." alt="" coords="283,319,439,360"/>
+<area shape="rect" id="node8" href="$classchip_1_1_packet_header.html#afa98e08699a1426e4ad651f9dbbb2aaa" title=" " alt="" coords="252,384,471,425"/>
+<area shape="rect" id="node9" href="$classchip_1_1_packet_header.html#addf981648d1ac90f854939b76b1ad7d4" title=" " alt="" coords="288,449,435,491"/>
+<area shape="rect" id="node10" href="$classchip_1_1_payload_header.html#a2719ba96478400b35428f6d7acd432a5" title="Set the vendor id for this header." alt="" coords="283,515,439,556"/>
+</map>

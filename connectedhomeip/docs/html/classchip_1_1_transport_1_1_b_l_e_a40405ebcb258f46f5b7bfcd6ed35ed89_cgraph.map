@@ -1,0 +1,4 @@
+<map id="chip::Transport::BLE::SendMessage" name="chip::Transport::BLE::SendMessage">
+<area shape="rect" id="node1" title="Send a message to the specified target." alt="" coords="5,5,156,47"/>
+<area shape="rect" id="node2" href="$classchip_1_1_packet_header.html#abe153ee429fc25b35a4fd829ceebae1a" title="A call to Encode will require at least this many bytes on the current object to be successful." alt="" coords="204,5,351,47"/>
+</map>

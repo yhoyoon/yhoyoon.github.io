@@ -1,0 +1,6 @@
+<map id="chip::PacketHeader::EncodeSizeBytes" name="chip::PacketHeader::EncodeSizeBytes">
+<area shape="rect" id="node1" title="A call to Encode will require at least this many bytes on the current object to be successful." alt="" coords="236,71,383,112"/>
+<area shape="rect" id="node2" href="$classchip_1_1_transport_1_1_b_l_e.html#a40405ebcb258f46f5b7bfcd6ed35ed89" title="Send a message to the specified target." alt="" coords="21,5,172,47"/>
+<area shape="rect" id="node3" href="$classchip_1_1_transport_1_1_u_d_p.html#ac103028dea48b3b17323e5b6cd5a27ac" title="Send a message to the specified target." alt="" coords="19,71,174,112"/>
+<area shape="rect" id="node4" href="$classchip_1_1_transport_1_1_t_c_p_base.html#a42df9559e541cdfa3789e68ae32e3417" title="Send a message to the specified target." alt="" coords="5,136,188,177"/>
+</map>

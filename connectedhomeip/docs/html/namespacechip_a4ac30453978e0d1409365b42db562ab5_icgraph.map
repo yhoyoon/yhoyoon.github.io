@@ -1,0 +1,5 @@
+<map id="chip::SecondsSinceEpochToCalendarTime" name="chip::SecondsSinceEpochToCalendarTime">
+<area shape="rect" id="node1" title=" " alt="" coords="455,5,653,47"/>
+<area shape="rect" id="node2" href="$namespacechip_1_1_system_1_1_platform_1_1_layer.html#aa46848ca7d4fdc8ad8ce933ea8ebedf3" title="Platform&#45;specific function for setting the current real (civil) time." alt="" coords="208,5,407,47"/>
+<area shape="rect" id="node3" href="$classchip_1_1_system_1_1_layer.html#a3d037a56e901fdf68e5007470710ec34" title="Sets the platform&#39;s notion of current real (civil) time." alt="" coords="5,5,160,47"/>
+</map>

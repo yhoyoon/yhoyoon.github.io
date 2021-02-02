@@ -1,0 +1,7 @@
+<map id="chip.ChipExceptions.ClusterError" name="chip.ChipExceptions.ClusterError">
+<area shape="rect" id="node1" title=" " alt="" coords="135,169,337,211"/>
+<area shape="rect" id="node4" href="$classchip_1_1_chip_exceptions_1_1_unknown_cluster.html" title=" " alt="" coords="5,259,224,300"/>
+<area shape="rect" id="node5" href="$classchip_1_1_chip_exceptions_1_1_unknown_command.html" title=" " alt="" coords="248,259,467,300"/>
+<area shape="rect" id="node2" href="$classchip_1_1_chip_exceptions_1_1_chip_stack_exception.html" title=" " alt="" coords="143,80,329,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="193,5,279,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="chip::Controller::IdentifyCluster::IdentifyQuery" name="chip::Controller::IdentifyCluster::IdentifyQuery">
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,184,112"/>
+<area shape="rect" id="node2" href="$classchip_1_1_controller_1_1_device.html#acd5827eb0d9b94083b9002c18fb2088f" title=" " alt="" coords="232,5,407,47"/>
+<area shape="rect" id="node3" href="$classchip_1_1_controller_1_1_cluster_base.html#a0b4d305c88f002f417ca466b3ff47741" title="Send the command, contained into the associate buffer, to the device." alt="" coords="232,71,407,112"/>
+<area shape="rect" id="node4" href="$classchip_1_1_controller_1_1_device.html#a831fd9089dfb26d9e92d7bae6e632311" title="Send the command in internal command sender." alt="" coords="232,136,407,177"/>
+</map>

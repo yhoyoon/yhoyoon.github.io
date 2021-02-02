@@ -1,0 +1,6 @@
+<map id="lib/support/CHIPCounter.h" name="lib/support/CHIPCounter.h">
+<area shape="rect" id="node1" title="Class declarations for a Counter base class, and a monotonically&#45;increasing counter." alt="" coords="130,5,319,32"/>
+<area shape="rect" id="node2" href="$_c_h_i_p_counter_8cpp.html" title=" " alt="" coords="5,80,209,107"/>
+<area shape="rect" id="node3" href="$_persisted_counter_8h.html" title="Class declarations for a monotonically&#45;increasing counter that is periodically saved in the platform&#39;..." alt="" coords="234,80,453,107"/>
+<area shape="rect" id="node4" href="$_persisted_counter_8cpp.html" title=" " alt="" coords="227,155,460,181"/>
+</map>

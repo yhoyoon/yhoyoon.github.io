@@ -1,0 +1,4 @@
+<map id="mdns::Minimal::TxtRecordDelegate::OnRecord" name="mdns::Minimal::TxtRecordDelegate::OnRecord">
+<area shape="rect" id="node1" title="Reports that a record was found." alt="" coords="283,5,476,47"/>
+<area shape="rect" id="node2" href="$namespacemdns_1_1_minimal.html#ae400e1275a2cb89e6c420f753c58da31" title="Parses TXT record data https://tools.ietf.org/html/rfc1035 (included in base RFC)" alt="" coords="5,13,235,39"/>
+</map>

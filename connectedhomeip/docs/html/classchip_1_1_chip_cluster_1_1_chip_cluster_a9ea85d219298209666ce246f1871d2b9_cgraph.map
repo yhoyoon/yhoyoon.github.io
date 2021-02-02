@@ -1,0 +1,10 @@
+<map id="chip.ChipCluster.ChipCluster.ClusterColorControl_CommandMoveSaturation" name="chip.ChipCluster.ChipCluster.ClusterColorControl_CommandMoveSaturation">
+<area shape="rect" id="node1" title=" " alt="" coords="5,58,332,99"/>
+<area shape="rect" id="node2" href="$_chip_device_controller-_cluster_commands_8cpp.html#af49482697470ff9df3ac2c0e45694a1b" title=" " alt="" coords="380,58,600,99"/>
+<area shape="rect" id="node3" href="$classchip_1_1_controller_1_1_cluster_base.html#a8394ee44c584199389891a9b66a04d1c" title=" " alt="" coords="666,25,841,66"/>
+<area shape="rect" id="node4" href="$classchip_1_1_controller_1_1_color_control_cluster.html#a32d404c6711bc5f65edf95641ba64c66" title=" " alt="" coords="648,90,859,131"/>
+<area shape="rect" id="node5" href="$namespacechip_1_1_t_l_v.html#a1cce8b65c58e738964d3dc935e94af37" title="Generates the API representation for of context&#45;specific TLV tag." alt="" coords="913,5,1075,32"/>
+<area shape="rect" id="node6" href="$classchip_1_1_controller_1_1_device.html#acd5827eb0d9b94083b9002c18fb2088f" title=" " alt="" coords="907,57,1081,98"/>
+<area shape="rect" id="node7" href="$classchip_1_1_controller_1_1_cluster_base.html#a0b4d305c88f002f417ca466b3ff47741" title="Send the command, contained into the associate buffer, to the device." alt="" coords="907,122,1081,163"/>
+<area shape="rect" id="node8" href="$classchip_1_1_controller_1_1_device.html#a831fd9089dfb26d9e92d7bae6e632311" title="Send the command in internal command sender." alt="" coords="907,187,1081,229"/>
+</map>

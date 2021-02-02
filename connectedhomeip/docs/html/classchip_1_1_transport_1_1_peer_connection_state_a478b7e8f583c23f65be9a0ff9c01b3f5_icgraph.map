@@ -1,0 +1,5 @@
+<map id="chip::Transport::PeerConnectionState::GetPeerKeyID" name="chip::Transport::PeerConnectionState::GetPeerKeyID">
+<area shape="rect" id="node1" title=" " alt="" coords="339,50,567,91"/>
+<area shape="rect" id="node2" href="$classchip_1_1_transport_1_1_peer_connections.html#a4767a048ac007a9b23d4a4bedf262368" title="Get a peer connection state given a Node Id and Peer&#39;s Encryption Key Id." alt="" coords="5,5,291,61"/>
+<area shape="rect" id="node3" href="$classchip_1_1_secure_session_mgr.html#a73f56b6894673360488af9d71ebfb1bf" title="Establish a new pairing with a peer node." alt="" coords="60,86,236,127"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="chip::Controller::PythonPersistentStorageDelegate::SetKeyValue" name="chip::Controller::PythonPersistentStorageDelegate::SetKeyValue">
+<area shape="rect" id="node1" title="Set the value for the key." alt="" coords="5,20,201,76"/>
+<area shape="rect" id="node2" href="$_c_h_i_p_device_controller-_j_n_i_8cpp.html#aeb4c8d46d53848881214615d1e950867" title=" " alt="" coords="325,5,412,32"/>
+<area shape="rect" id="node3" href="$classchip_1_1_controller_1_1_persistent_storage_result_delegate.html#a665fe99a5c5d9052fa04e8f5917d15f7" title="Called on completion of an operation in PersistentStorageDelegate API." alt="" coords="249,57,488,98"/>
+</map>

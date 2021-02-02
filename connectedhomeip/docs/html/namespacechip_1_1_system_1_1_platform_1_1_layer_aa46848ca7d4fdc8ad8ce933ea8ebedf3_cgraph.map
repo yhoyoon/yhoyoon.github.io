@@ -1,0 +1,9 @@
+<map id="chip::System::Platform::Layer::SetClock_RealTime" name="chip::System::Platform::Layer::SetClock_RealTime">
+<area shape="rect" id="node1" title="Platform&#45;specific function for setting the current real (civil) time." alt="" coords="5,71,204,112"/>
+<area shape="rect" id="node2" href="$namespacechip_1_1_system.html#a42791ce92c6c51662930b41fefd912e7" title="This implements a mapping function for CHIP System Layer errors that allows mapping integers in the n..." alt="" coords="252,49,464,75"/>
+<area shape="rect" id="node3" href="$namespacechip.html#a4ac30453978e0d1409365b42db562ab5" title=" " alt="" coords="259,100,457,141"/>
+<area shape="rect" id="node4" href="$namespacechip.html#a15a4cf36fc87a7c69af5f0e3ac76b622" title=" " alt="" coords="512,81,779,107"/>
+<area shape="rect" id="node7" href="$namespacechip.html#a7b161ecab2491e5a21adac0b527c532f" title=" " alt="" coords="893,137,979,163"/>
+<area shape="rect" id="node5" href="$namespacechip.html#ac64dc76d077901bc2ea4b9fb0adf7229" title=" " alt="" coords="833,5,1039,47"/>
+<area shape="rect" id="node6" href="$namespacechip.html#ad7141c66fd1e2b3f562588d02a865085" title=" " alt="" coords="827,71,1045,112"/>
+</map>

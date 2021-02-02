@@ -1,0 +1,4 @@
+<map id="chip::Optional::ValueOr" name="chip::Optional::ValueOr">
+<area shape="rect" id="node1" title="Gets the current value of the optional if the optional has a value; otherwise returns the provided de..." alt="" coords="276,20,448,47"/>
+<area shape="rect" id="node2" href="$classchip_1_1_secure_pairing_using_test_secret.html#a869349b3cbb06f793e61d78f4c61169d" title=" " alt="" coords="5,5,228,61"/>
+</map>

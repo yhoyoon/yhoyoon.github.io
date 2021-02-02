@@ -1,0 +1,12 @@
+<map id="chip.ChipDeviceCtrl.ChipDeviceController.ConnectIP" name="chip.ChipDeviceCtrl.ChipDeviceController.ConnectIP">
+<area shape="rect" id="node1" title=" " alt="" coords="5,151,205,193"/>
+<area shape="rect" id="node2" href="$_chip_device_controller-_script_binding_8cpp.html#a46219feecf65598e490b8e97209b5c86" title=" " alt="" coords="253,151,440,193"/>
+<area shape="rect" id="node3" href="$classchip_1_1_device_controller_1_1_chip_device_controller.html#a49b9d6124c23165cf52ad51cba813764" title="Connect to a CHIP device with the provided Rendezvous connection parameters." alt="" coords="509,5,677,61"/>
+<area shape="rect" id="node4" href="$classchip_1_1_inet_1_1_i_p_address.html#a525ecca3300dfad9c1aeab37dc26711d" title="Scan the IP address from its conventional presentation text." alt="" coords="516,86,671,127"/>
+<area shape="rect" id="node8" href="$classchip_1_1_rendezvous_parameters.html#a53e3c3f17425edd4c700788405e35ad1" title=" " alt="" coords="488,151,699,193"/>
+<area shape="rect" id="node9" href="$classchip_1_1_rendezvous_parameters.html#aadebca26d378f9973c7a4bcb2b76b294" title=" " alt="" coords="488,217,699,258"/>
+<area shape="rect" id="node10" href="$classchip_1_1_rendezvous_parameters.html#a365fa186e5e05298fa5641dad366f87b" title=" " alt="" coords="488,282,699,323"/>
+<area shape="rect" id="node5" href="$classchip_1_1_inet_1_1_i_p_address.html#abb6180cf8ced926a6be9189b53f1d932" title=" " alt="" coords="747,54,901,95"/>
+<area shape="rect" id="node6" href="$classchip_1_1_inet_1_1_i_p_address.html#a51a2c95a399e28425713cfc0e38b850d" title=" " alt="" coords="747,119,901,161"/>
+<area shape="rect" id="node7" href="$_c_h_i_p_device_controller-_j_n_i_8cpp.html#ab52833322402f0f0f1cb68f5ee5d1292" title=" " alt="" coords="949,127,1028,153"/>
+</map>

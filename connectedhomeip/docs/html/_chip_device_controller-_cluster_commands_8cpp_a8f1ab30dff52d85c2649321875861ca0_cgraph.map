@@ -1,0 +1,8 @@
+<map id="chip_ime_AppendCommand_BarrierControl_BarrierControlStop" name="chip_ime_AppendCommand_BarrierControl_BarrierControlStop">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,252,80"/>
+<area shape="rect" id="node2" href="$classchip_1_1_controller_1_1_cluster_base.html#a8394ee44c584199389891a9b66a04d1c" title=" " alt="" coords="334,5,509,47"/>
+<area shape="rect" id="node3" href="$classchip_1_1_controller_1_1_barrier_control_cluster.html#a1ff5155982dfaa7f311382a1c85f0679" title=" " alt="" coords="300,71,543,112"/>
+<area shape="rect" id="node4" href="$classchip_1_1_controller_1_1_device.html#acd5827eb0d9b94083b9002c18fb2088f" title=" " alt="" coords="591,5,765,47"/>
+<area shape="rect" id="node5" href="$classchip_1_1_controller_1_1_cluster_base.html#a0b4d305c88f002f417ca466b3ff47741" title="Send the command, contained into the associate buffer, to the device." alt="" coords="591,71,765,112"/>
+<area shape="rect" id="node6" href="$classchip_1_1_controller_1_1_device.html#a831fd9089dfb26d9e92d7bae6e632311" title="Send the command in internal command sender." alt="" coords="591,136,765,177"/>
+</map>

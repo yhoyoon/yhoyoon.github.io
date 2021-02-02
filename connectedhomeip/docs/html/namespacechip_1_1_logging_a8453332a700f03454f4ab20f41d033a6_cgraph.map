@@ -1,0 +1,8 @@
+<map id="chip::Logging::Log" name="chip::Logging::Log">
+<area shape="rect" id="node1" title="Log, to the platform&#45;specified mechanism, the specified log message, msg, for the specified module,..." alt="" coords="5,34,144,61"/>
+<area shape="rect" id="node2" href="$namespacechip_1_1_logging.html#a30ee062e3005b21c2e8dccca7bdd4f8c" title="CHIP log output functions." alt="" coords="192,34,340,61"/>
+<area shape="rect" id="node3" href="$namespacechip_1_1_logging.html#a23dfd2b5c52970e6895a4931b1bd84aa" title=" " alt="" coords="640,38,867,65"/>
+<area shape="rect" id="node5" href="$namespacechip_1_1_logging.html#a574c22b780a24267d60ebb8b4fa8aa0d" title=" " alt="" coords="397,27,583,68"/>
+<area shape="rect" id="node6" href="$namespacechip_1_1_logging.html#a8889275d03d70d365e0192071137ab17" title=" " alt="" coords="388,92,592,133"/>
+<area shape="rect" id="node4" href="$_c_h_i_p_device_controller-_j_n_i_8cpp.html#ab52833322402f0f0f1cb68f5ee5d1292" title=" " alt="" coords="915,38,993,65"/>
+</map>

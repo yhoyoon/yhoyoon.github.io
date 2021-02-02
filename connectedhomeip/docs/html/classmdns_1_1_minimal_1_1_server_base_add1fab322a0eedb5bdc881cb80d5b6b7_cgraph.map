@@ -1,0 +1,13 @@
+<map id="mdns::Minimal::ServerBase::~ServerBase" name="mdns::Minimal::ServerBase::~ServerBase">
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,207,112"/>
+<area shape="rect" id="node2" href="$classmdns_1_1_minimal_1_1_server_base.html#abff5c5e4c0d25eca9c8c514ac794225d" title="Closes all currently open endpoints." alt="" coords="255,71,456,112"/>
+<area shape="rect" id="node3" href="$classchip_1_1_inet_1_1_u_d_p_end_point.html#a553628b0f98910119fd75aa20d5f0c95" title="Close the endpoint." alt="" coords="504,71,679,112"/>
+<area shape="rect" id="node4" href="$classchip_1_1_inet_1_1_socket_events.html#ad89875d1eccc2fdefdd34c754b4f25e2" title="Clear the bit flags for the socket." alt="" coords="727,5,904,47"/>
+<area shape="rect" id="node5" href="$classchip_1_1_system_1_1_object.html#a0c52d0bce8be30a9a7cb8feaa6a54ae0" title="Returns a reference to the CHIP System Layer object provided when the object was initially retained f..." alt="" coords="737,71,893,112"/>
+<area shape="rect" id="node6" href="$classchip_1_1_system_1_1_layer.html#a5c9d5217af674bac407bcd6b47bd1239" title="Wake up the I/O thread that monitors the file descriptors using select() by writing a single byte to ..." alt="" coords="740,136,891,177"/>
+<area shape="rect" id="node7" href="$namespacechip.html#ae43b53bef8897cb48d4b8173e5c01b09" title="This routine returns a human&#45;readable NULL&#45;terminated C string describing the provided error." alt="" coords="998,85,1105,111"/>
+<area shape="rect" id="node9" href="$classchip_1_1_system_1_1_system_wake_event.html#a3ed2071c5081b56347c7cd51b206de8f" title="Set the event." alt="" coords="952,136,1151,177"/>
+<area shape="rect" id="node11" href="$classchip_1_1_system_1_1_layer.html#ae53b05f9b8d35810313f1657cfca1ebe" title="This returns the current state of the layer object." alt="" coords="976,201,1127,243"/>
+<area shape="rect" id="node8" href="$namespacechip.html#a94dcfc9993bc165d7620d8bbfa93724e" title="Generates a human&#45;readable NULL&#45;terminated C string describing the provided error." alt="" coords="1237,85,1372,111"/>
+<area shape="rect" id="node10" href="$namespacechip_1_1_system.html#a42791ce92c6c51662930b41fefd912e7" title="This implements a mapping function for CHIP System Layer errors that allows mapping integers in the n..." alt="" coords="1199,143,1411,170"/>
+</map>

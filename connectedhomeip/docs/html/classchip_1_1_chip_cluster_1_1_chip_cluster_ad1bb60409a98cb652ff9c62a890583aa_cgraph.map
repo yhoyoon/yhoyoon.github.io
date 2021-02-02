@@ -1,0 +1,9 @@
+<map id="chip.ChipCluster.ChipCluster.ClusterGroups_CommandRemoveAllGroups" name="chip.ChipCluster.ChipCluster.ClusterGroups_CommandRemoveAllGroups">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,311,80"/>
+<area shape="rect" id="node2" href="$_chip_device_controller-_cluster_commands_8cpp.html#a147c263c1e70ec75a00cbdfb24d6e55f" title=" " alt="" coords="359,39,563,80"/>
+<area shape="rect" id="node3" href="$classchip_1_1_controller_1_1_cluster_base.html#a8394ee44c584199389891a9b66a04d1c" title=" " alt="" coords="620,5,795,47"/>
+<area shape="rect" id="node4" href="$classchip_1_1_controller_1_1_groups_cluster.html#a3266ae0603f5fd8605be0811f21f00e9" title=" " alt="" coords="611,71,804,112"/>
+<area shape="rect" id="node5" href="$classchip_1_1_controller_1_1_device.html#acd5827eb0d9b94083b9002c18fb2088f" title=" " alt="" coords="852,5,1027,47"/>
+<area shape="rect" id="node6" href="$classchip_1_1_controller_1_1_cluster_base.html#a0b4d305c88f002f417ca466b3ff47741" title="Send the command, contained into the associate buffer, to the device." alt="" coords="852,71,1027,112"/>
+<area shape="rect" id="node7" href="$classchip_1_1_controller_1_1_device.html#a831fd9089dfb26d9e92d7bae6e632311" title="Send the command in internal command sender." alt="" coords="852,136,1027,177"/>
+</map>
