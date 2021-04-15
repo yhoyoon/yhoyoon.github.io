@@ -1,5 +1,0 @@
-<map id="chip::PacketHeader::GetSourceNodeId" name="chip::PacketHeader::GetSourceNodeId">
-<area shape="rect" id="node1" title="Gets the source node id in the current message." alt="" coords="299,39,445,80"/>
-<area shape="rect" id="node2" href="$classchip_1_1_secure_session_mgr.html#ad41d663b56c6e825422b9801df41f3dc" title="Handle received secure message." alt="" coords="40,5,216,47"/>
-<area shape="rect" id="node3" href="$classchip_1_1_rendezvous_session.html#a947a70779567b7919e7506888249e68f" title=" " alt="" coords="5,71,251,112"/>
-</map>

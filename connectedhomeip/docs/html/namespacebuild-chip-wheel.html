@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Connected Home over IP
-   &#160;<span id="projectnumber">a83086a0</span>
+   &#160;<span id="projectnumber">672cf7684</span>
    </div>
   </td>
  </tr>
@@ -95,6 +95,8 @@ $(document).ready(function(){initNavTree('namespacebuild-chip-wheel.html',''); i
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbuild-chip-wheel_1_1bdist__wheel__override.html">bdist_wheel_override</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbuild-chip-wheel_1_1_installed_script_info.html">InstalledScriptInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -108,14 +110,12 @@ Variables</h2></td></tr>
 <tr class="separator:a7fa146e9fdee7dba0c69d9a45f8c4cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c2054df918bfee10e69cd9da1a0002b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild-chip-wheel.html#a3c2054df918bfee10e69cd9da1a0002b">chipDLLName</a> = '_ChipDeviceCtrl.so'</td></tr>
 <tr class="separator:a3c2054df918bfee10e69cd9da1a0002b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3082464e1433166f161a05de6d0bcfcd"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild-chip-wheel.html#a3082464e1433166f161a05de6d0bcfcd">deviceManagerShellName</a> = 'chip-device-ctrl.py'</td></tr>
-<tr class="separator:a3082464e1433166f161a05de6d0bcfcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade8a761fce11855abc27cf5ced82a0e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild-chip-wheel.html#ade8a761fce11855abc27cf5ced82a0e0">chipControllerShellInstalledName</a> = os.path.splitext(<a class="el" href="namespacebuild-chip-wheel.html#a3082464e1433166f161a05de6d0bcfcd">deviceManagerShellName</a>)[0]</td></tr>
-<tr class="separator:ade8a761fce11855abc27cf5ced82a0e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99f288135bcf163b45df387ad7629524"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild-chip-wheel.html#a99f288135bcf163b45df387ad7629524">packageName</a> = args.package_name</td></tr>
 <tr class="separator:a99f288135bcf163b45df387ad7629524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9401b8bb057eb27fac3c3a0bcb34aa1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild-chip-wheel.html#ae9401b8bb057eb27fac3c3a0bcb34aa1">chipPackageVer</a> = args.build_number</td></tr>
 <tr class="separator:ae9401b8bb057eb27fac3c3a0bcb34aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f1a28d8b302e4d5c38723fe5f9dfb7d"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild-chip-wheel.html#a4f1a28d8b302e4d5c38723fe5f9dfb7d">installScripts</a></td></tr>
+<tr class="separator:a4f1a28d8b302e4d5c38723fe5f9dfb7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4725fbb1e63af4b520b9981b1de9f6f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild-chip-wheel.html#a4725fbb1e63af4b520b9981b1de9f6f2">curDir</a> = os.curdir</td></tr>
 <tr class="separator:a4725fbb1e63af4b520b9981b1de9f6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10cd891660c704148fafca19a0dce623"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild-chip-wheel.html#a10cd891660c704148fafca19a0dce623">manifestFile</a> = os.path.abspath(args.manifest)</td></tr>
@@ -138,8 +138,10 @@ Variables</h2></td></tr>
 <tr class="separator:a43cc3cac898cd7d0d4e20892b005bd63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3264b2f28d002c97d0cd5bbc60f0c815"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild-chip-wheel.html#a3264b2f28d002c97d0cd5bbc60f0c815">dstFile</a> = os.path.join(<a class="el" href="namespacebuild-chip-wheel.html#abbba582f43dd6c6403aaade4388b28dc">tmpDir</a>, path)</td></tr>
 <tr class="separator:a3264b2f28d002c97d0cd5bbc60f0c815"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1f4573ca8dbbcb19492a30c9c3c73e5"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild-chip-wheel.html#ac1f4573ca8dbbcb19492a30c9c3c73e5">requiredPackages</a></td></tr>
-<tr class="separator:ac1f4573ca8dbbcb19492a30c9c3c73e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d8212a749da7a4d730a89103cf18b43"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild-chip-wheel.html#a8d8212a749da7a4d730a89103cf18b43">requiredPackages</a></td></tr>
+<tr class="separator:a8d8212a749da7a4d730a89103cf18b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32af3a56158a23c8a1c486c69e9298f3"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild-chip-wheel.html#a32af3a56158a23c8a1c486c69e9298f3">packages</a></td></tr>
+<tr class="separator:a32af3a56158a23c8a1c486c69e9298f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf966b7ba217803bd7cce4f1d6904406"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild-chip-wheel.html#adf966b7ba217803bd7cce4f1d6904406">name</a></td></tr>
 <tr class="separator:adf966b7ba217803bd7cce4f1d6904406"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2111f8ed9a483bf0ad44effdb5c1dee5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild-chip-wheel.html#a2111f8ed9a483bf0ad44effdb5c1dee5">version</a></td></tr>
@@ -154,8 +156,6 @@ Variables</h2></td></tr>
 <tr class="separator:ab3dd785a89de96cdece42eea1d3600f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6600ae23cb20295ef03e21cac141008a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild-chip-wheel.html#a6600ae23cb20295ef03e21cac141008a">python_requires</a></td></tr>
 <tr class="separator:a6600ae23cb20295ef03e21cac141008a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32af3a56158a23c8a1c486c69e9298f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild-chip-wheel.html#a32af3a56158a23c8a1c486c69e9298f3">packages</a></td></tr>
-<tr class="separator:a32af3a56158a23c8a1c486c69e9298f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61503e982da0cfa62abb37e4365aa699"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild-chip-wheel.html#a61503e982da0cfa62abb37e4365aa699">package_dir</a></td></tr>
 <tr class="separator:a61503e982da0cfa62abb37e4365aa699"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a828acebbb877b030ba99a955572704cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebuild-chip-wheel.html#a828acebbb877b030ba99a955572704cb">package_data</a></td></tr>
@@ -194,20 +194,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">build-chip-wheel.buildDir = os.path.abspath(args.build_dir)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ade8a761fce11855abc27cf5ced82a0e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade8a761fce11855abc27cf5ced82a0e0">&#9670;&nbsp;</a></span>chipControllerShellInstalledName</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">build-chip-wheel.chipControllerShellInstalledName = os.path.splitext(<a class="el" href="namespacebuild-chip-wheel.html#a3082464e1433166f161a05de6d0bcfcd">deviceManagerShellName</a>)[0]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -312,20 +298,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a3082464e1433166f161a05de6d0bcfcd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3082464e1433166f161a05de6d0bcfcd">&#9670;&nbsp;</a></span>deviceManagerShellName</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string build-chip-wheel.deviceManagerShellName = 'chip-device-ctrl.py'</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a335e52f09c34e372460234cc58f92b1a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a335e52f09c34e372460234cc58f92b1a">&#9670;&nbsp;</a></span>distDir</h2>
 
@@ -394,6 +366,24 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<a id="a4f1a28d8b302e4d5c38723fe5f9dfb7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f1a28d8b302e4d5c38723fe5f9dfb7d">&#9670;&nbsp;</a></span>installScripts</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list build-chip-wheel.installScripts</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;=  [</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    InstalledScriptInfo(<span class="stringliteral">&#39;chip-device-ctrl.py&#39;</span>),</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    InstalledScriptInfo(<span class="stringliteral">&#39;chip-repl.py&#39;</span>),</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;]</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae4ee7667f576f5fe30fe3c1bef32f552"></a>
@@ -533,7 +523,20 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;= [</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;            <span class="stringliteral">&#39;chip&#39;</span>,</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;            <span class="stringliteral">&#39;chip.ble&#39;</span>,</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;            <span class="stringliteral">&#39;chip.ble.commissioning&#39;</span>,</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;            <span class="stringliteral">&#39;chip.configuration&#39;</span>,</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;            <span class="stringliteral">&#39;chip.clusters&#39;</span>,</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;            <span class="stringliteral">&#39;chip.exceptions&#39;</span>,</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;            <span class="stringliteral">&#39;chip.internal&#39;</span>,</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;            <span class="stringliteral">&#39;chip.interaction_model&#39;</span>,</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;            <span class="stringliteral">&#39;chip.logging&#39;</span>,</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;            <span class="stringliteral">&#39;chip.native&#39;</span>,</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;            <span class="stringliteral">&#39;chip.tlv&#39;</span>,</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    ]</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5b7d0af7b7df7719e4901de315f46244"></a>
@@ -564,22 +567,18 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac1f4573ca8dbbcb19492a30c9c3c73e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1f4573ca8dbbcb19492a30c9c3c73e5">&#9670;&nbsp;</a></span>requiredPackages</h2>
+<a id="a8d8212a749da7a4d730a89103cf18b43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d8212a749da7a4d730a89103cf18b43">&#9670;&nbsp;</a></span>requiredPackages</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">list build-chip-wheel.requiredPackages</td>
+          <td class="memname">build-chip-wheel.requiredPackages</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;=  [</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;            <span class="stringliteral">&#39;dbus-python&#39;</span>,</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;            <span class="stringliteral">&#39;pgi&#39;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;        ]</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a255c2ef3a087ae70bda12109528c8369"></a>
@@ -686,7 +685,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacebuild-chip-wheel.html">build-chip-wheel</a></li>
-    <li class="footer">Generated on Mon Feb 1 2021 16:49:16 for Connected Home over IP by
+    <li class="footer">Generated on Thu Apr 15 2021 18:57:05 for Connected Home over IP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

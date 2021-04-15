@@ -5,6 +5,7 @@ var dir_e35fa8df61d0eca1a5c0776eb4996f5b =
     [ "BlePlatformConfig.h", "_e_f_r32_2_ble_platform_config_8h.html", "_e_f_r32_2_ble_platform_config_8h" ],
     [ "CHIPDevicePlatformConfig.h", "_e_f_r32_2_c_h_i_p_device_platform_config_8h.html", "_e_f_r32_2_c_h_i_p_device_platform_config_8h" ],
     [ "CHIPDevicePlatformEvent.h", "_e_f_r32_2_c_h_i_p_device_platform_event_8h.html", "_e_f_r32_2_c_h_i_p_device_platform_event_8h" ],
+    [ "CHIPMem-Platform.cpp", "_c_h_i_p_mem-_platform_8cpp.html", null ],
     [ "CHIPPlatformConfig.h", "_e_f_r32_2_c_h_i_p_platform_config_8h.html", "_e_f_r32_2_c_h_i_p_platform_config_8h" ],
     [ "ConfigurationManagerImpl.cpp", "_e_f_r32_2_configuration_manager_impl_8cpp.html", null ],
     [ "ConfigurationManagerImpl.h", "_e_f_r32_2_configuration_manager_impl_8h.html", "_e_f_r32_2_configuration_manager_impl_8h" ],
@@ -22,7 +23,7 @@ var dir_e35fa8df61d0eca1a5c0776eb4996f5b =
     [ "freertos_bluetooth.c", "freertos__bluetooth_8c.html", "freertos__bluetooth_8c" ],
     [ "freertos_bluetooth.h", "freertos__bluetooth_8h.html", "freertos__bluetooth_8h" ],
     [ "gatt_db.c", "gatt__db_8c.html", "gatt__db_8c" ],
-    [ "gatt_db.h", "gatt__db_8h.html", "gatt__db_8h" ],
+    [ "gatt_db.h", "_e_f_r32_2gatt__db_8h.html", "_e_f_r32_2gatt__db_8h" ],
     [ "GroupKeyStoreImpl.cpp", "_e_f_r32_2_group_key_store_impl_8cpp.html", null ],
     [ "GroupKeyStoreImpl.h", "_e_f_r32_2_group_key_store_impl_8h.html", [
       [ "GroupKeyStoreImpl", "classchip_1_1_device_layer_1_1_internal_1_1_group_key_store_impl.html", "classchip_1_1_device_layer_1_1_internal_1_1_group_key_store_impl" ]

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Connected Home over IP
-   &#160;<span id="projectnumber">a83086a0</span>
+   &#160;<span id="projectnumber">672cf7684</span>
    </div>
   </td>
  </tr>
@@ -86,6 +86,8 @@ $(document).ready(function(){initNavTree('namespacechip_1_1_encoding.html',''); 
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">chip::Encoding Namespace Reference</div>  </div>
@@ -101,8 +103,34 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_encoding_1_1_buffer_writer_base.html">BufferWriterBase</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_encoding_1_1_buffer_writer.html">BufferWriter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_encoding_1_1_endian_buffer_writer_base.html">EndianBufferWriterBase</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_encoding_1_1_packet_buffer_writer_base.html">PacketBufferWriterBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classchip_1_1_encoding_1_1_buffer_writer.html">BufferWriter</a> backed by packet buffer.  <a href="classchip_1_1_encoding_1_1_packet_buffer_writer_base.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_encoding_1_1_packet_buffer_writer_util.html">PacketBufferWriterUtil</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a24b2c99966d5655121ea831bbbf213fa"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1_encoding.html#a24b2c99966d5655121ea831bbbf213fa">PacketBufferWriter</a> = <a class="el" href="classchip_1_1_encoding_1_1_packet_buffer_writer_base.html">PacketBufferWriterBase</a>&lt; <a class="el" href="classchip_1_1_encoding_1_1_buffer_writer.html">chip::Encoding::BufferWriter</a> &gt;</td></tr>
+<tr class="separator:a24b2c99966d5655121ea831bbbf213fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a9317c7a3247b762442fa99129307ecb9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1_encoding.html#a9317c7a3247b762442fa99129307ecb9">HexFlags</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacechip_1_1_encoding.html#a9317c7a3247b762442fa99129307ecb9a35c3ace1970663a16e5c65baa5941b13">HexFlags::kNone</a> = 0u, 
+<br />
+&#160;&#160;<a class="el" href="namespacechip_1_1_encoding.html#a9317c7a3247b762442fa99129307ecb9aab6abd97e11c5eca7769d423295375ec">HexFlags::kUppercase</a> = (1u &lt;&lt; 0), 
+<br />
+&#160;&#160;<a class="el" href="namespacechip_1_1_encoding.html#a9317c7a3247b762442fa99129307ecb9a606bc3bc8c720ed089d96c5996e4b4f4">HexFlags::kNullTerminate</a> = (1u &lt;&lt; 1), 
+<br />
+&#160;&#160;<a class="el" href="namespacechip_1_1_encoding.html#a9317c7a3247b762442fa99129307ecb9a633b2110744f90028821bf3a5bb2533b">HexFlags::kUppercaseAndNullTerminate</a> = ((1u &lt;&lt; 0) | (1u &lt;&lt; 1))
+<br />
+ }</td></tr>
+<tr class="separator:a9317c7a3247b762442fa99129307ecb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -130,6 +158,17 @@ Functions</h2></td></tr>
 <tr class="memitem:adf9249aee776fca0b80f867c104f3cab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1_encoding.html#adf9249aee776fca0b80f867c104f3cab">Write8</a> (uint8_t *&amp;p, uint8_t v)</td></tr>
 <tr class="memdesc:adf9249aee776fca0b80f867c104f3cab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a, potentially unaligned, memory write of the 8-bit value to the specified pointer address and increment the pointer by 8-bits (1 byte).  <a href="namespacechip_1_1_encoding.html#adf9249aee776fca0b80f867c104f3cab">More...</a><br /></td></tr>
 <tr class="separator:adf9249aee776fca0b80f867c104f3cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affc8076d311801d3bb39e8a93064cc73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1_encoding.html#affc8076d311801d3bb39e8a93064cc73">BytesToHex</a> (const uint8_t *src_bytes, size_t src_size, char *dest_hex, size_t dest_size_max, <a class="el" href="classchip_1_1_bit_flags.html">BitFlags</a>&lt; <a class="el" href="namespacechip_1_1_encoding.html#a9317c7a3247b762442fa99129307ecb9">HexFlags</a> &gt; flags)</td></tr>
+<tr class="memdesc:affc8076d311801d3bb39e8a93064cc73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode a buffer of bytes into hexadecimal, with or without null-termination and using either lowercase or uppercase hex.  <a href="namespacechip_1_1_encoding.html#affc8076d311801d3bb39e8a93064cc73">More...</a><br /></td></tr>
+<tr class="separator:affc8076d311801d3bb39e8a93064cc73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9389e040bc61bdc6bc8ed6fcaaac4cc2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1_encoding.html#a9389e040bc61bdc6bc8ed6fcaaac4cc2">BytesToUppercaseHexBuffer</a> (const uint8_t *src_bytes, size_t src_size, char *dest_hex_buf, size_t dest_size_max)</td></tr>
+<tr class="separator:a9389e040bc61bdc6bc8ed6fcaaac4cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a513d95f9ac8f66bdfc0bab532294b1ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1_encoding.html#a513d95f9ac8f66bdfc0bab532294b1ff">BytesToLowercaseHexBuffer</a> (const uint8_t *src_bytes, size_t src_size, char *dest_hex_buf, size_t dest_size_max)</td></tr>
+<tr class="separator:a513d95f9ac8f66bdfc0bab532294b1ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ca4be8d41c24afbb5916ced3d0e4a3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1_encoding.html#a5ca4be8d41c24afbb5916ced3d0e4a3f">BytesToUppercaseHexString</a> (const uint8_t *src_bytes, size_t src_size, char *dest_hex_str, size_t dest_size_max)</td></tr>
+<tr class="separator:a5ca4be8d41c24afbb5916ced3d0e4a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac780e234cb9d135fb85b5183c2861952"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1_encoding.html#ac780e234cb9d135fb85b5183c2861952">BytesToLowercaseHexString</a> (const uint8_t *src_bytes, size_t src_size, char *dest_hex_str, size_t dest_size_max)</td></tr>
+<tr class="separator:ac780e234cb9d135fb85b5183c2861952"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This namespace provides functions for:</p>
@@ -139,7 +178,310 @@ Performing byte reordering by value for 16-, 32-, and 64-bit types. </li>
 <li>
 Safely performing simple, efficient memory-mapped accesses, potentially to unaligned memory locations, with or without byte reordering, to 8-, 16-, 32-, and 64-bit quantities, both with and without pointer management. </li>
 </ul>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a24b2c99966d5655121ea831bbbf213fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24b2c99966d5655121ea831bbbf213fa">&#9670;&nbsp;</a></span>PacketBufferWriter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacechip_1_1_encoding.html#a24b2c99966d5655121ea831bbbf213fa">chip::Encoding::PacketBufferWriter</a> = typedef <a class="el" href="classchip_1_1_encoding_1_1_packet_buffer_writer_base.html">PacketBufferWriterBase</a>&lt;<a class="el" href="classchip_1_1_encoding_1_1_buffer_writer.html">chip::Encoding::BufferWriter</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a9317c7a3247b762442fa99129307ecb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9317c7a3247b762442fa99129307ecb9">&#9670;&nbsp;</a></span>HexFlags</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacechip_1_1_encoding.html#a9317c7a3247b762442fa99129307ecb9">chip::Encoding::HexFlags</a> : int</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9317c7a3247b762442fa99129307ecb9a35c3ace1970663a16e5c65baa5941b13"></a>kNone&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9317c7a3247b762442fa99129307ecb9aab6abd97e11c5eca7769d423295375ec"></a>kUppercase&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9317c7a3247b762442fa99129307ecb9a606bc3bc8c720ed089d96c5996e4b4f4"></a>kNullTerminate&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9317c7a3247b762442fa99129307ecb9a633b2110744f90028821bf3a5bb2533b"></a>kUppercaseAndNullTerminate&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="affc8076d311801d3bb39e8a93064cc73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affc8076d311801d3bb39e8a93064cc73">&#9670;&nbsp;</a></span>BytesToHex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> chip::Encoding::BytesToHex </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>src_bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>src_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dest_hex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dest_size_max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classchip_1_1_bit_flags.html">BitFlags</a>&lt; <a class="el" href="namespacechip_1_1_encoding.html#a9317c7a3247b762442fa99129307ecb9">HexFlags</a> &gt;&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Encode a buffer of bytes into hexadecimal, with or without null-termination and using either lowercase or uppercase hex. </p>
+<p>Default is lowercase output, not null-terminated.</p>
+<p>If <code>flags</code> has <code><a class="el" href="namespacechip_1_1_encoding.html#a9317c7a3247b762442fa99129307ecb9a606bc3bc8c720ed089d96c5996e4b4f4">HexFlags::kNullTerminate</a></code> set, treat <code>dest_hex</code> as a null-terminated string buffer. The function returns CHIP_ERROR_BUFFER_TOO_SMALL if <code>dest_size_max</code> can't fit the entire encoded buffer, and the null-terminator if enabled. This function will never output truncated data. The result either fits and is written, or does not fit and nothing is written to <code>dest_hex</code>.</p>
+<p>If <code>src_bytes</code> and <code>dest_hex</code> overlap, the results may be incorrect, depending on overlap, but only the core validity checks are done and it's possible to get CHIP_NO_ERROR with erroneous output.</p>
+<p>On success, number of bytes written to destination is always: output_size = (src_size * 2) + ((flags &amp; <a class="el" href="namespacechip_1_1_encoding.html#a9317c7a3247b762442fa99129307ecb9a606bc3bc8c720ed089d96c5996e4b4f4">HexFlags::kNullTerminate</a>) ? 1 : 0);</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">src_bytes</td><td>Pointer to non-null buffer to convert </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">src_size</td><td>Number of bytes to convert from src_bytes </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dest_hex</td><td>Destination buffer to receive hex encoding </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">dest_size_max</td><td>Maximum buffer size for the hex encoded <code>dest_hex</code> buffer including null-terminator if needed. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">flags</td><td>Flags from <code>HexFlags</code> for formatting options</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>CHIP_ERROR_BUFFER_TOO_SMALL on dest_max_size too small to fit output </dd>
+<dd>
+CHIP_ERROR_INVALID_ARGUMENT if either src_bytes or dest_hex is nullptr </dd>
+<dd>
+CHIP_NO_ERROR on success </dd></dl>
+
+</div>
+</div>
+<a id="a513d95f9ac8f66bdfc0bab532294b1ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a513d95f9ac8f66bdfc0bab532294b1ff">&#9670;&nbsp;</a></span>BytesToLowercaseHexBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> chip::Encoding::BytesToLowercaseHexBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>src_bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>src_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dest_hex_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dest_size_max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac780e234cb9d135fb85b5183c2861952"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac780e234cb9d135fb85b5183c2861952">&#9670;&nbsp;</a></span>BytesToLowercaseHexString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> chip::Encoding::BytesToLowercaseHexString </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>src_bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>src_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dest_hex_str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dest_size_max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9389e040bc61bdc6bc8ed6fcaaac4cc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9389e040bc61bdc6bc8ed6fcaaac4cc2">&#9670;&nbsp;</a></span>BytesToUppercaseHexBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> chip::Encoding::BytesToUppercaseHexBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>src_bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>src_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dest_hex_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dest_size_max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ca4be8d41c24afbb5916ced3d0e4a3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ca4be8d41c24afbb5916ced3d0e4a3f">&#9670;&nbsp;</a></span>BytesToUppercaseHexString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> chip::Encoding::BytesToUppercaseHexString </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>src_bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>src_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dest_hex_str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dest_size_max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa0718dd975b6d9e5eda88277f7e0d716"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa0718dd975b6d9e5eda88277f7e0d716">&#9670;&nbsp;</a></span>Get8()</h2>
 
@@ -252,26 +594,6 @@ Safely performing simple, efficient memory-mapped accesses, potentially to unali
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The 8-bit value at the specified pointer address. </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacechip_1_1_encoding_a6f47f2213fafa1636464cf78bbadf763_cgraph.png" border="0" usemap="#namespacechip_1_1_encoding_a6f47f2213fafa1636464cf78bbadf763_cgraph" alt=""/></div>
-<map name="namespacechip_1_1_encoding_a6f47f2213fafa1636464cf78bbadf763_cgraph" id="namespacechip_1_1_encoding_a6f47f2213fafa1636464cf78bbadf763_cgraph">
-<area shape="rect" title="Perform a, potentially unaligned, memory read of the 8&#45;bit value from the specified pointer address a..." alt="" coords="5,5,171,32"/>
-<area shape="rect" href="namespacechip_1_1_encoding.html#a73d29984220de1ccd2080484bde1f63c" title="Perform a, potentially unaligned, memory read of the 8&#45;bit value from the specified pointer address a..." alt="" coords="219,5,384,32"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacechip_1_1_encoding_a6f47f2213fafa1636464cf78bbadf763_icgraph.png" border="0" usemap="#namespacechip_1_1_encoding_a6f47f2213fafa1636464cf78bbadf763_icgraph" alt=""/></div>
-<map name="namespacechip_1_1_encoding_a6f47f2213fafa1636464cf78bbadf763_icgraph" id="namespacechip_1_1_encoding_a6f47f2213fafa1636464cf78bbadf763_icgraph">
-<area shape="rect" title="Perform a, potentially unaligned, memory read of the 8&#45;bit value from the specified pointer address a..." alt="" coords="219,35,384,61"/>
-<area shape="rect" href="namespacechip_1_1_encoding.html#a73d29984220de1ccd2080484bde1f63c" title="Perform a, potentially unaligned, memory read of the 8&#45;bit value from the specified pointer address a..." alt="" coords="5,5,171,32"/>
-<area shape="rect" href="classchip_1_1_t_l_v_1_1_t_l_v_reader.html#a72c33055887d84194210be994fd4ec73" title=" " alt="" coords="9,57,167,98"/>
-<area shape="rect" href="classchip_1_1_t_l_v_1_1_t_l_v_reader.html#ad6434d422a082b62e368f3744f0239e8" title=" " alt="" coords="9,122,167,163"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -307,26 +629,6 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The 8-bit value at the specified pointer address. </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacechip_1_1_encoding_a73d29984220de1ccd2080484bde1f63c_cgraph.png" border="0" usemap="#namespacechip_1_1_encoding_a73d29984220de1ccd2080484bde1f63c_cgraph" alt=""/></div>
-<map name="namespacechip_1_1_encoding_a73d29984220de1ccd2080484bde1f63c_cgraph" id="namespacechip_1_1_encoding_a73d29984220de1ccd2080484bde1f63c_cgraph">
-<area shape="rect" title="Perform a, potentially unaligned, memory read of the 8&#45;bit value from the specified pointer address a..." alt="" coords="5,5,171,32"/>
-<area shape="rect" href="namespacechip_1_1_encoding.html#a6f47f2213fafa1636464cf78bbadf763" title="Perform a, potentially unaligned, memory read of the 8&#45;bit value from the specified pointer address a..." alt="" coords="219,5,384,32"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacechip_1_1_encoding_a73d29984220de1ccd2080484bde1f63c_icgraph.png" border="0" usemap="#namespacechip_1_1_encoding_a73d29984220de1ccd2080484bde1f63c_icgraph" alt=""/></div>
-<map name="namespacechip_1_1_encoding_a73d29984220de1ccd2080484bde1f63c_icgraph" id="namespacechip_1_1_encoding_a73d29984220de1ccd2080484bde1f63c_icgraph">
-<area shape="rect" title="Perform a, potentially unaligned, memory read of the 8&#45;bit value from the specified pointer address a..." alt="" coords="424,46,589,73"/>
-<area shape="rect" href="namespacechip_1_1_encoding.html#a6f47f2213fafa1636464cf78bbadf763" title="Perform a, potentially unaligned, memory read of the 8&#45;bit value from the specified pointer address a..." alt="" coords="211,46,376,73"/>
-<area shape="rect" href="classchip_1_1_t_l_v_1_1_t_l_v_reader.html#a72c33055887d84194210be994fd4ec73" title=" " alt="" coords="5,5,163,47"/>
-<area shape="rect" href="classchip_1_1_t_l_v_1_1_t_l_v_reader.html#ad6434d422a082b62e368f3744f0239e8" title=" " alt="" coords="5,71,163,112"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -477,15 +779,6 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacechip_1_1_encoding_adf9249aee776fca0b80f867c104f3cab_icgraph.png" border="0" usemap="#namespacechip_1_1_encoding_adf9249aee776fca0b80f867c104f3cab_icgraph" alt=""/></div>
-<map name="namespacechip_1_1_encoding_adf9249aee776fca0b80f867c104f3cab_icgraph" id="namespacechip_1_1_encoding_adf9249aee776fca0b80f867c104f3cab_icgraph">
-<area shape="rect" title="Perform a, potentially unaligned, memory write of the 8&#45;bit value to the specified pointer address an..." alt="" coords="207,13,373,39"/>
-<area shape="rect" href="classchip_1_1_t_l_v_1_1_t_l_v_writer.html#aec386587551399bc60a37ec6dc9fd01d" title=" " alt="" coords="5,5,159,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -495,7 +788,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="namespacechip_1_1_encoding.html">Encoding</a></li>
-    <li class="footer">Generated on Mon Feb 1 2021 16:49:17 for Connected Home over IP by
+    <li class="footer">Generated on Thu Apr 15 2021 18:57:06 for Connected Home over IP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

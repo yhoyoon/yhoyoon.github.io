@@ -9,5 +9,6 @@ var classchip_1_1_encoding_1_1_little_endian_1_1_reader =
     [ "Read64", "classchip_1_1_encoding_1_1_little_endian_1_1_reader.html#a25100ed9012c6923317e5b52e13356d9", null ],
     [ "Read8", "classchip_1_1_encoding_1_1_little_endian_1_1_reader.html#a745bc77a31d4edac9240488fe3510e9c", null ],
     [ "Remaining", "classchip_1_1_encoding_1_1_little_endian_1_1_reader.html#aeb805a01856c73ef1aff760ca759ef47", null ],
+    [ "Skip", "classchip_1_1_encoding_1_1_little_endian_1_1_reader.html#a1dd63c624686d6384ba49fedc15ac1d4", null ],
     [ "StatusCode", "classchip_1_1_encoding_1_1_little_endian_1_1_reader.html#aeb04e2e9655dbe5078b62b95953c262c", null ]
 ];

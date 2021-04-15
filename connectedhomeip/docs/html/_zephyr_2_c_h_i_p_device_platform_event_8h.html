@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Connected Home over IP
-   &#160;<span id="projectnumber">a83086a0</span>
+   &#160;<span id="projectnumber">672cf7684</span>
    </div>
   </td>
  </tr>
@@ -93,45 +93,6 @@ $(document).ready(function(){initNavTree('_zephyr_2_c_h_i_p_device_platform_even
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="_c_h_i_p_device_event_8h_source.html">platform/CHIPDeviceEvent.h</a>&gt;</code><br />
 <code>#include &lt;bluetooth/bluetooth.h&gt;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for CHIPDevicePlatformEvent.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="_zephyr_2_c_h_i_p_device_platform_event_8h__incl.png" border="0" usemap="#platform_2_zephyr_2_c_h_i_p_device_platform_event_8h" alt=""/></div>
-<map name="platform_2_zephyr_2_c_h_i_p_device_platform_event_8h" id="platform_2_zephyr_2_c_h_i_p_device_platform_event_8h">
-<area shape="rect" title=" " alt="" coords="241,5,449,47"/>
-<area shape="rect" href="_c_h_i_p_device_event_8h.html" title=" " alt="" coords="138,95,345,121"/>
-<area shape="rect" title=" " alt="" coords="369,95,532,121"/>
-<area shape="rect" href="_ble_config_8h.html" title=" " alt="" coords="158,319,279,345"/>
-<area shape="rect" href="_system_packet_buffer_8h.html" title=" " alt="" coords="429,169,648,196"/>
-<area shape="rect" href="_system_config_8h.html" title=" " alt="" coords="69,468,246,495"/>
-<area shape="rect" title=" " alt="" coords="355,543,426,569"/>
-<area shape="rect" href="_c_h_i_p_config_8h.html" title=" " alt="" coords="321,393,460,420"/>
-<area shape="rect" title=" " alt="" coords="114,543,201,569"/>
-<area shape="rect" href="_code_utils_8h.html" title=" " alt="" coords="917,244,1067,271"/>
-<area shape="rect" href="_d_l_l_util_8h.html" title=" " alt="" coords="984,393,1117,420"/>
-<area shape="rect" href="_system_align_size_8h.html" title=" " alt="" coords="228,244,423,271"/>
-<area shape="rect" href="_system_error_8h.html" title=" " alt="" coords="37,244,203,271"/>
-<area shape="rect" title=" " alt="" coords="447,244,521,271"/>
-<area shape="rect" title=" " alt="" coords="545,244,644,271"/>
-<area shape="rect" title=" " alt="" coords="668,244,775,271"/>
-<area shape="rect" title=" " alt="" coords="799,244,892,271"/>
-<area shape="rect" href="_c_h_i_p_error_8h.html" title=" " alt="" coords="411,319,539,345"/>
-<area shape="rect" href="_error_str_8h.html" title=" " alt="" coords="928,319,1064,345"/>
-<area shape="rect" href="_c_h_i_p_logging_8h.html" title=" " alt="" coords="563,319,784,345"/>
-<area shape="rect" title=" " alt="" coords="817,319,903,345"/>
-<area shape="rect" title=" " alt="" coords="636,393,711,420"/>
-<area shape="rect" title=" " alt="" coords="304,319,387,345"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="_zephyr_2_c_h_i_p_device_platform_event_8h__dep__incl.png" border="0" usemap="#platform_2_zephyr_2_c_h_i_p_device_platform_event_8hdep" alt=""/></div>
-<map name="platform_2_zephyr_2_c_h_i_p_device_platform_event_8hdep" id="platform_2_zephyr_2_c_h_i_p_device_platform_event_8hdep">
-<area shape="rect" title=" " alt="" coords="5,5,213,47"/>
-<area shape="rect" href="nrfconnect_2_c_h_i_p_device_platform_event_8h.html" title=" " alt="" coords="6,95,213,136"/>
-</map>
-</div>
 </div>
 <p><a href="_zephyr_2_c_h_i_p_device_platform_event_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -174,6 +135,8 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacechip_1_1_device_layer_1_1_device_event_type.html#ae8584e0138538b418ca0f730e054ed59a102815a89b2b35bcf14d12cfe076a454">chip::DeviceLayer::DeviceEventType::kPlatformLinuxEvent</a> = kRange_InternalPlatformSpecific, 
 <br />
 &#160;&#160;<a class="el" href="namespacechip_1_1_device_layer_1_1_device_event_type.html#ae8584e0138538b418ca0f730e054ed59a5c5f9de3361db07db7938bb1834f25eb">chip::DeviceLayer::DeviceEventType::kPlatformLinuxBLECentralConnected</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespacechip_1_1_device_layer_1_1_device_event_type.html#ae8584e0138538b418ca0f730e054ed59a610ab7ce23c3dd9196bc2d8fb79ed8db">chip::DeviceLayer::DeviceEventType::kPlatformLinuxBLECentralConnectFailed</a>, 
 <br />
 &#160;&#160;<a class="el" href="namespacechip_1_1_device_layer_1_1_device_event_type.html#ae8584e0138538b418ca0f730e054ed59ae515e7e56bf33c0e250ba89fe6c26c69">chip::DeviceLayer::DeviceEventType::kPlatformLinuxBLEWriteComplete</a>, 
 <br />
@@ -229,7 +192,7 @@ Enumerations</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4b68c2fef3e151b6b93d5e93b14f1857.html">platform</a></li><li class="navelem"><a class="el" href="dir_5622a41dbea6cfc87110f572fb48985f.html">Zephyr</a></li><li class="navelem"><a class="el" href="_zephyr_2_c_h_i_p_device_platform_event_8h.html">CHIPDevicePlatformEvent.h</a></li>
-    <li class="footer">Generated on Mon Feb 1 2021 16:49:16 for Connected Home over IP by
+    <li class="footer">Generated on Thu Apr 15 2021 18:57:04 for Connected Home over IP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

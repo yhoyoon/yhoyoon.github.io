@@ -1,9 +1,9 @@
 var dir_4d3e2479dff153f0c0d8caae586ce0c0 =
 [
     [ "java", "dir_d00b6c3644a3e2b17447ea42c2ca8a78.html", "dir_d00b6c3644a3e2b17447ea42c2ca8a78" ],
-    [ "AdditionalDataPayload.h", "_additional_data_payload_8h.html", [
-      [ "AdditionalDataPayload", "structchip_1_1_setup_payload_1_1_additional_data_payload.html", "structchip_1_1_setup_payload_1_1_additional_data_payload" ]
-    ] ],
+    [ "AdditionalDataPayload.h", "_additional_data_payload_8h.html", "_additional_data_payload_8h" ],
+    [ "AdditionalDataPayloadGenerator.cpp", "_additional_data_payload_generator_8cpp.html", null ],
+    [ "AdditionalDataPayloadGenerator.h", "_additional_data_payload_generator_8h.html", "_additional_data_payload_generator_8h" ],
     [ "AdditionalDataPayloadParser.cpp", "_additional_data_payload_parser_8cpp.html", null ],
     [ "AdditionalDataPayloadParser.h", "_additional_data_payload_parser_8h.html", [
       [ "AdditionalDataPayloadParser", "classchip_1_1_additional_data_payload_parser.html", "classchip_1_1_additional_data_payload_parser" ]

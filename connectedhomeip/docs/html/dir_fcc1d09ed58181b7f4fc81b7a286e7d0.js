@@ -22,6 +22,8 @@ var dir_fcc1d09ed58181b7f4fc81b7a286e7d0 =
       [ "GroupKeyStoreImpl", "classchip_1_1_device_layer_1_1_internal_1_1_group_key_store_impl.html", "classchip_1_1_device_layer_1_1_internal_1_1_group_key_store_impl" ]
     ] ],
     [ "InetPlatformConfig.h", "qpg6100_2_inet_platform_config_8h.html", "qpg6100_2_inet_platform_config_8h" ],
+    [ "KeyValueStoreManagerImpl.cpp", "qpg6100_2_key_value_store_manager_impl_8cpp.html", null ],
+    [ "KeyValueStoreManagerImpl.h", "qpg6100_2_key_value_store_manager_impl_8h.html", "qpg6100_2_key_value_store_manager_impl_8h" ],
     [ "Logging.cpp", "qpg6100_2_logging_8cpp.html", "qpg6100_2_logging_8cpp" ],
     [ "PlatformManagerImpl.cpp", "qpg6100_2_platform_manager_impl_8cpp.html", null ],
     [ "PlatformManagerImpl.h", "qpg6100_2_platform_manager_impl_8h.html", "qpg6100_2_platform_manager_impl_8h" ],

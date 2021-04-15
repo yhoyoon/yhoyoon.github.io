@@ -1,7 +1,5 @@
 var cc13x2__26x2_2_thread_stack_manager_impl_8cpp =
 [
-    [ "ot_calloc", "cc13x2__26x2_2_thread_stack_manager_impl_8cpp.html#af56b0afb961150a120c8933c548fbb91", null ],
-    [ "ot_free", "cc13x2__26x2_2_thread_stack_manager_impl_8cpp.html#a78a7000d7900791a5b6d99a9c564dd9d", null ],
     [ "otSysProcessDrivers", "cc13x2__26x2_2_thread_stack_manager_impl_8cpp.html#a910ebbddd7f84aee20cde04258d7895f", null ],
     [ "otTaskletsSignalPending", "cc13x2__26x2_2_thread_stack_manager_impl_8cpp.html#a98d12345d246d5e55b6c8d749e771ac3", null ],
     [ "platformAlarmMicroSignal", "cc13x2__26x2_2_thread_stack_manager_impl_8cpp.html#a00e7c0274434f58261393bf8987f4802", null ],

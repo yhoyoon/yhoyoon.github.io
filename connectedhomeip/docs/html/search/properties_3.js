@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mblelayer_10422',['mBleLayer',['../interface_ble_connection.html#aa4cec98b712f9667407dd371279ec031',1,'BleConnection']]]
+  ['hasstatus_12055',['hasStatus',['../interface_fake_ble_adapter_information.html#a11eacbe07bffbaa335bcb54467b62bba',1,'FakeBleAdapterInformation']]]
 ];

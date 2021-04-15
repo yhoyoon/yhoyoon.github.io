@@ -6,6 +6,7 @@ var classchip_1_1_device_layer_1_1_internal_1_1_generic_platform_manager_impl =
     [ "_InitChipStack", "classchip_1_1_device_layer_1_1_internal_1_1_generic_platform_manager_impl.html#ab177ef1d3327fadae8d9a337633d94da", null ],
     [ "_RemoveEventHandler", "classchip_1_1_device_layer_1_1_internal_1_1_generic_platform_manager_impl.html#aac38e0bb647862d22f704cc57a93d32a", null ],
     [ "_ScheduleWork", "classchip_1_1_device_layer_1_1_internal_1_1_generic_platform_manager_impl.html#a2b76200fdc74bc688c1f9ccfdf7a2e8f", null ],
+    [ "_Shutdown", "classchip_1_1_device_layer_1_1_internal_1_1_generic_platform_manager_impl.html#a8467591ef3becb15488029ded56085db", null ],
     [ "DispatchEventToApplication", "classchip_1_1_device_layer_1_1_internal_1_1_generic_platform_manager_impl.html#a610326020f2def61eb8c0734a65ab67c", null ],
     [ "DispatchEventToDeviceLayer", "classchip_1_1_device_layer_1_1_internal_1_1_generic_platform_manager_impl.html#a61c162be18ef8c6aa2f12692ab1f8a36", null ],
     [ "DispatchEventToSystemLayer", "classchip_1_1_device_layer_1_1_internal_1_1_generic_platform_manager_impl.html#a3498268651cdcb252b07807bcf8a8907", null ],

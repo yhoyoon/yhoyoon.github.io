@@ -8,5 +8,6 @@ var _advertiser_8h =
       [ "kCommissioning", "_advertiser_8h.html#adf573d350431e66f24ce6567f580062fa2769d2ec12086ee4ecac048b6bff4ce0", null ],
       [ "kCommissionable", "_advertiser_8h.html#adf573d350431e66f24ce6567f580062fa7c4254b228ae988b69511be48c1a0115", null ]
     ] ],
+    [ "kMaxMacSize", "_advertiser_8h.html#a2eba931c0dc6253cddd48f83172de222", null ],
     [ "kMdnsPort", "_advertiser_8h.html#a0a303ecb5932e6cd0adf0913e886cefc", null ]
 ];

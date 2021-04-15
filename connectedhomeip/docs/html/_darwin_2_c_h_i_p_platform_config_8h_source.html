@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Connected Home over IP
-   &#160;<span id="projectnumber">a83086a0</span>
+   &#160;<span id="projectnumber">672cf7684</span>
    </div>
   </td>
  </tr>
@@ -156,45 +156,53 @@ $(document).ready(function(){initNavTree('_darwin_2_c_h_i_p_platform_config_8h_s
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif // CHIP_CONFIG_MAX_PEER_NODES</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#ifndef CHIP_CONFIG_MAX_UNSOLICITED_MESSAGE_HANDLERS</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="_darwin_2_c_h_i_p_platform_config_8h.html#a5e3f88d3ddb04517e635b9cd0bae78be">   76</a></span>&#160;<span class="preprocessor">#define CHIP_CONFIG_MAX_UNSOLICITED_MESSAGE_HANDLERS 16</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="_darwin_2_c_h_i_p_platform_config_8h.html#a5e3f88d3ddb04517e635b9cd0bae78be">   76</a></span>&#160;<span class="preprocessor">#define CHIP_CONFIG_MAX_UNSOLICITED_MESSAGE_HANDLERS 8</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif // CHIP_CONFIG_MAX_UNSOLICITED_MESSAGE_HANDLERS</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#ifndef CHIP_CONFIG_MAX_EXCHANGE_CONTEXTS</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="_darwin_2_c_h_i_p_platform_config_8h.html#a56f3094069136dfe32452bfb45b07b33">   80</a></span>&#160;<span class="preprocessor">#define CHIP_CONFIG_MAX_EXCHANGE_CONTEXTS 8</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif // CHIP_CONFIG_MAX_EXCHANGE_CONTEXTS</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#ifndef CHIP_CONFIG_RMP_TIMER_DEFAULT_PERIOD_SHIFT</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="_darwin_2_c_h_i_p_platform_config_8h.html#a2839eb8c235bbcc0abf18e1dc5adc017">   84</a></span>&#160;<span class="preprocessor">#define CHIP_CONFIG_RMP_TIMER_DEFAULT_PERIOD_SHIFT 6</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif // CHIP_CONFIG_RMP_TIMER_DEFAULT_PERIOD_SHIFT</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#ifndef CHIP_CONFIG_MAX_ACTIVE_CHANNELS</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="_darwin_2_c_h_i_p_platform_config_8h.html#aa8b734a5e4a184c82af017739a2c2939">   84</a></span>&#160;<span class="preprocessor">#define CHIP_CONFIG_MAX_ACTIVE_CHANNELS 16</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif // CHIP_CONFIG_MAX_ACTIVE_CHANNELS</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#ifndef CHIP_LOG_FILTERING</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="_darwin_2_c_h_i_p_platform_config_8h.html#a3aa01c76a63f43b5e827b36d1618ea80">   88</a></span>&#160;<span class="preprocessor">#define CHIP_LOG_FILTERING 1</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#endif // CHIP_LOG_FILTERING</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#ifndef CHIP_CONFIG_MAX_CHANNEL_HANDLES</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="_darwin_2_c_h_i_p_platform_config_8h.html#a1ae12aeb95743cb6dfe08891d769b01f">   88</a></span>&#160;<span class="preprocessor">#define CHIP_CONFIG_MAX_CHANNEL_HANDLES 32</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#endif // CHIP_CONFIG_MAX_CHANNEL_HANDLES</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#ifndef CHIP_CONFIG_BDX_MAX_NUM_TRANSFERS</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="_darwin_2_c_h_i_p_platform_config_8h.html#a5ba4362277d1b4590c86e1113a653381">   92</a></span>&#160;<span class="preprocessor">#define CHIP_CONFIG_BDX_MAX_NUM_TRANSFERS 1</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif // CHIP_CONFIG_BDX_MAX_NUM_TRANSFERS</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#ifndef CHIP_CONFIG_RMP_TIMER_DEFAULT_PERIOD_SHIFT</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="_darwin_2_c_h_i_p_platform_config_8h.html#a2839eb8c235bbcc0abf18e1dc5adc017">   92</a></span>&#160;<span class="preprocessor">#define CHIP_CONFIG_RMP_TIMER_DEFAULT_PERIOD_SHIFT 6</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif // CHIP_CONFIG_RMP_TIMER_DEFAULT_PERIOD_SHIFT</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">// ==================== Security Configuration Overrides ====================</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#ifndef CHIP_CONFIG_MAX_APPLICATION_GROUPS</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="_darwin_2_c_h_i_p_platform_config_8h.html#a94b9d362ab031bd0da363c120c1bbd76">   98</a></span>&#160;<span class="preprocessor">#define CHIP_CONFIG_MAX_APPLICATION_GROUPS 4</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif // CHIP_CONFIG_MAX_APPLICATION_GROUPS</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#ifndef CHIP_CONFIG_DEBUG_CERT_VALIDATION</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="_darwin_2_c_h_i_p_platform_config_8h.html#a33ef68a3fe8194463ee35f37cb1b7689">  102</a></span>&#160;<span class="preprocessor">#define CHIP_CONFIG_DEBUG_CERT_VALIDATION 0</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif // CHIP_CONFIG_DEBUG_CERT_VALIDATION</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#ifndef CHIP_LOG_FILTERING</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="_darwin_2_c_h_i_p_platform_config_8h.html#a3aa01c76a63f43b5e827b36d1618ea80">   96</a></span>&#160;<span class="preprocessor">#define CHIP_LOG_FILTERING 1</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif // CHIP_LOG_FILTERING</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#ifndef CHIP_CONFIG_BDX_MAX_NUM_TRANSFERS</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="_darwin_2_c_h_i_p_platform_config_8h.html#a5ba4362277d1b4590c86e1113a653381">  100</a></span>&#160;<span class="preprocessor">#define CHIP_CONFIG_BDX_MAX_NUM_TRANSFERS 1</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif // CHIP_CONFIG_BDX_MAX_NUM_TRANSFERS</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">// ==================== Security Configuration Overrides ====================</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#ifndef CHIP_CONFIG_ENABLE_CASE_RESPONDER</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="_darwin_2_c_h_i_p_platform_config_8h.html#a8918057a248c253a311c7e9e67754057">  106</a></span>&#160;<span class="preprocessor">#define CHIP_CONFIG_ENABLE_CASE_RESPONDER 1</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif // CHIP_CONFIG_ENABLE_CASE_RESPONDER</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#ifndef CHIP_CONFIG_MAX_APPLICATION_GROUPS</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="_darwin_2_c_h_i_p_platform_config_8h.html#a94b9d362ab031bd0da363c120c1bbd76">  106</a></span>&#160;<span class="preprocessor">#define CHIP_CONFIG_MAX_APPLICATION_GROUPS 4</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif // CHIP_CONFIG_MAX_APPLICATION_GROUPS</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#ifndef CHIP_CONFIG_DEBUG_CERT_VALIDATION</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="_darwin_2_c_h_i_p_platform_config_8h.html#a33ef68a3fe8194463ee35f37cb1b7689">  110</a></span>&#160;<span class="preprocessor">#define CHIP_CONFIG_DEBUG_CERT_VALIDATION 0</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif // CHIP_CONFIG_DEBUG_CERT_VALIDATION</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#ifndef CHIP_CONFIG_ENABLE_CASE_RESPONDER</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="_darwin_2_c_h_i_p_platform_config_8h.html#a8918057a248c253a311c7e9e67754057">  114</a></span>&#160;<span class="preprocessor">#define CHIP_CONFIG_ENABLE_CASE_RESPONDER 1</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif // CHIP_CONFIG_ENABLE_CASE_RESPONDER</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4b68c2fef3e151b6b93d5e93b14f1857.html">platform</a></li><li class="navelem"><a class="el" href="dir_a915e0d1adb138d0d68fe2a954708cd7.html">Darwin</a></li><li class="navelem"><a class="el" href="_darwin_2_c_h_i_p_platform_config_8h.html">CHIPPlatformConfig.h</a></li>
-    <li class="footer">Generated on Mon Feb 1 2021 16:49:15 for Connected Home over IP by
+    <li class="footer">Generated on Thu Apr 15 2021 18:57:04 for Connected Home over IP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -25,11 +25,5 @@ var dir_9218cfc7b104cb41a6aa9cf00c400bad =
       [ "ResponseSender", "classmdns_1_1_minimal_1_1_response_sender.html", "classmdns_1_1_minimal_1_1_response_sender" ]
     ] ],
     [ "Server.cpp", "_server_8cpp.html", "_server_8cpp" ],
-    [ "Server.h", "_server_8h.html", [
-      [ "ListenIterator", "classmdns_1_1_minimal_1_1_listen_iterator.html", "classmdns_1_1_minimal_1_1_listen_iterator" ],
-      [ "ServerDelegate", "classmdns_1_1_minimal_1_1_server_delegate.html", "classmdns_1_1_minimal_1_1_server_delegate" ],
-      [ "ServerBase", "classmdns_1_1_minimal_1_1_server_base.html", "classmdns_1_1_minimal_1_1_server_base" ],
-      [ "EndpointInfo", "structmdns_1_1_minimal_1_1_server_base_1_1_endpoint_info.html", "structmdns_1_1_minimal_1_1_server_base_1_1_endpoint_info" ],
-      [ "Server", "classmdns_1_1_minimal_1_1_server.html", "classmdns_1_1_minimal_1_1_server" ]
-    ] ]
+    [ "Server.h", "_server_8h.html", "_server_8h" ]
 ];

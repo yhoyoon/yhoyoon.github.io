@@ -7,10 +7,7 @@ var dir_a915e0d1adb138d0d68fe2a954708cd7 =
     [ "BleConnectionDelegate.h", "platform_2_darwin_2_ble_connection_delegate_8h.html", [
       [ "BleConnectionDelegateImpl", "classchip_1_1_device_layer_1_1_internal_1_1_ble_connection_delegate_impl.html", "classchip_1_1_device_layer_1_1_internal_1_1_ble_connection_delegate_impl" ]
     ] ],
-    [ "BleConnectionDelegateImpl.mm", "_ble_connection_delegate_impl_8mm.html", [
-      [ "BleConnection", "interface_ble_connection.html", "interface_ble_connection" ],
-      [ "BleConnection()", "category_ble_connection_07_08.html", null ]
-    ] ],
+    [ "BleConnectionDelegateImpl.mm", "_ble_connection_delegate_impl_8mm.html", "_ble_connection_delegate_impl_8mm" ],
     [ "BLEManagerImpl.cpp", "_darwin_2_b_l_e_manager_impl_8cpp.html", null ],
     [ "BLEManagerImpl.h", "_darwin_2_b_l_e_manager_impl_8h.html", null ],
     [ "BlePlatformConfig.h", "_darwin_2_ble_platform_config_8h.html", null ],
@@ -30,6 +27,15 @@ var dir_a915e0d1adb138d0d68fe2a954708cd7 =
       [ "DeviceNetworkProvisioningDelegateImpl", "classchip_1_1_device_layer_1_1_device_network_provisioning_delegate_impl.html", "classchip_1_1_device_layer_1_1_device_network_provisioning_delegate_impl" ]
     ] ],
     [ "InetPlatformConfig.h", "_darwin_2_inet_platform_config_8h.html", "_darwin_2_inet_platform_config_8h" ],
+    [ "KeyValueStoreManagerImpl.h", "_darwin_2_key_value_store_manager_impl_8h.html", "_darwin_2_key_value_store_manager_impl_8h" ],
+    [ "KeyValueStoreManagerImpl.mm", "_key_value_store_manager_impl_8mm.html", [
+      [ "KeyValueItem", "interface_key_value_item.html", "interface_key_value_item" ]
+    ] ],
+    [ "Logging.cpp", "_darwin_2_logging_8cpp.html", "_darwin_2_logging_8cpp" ],
+    [ "MdnsError.cpp", "_mdns_error_8cpp.html", "_mdns_error_8cpp" ],
+    [ "MdnsError.h", "_mdns_error_8h.html", "_mdns_error_8h" ],
+    [ "MdnsImpl.cpp", "_darwin_2_mdns_impl_8cpp.html", "_darwin_2_mdns_impl_8cpp" ],
+    [ "MdnsImpl.h", "_darwin_2_mdns_impl_8h.html", "_darwin_2_mdns_impl_8h" ],
     [ "PlatformManagerImpl.cpp", "_darwin_2_platform_manager_impl_8cpp.html", null ],
     [ "PlatformManagerImpl.h", "_darwin_2_platform_manager_impl_8h.html", "_darwin_2_platform_manager_impl_8h" ],
     [ "PosixConfig.cpp", "_darwin_2_posix_config_8cpp.html", null ],

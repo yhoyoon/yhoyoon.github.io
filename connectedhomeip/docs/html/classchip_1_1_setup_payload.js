@@ -15,11 +15,9 @@ var classchip_1_1_setup_payload =
     [ "QRCodeSetupPayloadGenerator", "classchip_1_1_setup_payload.html#a6f66b7752e78096aa6da3974f28cf9be", null ],
     [ "QRCodeSetupPayloadParser", "classchip_1_1_setup_payload.html#a7e662b954d9f27ce501879f4d017d4fa", null ],
     [ "discriminator", "classchip_1_1_setup_payload.html#a18a1ee82a86e3efe454c99755f2613e8", null ],
-    [ "kRotatingDeviceIdLength", "classchip_1_1_setup_payload.html#ab59199eebad089fdf718a7bc0e6eae9e", null ],
-    [ "kRotatingDeviceIdTag", "classchip_1_1_setup_payload.html#ac8a314ef381e8b2cb78f0d16027f67e5", null ],
     [ "productID", "classchip_1_1_setup_payload.html#a564e7a215081af6a945256f1b3d72a4a", null ],
     [ "rendezvousInformation", "classchip_1_1_setup_payload.html#a0592f7a1ed54b7240488e0f3d07ac5ad", null ],
-    [ "requiresCustomFlow", "classchip_1_1_setup_payload.html#a6ed3b439956c041c3879eba09f92fad0", null ],
+    [ "requiresCustomFlow", "classchip_1_1_setup_payload.html#aa17ce75f6ec653c791af3f5c9e1bf3a1", null ],
     [ "setUpPINCode", "classchip_1_1_setup_payload.html#a45c0348f694e4191656bb9253b0d728f", null ],
     [ "vendorID", "classchip_1_1_setup_payload.html#a41627935056e91fc8d9415ad160248ec", null ],
     [ "version", "classchip_1_1_setup_payload.html#a78d3c3abda4a4587cae377df1f928844", null ]

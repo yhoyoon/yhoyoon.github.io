@@ -1,6 +1,6 @@
 var _server_8cpp =
 [
-    [ "ipv4", "_server_8cpp.html#a56e41a15dc97f438bbbd09ab1c9fac70", null ],
-    [ "ipv6", "_server_8cpp.html#a3cdf5d65121cff533ac76b90f11d5a2b", null ],
+    [ "GetIpv4Into", "_server_8cpp.html#ad7447d40bd3a21f84c82c4aa74d6ee7e", null ],
+    [ "GetIpv6Into", "_server_8cpp.html#a032ce5c4f99f5ca98a1e54d4b90949e9", null ],
     [ "mServer", "_server_8cpp.html#ae541c184c61be5ac61ef40b7d6cc4e3b", null ]
 ];

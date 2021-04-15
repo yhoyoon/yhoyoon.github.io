@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Connected Home over IP
-   &#160;<span id="projectnumber">a83086a0</span>
+   &#160;<span id="projectnumber">672cf7684</span>
    </div>
   </td>
  </tr>
@@ -132,19 +132,15 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ab59199eebad089fdf718a7bc0e6eae9e"><td class="memItemLeft" align="right" valign="top">constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_setup_payload.html#ab59199eebad089fdf718a7bc0e6eae9e">kRotatingDeviceIdLength</a> = 18</td></tr>
-<tr class="separator:ab59199eebad089fdf718a7bc0e6eae9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8a314ef381e8b2cb78f0d16027f67e5"><td class="memItemLeft" align="right" valign="top">constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_setup_payload.html#ac8a314ef381e8b2cb78f0d16027f67e5">kRotatingDeviceIdTag</a> = 0x00</td></tr>
-<tr class="separator:ac8a314ef381e8b2cb78f0d16027f67e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78d3c3abda4a4587cae377df1f928844"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_setup_payload.html#a78d3c3abda4a4587cae377df1f928844">version</a></td></tr>
 <tr class="separator:a78d3c3abda4a4587cae377df1f928844"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41627935056e91fc8d9415ad160248ec"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_setup_payload.html#a41627935056e91fc8d9415ad160248ec">vendorID</a></td></tr>
 <tr class="separator:a41627935056e91fc8d9415ad160248ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a564e7a215081af6a945256f1b3d72a4a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_setup_payload.html#a564e7a215081af6a945256f1b3d72a4a">productID</a></td></tr>
 <tr class="separator:a564e7a215081af6a945256f1b3d72a4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ed3b439956c041c3879eba09f92fad0"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_setup_payload.html#a6ed3b439956c041c3879eba09f92fad0">requiresCustomFlow</a></td></tr>
-<tr class="separator:a6ed3b439956c041c3879eba09f92fad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0592f7a1ed54b7240488e0f3d07ac5ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip.html#a22a6daa82ecc6c358dda9f9223043a7e">RendezvousInformationFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_setup_payload.html#a0592f7a1ed54b7240488e0f3d07ac5ad">rendezvousInformation</a></td></tr>
+<tr class="memitem:aa17ce75f6ec653c791af3f5c9e1bf3a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_setup_payload.html#aa17ce75f6ec653c791af3f5c9e1bf3a1">requiresCustomFlow</a></td></tr>
+<tr class="separator:aa17ce75f6ec653c791af3f5c9e1bf3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0592f7a1ed54b7240488e0f3d07ac5ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip.html#a1f2a27cc45a5669b58965e0f206cb8ad">RendezvousInformationFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_setup_payload.html#a0592f7a1ed54b7240488e0f3d07ac5ad">rendezvousInformation</a></td></tr>
 <tr class="separator:a0592f7a1ed54b7240488e0f3d07ac5ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18a1ee82a86e3efe454c99755f2613e8"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_setup_payload.html#a18a1ee82a86e3efe454c99755f2613e8">discriminator</a></td></tr>
 <tr class="separator:a18a1ee82a86e3efe454c99755f2613e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,15 +216,6 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns a CHIP_ERROR on error, CHIP_NO_ERROR otherwise </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_setup_payload_af39c4a4031061d537fcbd18418c52b69_cgraph.png" border="0" usemap="#classchip_1_1_setup_payload_af39c4a4031061d537fcbd18418c52b69_cgraph" alt=""/></div>
-<map name="classchip_1_1_setup_payload_af39c4a4031061d537fcbd18418c52b69_cgraph" id="classchip_1_1_setup_payload_af39c4a4031061d537fcbd18418c52b69_cgraph">
-<area shape="rect" title="A function to add an optional vendor data." alt="" coords="5,5,192,47"/>
-<area shape="rect" href="classchip_1_1_setup_payload.html#a3a16b50bd8002dcbed64cf38b4984a1b" title="A function to add an optional vendor data." alt="" coords="240,5,427,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -267,15 +254,6 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns a CHIP_ERROR on error, CHIP_NO_ERROR otherwise </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_setup_payload_a3a16b50bd8002dcbed64cf38b4984a1b_icgraph.png" border="0" usemap="#classchip_1_1_setup_payload_a3a16b50bd8002dcbed64cf38b4984a1b_icgraph" alt=""/></div>
-<map name="classchip_1_1_setup_payload_a3a16b50bd8002dcbed64cf38b4984a1b_icgraph" id="classchip_1_1_setup_payload_a3a16b50bd8002dcbed64cf38b4984a1b_icgraph">
-<area shape="rect" title="A function to add an optional vendor data." alt="" coords="240,5,427,47"/>
-<area shape="rect" href="classchip_1_1_setup_payload.html#af39c4a4031061d537fcbd18418c52b69" title="A function to add an optional vendor data." alt="" coords="5,5,192,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -350,15 +328,6 @@ Here is the caller graph for this function:</div>
 
 <p>A function to retrieve the vector of <a class="el" href="structchip_1_1_optional_q_r_code_info.html" title="A structure to hold optional QR Code info.">OptionalQRCodeInfo</a> infos. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns a vector of optionalQRCodeInfos </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_setup_payload_a1349bc8c7bde0fa7c492a3f320d1e708_icgraph.png" border="0" usemap="#classchip_1_1_setup_payload_a1349bc8c7bde0fa7c492a3f320d1e708_icgraph" alt=""/></div>
-<map name="classchip_1_1_setup_payload_a1349bc8c7bde0fa7c492a3f320d1e708_icgraph" id="classchip_1_1_setup_payload_a1349bc8c7bde0fa7c492a3f320d1e708_icgraph">
-<area shape="rect" title="A function to retrieve the vector of OptionalQRCodeInfo infos." alt="" coords="231,5,431,47"/>
-<area shape="rect" href="_setup_payload_parser-_j_n_i_8cpp.html#ad2eef2ab63421c097affedac58dda166" title=" " alt="" coords="5,13,183,39"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -403,16 +372,6 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_setup_payload_ac76707c943d099bf2cd218d36f3e19f0_icgraph.png" border="0" usemap="#classchip_1_1_setup_payload_ac76707c943d099bf2cd218d36f3e19f0_icgraph" alt=""/></div>
-<map name="classchip_1_1_setup_payload_ac76707c943d099bf2cd218d36f3e19f0_icgraph" id="classchip_1_1_setup_payload_ac76707c943d099bf2cd218d36f3e19f0_icgraph">
-<area shape="rect" title=" " alt="" coords="536,13,691,54"/>
-<area shape="rect" href="classchip_1_1_manual_setup_payload_generator.html#a6f00448e7a93bddd71af297ee8f7c7ad" title=" " alt="" coords="249,5,488,61"/>
-<area shape="rect" href="namespacechip.html#a0cbebec40a541cb598dc1f30de811b62" title=" " alt="" coords="5,13,201,54"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -558,50 +517,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ab59199eebad089fdf718a7bc0e6eae9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab59199eebad089fdf718a7bc0e6eae9e">&#9670;&nbsp;</a></span>kRotatingDeviceIdLength</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr uint8_t chip::SetupPayload::kRotatingDeviceIdLength = 18</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac8a314ef381e8b2cb78f0d16027f67e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8a314ef381e8b2cb78f0d16027f67e5">&#9670;&nbsp;</a></span>kRotatingDeviceIdTag</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr uint8_t chip::SetupPayload::kRotatingDeviceIdTag = 0x00</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a564e7a215081af6a945256f1b3d72a4a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a564e7a215081af6a945256f1b3d72a4a">&#9670;&nbsp;</a></span>productID</h2>
 
@@ -623,21 +538,21 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacechip.html#a22a6daa82ecc6c358dda9f9223043a7e">RendezvousInformationFlags</a> chip::SetupPayload::rendezvousInformation</td>
+          <td class="memname"><a class="el" href="namespacechip.html#a1f2a27cc45a5669b58965e0f206cb8ad">RendezvousInformationFlags</a> chip::SetupPayload::rendezvousInformation</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a6ed3b439956c041c3879eba09f92fad0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ed3b439956c041c3879eba09f92fad0">&#9670;&nbsp;</a></span>requiresCustomFlow</h2>
+<a id="aa17ce75f6ec653c791af3f5c9e1bf3a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa17ce75f6ec653c791af3f5c9e1bf3a1">&#9670;&nbsp;</a></span>requiresCustomFlow</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t chip::SetupPayload::requiresCustomFlow</td>
+          <td class="memname">bool chip::SetupPayload::requiresCustomFlow</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -688,7 +603,6 @@ Here is the caller graph for this function:</div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>setup_payload/<a class="el" href="_setup_payload_8h_source.html">SetupPayload.h</a></li>
-<li>setup_payload/<a class="el" href="_additional_data_payload_8h_source.html">AdditionalDataPayload.h</a></li>
 <li>setup_payload/<a class="el" href="_setup_payload_8cpp.html">SetupPayload.cpp</a></li>
 </ul>
 </div><!-- contents -->
@@ -697,7 +611,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="classchip_1_1_setup_payload.html">SetupPayload</a></li>
-    <li class="footer">Generated on Mon Feb 1 2021 16:49:17 for Connected Home over IP by
+    <li class="footer">Generated on Thu Apr 15 2021 18:57:05 for Connected Home over IP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

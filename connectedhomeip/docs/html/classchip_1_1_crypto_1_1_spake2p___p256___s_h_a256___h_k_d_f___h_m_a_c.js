@@ -9,7 +9,7 @@ var classchip_1_1_crypto_1_1_spake2p___p256___s_h_a256___h_k_d_f___h_m_a_c =
     [ "FEWrite", "classchip_1_1_crypto_1_1_spake2p___p256___s_h_a256___h_k_d_f___h_m_a_c.html#aae2c96581f432044db37cf13c3120ff3", null ],
     [ "Hash", "classchip_1_1_crypto_1_1_spake2p___p256___s_h_a256___h_k_d_f___h_m_a_c.html#afb478f6b58f6f0b7e941086a9e7744b1", null ],
     [ "HashFinalize", "classchip_1_1_crypto_1_1_spake2p___p256___s_h_a256___h_k_d_f___h_m_a_c.html#ad0f06bdd38bb18978a64b89cc43bd725", null ],
-    [ "InitImpl", "classchip_1_1_crypto_1_1_spake2p___p256___s_h_a256___h_k_d_f___h_m_a_c.html#a30620134e3b51a623e86c15a3b3dff47", null ],
+    [ "InitImpl", "classchip_1_1_crypto_1_1_spake2p___p256___s_h_a256___h_k_d_f___h_m_a_c.html#a4c9cef2ca1f3f1d617198f6f33782fa5", null ],
     [ "KDF", "classchip_1_1_crypto_1_1_spake2p___p256___s_h_a256___h_k_d_f___h_m_a_c.html#af59eb716dda3c6185ad828de2d7e601f", null ],
     [ "Mac", "classchip_1_1_crypto_1_1_spake2p___p256___s_h_a256___h_k_d_f___h_m_a_c.html#ad0b0bdc4b3d2847cc65b141f251e9c43", null ],
     [ "MacVerify", "classchip_1_1_crypto_1_1_spake2p___p256___s_h_a256___h_k_d_f___h_m_a_c.html#a66a814ef3487cdabe0c509eea1113e95", null ],

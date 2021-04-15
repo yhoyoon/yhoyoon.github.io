@@ -7,5 +7,6 @@ var _e_f_r32_config_8cpp =
     [ "CHIP_NVM3_DEFINE_SECTION_INIT_DATA", "_e_f_r32_config_8cpp.html#a5bf101ff9757b25c14963ca78e7c973b", null ],
     [ "CHIP_NVM3_DEFINE_SECTION_STATIC_DATA", "_e_f_r32_config_8cpp.html#a8f11ca7567c1bfd59eea430295e6e476", null ],
     [ "handle", "_e_f_r32_config_8cpp.html#a460cf807ee2482f1c1431deacb7635e3", null ],
-    [ "nvm3_Sem", "_e_f_r32_config_8cpp.html#ae5b14facab4ee7b29218e0a2d7560079", null ]
+    [ "nvm3_Sem", "_e_f_r32_config_8cpp.html#ae5b14facab4ee7b29218e0a2d7560079", null ],
+    [ "nvm3_SemStruct", "_e_f_r32_config_8cpp.html#ad8aa6bd1c5c14bbcb40289d9722df64e", null ]
 ];

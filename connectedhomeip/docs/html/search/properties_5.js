@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['peripheral_10425',['peripheral',['../interface_ble_connection.html#abde1fd7976b85c5afaf075c8db898091',1,'BleConnection']]]
+  ['mblelayer_12057',['mBleLayer',['../interface_ble_connection.html#aa4cec98b712f9667407dd371279ec031',1,'BleConnection']]]
 ];

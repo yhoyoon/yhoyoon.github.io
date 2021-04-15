@@ -8,7 +8,7 @@ var structchip_1_1_mdns_1_1_mdns_service =
     [ "mProtocol", "structchip_1_1_mdns_1_1_mdns_service.html#a569f02b24fcb72d1dc8b6cfbe95ace54", null ],
     [ "mSubTypes", "structchip_1_1_mdns_1_1_mdns_service.html#af0de63876450eec96ecb1441c84a5029", null ],
     [ "mSubTypeSize", "structchip_1_1_mdns_1_1_mdns_service.html#a12866bf71ea862551a30215829c02cdc", null ],
-    [ "mTextEntryies", "structchip_1_1_mdns_1_1_mdns_service.html#ac55b66855fcfe4de105b42b9563ee66a", null ],
+    [ "mTextEntries", "structchip_1_1_mdns_1_1_mdns_service.html#a086acfb8be925d74fdee2aef93c90414", null ],
     [ "mTextEntrySize", "structchip_1_1_mdns_1_1_mdns_service.html#aa04db8af6e058af0c915a2a194117b4e", null ],
     [ "mType", "structchip_1_1_mdns_1_1_mdns_service.html#a2519ae3a2dea31b5eca5c2b28343231c", null ]
 ];

@@ -22,6 +22,7 @@ var classchip_1_1_transport_1_1_peer_address =
     [ "TCP", "classchip_1_1_transport_1_1_peer_address.html#a5adcbf1a0a5194d3f48f7aa545f65781", null ],
     [ "TCP", "classchip_1_1_transport_1_1_peer_address.html#a9da59253a04d23b7d07735b9c4607cd6", null ],
     [ "ToString", "classchip_1_1_transport_1_1_peer_address.html#a915e1f32a1bc1d399c259506cf56c6c3", null ],
+    [ "ToString", "classchip_1_1_transport_1_1_peer_address.html#aaa344439de3f2ee97bd3e1941629f42a", null ],
     [ "UDP", "classchip_1_1_transport_1_1_peer_address.html#a29887d5a38a4e7cf65d48925fc8404ec", null ],
     [ "UDP", "classchip_1_1_transport_1_1_peer_address.html#a432912d46277ea31a3779ec2c1c95e28", null ],
     [ "UDP", "classchip_1_1_transport_1_1_peer_address.html#a502d5d9233e6e7c5f9b05acf6753ca07", null ],

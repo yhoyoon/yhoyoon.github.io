@@ -31,6 +31,8 @@ var dir_3e85c5257447a731c2ccaf4f7bff62b6 =
       [ "GroupKeyStoreImpl", "classchip_1_1_device_layer_1_1_internal_1_1_group_key_store_impl.html", "classchip_1_1_device_layer_1_1_internal_1_1_group_key_store_impl" ]
     ] ],
     [ "InetPlatformConfig.h", "_e_s_p32_2_inet_platform_config_8h.html", "_e_s_p32_2_inet_platform_config_8h" ],
+    [ "KeyValueStoreManagerImpl.cpp", "_e_s_p32_2_key_value_store_manager_impl_8cpp.html", null ],
+    [ "KeyValueStoreManagerImpl.h", "_e_s_p32_2_key_value_store_manager_impl_8h.html", "_e_s_p32_2_key_value_store_manager_impl_8h" ],
     [ "Logging.cpp", "_e_s_p32_2_logging_8cpp.html", "_e_s_p32_2_logging_8cpp" ],
     [ "LwIPCoreLock.cpp", "_lw_i_p_core_lock_8cpp.html", "_lw_i_p_core_lock_8cpp" ],
     [ "MdnsImpl.cpp", "_e_s_p32_2_mdns_impl_8cpp.html", "_e_s_p32_2_mdns_impl_8cpp" ],

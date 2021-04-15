@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Connected Home over IP
-   &#160;<span id="projectnumber">a83086a0</span>
+   &#160;<span id="projectnumber">672cf7684</span>
    </div>
   </td>
  </tr>
@@ -91,37 +91,20 @@ $(document).ready(function(){initNavTree('freertos__bluetooth_8c.html',''); init
 <div class="title">freertos_bluetooth.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="freertos__bluetooth_8h_source.html">platform/EFR32/freertos_bluetooth.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &quot;AppConfig.h&quot;</code><br />
 <code>#include &lt;em_device.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="freertos__bluetooth_8h_source.html">platform/EFR32/freertos_bluetooth.h</a>&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
-<code>#include &quot;gecko_configuration.h&quot;</code><br />
-<code>#include &quot;rtos_gecko.h&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for freertos_bluetooth.c:</div>
-<div class="dyncontent">
-<div class="center"><img src="freertos__bluetooth_8c__incl.png" border="0" usemap="#platform_2_e_f_r32_2freertos__bluetooth_8c" alt=""/></div>
-<map name="platform_2_e_f_r32_2freertos__bluetooth_8c" id="platform_2_e_f_r32_2freertos__bluetooth_8c">
-<area shape="rect" title=" " alt="" coords="451,5,629,47"/>
-<area shape="rect" href="freertos__bluetooth_8h.html" title=" " alt="" coords="228,95,407,136"/>
-<area shape="rect" title=" " alt="" coords="5,184,109,211"/>
-<area shape="rect" title=" " alt="" coords="431,102,537,129"/>
-<area shape="rect" title=" " alt="" coords="561,102,631,129"/>
-<area shape="rect" title=" " alt="" coords="655,102,726,129"/>
-<area shape="rect" title=" " alt="" coords="751,102,916,129"/>
-<area shape="rect" title=" " alt="" coords="134,184,231,211"/>
-<area shape="rect" title=" " alt="" coords="256,184,379,211"/>
-<area shape="rect" title=" " alt="" coords="403,184,485,211"/>
-<area shape="rect" title=" " alt="" coords="510,184,573,211"/>
-<area shape="rect" title=" " alt="" coords="597,184,673,211"/>
-</map>
-</div>
+<code>#include &quot;sl_bt_api.h&quot;</code><br />
+<code>#include &quot;sl_bt_ncp_host.h&quot;</code><br />
+<code>#include &quot;sl_status.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:afba98b8c09a5dddd71d1ee85f2239ce8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#afba98b8c09a5dddd71d1ee85f2239ce8">BLUETOOTH_STACK_SIZE</a>&#160;&#160;&#160;(2048)</td></tr>
+<tr class="memitem:afba98b8c09a5dddd71d1ee85f2239ce8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#afba98b8c09a5dddd71d1ee85f2239ce8">BLUETOOTH_STACK_SIZE</a>&#160;&#160;&#160;(1024)</td></tr>
 <tr class="separator:afba98b8c09a5dddd71d1ee85f2239ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35c9b989825a8aa2a5adfc714d830db2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#a35c9b989825a8aa2a5adfc714d830db2">LINKLAYER_STACK_SIZE</a>&#160;&#160;&#160;(2048)</td></tr>
+<tr class="memitem:a35c9b989825a8aa2a5adfc714d830db2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#a35c9b989825a8aa2a5adfc714d830db2">LINKLAYER_STACK_SIZE</a>&#160;&#160;&#160;(1024)</td></tr>
 <tr class="separator:a35c9b989825a8aa2a5adfc714d830db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0924bb7b32a34eb411ad1a42268ec597"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#a0924bb7b32a34eb411ad1a42268ec597">RTOS_TICK_HZ</a>&#160;&#160;&#160;1024</td></tr>
 <tr class="separator:a0924bb7b32a34eb411ad1a42268ec597"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,21 +119,19 @@ Functions</h2></td></tr>
 <tr class="separator:ad8eeb1c36fc2729bc0b3048724f5995a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15d05af483395c0ec2cdb9219c5deb70"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#a15d05af483395c0ec2cdb9219c5deb70">BluetoothTask</a> (void *p_arg)</td></tr>
 <tr class="separator:a15d05af483395c0ec2cdb9219c5deb70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a498ebade47fe569443874e6f4c7292a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#a498ebade47fe569443874e6f4c7292a2">sli_bt_cmd_handler_rtos_delegate</a> (uint32_t header, sl_bgapi_handler handler, const void *<a class="el" href="_setup_payload_parser-_j_n_i_8cpp.html#a5ea97d2c9a0075e8da5e7f1bd36523d5">payload</a>)</td></tr>
+<tr class="separator:a498ebade47fe569443874e6f4c7292a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41af01a6f8328e3c709b3f206eb46d0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#a41af01a6f8328e3c709b3f206eb46d0e">sli_bgapi_cmd_handler_delegate</a> (uint32_t header, sl_bgapi_handler, const void *)</td></tr>
+<tr class="separator:a41af01a6f8328e3c709b3f206eb46d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e6d73fe9733bf13f79a55c5be02bd9a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#a7e6d73fe9733bf13f79a55c5be02bd9a">sli_bt_can_sleep_ticks</a> ()</td></tr>
+<tr class="separator:a7e6d73fe9733bf13f79a55c5be02bd9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adba4333931931f365fa12221a045d29e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#adba4333931931f365fa12221a045d29e">LinklayerTask</a> (void *p_arg)</td></tr>
 <tr class="separator:adba4333931931f365fa12221a045d29e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa504760657855bfbf497e8ef662b60cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#aa504760657855bfbf497e8ef662b60cb">BluetoothSetWakeupCallback</a> (<a class="el" href="freertos__bluetooth_8h.html#acec711a04bc90fb90b052c57c4b4f2f0">wakeupCallback</a> cb)</td></tr>
-<tr class="separator:aa504760657855bfbf497e8ef662b60cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68f97d7b2ecba133f275e4f73a744c2c"><td class="memItemLeft" align="right" valign="top">errorcode_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#a68f97d7b2ecba133f275e4f73a744c2c">bluetooth_start</a> (UBaseType_t ll_priority, UBaseType_t stack_priority, <a class="el" href="freertos__bluetooth_8h.html#a2ea7c4479bf6484b71d9ee50571bd122">bluetooth_stack_init_func</a> initialize_bluetooth_stack)</td></tr>
-<tr class="memdesc:a68f97d7b2ecba133f275e4f73a744c2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start Bluetooth tasks.  <a href="freertos__bluetooth_8c.html#a68f97d7b2ecba133f275e4f73a744c2c">More...</a><br /></td></tr>
-<tr class="separator:a68f97d7b2ecba133f275e4f73a744c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae08d3e7c5e7509283470ed21ef1d3ac6"><td class="memItemLeft" align="right" valign="top">sl_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#ae08d3e7c5e7509283470ed21ef1d3ac6">bluetooth_start</a> (UBaseType_t ll_priority, UBaseType_t stack_priority, <a class="el" href="freertos__bluetooth_8h.html#ac88651fb499b8455af3284548fe608cf">bluetooth_stack_init_func</a> initialize_bluetooth_stack)</td></tr>
+<tr class="memdesc:ae08d3e7c5e7509283470ed21ef1d3ac6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start Bluetooth tasks.  <a href="freertos__bluetooth_8c.html#ae08d3e7c5e7509283470ed21ef1d3ac6">More...</a><br /></td></tr>
+<tr class="separator:ae08d3e7c5e7509283470ed21ef1d3ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b0f152e4d20cf16d608363b62e13dab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#a6b0f152e4d20cf16d608363b62e13dab">BluetoothLLCallback</a> ()</td></tr>
 <tr class="separator:a6b0f152e4d20cf16d608363b62e13dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94954aad6e2e85c87082d37e0b308f5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#a94954aad6e2e85c87082d37e0b308f5e">rtos_gecko_handle_command</a> (uint32_t header, void *<a class="el" href="_setup_payload_parser-_j_n_i_8cpp.html#a5ea97d2c9a0075e8da5e7f1bd36523d5">payload</a>)</td></tr>
-<tr class="separator:a94954aad6e2e85c87082d37e0b308f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14d1042ff237c0cf0de9733ab3037a30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#a14d1042ff237c0cf0de9733ab3037a30">rtos_gecko_handle_command_noresponse</a> (uint32_t header, void *<a class="el" href="_setup_payload_parser-_j_n_i_8cpp.html#a5ea97d2c9a0075e8da5e7f1bd36523d5">payload</a>)</td></tr>
-<tr class="separator:a14d1042ff237c0cf0de9733ab3037a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfee78e3253c9d42b652733fb3b911a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#adfee78e3253c9d42b652733fb3b911a9">sli_bt_cmd_handler_rtos_delegate</a> (uint32_t header, gecko_cmd_handler handler, const void *<a class="el" href="_setup_payload_parser-_j_n_i_8cpp.html#a5ea97d2c9a0075e8da5e7f1bd36523d5">payload</a>)</td></tr>
-<tr class="separator:adfee78e3253c9d42b652733fb3b911a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8fd03a1a754dade58d251d6a0bc64fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#af8fd03a1a754dade58d251d6a0bc64fe">BluetoothPend</a> (void)</td></tr>
 <tr class="separator:af8fd03a1a754dade58d251d6a0bc64fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34331c74b0be386cb38cc52a0e726c1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#a34331c74b0be386cb38cc52a0e726c1d">BluetoothPost</a> (void)</td></tr>
@@ -172,22 +153,32 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aad22d035a67cfcb7e7b04a1c0c59c52e"><td class="memItemLeft" align="right" valign="top">volatile struct gecko_cmd_packet *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#aad22d035a67cfcb7e7b04a1c0c59c52e">bluetooth_evt</a></td></tr>
-<tr class="separator:aad22d035a67cfcb7e7b04a1c0c59c52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9e7036375fd2cc530fbe45e0a70987d"><td class="memItemLeft" align="right" valign="top">static sl_bt_msg_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#af9e7036375fd2cc530fbe45e0a70987d">ble_evt</a></td></tr>
+<tr class="separator:af9e7036375fd2cc530fbe45e0a70987d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd91381de4d24aa8e31a536d5214f12"><td class="memItemLeft" align="right" valign="top">volatile sl_bt_msg_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#afdd91381de4d24aa8e31a536d5214f12">bluetooth_evt</a> = &amp;<a class="el" href="freertos__bluetooth_8c.html#af9e7036375fd2cc530fbe45e0a70987d">ble_evt</a></td></tr>
+<tr class="separator:afdd91381de4d24aa8e31a536d5214f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a387e12db7793219b03e14ecedcaa98a6"><td class="memItemLeft" align="right" valign="top">SemaphoreHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#a387e12db7793219b03e14ecedcaa98a6">BluetoothMutex</a> = NULL</td></tr>
 <tr class="separator:a387e12db7793219b03e14ecedcaa98a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4cae107757d759fa406f6a9b453ac1e"><td class="memItemLeft" align="right" valign="top">static volatile uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#af4cae107757d759fa406f6a9b453ac1e">command_header</a></td></tr>
 <tr class="separator:af4cae107757d759fa406f6a9b453ac1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac76d9f34a47144cf77e8f4503b8cde3c"><td class="memItemLeft" align="right" valign="top">static volatile void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#ac76d9f34a47144cf77e8f4503b8cde3c">command_data</a></td></tr>
 <tr class="separator:ac76d9f34a47144cf77e8f4503b8cde3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6198e0d18ef6ed997a1b6bbaef26f9c0"><td class="memItemLeft" align="right" valign="top">static volatile gecko_cmd_handler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#a6198e0d18ef6ed997a1b6bbaef26f9c0">command_handler_func</a> = NULL</td></tr>
-<tr class="separator:a6198e0d18ef6ed997a1b6bbaef26f9c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96796290881c3f33f93aac6d94313891"><td class="memItemLeft" align="right" valign="top">static volatile sl_bgapi_handler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#a96796290881c3f33f93aac6d94313891">command_handler_func</a> = NULL</td></tr>
+<tr class="separator:a96796290881c3f33f93aac6d94313891"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fa0a6135963f0979343d2be850c427b"><td class="memItemLeft" align="right" valign="top">static TaskHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#a5fa0a6135963f0979343d2be850c427b">BluetoothTaskHandle</a> = NULL</td></tr>
 <tr class="separator:a5fa0a6135963f0979343d2be850c427b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdfd989726541e26060dd06f617ad92d"><td class="memItemLeft" align="right" valign="top">StackType_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#abdfd989726541e26060dd06f617ad92d">bluetoothStack</a> [<a class="el" href="freertos__bluetooth_8c.html#afba98b8c09a5dddd71d1ee85f2239ce8">BLUETOOTH_STACK_SIZE</a>/sizeof(StackType_t)]</td></tr>
+<tr class="separator:abdfd989726541e26060dd06f617ad92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8495e58a498c883b51ef2fb833babef3"><td class="memItemLeft" align="right" valign="top">StaticTask_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#a8495e58a498c883b51ef2fb833babef3">bluetoothTaskStruct</a></td></tr>
+<tr class="separator:a8495e58a498c883b51ef2fb833babef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e45b1fa24761ea41316057e9883fda9"><td class="memItemLeft" align="right" valign="top">static TaskHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#a2e45b1fa24761ea41316057e9883fda9">LinklayerTaskHandle</a> = NULL</td></tr>
 <tr class="separator:a2e45b1fa24761ea41316057e9883fda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98a99960db8bb016811c92b730efb9a9"><td class="memItemLeft" align="right" valign="top">static volatile <a class="el" href="freertos__bluetooth_8h.html#acec711a04bc90fb90b052c57c4b4f2f0">wakeupCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#a98a99960db8bb016811c92b730efb9a9">wakeupCB</a> = NULL</td></tr>
-<tr class="separator:a98a99960db8bb016811c92b730efb9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36c9475702d63fe8c573e83b181dd4b5"><td class="memItemLeft" align="right" valign="top">StackType_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#a36c9475702d63fe8c573e83b181dd4b5">linkLayerStack</a> [<a class="el" href="freertos__bluetooth_8c.html#a35c9b989825a8aa2a5adfc714d830db2">LINKLAYER_STACK_SIZE</a>/sizeof(StackType_t)]</td></tr>
+<tr class="separator:a36c9475702d63fe8c573e83b181dd4b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a184d82c7012fdd1b349baa340d0009c3"><td class="memItemLeft" align="right" valign="top">StaticTask_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#a184d82c7012fdd1b349baa340d0009c3">linkLayerTaskStruct</a></td></tr>
+<tr class="separator:a184d82c7012fdd1b349baa340d0009c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d63e9c91e4332cffff866a0eb26af15"><td class="memItemLeft" align="right" valign="top">StaticSemaphore_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#a1d63e9c91e4332cffff866a0eb26af15">bluetoothMutexStruct</a></td></tr>
+<tr class="separator:a1d63e9c91e4332cffff866a0eb26af15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb602b4ed278d1cee27ec5fa23a44651"><td class="memItemLeft" align="right" valign="top">EventGroupHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="freertos__bluetooth_8c.html#adb602b4ed278d1cee27ec5fa23a44651">bluetooth_event_flags</a></td></tr>
 <tr class="separator:adb602b4ed278d1cee27ec5fa23a44651"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -199,7 +190,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define BLUETOOTH_STACK_SIZE&#160;&#160;&#160;(2048)</td>
+          <td class="memname">#define BLUETOOTH_STACK_SIZE&#160;&#160;&#160;(1024)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -241,7 +232,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define LINKLAYER_STACK_SIZE&#160;&#160;&#160;(2048)</td>
+          <td class="memname">#define LINKLAYER_STACK_SIZE&#160;&#160;&#160;(1024)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -263,14 +254,14 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a68f97d7b2ecba133f275e4f73a744c2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68f97d7b2ecba133f275e4f73a744c2c">&#9670;&nbsp;</a></span>bluetooth_start()</h2>
+<a id="ae08d3e7c5e7509283470ed21ef1d3ac6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae08d3e7c5e7509283470ed21ef1d3ac6">&#9670;&nbsp;</a></span>bluetooth_start()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">errorcode_t bluetooth_start </td>
+          <td class="memname">sl_status_t bluetooth_start </td>
           <td>(</td>
           <td class="paramtype">UBaseType_t&#160;</td>
           <td class="paramname"><em>ll_priority</em>, </td>
@@ -284,7 +275,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="freertos__bluetooth_8h.html#a2ea7c4479bf6484b71d9ee50571bd122">bluetooth_stack_init_func</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="freertos__bluetooth_8h.html#ac88651fb499b8455af3284548fe608cf">bluetooth_stack_init_func</a>&#160;</td>
           <td class="paramname"><em>initialize_bluetooth_stack</em>&#160;</td>
         </tr>
         <tr>
@@ -305,17 +296,6 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="freertos__bluetooth_8c_a68f97d7b2ecba133f275e4f73a744c2c_cgraph.png" border="0" usemap="#freertos__bluetooth_8c_a68f97d7b2ecba133f275e4f73a744c2c_cgraph" alt=""/></div>
-<map name="freertos__bluetooth_8c_a68f97d7b2ecba133f275e4f73a744c2c_cgraph" id="freertos__bluetooth_8c_a68f97d7b2ecba133f275e4f73a744c2c_cgraph">
-<area shape="rect" title="Start Bluetooth tasks." alt="" coords="5,31,127,57"/>
-<area shape="rect" href="freertos__bluetooth_8c.html#a15d05af483395c0ec2cdb9219c5deb70" title=" " alt="" coords="175,5,289,32"/>
-<area shape="rect" href="freertos__bluetooth_8c.html#adba4333931931f365fa12221a045d29e" title=" " alt="" coords="177,56,287,83"/>
-<area shape="rect" href="freertos__bluetooth_8c.html#ae84bf03a2acc9d3c7e7cbcd32f22bd79" title=" " alt="" coords="337,5,577,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -333,15 +313,6 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="freertos__bluetooth_8c_a6b0f152e4d20cf16d608363b62e13dab_cgraph.png" border="0" usemap="#freertos__bluetooth_8c_a6b0f152e4d20cf16d608363b62e13dab_cgraph" alt=""/></div>
-<map name="freertos__bluetooth_8c_a6b0f152e4d20cf16d608363b62e13dab_cgraph" id="freertos__bluetooth_8c_a6b0f152e4d20cf16d608363b62e13dab_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,160,32"/>
-<area shape="rect" href="freertos__bluetooth_8c.html#ae84bf03a2acc9d3c7e7cbcd32f22bd79" title=" " alt="" coords="208,5,448,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -381,24 +352,6 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="aa504760657855bfbf497e8ef662b60cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa504760657855bfbf497e8ef662b60cb">&#9670;&nbsp;</a></span>BluetoothSetWakeupCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void BluetoothSetWakeupCallback </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="freertos__bluetooth_8h.html#acec711a04bc90fb90b052c57c4b4f2f0">wakeupCallback</a>&#160;</td>
-          <td class="paramname"><em>cb</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a15d05af483395c0ec2cdb9219c5deb70"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a15d05af483395c0ec2cdb9219c5deb70">&#9670;&nbsp;</a></span>BluetoothTask()</h2>
 
@@ -422,24 +375,6 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="freertos__bluetooth_8c_a15d05af483395c0ec2cdb9219c5deb70_cgraph.png" border="0" usemap="#freertos__bluetooth_8c_a15d05af483395c0ec2cdb9219c5deb70_cgraph" alt=""/></div>
-<map name="freertos__bluetooth_8c_a15d05af483395c0ec2cdb9219c5deb70_cgraph" id="freertos__bluetooth_8c_a15d05af483395c0ec2cdb9219c5deb70_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,120,32"/>
-<area shape="rect" href="freertos__bluetooth_8c.html#ae84bf03a2acc9d3c7e7cbcd32f22bd79" title=" " alt="" coords="168,5,408,32"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="freertos__bluetooth_8c_a15d05af483395c0ec2cdb9219c5deb70_icgraph.png" border="0" usemap="#freertos__bluetooth_8c_a15d05af483395c0ec2cdb9219c5deb70_icgraph" alt=""/></div>
-<map name="freertos__bluetooth_8c_a15d05af483395c0ec2cdb9219c5deb70_icgraph" id="freertos__bluetooth_8c_a15d05af483395c0ec2cdb9219c5deb70_icgraph">
-<area shape="rect" title=" " alt="" coords="175,5,289,32"/>
-<area shape="rect" href="freertos__bluetooth_8h.html#a68f97d7b2ecba133f275e4f73a744c2c" title="Start Bluetooth tasks." alt="" coords="5,5,127,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -457,15 +392,6 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="freertos__bluetooth_8c_ad8eeb1c36fc2729bc0b3048724f5995a_cgraph.png" border="0" usemap="#freertos__bluetooth_8c_ad8eeb1c36fc2729bc0b3048724f5995a_cgraph" alt=""/></div>
-<map name="freertos__bluetooth_8c_ad8eeb1c36fc2729bc0b3048724f5995a_cgraph" id="freertos__bluetooth_8c_ad8eeb1c36fc2729bc0b3048724f5995a_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,137,32"/>
-<area shape="rect" href="freertos__bluetooth_8c.html#ae84bf03a2acc9d3c7e7cbcd32f22bd79" title=" " alt="" coords="185,5,425,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -492,26 +418,17 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="freertos__bluetooth_8c_adba4333931931f365fa12221a045d29e_icgraph.png" border="0" usemap="#freertos__bluetooth_8c_adba4333931931f365fa12221a045d29e_icgraph" alt=""/></div>
-<map name="freertos__bluetooth_8c_adba4333931931f365fa12221a045d29e_icgraph" id="freertos__bluetooth_8c_adba4333931931f365fa12221a045d29e_icgraph">
-<area shape="rect" title=" " alt="" coords="175,5,285,32"/>
-<area shape="rect" href="freertos__bluetooth_8h.html#a68f97d7b2ecba133f275e4f73a744c2c" title="Start Bluetooth tasks." alt="" coords="5,5,127,32"/>
-</map>
-</div>
 
 </div>
 </div>
-<a id="a94954aad6e2e85c87082d37e0b308f5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94954aad6e2e85c87082d37e0b308f5e">&#9670;&nbsp;</a></span>rtos_gecko_handle_command()</h2>
+<a id="a41af01a6f8328e3c709b3f206eb46d0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41af01a6f8328e3c709b3f206eb46d0e">&#9670;&nbsp;</a></span>sli_bgapi_cmd_handler_delegate()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void rtos_gecko_handle_command </td>
+          <td class="memname">void sli_bgapi_cmd_handler_delegate </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>header</em>, </td>
@@ -519,8 +436,14 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>payload</em>&#160;</td>
+          <td class="paramtype">sl_bgapi_handler&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -529,59 +452,28 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="freertos__bluetooth_8c_a94954aad6e2e85c87082d37e0b308f5e_cgraph.png" border="0" usemap="#freertos__bluetooth_8c_a94954aad6e2e85c87082d37e0b308f5e_cgraph" alt=""/></div>
-<map name="freertos__bluetooth_8c_a94954aad6e2e85c87082d37e0b308f5e_cgraph" id="freertos__bluetooth_8c_a94954aad6e2e85c87082d37e0b308f5e_cgraph">
-<area shape="rect" title=" " alt="" coords="5,13,220,39"/>
-<area shape="rect" href="freertos__bluetooth_8c.html#adfee78e3253c9d42b652733fb3b911a9" title=" " alt="" coords="268,5,416,47"/>
-<area shape="rect" href="freertos__bluetooth_8c.html#ae84bf03a2acc9d3c7e7cbcd32f22bd79" title=" " alt="" coords="464,13,704,39"/>
-</map>
-</div>
 
 </div>
 </div>
-<a id="a14d1042ff237c0cf0de9733ab3037a30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14d1042ff237c0cf0de9733ab3037a30">&#9670;&nbsp;</a></span>rtos_gecko_handle_command_noresponse()</h2>
+<a id="a7e6d73fe9733bf13f79a55c5be02bd9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e6d73fe9733bf13f79a55c5be02bd9a">&#9670;&nbsp;</a></span>sli_bt_can_sleep_ticks()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void rtos_gecko_handle_command_noresponse </td>
+          <td class="memname">uint32_t sli_bt_can_sleep_ticks </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>header</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>payload</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="freertos__bluetooth_8c_a14d1042ff237c0cf0de9733ab3037a30_cgraph.png" border="0" usemap="#freertos__bluetooth_8c_a14d1042ff237c0cf0de9733ab3037a30_cgraph" alt=""/></div>
-<map name="freertos__bluetooth_8c_a14d1042ff237c0cf0de9733ab3037a30_cgraph" id="freertos__bluetooth_8c_a14d1042ff237c0cf0de9733ab3037a30_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,220,47"/>
-<area shape="rect" href="freertos__bluetooth_8c.html#adfee78e3253c9d42b652733fb3b911a9" title=" " alt="" coords="268,5,416,47"/>
-<area shape="rect" href="freertos__bluetooth_8c.html#ae84bf03a2acc9d3c7e7cbcd32f22bd79" title=" " alt="" coords="464,13,704,39"/>
-</map>
-</div>
 
 </div>
 </div>
-<a id="adfee78e3253c9d42b652733fb3b911a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfee78e3253c9d42b652733fb3b911a9">&#9670;&nbsp;</a></span>sli_bt_cmd_handler_rtos_delegate()</h2>
+<a id="a498ebade47fe569443874e6f4c7292a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a498ebade47fe569443874e6f4c7292a2">&#9670;&nbsp;</a></span>sli_bt_cmd_handler_rtos_delegate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -595,7 +487,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">gecko_cmd_handler&#160;</td>
+          <td class="paramtype">sl_bgapi_handler&#160;</td>
           <td class="paramname"><em>handler</em>, </td>
         </tr>
         <tr>
@@ -611,25 +503,6 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="freertos__bluetooth_8c_adfee78e3253c9d42b652733fb3b911a9_cgraph.png" border="0" usemap="#freertos__bluetooth_8c_adfee78e3253c9d42b652733fb3b911a9_cgraph" alt=""/></div>
-<map name="freertos__bluetooth_8c_adfee78e3253c9d42b652733fb3b911a9_cgraph" id="freertos__bluetooth_8c_adfee78e3253c9d42b652733fb3b911a9_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,153,47"/>
-<area shape="rect" href="freertos__bluetooth_8c.html#ae84bf03a2acc9d3c7e7cbcd32f22bd79" title=" " alt="" coords="201,13,441,39"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="freertos__bluetooth_8c_adfee78e3253c9d42b652733fb3b911a9_icgraph.png" border="0" usemap="#freertos__bluetooth_8c_adfee78e3253c9d42b652733fb3b911a9_icgraph" alt=""/></div>
-<map name="freertos__bluetooth_8c_adfee78e3253c9d42b652733fb3b911a9_icgraph" id="freertos__bluetooth_8c_adfee78e3253c9d42b652733fb3b911a9_icgraph">
-<area shape="rect" title=" " alt="" coords="268,27,416,69"/>
-<area shape="rect" href="freertos__bluetooth_8c.html#a94954aad6e2e85c87082d37e0b308f5e" title=" " alt="" coords="5,5,220,32"/>
-<area shape="rect" href="freertos__bluetooth_8c.html#a14d1042ff237c0cf0de9733ab3037a30" title=" " alt="" coords="5,57,220,98"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -790,21 +663,6 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="freertos__bluetooth_8c_ae84bf03a2acc9d3c7e7cbcd32f22bd79_icgraph.png" border="0" usemap="#freertos__bluetooth_8c_ae84bf03a2acc9d3c7e7cbcd32f22bd79_icgraph" alt=""/></div>
-<map name="freertos__bluetooth_8c_ae84bf03a2acc9d3c7e7cbcd32f22bd79_icgraph" id="freertos__bluetooth_8c_ae84bf03a2acc9d3c7e7cbcd32f22bd79_icgraph">
-<area shape="rect" title=" " alt="" coords="471,81,711,108"/>
-<area shape="rect" href="freertos__bluetooth_8h.html#ae7a6d074595992ee1ba082633ee29a7c" title=" " alt="" coords="268,5,423,32"/>
-<area shape="rect" href="freertos__bluetooth_8c.html#a15d05af483395c0ec2cdb9219c5deb70" title=" " alt="" coords="288,56,403,83"/>
-<area shape="rect" href="freertos__bluetooth_8h.html#aed1704c60138b031352005b00b321a65" title=" " alt="" coords="279,107,411,133"/>
-<area shape="rect" href="freertos__bluetooth_8c.html#adfee78e3253c9d42b652733fb3b911a9" title=" " alt="" coords="271,158,419,199"/>
-<area shape="rect" href="freertos__bluetooth_8h.html#a68f97d7b2ecba133f275e4f73a744c2c" title="Start Bluetooth tasks." alt="" coords="52,56,173,83"/>
-<area shape="rect" href="freertos__bluetooth_8c.html#a94954aad6e2e85c87082d37e0b308f5e" title=" " alt="" coords="5,136,220,163"/>
-<area shape="rect" href="freertos__bluetooth_8c.html#a14d1042ff237c0cf0de9733ab3037a30" title=" " alt="" coords="5,187,220,229"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -849,6 +707,28 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="af9e7036375fd2cc530fbe45e0a70987d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9e7036375fd2cc530fbe45e0a70987d">&#9670;&nbsp;</a></span>ble_evt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sl_bt_msg_t ble_evt</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="adb602b4ed278d1cee27ec5fa23a44651"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb602b4ed278d1cee27ec5fa23a44651">&#9670;&nbsp;</a></span>bluetooth_event_flags</h2>
 
@@ -863,14 +743,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="aad22d035a67cfcb7e7b04a1c0c59c52e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad22d035a67cfcb7e7b04a1c0c59c52e">&#9670;&nbsp;</a></span>bluetooth_evt</h2>
+<a id="afdd91381de4d24aa8e31a536d5214f12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdd91381de4d24aa8e31a536d5214f12">&#9670;&nbsp;</a></span>bluetooth_evt</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile struct gecko_cmd_packet* bluetooth_evt</td>
+          <td class="memname">volatile sl_bt_msg_t* bluetooth_evt = &amp;<a class="el" href="freertos__bluetooth_8c.html#af9e7036375fd2cc530fbe45e0a70987d">ble_evt</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -885,6 +765,34 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">SemaphoreHandle_t BluetoothMutex = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d63e9c91e4332cffff866a0eb26af15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d63e9c91e4332cffff866a0eb26af15">&#9670;&nbsp;</a></span>bluetoothMutexStruct</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">StaticSemaphore_t bluetoothMutexStruct</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abdfd989726541e26060dd06f617ad92d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdfd989726541e26060dd06f617ad92d">&#9670;&nbsp;</a></span>bluetoothStack</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">StackType_t bluetoothStack[<a class="el" href="freertos__bluetooth_8c.html#afba98b8c09a5dddd71d1ee85f2239ce8">BLUETOOTH_STACK_SIZE</a>/sizeof(StackType_t)]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -913,6 +821,20 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a8495e58a498c883b51ef2fb833babef3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8495e58a498c883b51ef2fb833babef3">&#9670;&nbsp;</a></span>bluetoothTaskStruct</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">StaticTask_t bluetoothTaskStruct</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac76d9f34a47144cf77e8f4503b8cde3c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac76d9f34a47144cf77e8f4503b8cde3c">&#9670;&nbsp;</a></span>command_data</h2>
 
@@ -935,8 +857,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a6198e0d18ef6ed997a1b6bbaef26f9c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6198e0d18ef6ed997a1b6bbaef26f9c0">&#9670;&nbsp;</a></span>command_handler_func</h2>
+<a id="a96796290881c3f33f93aac6d94313891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96796290881c3f33f93aac6d94313891">&#9670;&nbsp;</a></span>command_handler_func</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -945,7 +867,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">volatile gecko_cmd_handler command_handler_func = NULL</td>
+          <td class="memname">volatile sl_bgapi_handler command_handler_func = NULL</td>
         </tr>
       </table>
   </td>
@@ -979,6 +901,20 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a36c9475702d63fe8c573e83b181dd4b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36c9475702d63fe8c573e83b181dd4b5">&#9670;&nbsp;</a></span>linkLayerStack</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">StackType_t linkLayerStack[<a class="el" href="freertos__bluetooth_8c.html#a35c9b989825a8aa2a5adfc714d830db2">LINKLAYER_STACK_SIZE</a>/sizeof(StackType_t)]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2e45b1fa24761ea41316057e9883fda9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2e45b1fa24761ea41316057e9883fda9">&#9670;&nbsp;</a></span>LinklayerTaskHandle</h2>
 
@@ -1001,24 +937,16 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a98a99960db8bb016811c92b730efb9a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98a99960db8bb016811c92b730efb9a9">&#9670;&nbsp;</a></span>wakeupCB</h2>
+<a id="a184d82c7012fdd1b349baa340d0009c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a184d82c7012fdd1b349baa340d0009c3">&#9670;&nbsp;</a></span>linkLayerTaskStruct</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">volatile <a class="el" href="freertos__bluetooth_8h.html#acec711a04bc90fb90b052c57c4b4f2f0">wakeupCallback</a> wakeupCB = NULL</td>
+          <td class="memname">StaticTask_t linkLayerTaskStruct</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -1029,7 +957,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4b68c2fef3e151b6b93d5e93b14f1857.html">platform</a></li><li class="navelem"><a class="el" href="dir_e35fa8df61d0eca1a5c0776eb4996f5b.html">EFR32</a></li><li class="navelem"><a class="el" href="freertos__bluetooth_8c.html">freertos_bluetooth.c</a></li>
-    <li class="footer">Generated on Mon Feb 1 2021 16:49:16 for Connected Home over IP by
+    <li class="footer">Generated on Thu Apr 15 2021 18:57:05 for Connected Home over IP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Connected Home over IP
-   &#160;<span id="projectnumber">a83086a0</span>
+   &#160;<span id="projectnumber">672cf7684</span>
    </div>
   </td>
  </tr>
@@ -97,6 +97,8 @@ $(document).ready(function(){initNavTree('namespacemdns_1_1_minimal.html',''); i
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:namespacemdns_1_1_minimal_1_1_broadcast_ip_addresses"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemdns_1_1_minimal_1_1_broadcast_ip_addresses.html">BroadcastIpAddresses</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacemdns_1_1_minimal_1_1_flat_allocated_q_name"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemdns_1_1_minimal_1_1_flat_allocated_q_name.html">FlatAllocatedQName</a></td></tr>
 <tr class="memdesc:namespacemdns_1_1_minimal_1_1_flat_allocated_q_name"><td class="mdescLeft">&#160;</td><td class="mdescRight">A void* implementation that stores QNames as [ptr array] [name1] #0 [name2] #0 .... <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -271,7 +273,7 @@ Functions</h2></td></tr>
 <tr class="memitem:aa2ec27a27a315460f9520cf8433055d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemdns_1_1_minimal.html#aa2ec27a27a315460f9520cf8433055d3">ParsePacket</a> (const <a class="el" href="classmdns_1_1_minimal_1_1_bytes_range.html">BytesRange</a> &amp;packetData, <a class="el" href="classmdns_1_1_minimal_1_1_parser_delegate.html">ParserDelegate</a> *delegate)</td></tr>
 <tr class="memdesc:aa2ec27a27a315460f9520cf8433055d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a mMDNS packet.  <a href="namespacemdns_1_1_minimal.html#aa2ec27a27a315460f9520cf8433055d3">More...</a><br /></td></tr>
 <tr class="separator:aa2ec27a27a315460f9520cf8433055d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae400e1275a2cb89e6c420f753c58da31"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemdns_1_1_minimal.html#ae400e1275a2cb89e6c420f753c58da31">ParseTxtRecord</a> (const <a class="el" href="classmdns_1_1_minimal_1_1_bytes_range.html">BytesRange</a> &amp;data, <a class="el" href="classmdns_1_1_minimal_1_1_txt_record_delegate.html">TxtRecordDelegate</a> *callback)</td></tr>
+<tr class="memitem:ae400e1275a2cb89e6c420f753c58da31"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemdns_1_1_minimal.html#ae400e1275a2cb89e6c420f753c58da31">ParseTxtRecord</a> (const <a class="el" href="classmdns_1_1_minimal_1_1_bytes_range.html">BytesRange</a> &amp;data, <a class="el" href="classmdns_1_1_minimal_1_1_txt_record_delegate.html">TxtRecordDelegate</a> *<a class="el" href="_chip_thread_work_8cpp.html#a91b6c1a5164ca0b5a5ee39d0b77d452a">callback</a>)</td></tr>
 <tr class="memdesc:ae400e1275a2cb89e6c420f753c58da31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses TXT record data <a href="https://tools.ietf.org/html/rfc1035">https://tools.ietf.org/html/rfc1035</a> (included in base RFC)  <a href="namespacemdns_1_1_minimal.html#ae400e1275a2cb89e6c420f753c58da31">More...</a><br /></td></tr>
 <tr class="separator:ae400e1275a2cb89e6c420f753c58da31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7cbea1bc2f9dc8b2373685359977403"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemdns_1_1_minimal.html#ad7cbea1bc2f9dc8b2373685359977403">ParseARecord</a> (const <a class="el" href="classmdns_1_1_minimal_1_1_bytes_range.html">BytesRange</a> &amp;data, <a class="el" href="classchip_1_1_inet_1_1_i_p_address.html">chip::Inet::IPAddress</a> *<a class="el" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#a9c3ea1928b2efa1d7e23825de2652b24">addr</a>)</td></tr>
@@ -434,18 +436,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Parses an IPV6 (AAAA) record data <a href="https://tools.ietf.org/html/rfc3596">https://tools.ietf.org/html/rfc3596</a>. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacemdns_1_1_minimal_a40ded0289bd6bc55f15cc40b9b61721c_cgraph.png" border="0" usemap="#namespacemdns_1_1_minimal_a40ded0289bd6bc55f15cc40b9b61721c_cgraph" alt=""/></div>
-<map name="namespacemdns_1_1_minimal_a40ded0289bd6bc55f15cc40b9b61721c_cgraph" id="namespacemdns_1_1_minimal_a40ded0289bd6bc55f15cc40b9b61721c_cgraph">
-<area shape="rect" title="Parses an IPV6 (AAAA) record data https://tools.ietf.org/html/rfc3596." alt="" coords="5,78,249,105"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#a754433df2941d22c556c7dc19697c6d1" title="Emit the IP address in standard network representation." alt="" coords="323,5,477,47"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_bytes_range.html#ae8930c59f812c431b25ab13f89d80b07" title=" " alt="" coords="297,71,503,112"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_bytes_range.html#a8cd4a5e18582c7607047a1d3871fa1b4" title=" " alt="" coords="297,136,503,177"/>
-<area shape="rect" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#ab52833322402f0f0f1cb68f5ee5d1292" title=" " alt="" coords="551,13,629,39"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -476,17 +466,6 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Parses an IPV4 (A) record data <a href="https://tools.ietf.org/html/rfc1035">https://tools.ietf.org/html/rfc1035</a> (included in base RFC) </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacemdns_1_1_minimal_ad7cbea1bc2f9dc8b2373685359977403_cgraph.png" border="0" usemap="#namespacemdns_1_1_minimal_ad7cbea1bc2f9dc8b2373685359977403_cgraph" alt=""/></div>
-<map name="namespacemdns_1_1_minimal_ad7cbea1bc2f9dc8b2373685359977403_cgraph" id="namespacemdns_1_1_minimal_ad7cbea1bc2f9dc8b2373685359977403_cgraph">
-<area shape="rect" title="Parses an IPV4 (A) record data https://tools.ietf.org/html/rfc1035 (included in base RFC)" alt="" coords="5,78,223,105"/>
-<area shape="rect" href="namespacechip_1_1_encoding_1_1_big_endian.html#a258845aeb343932a8f1d2f8b9b940c70" title="Perform a, potentially unaligned, memory read of the big endian byte ordered 32&#45;bit value from the sp..." alt="" coords="279,5,468,47"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_bytes_range.html#ae8930c59f812c431b25ab13f89d80b07" title=" " alt="" coords="271,71,476,112"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_bytes_range.html#a8cd4a5e18582c7607047a1d3871fa1b4" title=" " alt="" coords="271,136,476,177"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -519,35 +498,6 @@ Here is the call graph for this function:</div>
 <p>Parses a mMDNS packet. </p>
 <p>Calls appropriate delegate callbacks while parsing</p>
 <p>returns true if packet was succesfully parsed, false otherwise </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacemdns_1_1_minimal_aa2ec27a27a315460f9520cf8433055d3_cgraph.png" border="0" usemap="#namespacemdns_1_1_minimal_aa2ec27a27a315460f9520cf8433055d3_cgraph" alt=""/></div>
-<map name="namespacemdns_1_1_minimal_aa2ec27a27a315460f9520cf8433055d3_cgraph" id="namespacemdns_1_1_minimal_aa2ec27a27a315460f9520cf8433055d3_cgraph">
-<area shape="rect" title="Parses a mMDNS packet." alt="" coords="5,405,212,431"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_const_header_ref.html#a87596ef551ae124dbde4514929745c9b" title=" " alt="" coords="268,267,479,308"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_const_header_ref.html#aae2672de215e8833440adc79ddf69ff0" title=" " alt="" coords="268,5,479,47"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_const_header_ref.html#ae867bf99df60e2a6ce48f59f5b55a4b0" title=" " alt="" coords="268,71,479,112"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_const_header_ref.html#af8398863bc8137fc89d09c7fe2134867" title=" " alt="" coords="268,136,479,177"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_const_header_ref.html#aeefa710ae205ad39df5eaa7824d1d0bb" title=" " alt="" coords="268,201,479,243"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_bit_packed_flags.html#a7e5c303ff57964e8c8eed598ddc34075" title="Validates that the message does not need to be ignored according to RFC 6762." alt="" coords="278,332,469,373"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_parser_delegate.html#a93999c75c7c3a1b5f288b3d5b79bca0f" title=" " alt="" coords="260,397,487,439"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_parser_delegate.html#a9105b47a08f04bab2f2e86e02f2d49f4" title=" " alt="" coords="260,463,487,504"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_parser_delegate.html#a9b5a2377a73d11a4b5da88ba2cba1f10" title=" " alt="" coords="260,528,487,569"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_query_data.html#a106e1e3201e9f4b58d0a38115198973e" title="Parses a query structure." alt="" coords="275,593,472,635"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_resource_data.html#a98f2bd6ef9ecf3ddbbc974d01d3252a8" title="Parses a resource data structure." alt="" coords="264,659,483,700"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_bytes_range.html#ae8930c59f812c431b25ab13f89d80b07" title=" " alt="" coords="271,724,476,765"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_bytes_range.html#a8cd4a5e18582c7607047a1d3871fa1b4" title=" " alt="" coords="271,789,476,831"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_const_header_ref.html#addf62d8d8e0f5250678c6194132de4b6" title=" " alt="" coords="535,136,745,177"/>
-<area shape="rect" href="namespacechip_1_1_encoding_1_1_big_endian.html#a243b499fbaf3008052cb5546547fffc3" title="Perform a, potentially unaligned, memory read of the big endian byte ordered 16&#45;bit value from the sp..." alt="" coords="801,136,991,177"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_bytes_range.html#a3e5dfd8be245f27477cc35e3559477c1" title=" " alt="" coords="793,600,999,641"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_serialized_q_name_iterator.html#a7474ddeea0c38d06e36e76f3b529fa23" title="Get the end of the sequence without following any backwards pointers." alt="" coords="536,535,744,576"/>
-<area shape="rect" href="namespacechip_1_1_encoding_1_1_big_endian.html#a43f39a556041dd2a2214fc08dcaecdce" title="Perform a, potentially unaligned, memory read of the big endian byte ordered 16&#45;bit value from the sp..." alt="" coords="545,652,735,693"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_serialized_q_name_iterator.html#abbc006cad9248016fa6967340ad2ac7c" title="Find out if the data parsing is ok." alt="" coords="801,469,991,511"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_serialized_q_name_iterator.html#a6bf07bdf57579d2bb36362da941ab679" title="Advances to the next element in the sequence Returns true if new data was available." alt="" coords="801,535,991,576"/>
-<area shape="rect" href="namespacechip_1_1_encoding_1_1_big_endian.html#a26c0f5214779ed48b88f94e5a30f0928" title="Perform a, potentially unaligned, memory read of the big endian byte ordered 32&#45;bit value from the sp..." alt="" coords="545,717,735,759"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -584,16 +534,6 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Parses a PTR record data <a href="https://tools.ietf.org/html/rfc1035">https://tools.ietf.org/html/rfc1035</a> (included in base RFC) </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacemdns_1_1_minimal_a8dfdadec68358895206b805a586fec1b_cgraph.png" border="0" usemap="#namespacemdns_1_1_minimal_a8dfdadec68358895206b805a586fec1b_cgraph" alt=""/></div>
-<map name="namespacemdns_1_1_minimal_a8dfdadec68358895206b805a586fec1b_cgraph" id="namespacemdns_1_1_minimal_a8dfdadec68358895206b805a586fec1b_cgraph">
-<area shape="rect" title="Parses a PTR record data https://tools.ietf.org/html/rfc1035 (included in base RFC)" alt="" coords="5,46,232,73"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_bytes_range.html#ae8930c59f812c431b25ab13f89d80b07" title=" " alt="" coords="280,5,485,47"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_bytes_range.html#a8cd4a5e18582c7607047a1d3871fa1b4" title=" " alt="" coords="280,71,485,112"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -624,18 +564,6 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Parses TXT record data <a href="https://tools.ietf.org/html/rfc1035">https://tools.ietf.org/html/rfc1035</a> (included in base RFC) </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacemdns_1_1_minimal_ae400e1275a2cb89e6c420f753c58da31_cgraph.png" border="0" usemap="#namespacemdns_1_1_minimal_ae400e1275a2cb89e6c420f753c58da31_cgraph" alt=""/></div>
-<map name="namespacemdns_1_1_minimal_ae400e1275a2cb89e6c420f753c58da31_cgraph" id="namespacemdns_1_1_minimal_ae400e1275a2cb89e6c420f753c58da31_cgraph">
-<area shape="rect" title="Parses TXT record data https://tools.ietf.org/html/rfc1035 (included in base RFC)" alt="" coords="5,101,235,127"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_bytes_range.html#a3e5dfd8be245f27477cc35e3559477c1" title=" " alt="" coords="299,5,504,47"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_bytes_range.html#a47b6688755e5ee2850f1fa563b895192" title=" " alt="" coords="283,71,520,98"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_txt_record_delegate.html#ab14c6b56ef2ca4770b7188c5ed3185ce" title="Reports that a record was found." alt="" coords="305,123,498,164"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_bytes_range.html#a8cd4a5e18582c7607047a1d3871fa1b4" title=" " alt="" coords="299,188,504,229"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -706,7 +634,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacemdns.html">mdns</a></li><li class="navelem"><a class="el" href="namespacemdns_1_1_minimal.html">Minimal</a></li>
-    <li class="footer">Generated on Mon Feb 1 2021 16:49:18 for Connected Home over IP by
+    <li class="footer">Generated on Thu Apr 15 2021 18:57:06 for Connected Home over IP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

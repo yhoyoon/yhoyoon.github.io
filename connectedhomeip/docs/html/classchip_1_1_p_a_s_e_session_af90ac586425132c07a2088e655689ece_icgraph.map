@@ -1,4 +1,0 @@
-<map id="chip::PASESession::GetPeerKeyId" name="chip::PASESession::GetPeerKeyId">
-<area shape="rect" id="node1" title="Return the associated peer key id." alt="" coords="229,5,377,47"/>
-<area shape="rect" id="node2" href="$classchip_1_1_secure_session_mgr.html#a73f56b6894673360488af9d71ebfb1bf" title="Establish a new pairing with a peer node." alt="" coords="5,5,181,47"/>
-</map>

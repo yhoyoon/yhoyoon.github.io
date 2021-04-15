@@ -1,5 +1,0 @@
-<map id="chip::Controller::DevicePairingDelegate" name="chip::Controller::DevicePairingDelegate">
-<area shape="rect" id="node1" title=" " alt="" coords="5,27,180,69"/>
-<area shape="rect" id="node2" href="$class_android_device_controller_wrapper.html" title="This class contains all relevant information for the JNI view of CHIPDeviceController to handle all c..." alt="" coords="228,5,464,32"/>
-<area shape="rect" id="node3" href="$classchip_1_1_device_controller_1_1_script_device_pairing_delegate.html" title=" " alt="" coords="238,57,454,98"/>
-</map>

@@ -1,7 +1,7 @@
 var _c_h_i_p_t_l_v_types_8h =
 [
-    [ "kTLVTypeMask", "_c_h_i_p_t_l_v_types_8h.html#aadcd26c2dc67fd042d6615fdc8bd4acdada5c80e57ed2e74fdf99756f5c2e9f74", null ],
-    [ "kTLVTypeSizeMask", "_c_h_i_p_t_l_v_types_8h.html#aadcd26c2dc67fd042d6615fdc8bd4acdab86a77e098fcfd3b2bebd50128ed6527", null ],
+    [ "kTLVTypeMask", "_c_h_i_p_t_l_v_types_8h.html#a2c034122e18fac8b95dd1dd36f7d8d75ada5c80e57ed2e74fdf99756f5c2e9f74", null ],
+    [ "kTLVTypeSizeMask", "_c_h_i_p_t_l_v_types_8h.html#a2c034122e18fac8b95dd1dd36f7d8d75ab86a77e098fcfd3b2bebd50128ed6527", null ],
     [ "TLVElementType", "_c_h_i_p_t_l_v_types_8h.html#aca7e925a5d00f8dd399cfd7dca4587dc", [
       [ "NotSpecified", "_c_h_i_p_t_l_v_types_8h.html#aca7e925a5d00f8dd399cfd7dca4587dca4b7d504abac49ba24b4df86c129d3cbc", null ],
       [ "Int8", "_c_h_i_p_t_l_v_types_8h.html#aca7e925a5d00f8dd399cfd7dca4587dca7d839b2c12bfd40ac121b4cc9e81c539", null ],
@@ -49,7 +49,7 @@ var _c_h_i_p_t_l_v_types_8h =
       [ "kTLVType_Null", "_c_h_i_p_t_l_v_types_8h.html#a2e8308c2159d0d17e066a4b86fe19730ad009902c1880dd886f877a4b89c0b2f9", null ],
       [ "kTLVType_Structure", "_c_h_i_p_t_l_v_types_8h.html#a2e8308c2159d0d17e066a4b86fe19730a728b6cb86e30d865435604966f4af166", null ],
       [ "kTLVType_Array", "_c_h_i_p_t_l_v_types_8h.html#a2e8308c2159d0d17e066a4b86fe19730a85c3e7fa5432efbebe1eb6d5b2a7f256", null ],
-      [ "kTLVType_Path", "_c_h_i_p_t_l_v_types_8h.html#a2e8308c2159d0d17e066a4b86fe19730a71f41ef7f725b920f37138926bf63789", null ]
+      [ "kTLVType_List", "_c_h_i_p_t_l_v_types_8h.html#a2e8308c2159d0d17e066a4b86fe19730a6cea366de1780ae6b0c13f54b3a409bd", null ]
     ] ],
     [ "GetTLVFieldSize", "_c_h_i_p_t_l_v_types_8h.html#aefe89efd4af36fe38533d3c4c71f7d78", null ],
     [ "IsValidTLVType", "_c_h_i_p_t_l_v_types_8h.html#a1fe781c2c5180d81cf95ce899e92818b", null ],

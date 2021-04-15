@@ -1,5 +1,0 @@
-<map id="chip::TLV::TLVReader::Get" name="chip::TLV::TLVReader::Get">
-<area shape="rect" id="node1" title="Get the value of the current element as a 64&#45;bit signed integer." alt="" coords="5,5,193,32"/>
-<area shape="rect" id="node2" href="$namespacechip.html#a8205c30bb95fb13aa400284110944165" title="A function to reverse the effects of a signed&#45;to&#45;unsigned integer cast." alt="" coords="241,5,385,32"/>
-<area shape="rect" id="node3" href="$namespacechip.html#a7b161ecab2491e5a21adac0b527c532f" title=" " alt="" coords="433,5,520,32"/>
-</map>

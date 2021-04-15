@@ -115,6 +115,7 @@ var _c_h_i_p_error_8h =
     [ "CHIP_ERROR_PASE_SUPPORTS_ONLY_CONFIG1", "_c_h_i_p_error_8h.html#a36bb23254baddec10c11cc8a0e378d06", null ],
     [ "CHIP_ERROR_PASSCODE_AUTHENTICATION_FAILED", "_c_h_i_p_error_8h.html#af127907feb36b35e04da089936a0137b", null ],
     [ "CHIP_ERROR_PASSCODE_FINGERPRINT_FAILED", "_c_h_i_p_error_8h.html#a4cd6651c19cfd2ed0c40dd14c3c28ab0", null ],
+    [ "CHIP_ERROR_PEER_NODE_NOT_FOUND", "_c_h_i_p_error_8h.html#a3df9762e342cce88f72fe0c303a70390", null ],
     [ "CHIP_ERROR_PERSISTED_STORAGE_FAILED", "_c_h_i_p_error_8h.html#a4f592a1858b95dbdcff28a8508ef1bfb", null ],
     [ "CHIP_ERROR_PERSISTED_STORAGE_VALUE_NOT_FOUND", "_c_h_i_p_error_8h.html#a3faf7ae931d14a0e58d3cb6fe68c01b1", null ],
     [ "CHIP_ERROR_PROFILE_STRING_CONTEXT_ALREADY_REGISTERED", "_c_h_i_p_error_8h.html#afff724040a249f3463269757aebff979", null ],

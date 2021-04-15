@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Connected Home over IP
-   &#160;<span id="projectnumber">a83086a0</span>
+   &#160;<span id="projectnumber">672cf7684</span>
    </div>
   </td>
  </tr>
@@ -96,34 +96,6 @@ $(document).ready(function(){initNavTree('_manual_setup_payload_generator_8h.htm
 <div class="textblock"><code>#include &quot;<a class="el" href="_setup_payload_8h_source.html">SetupPayload.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="_c_h_i_p_error_8h_source.html">core/CHIPError.h</a>&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for ManualSetupPayloadGenerator.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="_manual_setup_payload_generator_8h__incl.png" border="0" usemap="#setup__payload_2_manual_setup_payload_generator_8h" alt=""/></div>
-<map name="setup__payload_2_manual_setup_payload_generator_8h" id="setup__payload_2_manual_setup_payload_generator_8h">
-<area shape="rect" title="Copyright (c) 2020 Project CHIP Authors." alt="" coords="179,5,386,47"/>
-<area shape="rect" href="_setup_payload_8h.html" title=" " alt="" coords="112,95,235,121"/>
-<area shape="rect" title=" " alt="" coords="371,169,429,196"/>
-<area shape="rect" href="_c_h_i_p_error_8h.html" title=" " alt="" coords="219,169,347,196"/>
-<area shape="rect" title=" " alt="" coords="5,169,56,196"/>
-<area shape="rect" title=" " alt="" coords="154,468,225,495"/>
-<area shape="rect" title=" " alt="" coords="131,169,194,196"/>
-<area shape="rect" href="_c_h_i_p_config_8h.html" title=" " alt="" coords="193,244,332,271"/>
-<area shape="rect" href="_ble_config_8h.html" title=" " alt="" coords="202,319,323,345"/>
-<area shape="rect" href="_system_config_8h.html" title=" " alt="" coords="253,393,430,420"/>
-<area shape="rect" title=" " alt="" coords="298,468,385,495"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="_manual_setup_payload_generator_8h__dep__incl.png" border="0" usemap="#setup__payload_2_manual_setup_payload_generator_8hdep" alt=""/></div>
-<map name="setup__payload_2_manual_setup_payload_generator_8hdep" id="setup__payload_2_manual_setup_payload_generator_8hdep">
-<area shape="rect" title="Copyright (c) 2020 Project CHIP Authors." alt="" coords="121,5,328,47"/>
-<area shape="rect" href="_manual_setup_payload_generator_8cpp.html" title="Copyright (c) 2020 Project CHIP Authors." alt="" coords="5,95,212,136"/>
-<area shape="rect" href="_setup_payload_helper_8cpp.html" title=" " alt="" coords="237,95,447,136"/>
-</map>
-</div>
 </div>
 <p><a href="_manual_setup_payload_generator_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -143,15 +115,23 @@ Namespaces</h2></td></tr>
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><pre class="fragment">http://www.apache.org/licenses/LICENSE-2.0
 </pre><p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
 <p>This file describes a Manual Entry Code Generator based on the CHIP specification.</p>
-<p>The encoding of the binary data to a decimal string is split into 3 chunks &lt;32 bit&gt;&lt;16 bit&gt;&lt;16 bit&gt;:</p><ul>
-<li>&lt;32 bit&gt; Represents:<ul>
-<li>&lt;1 bit&gt; 1 if vid+pid present, 0 otherwise</li>
-<li>&lt;27 bit&gt; setup pin code</li>
-<li>&lt;4 bit&gt; discriminator</li>
+<p>The encoding of the binary data to a decimal string is split into 5 chunks &lt;1-digit/3-bits&gt;&lt;5 digits/16-bits&gt;&lt;4-digits/13-bits&gt;&lt;5-digits/16-bits&gt;&lt;5-digits/16-bits&gt;:</p><ul>
+<li>&lt;1 digit&gt; Represents:<ul>
+<li>&lt;bits 1..0&gt; Discriminator &lt;bits 11.10&gt;</li>
+<li>&lt;bit 2&gt; VID/PID present flag</li>
 </ul>
 </li>
-<li>&lt;16 bit&gt; Vendor ID</li>
-<li>&lt;16 bit&gt; Product ID </li>
+<li>&lt;5 digits&gt; Represents:<ul>
+<li>&lt;bits 13..0&gt; PIN Code &lt;bits 13..0&gt;</li>
+<li>&lt;bits 15..14&gt; Discriminator &lt;bits 9..8&gt;</li>
+</ul>
+</li>
+<li>&lt;4 digits&gt; Represents:<ul>
+<li>&lt;bits 12..0&gt; PIN Code &lt;bits 26..14&gt;</li>
+</ul>
+</li>
+<li>&lt;5 digits&gt; Vendor ID</li>
+<li>&lt;5 digits&gt; Product ID </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
@@ -159,7 +139,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d3e2479dff153f0c0d8caae586ce0c0.html">setup_payload</a></li><li class="navelem"><a class="el" href="_manual_setup_payload_generator_8h.html">ManualSetupPayloadGenerator.h</a></li>
-    <li class="footer">Generated on Mon Feb 1 2021 16:49:16 for Connected Home over IP by
+    <li class="footer">Generated on Thu Apr 15 2021 18:57:05 for Connected Home over IP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

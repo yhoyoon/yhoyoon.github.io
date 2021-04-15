@@ -1,10 +1,9 @@
 var dir_73d3889ee67b63af7c3145b099b55cd9 =
 [
+    [ "bluez", "dir_e55d4bd46792515e15a6fa831d38d67f.html", "dir_e55d4bd46792515e15a6fa831d38d67f" ],
     [ "BLEManagerImpl.cpp", "_linux_2_b_l_e_manager_impl_8cpp.html", null ],
     [ "BLEManagerImpl.h", "_linux_2_b_l_e_manager_impl_8h.html", null ],
     [ "BlePlatformConfig.h", "_linux_2_ble_platform_config_8h.html", "_linux_2_ble_platform_config_8h" ],
-    [ "CHIPBluezHelper.cpp", "_c_h_i_p_bluez_helper_8cpp.html", null ],
-    [ "CHIPBluezHelper.h", "_c_h_i_p_bluez_helper_8h.html", null ],
     [ "CHIPDevicePlatformConfig.h", "_linux_2_c_h_i_p_device_platform_config_8h.html", "_linux_2_c_h_i_p_device_platform_config_8h" ],
     [ "CHIPDevicePlatformEvent.h", "_linux_2_c_h_i_p_device_platform_event_8h.html", "_linux_2_c_h_i_p_device_platform_event_8h" ],
     [ "CHIPLinuxStorage.cpp", "_c_h_i_p_linux_storage_8cpp.html", null ],
@@ -29,7 +28,12 @@ var dir_73d3889ee67b63af7c3145b099b55cd9 =
     [ "KeyValueStoreManagerImpl.h", "_linux_2_key_value_store_manager_impl_8h.html", "_linux_2_key_value_store_manager_impl_8h" ],
     [ "Logging.cpp", "_linux_2_logging_8cpp.html", "_linux_2_logging_8cpp" ],
     [ "MdnsImpl.cpp", "_linux_2_mdns_impl_8cpp.html", "_linux_2_mdns_impl_8cpp" ],
-    [ "MdnsImpl.h", "_mdns_impl_8h.html", "_mdns_impl_8h" ],
+    [ "MdnsImpl.h", "_linux_2_mdns_impl_8h.html", [
+      [ "AvahiWatch", "struct_avahi_watch.html", "struct_avahi_watch" ],
+      [ "AvahiTimeout", "struct_avahi_timeout.html", "struct_avahi_timeout" ],
+      [ "Poller", "classchip_1_1_mdns_1_1_poller.html", "classchip_1_1_mdns_1_1_poller" ],
+      [ "MdnsAvahi", "classchip_1_1_mdns_1_1_mdns_avahi.html", "classchip_1_1_mdns_1_1_mdns_avahi" ]
+    ] ],
     [ "PlatformManagerImpl.cpp", "_linux_2_platform_manager_impl_8cpp.html", null ],
     [ "PlatformManagerImpl.h", "_linux_2_platform_manager_impl_8h.html", "_linux_2_platform_manager_impl_8h" ],
     [ "PosixConfig.cpp", "_linux_2_posix_config_8cpp.html", "_linux_2_posix_config_8cpp" ],

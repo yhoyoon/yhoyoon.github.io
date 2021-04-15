@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['packettype_5ft_9900',['PacketType_t',['../namespacechip_1_1_ble.html#aaa2b6b536b3f30eebdaa02509976d593',1,'chip::Ble']]],
-  ['publiceventtypes_9901',['PublicEventTypes',['../namespacechip_1_1_device_layer_1_1_device_event_type.html#a06d37ccd4891b45fe9303a788558c41c',1,'chip::DeviceLayer::DeviceEventType']]],
-  ['publicplatformspecificeventtypes_9902',['PublicPlatformSpecificEventTypes',['../namespacechip_1_1_device_layer_1_1_device_event_type.html#a4cbbf8da21943033fc2967e8aa475e52',1,'chip::DeviceLayer::DeviceEventType::PublicPlatformSpecificEventTypes()'],['../namespacechip_1_1_device_layer_1_1_device_event_type.html#a4cbbf8da21943033fc2967e8aa475e52',1,'chip::DeviceLayer::DeviceEventType::PublicPlatformSpecificEventTypes()'],['../namespacechip_1_1_device_layer_1_1_device_event_type.html#a4cbbf8da21943033fc2967e8aa475e52',1,'chip::DeviceLayer::DeviceEventType::PublicPlatformSpecificEventTypes()'],['../namespacechip_1_1_device_layer_1_1_device_event_type.html#a4cbbf8da21943033fc2967e8aa475e52',1,'chip::DeviceLayer::DeviceEventType::PublicPlatformSpecificEventTypes()'],['../namespacechip_1_1_device_layer_1_1_device_event_type.html#a4cbbf8da21943033fc2967e8aa475e52',1,'chip::DeviceLayer::DeviceEventType::PublicPlatformSpecificEventTypes()'],['../namespacechip_1_1_device_layer_1_1_device_event_type.html#a4cbbf8da21943033fc2967e8aa475e52',1,'chip::DeviceLayer::DeviceEventType::PublicPlatformSpecificEventTypes()']]]
+  ['operation_11517',['Operation',['../classchip_1_1_persistent_storage_result_delegate.html#a5036ef9eec8391a43bed71c5ceaad2ab',1,'chip::PersistentStorageResultDelegate']]],
+  ['optionalqrcodeinfotype_11518',['optionalQRCodeInfoType',['../namespacechip.html#af01e14e9a7cf70c1be1c9f5f0f5523a3',1,'chip']]]
 ];

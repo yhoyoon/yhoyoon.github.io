@@ -1,5 +1,0 @@
-<map id="chip::Transport::PeerConnectionState::GetLocalKeyID" name="chip::Transport::PeerConnectionState::GetLocalKeyID">
-<area shape="rect" id="node1" title=" " alt="" coords="356,45,584,87"/>
-<area shape="rect" id="node2" href="$namespacechip_1_1_secure_message_codec.html#ab4b26d118b04e9a3aeecd8ea55c82b72" title="Attach payload header to the message and encrypt the message buffer using key from the connection sta..." alt="" coords="57,5,256,47"/>
-<area shape="rect" id="node3" href="$classchip_1_1_transport_1_1_peer_connections.html#a0188b8748e6625edbc1f9983fc9f3278" title="Get a peer connection state given a Node Id and Peer&#39;s Encryption Key Id." alt="" coords="5,71,308,141"/>
-</map>

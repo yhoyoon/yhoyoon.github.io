@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Connected Home over IP
-   &#160;<span id="projectnumber">a83086a0</span>
+   &#160;<span id="projectnumber">672cf7684</span>
    </div>
   </td>
  </tr>
@@ -102,22 +102,12 @@ $(document).ready(function(){initNavTree('classchip_1_1_system_1_1_timer.html','
 <div class="dynheader">
 Inheritance diagram for chip::System::Timer:</div>
 <div class="dyncontent">
-<div class="center"><img src="classchip_1_1_system_1_1_timer__inherit__graph.png" border="0" usemap="#chip_1_1_system_1_1_timer_inherit__map" alt="Inheritance graph"/></div>
-<map name="chip_1_1_system_1_1_timer_inherit__map" id="chip_1_1_system_1_1_timer_inherit__map">
-<area shape="rect" title="This is an internal class to CHIP System Layer, used to represent an in&#45;progress one&#45;shot timer...." alt="" coords="8,80,159,107"/>
-<area shape="rect" href="classchip_1_1_system_1_1_object.html" title="This represents a reference&#45;counted object allocated from space contained in an ObjectPool&lt;T,..." alt="" coords="5,5,161,32"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for chip::System::Timer:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_system_1_1_timer__coll__graph.png" border="0" usemap="#chip_1_1_system_1_1_timer_coll__map" alt="Collaboration graph"/></div>
-<map name="chip_1_1_system_1_1_timer_coll__map" id="chip_1_1_system_1_1_timer_coll__map">
-<area shape="rect" title="This is an internal class to CHIP System Layer, used to represent an in&#45;progress one&#45;shot timer...." alt="" coords="96,95,247,121"/>
-<area shape="rect" href="classchip_1_1_system_1_1_object.html" title="This represents a reference&#45;counted object allocated from space contained in an ObjectPool&lt;T,..." alt="" coords="5,5,161,32"/>
-<area shape="rect" href="classchip_1_1_system_1_1_layer.html" title="This provides access to timers according to the configured event handling model." alt="" coords="185,5,336,32"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+ <div class="center">
+  <img src="classchip_1_1_system_1_1_timer.png" usemap="#chip::System::Timer_map" alt=""/>
+  <map id="chip::System::Timer_map" name="chip::System::Timer_map">
+<area href="classchip_1_1_system_1_1_object.html" title="This represents a reference-counted object allocated from space contained in an ObjectPool&lt;T,..." alt="chip::System::Object" shape="rect" coords="0,0,125,24"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -248,16 +238,6 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_system_1_1_timer_a67639490dea4ea2df61dc9435d01984e_icgraph.png" border="0" usemap="#classchip_1_1_system_1_1_timer_a67639490dea4ea2df61dc9435d01984e_icgraph" alt=""/></div>
-<map name="classchip_1_1_system_1_1_timer_a67639490dea4ea2df61dc9435d01984e_icgraph" id="classchip_1_1_system_1_1_timer_a67639490dea4ea2df61dc9435d01984e_icgraph">
-<area shape="rect" title="This method de&#45;initializes the timer object, and prevents this timer from firing if it hasn&#39;t done so..." alt="" coords="403,5,553,47"/>
-<area shape="rect" href="classchip_1_1_system_1_1_layer.html#a484dd8680d68c3b749b8808dc57cb406" title="This method cancels a one&#45;shot timer, started earlier through StartTimer()." alt="" coords="204,5,355,47"/>
-<area shape="rect" href="classchip_1_1_system_1_1_layer.html#a4c05ea0fbe3353e42a0d38e220c5716e" title="This method starts a one&#45;shot timer." alt="" coords="5,5,156,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -287,18 +267,6 @@ Here is the caller graph for this function:</div>
 <p>This method returns the current epoch, corrected by system sleep with the system timescale, in milliseconds. </p>
 <p>DEPRECATED &ndash; Please use <a class="el" href="classchip_1_1_system_1_1_layer.html#aec4102e7f2fbdfd875fc565652ea0097" title="Returns a monotonic system time in units of milliseconds.">System::Layer::GetClock_MonotonicMS()</a> instead.</p>
 <dl class="section return"><dt>Returns</dt><dd>A timestamp in milliseconds. </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_system_1_1_timer_a2188f59a55006505705544b570a543e7_icgraph.png" border="0" usemap="#classchip_1_1_system_1_1_timer_a2188f59a55006505705544b570a543e7_icgraph" alt=""/></div>
-<map name="classchip_1_1_system_1_1_timer_a2188f59a55006505705544b570a543e7_icgraph" id="classchip_1_1_system_1_1_timer_a2188f59a55006505705544b570a543e7_icgraph">
-<area shape="rect" title="This method returns the current epoch, corrected by system sleep with the system timescale,..." alt="" coords="372,71,523,112"/>
-<area shape="rect" href="classchip_1_1_system_1_1_layer.html#a051e191795a9fab9b311957659733076" title="Handle I/O from a select call." alt="" coords="167,5,324,47"/>
-<area shape="rect" href="classchip_1_1_system_1_1_layer.html#a9f8401330ab67d20a0b7f962550f8b02" title="Prepare the sets of file descriptors for select() to work with." alt="" coords="170,71,321,112"/>
-<area shape="rect" href="classchip_1_1_system_1_1_layer.html#acdfa234a097e97625e67894292fa648a" title="This method starts a one&#45;shot timer." alt="" coords="170,136,321,177"/>
-<area shape="rect" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#a2d24b8806b75aeb1b49b95919f4ea747" title=" " alt="" coords="5,46,119,73"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -335,15 +303,6 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_system_1_1_timer_a184d838433c302fa167c0c9132f11b22_icgraph.png" border="0" usemap="#classchip_1_1_system_1_1_timer_a184d838433c302fa167c0c9132f11b22_icgraph" alt=""/></div>
-<map name="classchip_1_1_system_1_1_timer_a184d838433c302fa167c0c9132f11b22_icgraph" id="classchip_1_1_system_1_1_timer_a184d838433c302fa167c0c9132f11b22_icgraph">
-<area shape="rect" title=" " alt="" coords="200,5,351,47"/>
-<area shape="rect" href="namespacechip_1_1_system_1_1_stats.html#aaa4a2e082c7285a19804885934e67a1b" title=" " alt="" coords="5,5,152,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -385,19 +344,6 @@ Here is the caller graph for this function:</div>
 <p>A static API that gets called to compare 2 time values. This API attempts to account for timer wrap by assuming that the difference between the 2 input values will only be more than half the Epoch scalar range if a timer wrap has occurred between the 2 samples.</p>
 <dl class="section note"><dt>Note</dt><dd>This implementation assumes that <a class="el" href="classchip_1_1_system_1_1_timer.html#ad5a3d60d923c459ac1e21dd458501952" title="Represents an epoch in the local system timescale, usually the POSIX timescale.">Timer::Epoch</a> is an unsigned scalar type.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the first param is earlier than the second, false otherwise. </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_system_1_1_timer_a4254d91b87cd634367712dc282f4f371_icgraph.png" border="0" usemap="#classchip_1_1_system_1_1_timer_a4254d91b87cd634367712dc282f4f371_icgraph" alt=""/></div>
-<map name="classchip_1_1_system_1_1_timer_a4254d91b87cd634367712dc282f4f371_icgraph" id="classchip_1_1_system_1_1_timer_a4254d91b87cd634367712dc282f4f371_icgraph">
-<area shape="rect" title="Compares two Timer::Epoch values and returns true if the first value is earlier than the second value..." alt="" coords="847,64,997,105"/>
-<area shape="rect" href="classchip_1_1_system_1_1_layer.html#a051e191795a9fab9b311957659733076" title="Handle I/O from a select call." alt="" coords="167,64,324,105"/>
-<area shape="rect" href="classchip_1_1_system_1_1_layer.html#a9f8401330ab67d20a0b7f962550f8b02" title="Prepare the sets of file descriptors for select() to work with." alt="" coords="390,123,541,164"/>
-<area shape="rect" href="namespacechip_1_1_system.html#a25d3a94ef8ce5e9934f0bdbd8c7324c8" title=" " alt="" coords="607,17,799,43"/>
-<area shape="rect" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#a2d24b8806b75aeb1b49b95919f4ea747" title=" " alt="" coords="5,101,119,127"/>
-<area shape="rect" href="classchip_1_1_system_1_1_layer.html#aa6cb2f68eb14a510eb6a2197a53b6042" title="Run any timers that are due based on input current time." alt="" coords="372,5,559,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -499,7 +445,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="namespacechip_1_1_system.html">System</a></li><li class="navelem"><a class="el" href="classchip_1_1_system_1_1_timer.html">Timer</a></li>
-    <li class="footer">Generated on Mon Feb 1 2021 16:49:18 for Connected Home over IP by
+    <li class="footer">Generated on Thu Apr 15 2021 18:57:06 for Connected Home over IP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['workqueue_10427',['workQueue',['../interface_ble_connection.html#ab77024e05ad2ecad4529935c29693b11',1,'BleConnection']]]
+  ['peripheral_12060',['peripheral',['../interface_ble_connection.html#abde1fd7976b85c5afaf075c8db898091',1,'BleConnection']]]
 ];

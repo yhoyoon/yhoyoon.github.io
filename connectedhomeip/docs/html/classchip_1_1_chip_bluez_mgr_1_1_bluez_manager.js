@@ -9,6 +9,7 @@ var classchip_1_1_chip_bluez_mgr_1_1_bluez_manager =
     [ "devMgrCB", "classchip_1_1_chip_bluez_mgr_1_1_bluez_manager.html#a3f6ff47f697200661250e453440939f0", null ],
     [ "dump_scan_result", "classchip_1_1_chip_bluez_mgr_1_1_bluez_manager.html#ab1b23081909c5a1a484ca25aa805eeb2", null ],
     [ "get_adapter_by_addr", "classchip_1_1_chip_bluez_mgr_1_1_bluez_manager.html#af1be9faff4a24e4daf3e32e4e1810d7f", null ],
+    [ "get_adapters", "classchip_1_1_chip_bluez_mgr_1_1_bluez_manager.html#ac7c38edfe17d8b7e61be63fd2e222444", null ],
     [ "get_peripheral_devIdInfo", "classchip_1_1_chip_bluez_mgr_1_1_bluez_manager.html#a2af007834107648aa2e210eaca78c704", null ],
     [ "readlineCB", "classchip_1_1_chip_bluez_mgr_1_1_bluez_manager.html#ab46584f2e3e45db429f582b209e89ef2", null ],
     [ "runIdleLoop", "classchip_1_1_chip_bluez_mgr_1_1_bluez_manager.html#aae715432ed49e4f1f2b4b08473ed3780", null ],

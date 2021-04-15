@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Connected Home over IP
-   &#160;<span id="projectnumber">a83086a0</span>
+   &#160;<span id="projectnumber">672cf7684</span>
    </div>
   </td>
  </tr>
@@ -103,12 +103,12 @@ $(document).ready(function(){initNavTree('classchip_1_1_device_layer_1_1_connect
 <div class="dynheader">
 Inheritance diagram for chip::DeviceLayer::ConnectivityManager:</div>
 <div class="dyncontent">
-<div class="center"><img src="classchip_1_1_device_layer_1_1_connectivity_manager__inherit__graph.png" border="0" usemap="#chip_1_1_device_layer_1_1_connectivity_manager_inherit__map" alt="Inheritance graph"/></div>
-<map name="chip_1_1_device_layer_1_1_connectivity_manager_inherit__map" id="chip_1_1_device_layer_1_1_connectivity_manager_inherit__map">
-<area shape="rect" title="Provides control of network connectivity for a chip device." alt="" coords="20,5,181,47"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_connectivity_manager_impl.html" title="Concrete implementation of the ConnectivityManager singleton object for the CC13X2_26X2 platforms." alt="" coords="5,95,196,136"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+ <div class="center">
+  <img src="classchip_1_1_device_layer_1_1_connectivity_manager.png" usemap="#chip::DeviceLayer::ConnectivityManager_map" alt=""/>
+  <map id="chip::DeviceLayer::ConnectivityManager_map" name="chip::DeviceLayer::ConnectivityManager_map">
+<area href="classchip_1_1_device_layer_1_1_connectivity_manager_impl.html" title="Concrete implementation of the ConnectivityManager singleton object for the CC13X2_26X2 platforms." alt="chip::DeviceLayer::ConnectivityManagerImpl" shape="rect" coords="0,56,264,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -203,8 +203,13 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:ab3d1f32b512ccabb86bf40a30b769821"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13156c62c3e4ed47123e2bd5f857fe0e"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#a13156c62c3e4ed47123e2bd5f857fe0e">BleConnectionReceivedFunct</a>) (<a class="el" href="classchip_1_1_ble_1_1_b_l_e_end_point.html">Ble::BLEEndPoint</a> *<a class="el" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#a7d397493728da2bca8d55b2d61c4ec5d">endpoint</a>)</td></tr>
-<tr class="separator:a13156c62c3e4ed47123e2bd5f857fe0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60af5dc0cca9010a4711ab30a5fca31c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#a60af5dc0cca9010a4711ab30a5fca31c">BLEAdvertisingMode</a> { <br />
+&#160;&#160;<a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#a60af5dc0cca9010a4711ab30a5fca31ca85185c216bf431544881d319a389f94b">kFastAdvertising</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#a60af5dc0cca9010a4711ab30a5fca31cabd825623924c7867dfcb639a0ff0bd7f">kSlowAdvertising</a> = 1
+<br />
+ }</td></tr>
+<tr class="separator:a60af5dc0cca9010a4711ab30a5fca31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -278,10 +283,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a06d522e80ca2ea1107cf4a19d0c0d0d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a810834e8f952859c906a4a2732105171"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1_ble_1_1_ble_layer.html">Ble::BleLayer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#a810834e8f952859c906a4a2732105171">GetBleLayer</a> ()</td></tr>
 <tr class="separator:a810834e8f952859c906a4a2732105171"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a9566404b8c08fa35ba27fe80d87e84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#a1a9566404b8c08fa35ba27fe80d87e84">AddCHIPoBLEConnectionHandler</a> (<a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#a13156c62c3e4ed47123e2bd5f857fe0e">BleConnectionReceivedFunct</a> handler)</td></tr>
-<tr class="separator:a1a9566404b8c08fa35ba27fe80d87e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a771047e787bd0f3f2dc870446e94b124"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#a771047e787bd0f3f2dc870446e94b124">RemoveCHIPoBLEConnectionHandler</a> ()</td></tr>
-<tr class="separator:a771047e787bd0f3f2dc870446e94b124"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fcbef84be893be4f850a8b675fcfbad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#a918876d0395f5c4ff1a7ef802ff268af">CHIPoBLEServiceMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#a8fcbef84be893be4f850a8b675fcfbad">GetCHIPoBLEServiceMode</a> ()</td></tr>
 <tr class="separator:a8fcbef84be893be4f850a8b675fcfbad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac311bff412be0d8c765200d68a133f97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#ac311bff412be0d8c765200d68a133f97">SetCHIPoBLEServiceMode</a> (<a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#a918876d0395f5c4ff1a7ef802ff268af">CHIPoBLEServiceMode</a> val)</td></tr>
@@ -290,12 +291,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9ffa7fa0d968c8c1e6eb950e8368acec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f50ad9f26bbf4353f1c62a04cb1377a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#a2f50ad9f26bbf4353f1c62a04cb1377a">SetBLEAdvertisingEnabled</a> (bool val)</td></tr>
 <tr class="separator:a2f50ad9f26bbf4353f1c62a04cb1377a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38395c847d4d674758e08e436c012474"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#a38395c847d4d674758e08e436c012474">IsBLEFastAdvertisingEnabled</a> ()</td></tr>
-<tr class="separator:a38395c847d4d674758e08e436c012474"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b53dcd58909adb59c6f1d441b96b15e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#a0b53dcd58909adb59c6f1d441b96b15e">SetBLEFastAdvertisingEnabled</a> (bool val)</td></tr>
-<tr class="separator:a0b53dcd58909adb59c6f1d441b96b15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dba1fdad0c465d4e24015330c684fd6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#a6dba1fdad0c465d4e24015330c684fd6">IsBLEAdvertising</a> ()</td></tr>
 <tr class="separator:a6dba1fdad0c465d4e24015330c684fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad757e469dd14e11eae45912a456b8160"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#ad757e469dd14e11eae45912a456b8160">SetBLEAdvertisingMode</a> (<a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#a60af5dc0cca9010a4711ab30a5fca31c">BLEAdvertisingMode</a> mode)</td></tr>
+<tr class="separator:ad757e469dd14e11eae45912a456b8160"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefbd1e2ee9f8cd0a38e2819880d3c165"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#aefbd1e2ee9f8cd0a38e2819880d3c165">GetBLEDeviceName</a> (char *buf, size_t bufSize)</td></tr>
 <tr class="separator:aefbd1e2ee9f8cd0a38e2819880d3c165"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abeb325cda71eda3f4e514fcbb28290f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#abeb325cda71eda3f4e514fcbb28290f6">SetBLEDeviceName</a> (const char *deviceName)</td></tr>
@@ -350,30 +349,28 @@ Friends</h2></td></tr>
 <tr class="memitem:ae442cfbf06ded6604c83e41b66654d80"><td class="memTemplParams" colspan="2">template&lt;class &gt; </td></tr>
 <tr class="memitem:ae442cfbf06ded6604c83e41b66654d80"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#ae442cfbf06ded6604c83e41b66654d80">Internal::GenericPlatformManagerImpl_POSIX</a></td></tr>
 <tr class="separator:ae442cfbf06ded6604c83e41b66654d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa398f5dda0995fa82b534d46240a90cf"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#aa398f5dda0995fa82b534d46240a90cf">Internal::NetworkProvisioningServerImpl</a></td></tr>
-<tr class="separator:aa398f5dda0995fa82b534d46240a90cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63781c925ec355c4c11a425791eaf00a"><td class="memTemplParams" colspan="2">template&lt;class &gt; </td></tr>
-<tr class="memitem:a63781c925ec355c4c11a425791eaf00a"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#a63781c925ec355c4c11a425791eaf00a">Internal::GenericNetworkProvisioningServerImpl</a></td></tr>
-<tr class="separator:a63781c925ec355c4c11a425791eaf00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides control of network connectivity for a chip device. </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a13156c62c3e4ed47123e2bd5f857fe0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13156c62c3e4ed47123e2bd5f857fe0e">&#9670;&nbsp;</a></span>BleConnectionReceivedFunct</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a60af5dc0cca9010a4711ab30a5fca31c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60af5dc0cca9010a4711ab30a5fca31c">&#9670;&nbsp;</a></span>BLEAdvertisingMode</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* chip::DeviceLayer::ConnectivityManager::BleConnectionReceivedFunct) (<a class="el" href="classchip_1_1_ble_1_1_b_l_e_end_point.html">Ble::BLEEndPoint</a> *<a class="el" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#a7d397493728da2bca8d55b2d61c4ec5d">endpoint</a>)</td>
+          <td class="memname">enum <a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#a60af5dc0cca9010a4711ab30a5fca31c">chip::DeviceLayer::ConnectivityManager::BLEAdvertisingMode</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a60af5dc0cca9010a4711ab30a5fca31ca85185c216bf431544881d319a389f94b"></a>kFastAdvertising&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a60af5dc0cca9010a4711ab30a5fca31cabd825623924c7867dfcb639a0ff0bd7f"></a>kSlowAdvertising&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a918876d0395f5c4ff1a7ef802ff268af"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a918876d0395f5c4ff1a7ef802ff268af">&#9670;&nbsp;</a></span>CHIPoBLEServiceMode</h2>
 
@@ -622,32 +619,6 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1a9566404b8c08fa35ba27fe80d87e84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a9566404b8c08fa35ba27fe80d87e84">&#9670;&nbsp;</a></span>AddCHIPoBLEConnectionHandler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void chip::DeviceLayer::ConnectivityManager::AddCHIPoBLEConnectionHandler </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#a13156c62c3e4ed47123e2bd5f857fe0e">BleConnectionReceivedFunct</a>&#160;</td>
-          <td class="paramname"><em>handler</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a1b29d4f3c8962c58f7b5b673dfe2f697"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1b29d4f3c8962c58f7b5b673dfe2f697">&#9670;&nbsp;</a></span>CHIPoBLEServiceModeToStr()</h2>
 
@@ -671,15 +642,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_device_layer_1_1_connectivity_manager_a1b29d4f3c8962c58f7b5b673dfe2f697_cgraph.png" border="0" usemap="#classchip_1_1_device_layer_1_1_connectivity_manager_a1b29d4f3c8962c58f7b5b673dfe2f697_cgraph" alt=""/></div>
-<map name="classchip_1_1_device_layer_1_1_connectivity_manager_a1b29d4f3c8962c58f7b5b673dfe2f697_cgraph" id="classchip_1_1_device_layer_1_1_connectivity_manager_a1b29d4f3c8962c58f7b5b673dfe2f697_cgraph">
-<area shape="rect" title=" " alt="" coords="5,13,215,69"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_internal_1_1_generic_connectivity_manager_impl___no_b_l_e.html#a718b0c07387e8d48e01f703e42f69aca" title=" " alt="" coords="263,5,573,76"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1220,31 +1182,6 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a38395c847d4d674758e08e436c012474"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38395c847d4d674758e08e436c012474">&#9670;&nbsp;</a></span>IsBLEFastAdvertisingEnabled()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool chip::DeviceLayer::ConnectivityManager::IsBLEFastAdvertisingEnabled </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ad5026ae956a58871d2c4864e6de0444d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad5026ae956a58871d2c4864e6de0444d">&#9670;&nbsp;</a></span>IsThreadApplicationControlled()</h2>
 
@@ -1342,15 +1279,6 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_device_layer_1_1_connectivity_manager_a7b5e64de37c46a0c369cf094437719be_icgraph.png" border="0" usemap="#classchip_1_1_device_layer_1_1_connectivity_manager_a7b5e64de37c46a0c369cf094437719be_icgraph" alt=""/></div>
-<map name="classchip_1_1_device_layer_1_1_connectivity_manager_a7b5e64de37c46a0c369cf094437719be_icgraph" id="classchip_1_1_device_layer_1_1_connectivity_manager_a7b5e64de37c46a0c369cf094437719be_icgraph">
-<area shape="rect" title=" " alt="" coords="351,13,513,69"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_internal_1_1_generic_configuration_manager_impl.html#a0b785de0c5c1e421b6cfc4037e546b93" title=" " alt="" coords="5,5,303,76"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1526,15 +1454,6 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_device_layer_1_1_connectivity_manager_a94b166b3178570e3551288ba0510d6f0_icgraph.png" border="0" usemap="#classchip_1_1_device_layer_1_1_connectivity_manager_a94b166b3178570e3551288ba0510d6f0_icgraph" alt=""/></div>
-<map name="classchip_1_1_device_layer_1_1_connectivity_manager_a94b166b3178570e3551288ba0510d6f0_icgraph" id="classchip_1_1_device_layer_1_1_connectivity_manager_a94b166b3178570e3551288ba0510d6f0_icgraph">
-<area shape="rect" title=" " alt="" coords="351,13,541,69"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_internal_1_1_generic_configuration_manager_impl.html#a0b785de0c5c1e421b6cfc4037e546b93" title=" " alt="" coords="5,5,303,76"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1614,31 +1533,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a771047e787bd0f3f2dc870446e94b124"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a771047e787bd0f3f2dc870446e94b124">&#9670;&nbsp;</a></span>RemoveCHIPoBLEConnectionHandler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void chip::DeviceLayer::ConnectivityManager::RemoveCHIPoBLEConnectionHandler </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a2f50ad9f26bbf4353f1c62a04cb1377a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2f50ad9f26bbf4353f1c62a04cb1377a">&#9670;&nbsp;</a></span>SetBLEAdvertisingEnabled()</h2>
 
@@ -1665,6 +1559,32 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="ad757e469dd14e11eae45912a456b8160"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad757e469dd14e11eae45912a456b8160">&#9670;&nbsp;</a></span>SetBLEAdvertisingMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> chip::DeviceLayer::ConnectivityManager::SetBLEAdvertisingMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#a60af5dc0cca9010a4711ab30a5fca31c">BLEAdvertisingMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="abeb325cda71eda3f4e514fcbb28290f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abeb325cda71eda3f4e514fcbb28290f6">&#9670;&nbsp;</a></span>SetBLEDeviceName()</h2>
 
@@ -1679,32 +1599,6 @@ Here is the caller graph for this function:</div>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>deviceName</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0b53dcd58909adb59c6f1d441b96b15e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b53dcd58909adb59c6f1d441b96b15e">&#9670;&nbsp;</a></span>SetBLEFastAdvertisingEnabled()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> chip::DeviceLayer::ConnectivityManager::SetBLEFastAdvertisingEnabled </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1948,15 +1842,6 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_device_layer_1_1_connectivity_manager_a5331b990a2cf17ffeccd22aa6f55dea5_icgraph.png" border="0" usemap="#classchip_1_1_device_layer_1_1_connectivity_manager_a5331b990a2cf17ffeccd22aa6f55dea5_icgraph" alt=""/></div>
-<map name="classchip_1_1_device_layer_1_1_connectivity_manager_a5331b990a2cf17ffeccd22aa6f55dea5_icgraph" id="classchip_1_1_device_layer_1_1_connectivity_manager_a5331b990a2cf17ffeccd22aa6f55dea5_icgraph">
-<area shape="rect" title=" " alt="" coords="249,5,411,61"/>
-<area shape="rect" href="_service_provisioning_8h.html#a68625edfbb5f840d6857e40618ce0d60" title=" " alt="" coords="5,20,201,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -2034,15 +1919,6 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_device_layer_1_1_connectivity_manager_a64d333f2db31385ed5f009f27abe7473_cgraph.png" border="0" usemap="#classchip_1_1_device_layer_1_1_connectivity_manager_a64d333f2db31385ed5f009f27abe7473_cgraph" alt=""/></div>
-<map name="classchip_1_1_device_layer_1_1_connectivity_manager_a64d333f2db31385ed5f009f27abe7473_cgraph" id="classchip_1_1_device_layer_1_1_connectivity_manager_a64d333f2db31385ed5f009f27abe7473_cgraph">
-<area shape="rect" title=" " alt="" coords="5,13,167,69"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_internal_1_1_generic_connectivity_manager_impl___no_wi_fi.html#ab1a6b78011a9932417aba8d37dbf73f6" title=" " alt="" coords="215,5,472,76"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -2069,15 +1945,6 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_device_layer_1_1_connectivity_manager_aa92fb01b1af877583963babff28e31da_cgraph.png" border="0" usemap="#classchip_1_1_device_layer_1_1_connectivity_manager_aa92fb01b1af877583963babff28e31da_cgraph" alt=""/></div>
-<map name="classchip_1_1_device_layer_1_1_connectivity_manager_aa92fb01b1af877583963babff28e31da_cgraph" id="classchip_1_1_device_layer_1_1_connectivity_manager_aa92fb01b1af877583963babff28e31da_cgraph">
-<area shape="rect" title=" " alt="" coords="5,13,167,69"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_internal_1_1_generic_connectivity_manager_impl___no_wi_fi.html#a98592b5e4e0fa658af1f1589fdcc0b70" title=" " alt="" coords="215,5,472,76"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -2104,15 +1971,6 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_device_layer_1_1_connectivity_manager_a57d8be43566dd6d1f900edc96223cd8e_cgraph.png" border="0" usemap="#classchip_1_1_device_layer_1_1_connectivity_manager_a57d8be43566dd6d1f900edc96223cd8e_cgraph" alt=""/></div>
-<map name="classchip_1_1_device_layer_1_1_connectivity_manager_a57d8be43566dd6d1f900edc96223cd8e_cgraph" id="classchip_1_1_device_layer_1_1_connectivity_manager_a57d8be43566dd6d1f900edc96223cd8e_cgraph">
-<area shape="rect" title=" " alt="" coords="5,13,176,69"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_internal_1_1_generic_connectivity_manager_impl___no_wi_fi.html#a35fa65c24a43611633d3cd3e2aa1b8fb" title=" " alt="" coords="224,5,503,76"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -2139,43 +1997,10 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_device_layer_1_1_connectivity_manager_acac39af5bfc96a4f2d200b39559ed9fa_cgraph.png" border="0" usemap="#classchip_1_1_device_layer_1_1_connectivity_manager_acac39af5bfc96a4f2d200b39559ed9fa_cgraph" alt=""/></div>
-<map name="classchip_1_1_device_layer_1_1_connectivity_manager_acac39af5bfc96a4f2d200b39559ed9fa_cgraph" id="classchip_1_1_device_layer_1_1_connectivity_manager_acac39af5bfc96a4f2d200b39559ed9fa_cgraph">
-<area shape="rect" title=" " alt="" coords="5,13,175,69"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_internal_1_1_generic_connectivity_manager_impl___no_wi_fi.html#a4728e1930b1f3ae9a8ad96b9b1952ac8" title=" " alt="" coords="223,5,500,76"/>
-</map>
-</div>
 
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="a63781c925ec355c4c11a425791eaf00a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63781c925ec355c4c11a425791eaf00a">&#9670;&nbsp;</a></span>Internal::GenericNetworkProvisioningServerImpl</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="classchip_1_1_device_layer_1_1_internal_1_1_generic_network_provisioning_server_impl.html">Internal::GenericNetworkProvisioningServerImpl</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a929b8c50e573b52988f41760a0377430"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a929b8c50e573b52988f41760a0377430">&#9670;&nbsp;</a></span>Internal::GenericPlatformManagerImpl</h2>
 
@@ -2248,28 +2073,6 @@ template&lt;class &gt; </div>
 
 </div>
 </div>
-<a id="aa398f5dda0995fa82b534d46240a90cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa398f5dda0995fa82b534d46240a90cf">&#9670;&nbsp;</a></span>Internal::NetworkProvisioningServerImpl</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class Internal::NetworkProvisioningServerImpl</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ac31a0df4105578f7404846c15568b820"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac31a0df4105578f7404846c15568b820">&#9670;&nbsp;</a></span>PlatformManagerImpl</h2>
 
@@ -2301,7 +2104,7 @@ template&lt;class &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="namespacechip_1_1_device_layer.html">DeviceLayer</a></li><li class="navelem"><a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html">ConnectivityManager</a></li>
-    <li class="footer">Generated on Mon Feb 1 2021 16:49:17 for Connected Home over IP by
+    <li class="footer">Generated on Thu Apr 15 2021 18:57:05 for Connected Home over IP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -1,8 +1,0 @@
-<map id="chip::MessageAuthenticationCode::TagLenForEncryptionType" name="chip::MessageAuthenticationCode::TagLenForEncryptionType">
-<area shape="rect" id="node1" title=" " alt="" coords="757,64,984,105"/>
-<area shape="rect" id="node2" href="$classchip_1_1_secure_session.html#a4790d6827623e8ffde65c0a325e54e6b" title="Decrypt the input data using keys established in the secure channel." alt="" coords="529,5,679,47"/>
-<area shape="rect" id="node4" href="$classchip_1_1_secure_session.html#a9ca7acab029cf2223049f61cf6b7ca21" title="Encrypt the input data using keys established in the secure channel." alt="" coords="276,96,427,137"/>
-<area shape="rect" id="node6" href="$classchip_1_1_message_authentication_code.html#aaaaba6a570fa9ad3e8501f9e223134df" title="Set the message auth tag for this header." alt="" coords="499,123,709,164"/>
-<area shape="rect" id="node3" href="$namespacechip_1_1_secure_message_codec.html#a8c74f179b64643d01e43d3ea231ef3b7" title="Decrypt the message, perform message integrity check, and decode the payload header." alt="" coords="252,5,451,47"/>
-<area shape="rect" id="node5" href="$namespacechip_1_1_secure_message_codec.html#ab4b26d118b04e9a3aeecd8ea55c82b72" title="Attach payload header to the message and encrypt the message buffer using key from the connection sta..." alt="" coords="5,96,204,137"/>
-</map>

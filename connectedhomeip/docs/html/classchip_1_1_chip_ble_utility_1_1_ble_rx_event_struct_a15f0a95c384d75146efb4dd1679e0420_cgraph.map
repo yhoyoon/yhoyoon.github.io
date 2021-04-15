@@ -1,7 +1,0 @@
-<map id="chip.ChipBleUtility.BleRxEventStruct.toBleRxEvent" name="chip.ChipBleUtility.BleRxEventStruct.toBleRxEvent">
-<area shape="rect" id="node1" title=" " alt="" coords="5,79,195,120"/>
-<area shape="rect" id="node2" href="$classchip_1_1_encoding_1_1_buffer_writer_base.html#a956057d97ab48e35004f48d0cccc9105" title=" " alt="" coords="244,5,448,47"/>
-<area shape="rect" id="node3" href="$classchip_1_1_crypto_1_1_e_c_p_key.html#a8ff4b1e15c6c221ac414a31d4a5009e9" title=" " alt="" coords="258,71,434,127"/>
-<area shape="rect" id="node4" href="$classchip_1_1_crypto_1_1_capacity_bound_buffer.html#a5c1583d8136495b0d3429edc243e426f" title="Returns current length of the buffer that&#39;s being used." alt="" coords="243,152,449,193"/>
-<area shape="rect" id="node5" href="$classchip_1_1_crypto_1_1_p256_public_key.html#a4e0297054166dea678b6d2ebc8ee32d3" title=" " alt="" coords="257,217,435,259"/>
-</map>

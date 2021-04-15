@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Connected Home over IP
-   &#160;<span id="projectnumber">a83086a0</span>
+   &#160;<span id="projectnumber">672cf7684</span>
    </div>
   </td>
  </tr>
@@ -87,13 +87,19 @@ $(document).ready(function(){initNavTree('functions_func_r.html',''); initResiza
 
 <h3><a id="index_r"></a>- r -</h3><ul>
 <li>Raw()
-: <a class="el" href="classchip_1_1_bit_flags.html#acb9af257404fc467c965c6423b9ce6bb">chip::BitFlags&lt; StorageType, FlagsEnum &gt;</a>
+: <a class="el" href="classchip_1_1_bit_flags.html#a7e04bc082ef554be82e01ee17f4d2d23">chip::BitFlags&lt; FlagsEnum, StorageType &gt;</a>
 </li>
 <li>RawRead()
 : <a class="el" href="classchip_1_1_encoding_1_1_little_endian_1_1_reader.html#a8ef19c42c2d576cdfe8ef570ae6651d3">chip::Encoding::LittleEndian::Reader</a>
 </li>
+<li>RawStorage()
+: <a class="el" href="classchip_1_1_bit_flags.html#a075f286ede25709967ebcaf7253fc496">chip::BitFlags&lt; FlagsEnum, StorageType &gt;</a>
+</li>
 <li>RawValue()
 : <a class="el" href="classmdns_1_1_minimal_1_1_bit_packed_flags.html#a6ab16e63031893d4b9cfb573b2a74ac9">mdns::Minimal::BitPackedFlags</a>
+</li>
+<li>Read()
+: <a class="el" href="classchip_1_1_system_1_1_packet_buffer.html#a4ed8f36d27742745d384d17ea535138d">chip::System::PacketBuffer</a>
 </li>
 <li>Read16()
 : <a class="el" href="classchip_1_1_encoding_1_1_little_endian_1_1_reader.html#aa086a202c01da34179989d5adb7ea532">chip::Encoding::LittleEndian::Reader</a>
@@ -110,245 +116,352 @@ $(document).ready(function(){initNavTree('functions_func_r.html',''); initResiza
 <li>ReadAddress()
 : <a class="el" href="classchip_1_1_inet_1_1_i_p_address.html#a754433df2941d22c556c7dc19697c6d1">chip::Inet::IPAddress</a>
 </li>
+<li>ReadAttribute()
+: <a class="el" href="classchip_1_1clusters_1_1_c_h_i_p_clusters_1_1_chip_clusters.html#ae9ac5294f789ad1a3f16b20bc85b5875">chip.clusters.CHIPClusters.ChipClusters</a>
+</li>
 <li>ReadAttributeActuatorEnabled()
-: <a class="el" href="classchip_1_1_controller_1_1_door_lock_cluster.html#a45eb0012db076b04c2c4b11df9819366">chip::Controller::DoorLockCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_door_lock_cluster.html#aa218eb94f20a348075a353bc07db3bdd">chip::Controller::DoorLockCluster</a>
+</li>
+<li>ReadAttributeApplicationId()
+: <a class="el" href="classchip_1_1_controller_1_1_application_basic_cluster.html#a771e5aa62eb79af391703176a0ad6aac">chip::Controller::ApplicationBasicCluster</a>
+</li>
+<li>ReadAttributeApplicationName()
+: <a class="el" href="classchip_1_1_controller_1_1_application_basic_cluster.html#a7508af937b1705666c772653f599be02">chip::Controller::ApplicationBasicCluster</a>
+</li>
+<li>ReadAttributeApplicationSatus()
+: <a class="el" href="classchip_1_1_controller_1_1_application_basic_cluster.html#aec902fe3eebad790812b589d81aba0b1">chip::Controller::ApplicationBasicCluster</a>
 </li>
 <li>ReadAttributeBarrierCapabilities()
-: <a class="el" href="classchip_1_1_controller_1_1_barrier_control_cluster.html#a467c4139d360a91efe6edd8f956d98b6">chip::Controller::BarrierControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_barrier_control_cluster.html#a90990b70541581f8d95da3f2062d8b79">chip::Controller::BarrierControlCluster</a>
 </li>
 <li>ReadAttributeBarrierMovingState()
-: <a class="el" href="classchip_1_1_controller_1_1_barrier_control_cluster.html#aa087c568668cf96ae44cd55246b0705c">chip::Controller::BarrierControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_barrier_control_cluster.html#a828f557410dd144bae07bf71366bbbdb">chip::Controller::BarrierControlCluster</a>
 </li>
 <li>ReadAttributeBarrierPosition()
-: <a class="el" href="classchip_1_1_controller_1_1_barrier_control_cluster.html#a5dc2608757197788f73381d49082a2b5">chip::Controller::BarrierControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_barrier_control_cluster.html#abfceff7e648168a84c17c7fc4fb77c0f">chip::Controller::BarrierControlCluster</a>
 </li>
 <li>ReadAttributeBarrierSafetyStatus()
-: <a class="el" href="classchip_1_1_controller_1_1_barrier_control_cluster.html#a24775076c8663f4a4ba9fa4d9f976648">chip::Controller::BarrierControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_barrier_control_cluster.html#a23452c3bc8dffa342046518349934875">chip::Controller::BarrierControlCluster</a>
+</li>
+<li>ReadAttributeBreadcrumb()
+: <a class="el" href="classchip_1_1_controller_1_1_general_commissioning_cluster.html#aa2f3aa4e0936e2c454d513597eb7f50d">chip::Controller::GeneralCommissioningCluster</a>
+</li>
+<li>ReadAttributeCatalogVendorId()
+: <a class="el" href="classchip_1_1_controller_1_1_application_basic_cluster.html#a7e8b7ff9769e9c7131e1ff91b55c2bcb">chip::Controller::ApplicationBasicCluster</a>
+</li>
+<li>ReadAttributeClientList()
+: <a class="el" href="classchip_1_1_controller_1_1_descriptor_cluster.html#a6ef486640b77d3c5d29dcf8beb93d0cb">chip::Controller::DescriptorCluster</a>
 </li>
 <li>ReadAttributeClusterRevision()
-: <a class="el" href="classchip_1_1_controller_1_1_barrier_control_cluster.html#ab534b7b7e743356242403e66cacf3175">chip::Controller::BarrierControlCluster</a>
-, <a class="el" href="classchip_1_1_controller_1_1_basic_cluster.html#a940ee3c639af949d8942485c43430b84">chip::Controller::BasicCluster</a>
-, <a class="el" href="classchip_1_1_controller_1_1_binding_cluster.html#a515764eba903a17144405fcf663e2a5f">chip::Controller::BindingCluster</a>
-, <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#ae20381bb70253db3126a8afe2e4e75fe">chip::Controller::ColorControlCluster</a>
-, <a class="el" href="classchip_1_1_controller_1_1_door_lock_cluster.html#a01430109c8c3203d3c28c74c9c625559">chip::Controller::DoorLockCluster</a>
-, <a class="el" href="classchip_1_1_controller_1_1_groups_cluster.html#a8b8691f334a255c1c444d344350c207d">chip::Controller::GroupsCluster</a>
-, <a class="el" href="classchip_1_1_controller_1_1_ias_zone_cluster.html#a3a998d8129b210283c812f6a1625a192">chip::Controller::IasZoneCluster</a>
-, <a class="el" href="classchip_1_1_controller_1_1_identify_cluster.html#ae8922ef555794e94182f500077be5188">chip::Controller::IdentifyCluster</a>
-, <a class="el" href="classchip_1_1_controller_1_1_level_control_cluster.html#af4c8cda19679cbfbe6e4ad016c2d8c21">chip::Controller::LevelControlCluster</a>
-, <a class="el" href="classchip_1_1_controller_1_1_on_off_cluster.html#a88680a9f9221856156c0f53d3ede94b1">chip::Controller::OnOffCluster</a>
-, <a class="el" href="classchip_1_1_controller_1_1_scenes_cluster.html#a9d44d0c75512e8f1e2302b8117c9b0ba">chip::Controller::ScenesCluster</a>
-, <a class="el" href="classchip_1_1_controller_1_1_temperature_measurement_cluster.html#a317ed52d9e08082ea418f9d61f3c5409">chip::Controller::TemperatureMeasurementCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_application_basic_cluster.html#aa23cdf15a9ebaf7fc6ef1c3976b0cd4a">chip::Controller::ApplicationBasicCluster</a>
+, <a class="el" href="classchip_1_1_controller_1_1_barrier_control_cluster.html#a4efae56ca82aa1e6cece7fac9d3a0fef">chip::Controller::BarrierControlCluster</a>
+, <a class="el" href="classchip_1_1_controller_1_1_basic_cluster.html#a1ef4e9a99a616da3b28d3db86200dc53">chip::Controller::BasicCluster</a>
+, <a class="el" href="classchip_1_1_controller_1_1_binding_cluster.html#ada22fdfb3d6e4151585ebeba3b6cfcf6">chip::Controller::BindingCluster</a>
+, <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a885dd4bd8bce7e94e55de1f189919a7f">chip::Controller::ColorControlCluster</a>
+, <a class="el" href="classchip_1_1_controller_1_1_descriptor_cluster.html#a0c2375ff77d7dffdf8b5c3f93deb2c89">chip::Controller::DescriptorCluster</a>
+, <a class="el" href="classchip_1_1_controller_1_1_door_lock_cluster.html#a4db021e676a5fea328265c16a200a068">chip::Controller::DoorLockCluster</a>
+, <a class="el" href="classchip_1_1_controller_1_1_general_commissioning_cluster.html#a7d7ab7f2eac20c893649a6a820824a62">chip::Controller::GeneralCommissioningCluster</a>
+, <a class="el" href="classchip_1_1_controller_1_1_group_key_management_cluster.html#a9dd3312385cc4a6a57686c12dc61ac05">chip::Controller::GroupKeyManagementCluster</a>
+, <a class="el" href="classchip_1_1_controller_1_1_groups_cluster.html#a911e804d3f52b3bac89a7e7345222ac5">chip::Controller::GroupsCluster</a>
+, <a class="el" href="classchip_1_1_controller_1_1_ias_zone_cluster.html#aa7ec212e2bde56eefd091cdba93d5b40">chip::Controller::IasZoneCluster</a>
+, <a class="el" href="classchip_1_1_controller_1_1_identify_cluster.html#a7cee4a97538a89fc850791bc60fa9d69">chip::Controller::IdentifyCluster</a>
+, <a class="el" href="classchip_1_1_controller_1_1_level_control_cluster.html#af01458812bff348723b85fbf10ad56b5">chip::Controller::LevelControlCluster</a>
+, <a class="el" href="classchip_1_1_controller_1_1_low_power_cluster.html#a6b0c6802a2efef77fd05c649315f82bc">chip::Controller::LowPowerCluster</a>
+, <a class="el" href="classchip_1_1_controller_1_1_network_commissioning_cluster.html#abb70936b04fc89a4d6103e92c8f5bbe9">chip::Controller::NetworkCommissioningCluster</a>
+, <a class="el" href="classchip_1_1_controller_1_1_on_off_cluster.html#a45bf2715d677e321229484a3855929fa">chip::Controller::OnOffCluster</a>
+, <a class="el" href="classchip_1_1_controller_1_1_scenes_cluster.html#a1c1cf653ac1e210d357b8b97430c108e">chip::Controller::ScenesCluster</a>
+, <a class="el" href="classchip_1_1_controller_1_1_temperature_measurement_cluster.html#a744d2c94cb0169b387c0d40d282ffa4e">chip::Controller::TemperatureMeasurementCluster</a>
+, <a class="el" href="classchip_1_1_controller_1_1_window_covering_cluster.html#afba520d47e42ce60c3c4322eb4707343">chip::Controller::WindowCoveringCluster</a>
 </li>
 <li>ReadAttributeColorCapabilities()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#ae9ee8e7c243005d628f14116e6548f0b">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#ae09a4511b0a07b70be717cb2ca73988f">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeColorControlOptions()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#abbd91d31aebee9321bf67da8a965611c">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a787a12c1c85459276118d7c29515b2bb">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeColorLoopActive()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a10abf505b3958449286e6663bd7b3b33">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#ad6a14340e10c312c76ca728fcf492e8e">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeColorLoopDirection()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#aa6446697a3e025125f3712c4b50712a6">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a5a2450f025ee6ef879b4297c1661a63a">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeColorLoopTime()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#aaa9563a0ab5566d5b37d2314d55339c6">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a1be35805e8dfd19b34db63f2f49ca32e">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeColorMode()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a03e9b57f65626b0cf0010590a5682ab1">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#ac9e9694b2422b41d09457d3a2e123cf3">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeColorPointBIntensity()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a051d038825ca3620834f0389625247fe">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a9f9d067b803c00cba3c4aa94c5bbe8a7">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeColorPointBX()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a30fef89533852aebf0d68bcd9f573694">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a1f0e275c2a39e5af15138cce44b14938">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeColorPointBY()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a7fe119f550267b7a6e47550ed5afa176">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a78ea532c669cd318f3c05651ea4bee05">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeColorPointGIntensity()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a746ebe9e72d264d955cc0f022613455b">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a2ae20e14b22ac2e62f05da04f14e5154">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeColorPointGX()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a1baa3fb4dc8b8de94350217923003166">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a5b60a7b2bf620d136a9528be0688cb08">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeColorPointGY()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#aa8e1d73845e28d301e44acd3416728e2">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a30c2e8f9093acedaa82a4a1b8361ed58">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeColorPointRIntensity()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#af682a48f63860bfea2923963b5a4bd86">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a8d2c5750f0e6929f64fba6381284ba3a">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeColorPointRX()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a73cea0739a50dd1162d4c97fcc215c61">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#ab6526bb2ff822943f674cb0e718c0afc">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeColorPointRY()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#aeb676c0dd3a02eaf01d539aacf61390a">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a8d8d88c77fe0d95ae675f73ee64a176a">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeColorTemperature()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a1aeece4e92da073dbd74f0fa483e513e">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a7720b398a69ae40c580e80d758a320af">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeColorTempPhysicalMax()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#acc3f5bbfc3f1693033672eb1a730ff09">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a166f1536e5c8f31364441fe374f19d80">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeColorTempPhysicalMin()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a9d6301e1f93283f34cb1ca75718f834d">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a715ef1eff228f0a4c5f9bc58761233b4">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeCompensationText()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#afba0feb7ae47805c4fced6676e067a90">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a39f6c95b8170e28d86f85364691e7962">chip::Controller::ColorControlCluster</a>
+</li>
+<li>ReadAttributeConfigStatus()
+: <a class="el" href="classchip_1_1_controller_1_1_window_covering_cluster.html#a3d08961d99f46549cfd519e04212c172">chip::Controller::WindowCoveringCluster</a>
 </li>
 <li>ReadAttributeCoupleColorTempToLevelMinMireds()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a5479efc4b1401acb81ac1812fcd4c468">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a6d9a413ec901a61ff3a5b907736276aa">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeCurrentGroup()
-: <a class="el" href="classchip_1_1_controller_1_1_scenes_cluster.html#aadb76a183a999e4754f3ff604e238c63">chip::Controller::ScenesCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_scenes_cluster.html#a952c5af393df38e7e27af3f55e8382a9">chip::Controller::ScenesCluster</a>
 </li>
 <li>ReadAttributeCurrentHue()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#ae4fc1f36e46d2b4e97e83c3035501112">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a760e1b45dcda3ce1056dd3a3e405aefc">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeCurrentLevel()
-: <a class="el" href="classchip_1_1_controller_1_1_level_control_cluster.html#abb5b5815ebefcedeb64b127be902f7c6">chip::Controller::LevelControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_level_control_cluster.html#a5b6d0dcc98eb12ee16530f216efd11aa">chip::Controller::LevelControlCluster</a>
+</li>
+<li>ReadAttributeCurrentPositionLift()
+: <a class="el" href="classchip_1_1_controller_1_1_window_covering_cluster.html#a011c33e8f1c7681e89f42ec6da847cff">chip::Controller::WindowCoveringCluster</a>
+</li>
+<li>ReadAttributeCurrentPositionTilt()
+: <a class="el" href="classchip_1_1_controller_1_1_window_covering_cluster.html#ac16537169a4a633299703f2591e1e884">chip::Controller::WindowCoveringCluster</a>
 </li>
 <li>ReadAttributeCurrentSaturation()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#ac630dcc31dee85acd3bed7eb16710bc5">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a963201220c84cfcf729df487ae5e2549">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeCurrentScene()
-: <a class="el" href="classchip_1_1_controller_1_1_scenes_cluster.html#a239c35fd83997219952eec94e5501600">chip::Controller::ScenesCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_scenes_cluster.html#a3bdcd52731d4ff1e6d40ba70060dee47">chip::Controller::ScenesCluster</a>
 </li>
 <li>ReadAttributeCurrentX()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a30b00024ba4985101933461301a8dddc">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a406bdfb976750bc47795d40f9e1c9412">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeCurrentY()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#ab71bfb21915340789370dee459550625">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#aa926bd42c309541bcd9ba471438d9ec1">chip::Controller::ColorControlCluster</a>
+</li>
+<li>ReadAttributeDeviceList()
+: <a class="el" href="classchip_1_1_controller_1_1_descriptor_cluster.html#ad058b2b279bcae0ad4903969a4295440">chip::Controller::DescriptorCluster</a>
 </li>
 <li>ReadAttributeDriftCompensation()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#aaa430b57815474e9fd3272b1dc40f57b">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#ac6db1e84c0b657cec83c552b271939d7">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeEnhancedColorMode()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#ac565af1477e2b81b45369410f71438da">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a588228d4380a872495c4c4c8b1c83699">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeEnhancedCurrentHue()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#aa394f3dc127ffb49d751b4432499a6a2">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a960b6d3fc23b3802cca5994eda3553bd">chip::Controller::ColorControlCluster</a>
+</li>
+<li>ReadAttributeFabricId()
+: <a class="el" href="classchip_1_1_controller_1_1_general_commissioning_cluster.html#a49259ef5b3915ec98f9cd2855111e038">chip::Controller::GeneralCommissioningCluster</a>
+</li>
+<li>ReadAttributeGroupKeys()
+: <a class="el" href="classchip_1_1_controller_1_1_group_key_management_cluster.html#aa5496adc29be96c1eb42fa2162f52028">chip::Controller::GroupKeyManagementCluster</a>
+</li>
+<li>ReadAttributeGroups()
+: <a class="el" href="classchip_1_1_controller_1_1_group_key_management_cluster.html#a78b0a14e9d3ffb668d04958eae9aff38">chip::Controller::GroupKeyManagementCluster</a>
+</li>
+<li>ReadAttributeHardwareVersion()
+: <a class="el" href="classchip_1_1_controller_1_1_basic_cluster.html#a9e48333e65c2dda44873fb17293a9ae9">chip::Controller::BasicCluster</a>
+</li>
+<li>ReadAttributeHardwareVersionString()
+: <a class="el" href="classchip_1_1_controller_1_1_basic_cluster.html#ae0d97f2c1c1312e82ef425c47e896b0e">chip::Controller::BasicCluster</a>
 </li>
 <li>ReadAttributeIasCieAddress()
-: <a class="el" href="classchip_1_1_controller_1_1_ias_zone_cluster.html#ab494d66ae819d191298280ba661c6620">chip::Controller::IasZoneCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_ias_zone_cluster.html#a13760b16f2f13f8a0a71192d140d3983">chip::Controller::IasZoneCluster</a>
 </li>
 <li>ReadAttributeIdentifyTime()
-: <a class="el" href="classchip_1_1_controller_1_1_identify_cluster.html#a765fdc44de593e20d09ddfecdee2b4f8">chip::Controller::IdentifyCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_identify_cluster.html#aff7005d8d19b99af74f9b38d0a5fcc5c">chip::Controller::IdentifyCluster</a>
+</li>
+<li>ReadAttributeInstalledClosedLimitLift()
+: <a class="el" href="classchip_1_1_controller_1_1_window_covering_cluster.html#ae05f36de76a64c330acdce52a0a66469">chip::Controller::WindowCoveringCluster</a>
+</li>
+<li>ReadAttributeInstalledClosedLimitTilt()
+: <a class="el" href="classchip_1_1_controller_1_1_window_covering_cluster.html#a5da77ee70a2c9b35f943a7b4949e4617">chip::Controller::WindowCoveringCluster</a>
+</li>
+<li>ReadAttributeInstalledOpenLimitLift()
+: <a class="el" href="classchip_1_1_controller_1_1_window_covering_cluster.html#ab6fe2864ef701673dcfbec95590cec29">chip::Controller::WindowCoveringCluster</a>
+</li>
+<li>ReadAttributeInstalledOpenLimitTilt()
+: <a class="el" href="classchip_1_1_controller_1_1_window_covering_cluster.html#a72460d5fd8a2e00ba5a0b26e684af0a4">chip::Controller::WindowCoveringCluster</a>
+</li>
+<li>ReadAttributeInteractionModelVersion()
+: <a class="el" href="classchip_1_1_controller_1_1_basic_cluster.html#a769e796474ee0e83c588c138c3e5bfdc">chip::Controller::BasicCluster</a>
+</li>
+<li>ReadAttributeLocation()
+: <a class="el" href="classchip_1_1_controller_1_1_basic_cluster.html#a7239f2026add94fa8eb369c1c3f834b2">chip::Controller::BasicCluster</a>
 </li>
 <li>ReadAttributeLockState()
-: <a class="el" href="classchip_1_1_controller_1_1_door_lock_cluster.html#ab902856db4638d79768299980b89c3c8">chip::Controller::DoorLockCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_door_lock_cluster.html#ad39839fd7b6f5e95d56147fae4a497ef">chip::Controller::DoorLockCluster</a>
 </li>
 <li>ReadAttributeLockType()
-: <a class="el" href="classchip_1_1_controller_1_1_door_lock_cluster.html#a55e2061567a2927ff4c58d38bf405249">chip::Controller::DoorLockCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_door_lock_cluster.html#ae9cd6995a1246ad3ced13e33a121a738">chip::Controller::DoorLockCluster</a>
 </li>
 <li>ReadAttributeMaxMeasuredValue()
-: <a class="el" href="classchip_1_1_controller_1_1_temperature_measurement_cluster.html#a4377f4ac59ada4805b95397153baa521">chip::Controller::TemperatureMeasurementCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_temperature_measurement_cluster.html#a46d75341bf1acae2cccf00887c615420">chip::Controller::TemperatureMeasurementCluster</a>
 </li>
 <li>ReadAttributeMeasuredValue()
-: <a class="el" href="classchip_1_1_controller_1_1_temperature_measurement_cluster.html#abdd0c7ee0ab25f766c6d4fd192fd4ed1">chip::Controller::TemperatureMeasurementCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_temperature_measurement_cluster.html#af71930f73543eb9395e7d36b56f8469c">chip::Controller::TemperatureMeasurementCluster</a>
 </li>
 <li>ReadAttributeMinMeasuredValue()
-: <a class="el" href="classchip_1_1_controller_1_1_temperature_measurement_cluster.html#a840477341de0b155e66b4121e350b32a">chip::Controller::TemperatureMeasurementCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_temperature_measurement_cluster.html#a92c2cb12a1e0c1755e32f3e07153fb6e">chip::Controller::TemperatureMeasurementCluster</a>
+</li>
+<li>ReadAttributeMode()
+: <a class="el" href="classchip_1_1_controller_1_1_window_covering_cluster.html#a9dbd330b683fcf2e3193f5c98a3f5d2e">chip::Controller::WindowCoveringCluster</a>
 </li>
 <li>ReadAttributeNameSupport()
-: <a class="el" href="classchip_1_1_controller_1_1_groups_cluster.html#a09415006fac14d0d12ce9072a5e1d242">chip::Controller::GroupsCluster</a>
-, <a class="el" href="classchip_1_1_controller_1_1_scenes_cluster.html#a2b72d581a83ca0cab7132048ed38c22f">chip::Controller::ScenesCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_groups_cluster.html#a324826d4ea5ee87e0c7cdaad88825122">chip::Controller::GroupsCluster</a>
+, <a class="el" href="classchip_1_1_controller_1_1_scenes_cluster.html#afe88d58483b8611e8dcaa32dfc786dc1">chip::Controller::ScenesCluster</a>
 </li>
 <li>ReadAttributeNumberOfPrimaries()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a639ee6c181c2bd53fc522fa11033ea0c">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#ab22067d685f09568f76abbd1b7488e95">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeOnOff()
-: <a class="el" href="classchip_1_1_controller_1_1_on_off_cluster.html#a862eaebdbaafc832690e0b2d275f4161">chip::Controller::OnOffCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_on_off_cluster.html#adc5ecaa95837129fdeba39f606460b2b">chip::Controller::OnOffCluster</a>
 </li>
-<li>ReadAttributePowerSource()
-: <a class="el" href="classchip_1_1_controller_1_1_basic_cluster.html#afae93f04f010d9486d0856559d981776">chip::Controller::BasicCluster</a>
+<li>ReadAttributePartsList()
+: <a class="el" href="classchip_1_1_controller_1_1_descriptor_cluster.html#a227cf400488d4f68dc8bc7ce355f6ffe">chip::Controller::DescriptorCluster</a>
 </li>
 <li>ReadAttributePrimary1Intensity()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a681c73b8ab0969948b097ac9c48abbd4">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#afcb3cf753f048bd33b893d203ecfba32">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributePrimary1X()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#ac6dfc1c4f9df8081720137a6d29d26af">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#aa4c860d93c6ec3b79c33f847849917b8">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributePrimary1Y()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#ab060d4375433b7a2047d33bb93d527e3">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a344ad8fbab231c15b8360e4961859ad9">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributePrimary2Intensity()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a47872062d01ab1df5a50e557479bf9df">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#ab159583f393d30519d19d8d6fb15fe49">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributePrimary2X()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#aefdc62516fe9edb5c2ec19cfaf0d82de">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a7d1c0da8280482ef2efbf7e9630dd23f">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributePrimary2Y()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a39040642c9fde55bf00f60b2d380c094">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a62efcacf777ef44324f5ab6fd52ed830">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributePrimary3Intensity()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#ac8a87ecebd05abe65b0d9f9842b59643">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a7ba9b3437116c5751c0d3093735b073d">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributePrimary3X()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a8bca984f55b9f1f4b00fe30da6ffa2d0">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#aff3ba60f4d810853427d41b9c06cae52">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributePrimary3Y()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#ad36131296975d6dbe7481ffc4fbfe516">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a1d83d54fa94072c8fe74360099cc9b98">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributePrimary4Intensity()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#aa6269b6e1080f598a4ae05ab76b86a48">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a75294768253c908e576bb7e95485abe3">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributePrimary4X()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a3145a5d327c80892ba14ff022a3ffce1">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#ac753538762e44358b08e0cd467c88301">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributePrimary4Y()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a4e04641142fba55d474129c75b0c5826">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a6c99f780310e0eb8f67eb645a59263aa">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributePrimary5Intensity()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a85a145e9b3086e0568217092c74045ac">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a974e336b456963e8bc640ce4f0c7af1d">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributePrimary5X()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#adf8f5f9fcba7e2c8fb069074d5f092fb">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#ac7f7a47052584212cf9f7a13af28daf8">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributePrimary5Y()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#af5ee130e24c85e8d58e2b4ca542b94bc">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a05d532b616fa4848e822671fcebee019">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributePrimary6Intensity()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#ae84c3438768cab621c65d4710485fe09">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a938763aa4e82c1bcc732b1fe1d18ac2a">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributePrimary6X()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#ae9c4c696af7bed555a054c2f2db62aee">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#af8a8d7e4da20851546de5703197d2328">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributePrimary6Y()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a90ff0c2eb2ba3221748f9f75dcd15d1e">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#ad6c18a44a9250a67e000ecc10a926412">chip::Controller::ColorControlCluster</a>
+</li>
+<li>ReadAttributeProductId()
+: <a class="el" href="classchip_1_1_controller_1_1_application_basic_cluster.html#a63e7e20aa609e096846e50af1e149ac8">chip::Controller::ApplicationBasicCluster</a>
+</li>
+<li>ReadAttributeProductID()
+: <a class="el" href="classchip_1_1_controller_1_1_basic_cluster.html#aeaf5a7b1a71083db96b8a204bc1b2119">chip::Controller::BasicCluster</a>
+</li>
+<li>ReadAttributeProductName()
+: <a class="el" href="classchip_1_1_controller_1_1_basic_cluster.html#a9ad547238819c674fdda0e8fd094a26d">chip::Controller::BasicCluster</a>
 </li>
 <li>ReadAttributeRemainingTime()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a5fc0ca247b889764618a2da29e1bca98">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a8fedde972657579648eebfa505e9d8ce">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeSceneCount()
-: <a class="el" href="classchip_1_1_controller_1_1_scenes_cluster.html#a058d1c2db308356010d930e56bb5a36e">chip::Controller::ScenesCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_scenes_cluster.html#a4702e8e5a61ba7ed5218faf29c75eba1">chip::Controller::ScenesCluster</a>
 </li>
 <li>ReadAttributeSceneValid()
-: <a class="el" href="classchip_1_1_controller_1_1_scenes_cluster.html#a4dd3e7ecc08edeaa9e05076ef59bfdb8">chip::Controller::ScenesCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_scenes_cluster.html#ad75c1c0742113250659778f8800582ea">chip::Controller::ScenesCluster</a>
+</li>
+<li>ReadAttributeServerList()
+: <a class="el" href="classchip_1_1_controller_1_1_descriptor_cluster.html#abc37902ab23a70ad6523f1db3c119486">chip::Controller::DescriptorCluster</a>
+</li>
+<li>ReadAttributeSoftwareVersion()
+: <a class="el" href="classchip_1_1_controller_1_1_basic_cluster.html#a90ef98db1e6453bdd62e630dece3d07b">chip::Controller::BasicCluster</a>
+</li>
+<li>ReadAttributeSoftwareVersionString()
+: <a class="el" href="classchip_1_1_controller_1_1_basic_cluster.html#a930229bd9dff8fd342f22e00d87c49c1">chip::Controller::BasicCluster</a>
 </li>
 <li>ReadAttributeStartUpColorTemperatureMireds()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#ac1203106e1201b2229fbc6eed9c1ec5c">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a4703161e91eba9685088c24cf3ac06cc">chip::Controller::ColorControlCluster</a>
+</li>
+<li>ReadAttributeUserLabel()
+: <a class="el" href="classchip_1_1_controller_1_1_basic_cluster.html#ac6a1871fc2f68417e7ac5d65a6c4482a">chip::Controller::BasicCluster</a>
+</li>
+<li>ReadAttributeVendorId()
+: <a class="el" href="classchip_1_1_controller_1_1_application_basic_cluster.html#abd30d90d728b8c8edd347ad6ee58b2bf">chip::Controller::ApplicationBasicCluster</a>
+</li>
+<li>ReadAttributeVendorID()
+: <a class="el" href="classchip_1_1_controller_1_1_basic_cluster.html#a656d798f798a615b50520d69f9da6d7c">chip::Controller::BasicCluster</a>
+</li>
+<li>ReadAttributeVendorName()
+: <a class="el" href="classchip_1_1_controller_1_1_application_basic_cluster.html#a948440d3e0c608de26fa11847351c126">chip::Controller::ApplicationBasicCluster</a>
+, <a class="el" href="classchip_1_1_controller_1_1_basic_cluster.html#ac807078f8bcc925664c93cce15802cae">chip::Controller::BasicCluster</a>
 </li>
 <li>ReadAttributeWhitePointX()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a677e0a1f5e1bbe04a1ecd4b0d8b22f3e">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a6606344e55bc8a58a2b24b855630f7e4">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReadAttributeWhitePointY()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#aead04d2de95296d0c7559763c91a04bf">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a7e2aeecbebca3524d8d608187d0aee99">chip::Controller::ColorControlCluster</a>
 </li>
-<li>ReadAttributeZclVersion()
-: <a class="el" href="classchip_1_1_controller_1_1_basic_cluster.html#a3ee56f870b0995fd15dfb992663be05c">chip::Controller::BasicCluster</a>
+<li>ReadAttributeWindowCoveringType()
+: <a class="el" href="classchip_1_1_controller_1_1_window_covering_cluster.html#a8906681168a657d4b369c83578ef1744">chip::Controller::WindowCoveringCluster</a>
 </li>
 <li>ReadAttributeZoneId()
-: <a class="el" href="classchip_1_1_controller_1_1_ias_zone_cluster.html#a571c98237981134b7ae1233af8cc46bd">chip::Controller::IasZoneCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_ias_zone_cluster.html#ae5024f80a7b672d3c6005c25e0c94c6a">chip::Controller::IasZoneCluster</a>
 </li>
 <li>ReadAttributeZoneState()
-: <a class="el" href="classchip_1_1_controller_1_1_ias_zone_cluster.html#a563c0b4f5343b128162d64c765d89cd5">chip::Controller::IasZoneCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_ias_zone_cluster.html#a930fb9a2b175b4ed5f0d1a405ca1ff27">chip::Controller::IasZoneCluster</a>
 </li>
 <li>ReadAttributeZoneStatus()
-: <a class="el" href="classchip_1_1_controller_1_1_ias_zone_cluster.html#aca2e0b1d20ea8adaf6c929a5dfc52d14">chip::Controller::IasZoneCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_ias_zone_cluster.html#a14657f4be74bc6993edaa8c4a5ae318b">chip::Controller::IasZoneCluster</a>
 </li>
 <li>ReadAttributeZoneType()
-: <a class="el" href="classchip_1_1_controller_1_1_ias_zone_cluster.html#a86ed062becc470dd6011972810a13422">chip::Controller::IasZoneCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_ias_zone_cluster.html#a11104429772932042de414b7b2ebae9b">chip::Controller::IasZoneCluster</a>
 </li>
 <li>ReadConfigValue()
 : <a class="el" href="classchip_1_1_device_layer_1_1_internal_1_1_c_c13_x2__26_x2_config.html#a3f4062207d60ce10b64dc02d45267db0">chip::DeviceLayer::Internal::CC13X2_26X2Config</a>
@@ -408,7 +521,7 @@ $(document).ready(function(){initNavTree('functions_func_r.html',''); initResiza
 : <a class="el" href="classchip_1_1_device_layer_1_1_internal_1_1_chip_linux_storage.html#af07429be91afda3491b182974ddf3d95">chip::DeviceLayer::Internal::ChipLinuxStorage</a>
 </li>
 <li>RecallScene()
-: <a class="el" href="classchip_1_1_controller_1_1_scenes_cluster.html#a834d299f17c1d099eabdae3ad1f7f34c">chip::Controller::ScenesCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_scenes_cluster.html#a5db8eba7761228c2dc742fde649fa499">chip::Controller::ScenesCluster</a>
 </li>
 <li>Receive()
 : <a class="el" href="classchip_1_1_ble_1_1_b_l_e_end_point.html#a7ecc4042907099cc172e769e87e07443">chip::Ble::BLEEndPoint</a>
@@ -416,11 +529,11 @@ $(document).ready(function(){initNavTree('functions_func_r.html',''); initResiza
 <li>RegisterCommands()
 : <a class="el" href="classchip_1_1_shell_1_1_shell.html#aa1b25a6017143b2c61232fca56026f8d">chip::Shell::Shell</a>
 </li>
+<li>RegisterContext()
+: <a class="el" href="structchip_1_1_mdns_1_1_register_context.html#ad99df8194e632f4fa0bd994769bc8237">chip::Mdns::RegisterContext</a>
+</li>
 <li>RegisterDefaultCommands()
 : <a class="el" href="classchip_1_1_shell_1_1_shell.html#a463aae7c00b42008e0185b7d3e6dbb15">chip::Shell::Shell</a>
-</li>
-<li>RegisterResolveDelegate()
-: <a class="el" href="classchip_1_1_mdns_1_1_discovery_impl_platform.html#acd554cd2f3b12f609035c38729751867">chip::Mdns::DiscoveryImplPlatform</a>
 </li>
 <li>Release()
 : <a class="el" href="classchip_1_1_ble_1_1_ble_layer_object.html#a7fda75cac0a160de2a7b6225de8cfa8d">chip::Ble::BleLayerObject</a>
@@ -432,9 +545,15 @@ $(document).ready(function(){initNavTree('functions_func_r.html',''); initResiza
 , <a class="el" href="classchip_1_1_system_1_1_object.html#a5bca5532b82608d71356ffe6dfd7da54">chip::System::Object</a>
 , <a class="el" href="classchip_1_1_system_1_1_t_l_v_packet_buffer_backing_store.html#af3ecc45a03e340ddbc5bd492aadbad1b">chip::System::TLVPacketBufferBackingStore</a>
 </li>
+<li>ReleaseAdminId()
+: <a class="el" href="classchip_1_1_transport_1_1_admin_pairing_table.html#a18364d52adbfa4b87a8485a22ce8a617">chip::Transport::AdminPairingTable</a>
+</li>
 <li>ReleaseDevice()
 : <a class="el" href="classchip_1_1_controller_1_1_device_commissioner.html#adeb062685e6022d317a4e76fde29706a">chip::Controller::DeviceCommissioner</a>
-, <a class="el" href="classchip_1_1_controller_1_1_device_controller.html#a7ef943f16778b2466a4637f89fce8767">chip::Controller::DeviceController</a>
+, <a class="el" href="classchip_1_1_controller_1_1_device_controller.html#a20011e300d00763eb58cbfb7d6de0455">chip::Controller::DeviceController</a>
+</li>
+<li>ReleaseDeviceById()
+: <a class="el" href="classchip_1_1_controller_1_1_device_controller.html#ad00416087ce23a7ccc96f6c2cc4d811f">chip::Controller::DeviceController</a>
 </li>
 <li>ReleaseObject()
 : <a class="el" href="classchip_1_1_bit_map_object_pool.html#a3b3aa898475c915f65179f58441a0f15">chip::BitMapObjectPool&lt; T, N &gt;</a>
@@ -447,20 +566,18 @@ $(document).ready(function(){initNavTree('functions_func_r.html',''); initResiza
 : <a class="el" href="classchip_1_1_encoding_1_1_little_endian_1_1_reader.html#aeb805a01856c73ef1aff760ca759ef47">chip::Encoding::LittleEndian::Reader</a>
 </li>
 <li>Remove()
-: <a class="el" href="classchip_1_1_retransmit_1_1_cache.html#ae61ba10180d202a749e8a5033957b028">chip::Retransmit::Cache&lt; KeyType, PayloadType, N &gt;</a>
+: <a class="el" href="classchip_1_1_mdns_1_1_mdns_contexts.html#aabe2ceaa8f4773f7ac8a0a6a7b6e3a8d">chip::Mdns::MdnsContexts</a>
+, <a class="el" href="classchip_1_1_retransmit_1_1_cache.html#ae61ba10180d202a749e8a5033957b028">chip::Retransmit::Cache&lt; KeyType, PayloadType, N &gt;</a>
 , <a class="el" href="classchip_1_1_serializable_u64_set_base.html#afe7d5be22364afcb0cafef5bc055cf54">chip::SerializableU64SetBase</a>
 </li>
 <li>RemoveAll()
 : <a class="el" href="classchip_1_1_device_layer_1_1_internal_1_1_chip_linux_storage_ini.html#a50426028d0bc17598125dc7d2c8aa521">chip::DeviceLayer::Internal::ChipLinuxStorageIni</a>
 </li>
 <li>RemoveAllGroups()
-: <a class="el" href="classchip_1_1_controller_1_1_groups_cluster.html#a3266ae0603f5fd8605be0811f21f00e9">chip::Controller::GroupsCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_groups_cluster.html#ad0abf00ab596e90e64d4c1f29342bee7">chip::Controller::GroupsCluster</a>
 </li>
 <li>RemoveAllScenes()
-: <a class="el" href="classchip_1_1_controller_1_1_scenes_cluster.html#aae7fe0673c8b463bde6e241487e446a9">chip::Controller::ScenesCluster</a>
-</li>
-<li>RemoveCHIPoBLEConnectionHandler()
-: <a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#a771047e787bd0f3f2dc870446e94b124">chip::DeviceLayer::ConnectivityManager</a>
+: <a class="el" href="classchip_1_1_controller_1_1_scenes_cluster.html#a8d113e8876443aec6a1d12b494fd4796">chip::Controller::ScenesCluster</a>
 </li>
 <li>removeConnection()
 : <a class="el" href="classchip_1_1devicecontroller_1_1_android_chip_stack.html#ae011eaae3f9a2bc9c854281846b8caac">chip.devicecontroller.AndroidChipStack</a>
@@ -472,16 +589,22 @@ $(document).ready(function(){initNavTree('functions_func_r.html',''); initResiza
 : <a class="el" href="classchip_1_1_device_layer_1_1_platform_manager.html#a5fe71645c08ad0f7dc93a432b14bbeb5">chip::DeviceLayer::PlatformManager</a>
 </li>
 <li>RemoveGroup()
-: <a class="el" href="classchip_1_1_controller_1_1_groups_cluster.html#aba47f6b936bdd5c8bc69640b7ce5733b">chip::Controller::GroupsCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_groups_cluster.html#a4115bebe10608e52b46b3cf3eee55b9e">chip::Controller::GroupsCluster</a>
 </li>
 <li>RemoveMatching()
 : <a class="el" href="classchip_1_1_retransmit_1_1_cache.html#a8688d76df44874e9368e34318468b7b9">chip::Retransmit::Cache&lt; KeyType, PayloadType, N &gt;</a>
 </li>
+<li>RemoveNetwork()
+: <a class="el" href="classchip_1_1_controller_1_1_network_commissioning_cluster.html#a7006a902599491b7b1b0cb1db3622914">chip::Controller::NetworkCommissioningCluster</a>
+</li>
 <li>removeOptionalVendorData()
 : <a class="el" href="classchip_1_1_setup_payload.html#ae7f3b4ef8143199c1577622d2c7a8a1c">chip::SetupPayload</a>
 </li>
+<li>Removes()
+: <a class="el" href="classchip_1_1_mdns_1_1_mdns_contexts.html#a259d75046062dc2482b9e949a781ec80">chip::Mdns::MdnsContexts</a>
+</li>
 <li>RemoveScene()
-: <a class="el" href="classchip_1_1_controller_1_1_scenes_cluster.html#a14f4a9a6c6c91bfb6e335acacc36ab28">chip::Controller::ScenesCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_scenes_cluster.html#a25e1799ae7ef61194aa52f26cdce92e2">chip::Controller::ScenesCluster</a>
 </li>
 <li>removeSerialNumber()
 : <a class="el" href="classchip_1_1_setup_payload.html#af1c4ab9c3ad209c0e69e12bff491ada6">chip::SetupPayload</a>
@@ -489,44 +612,50 @@ $(document).ready(function(){initNavTree('functions_func_r.html',''); initResiza
 <li>RendezvousCleanup()
 : <a class="el" href="classchip_1_1_controller_1_1_device_commissioner.html#a0c88792b87a2ffb391e50bd202b45380">chip::Controller::DeviceCommissioner</a>
 </li>
-<li>RendezvousParameters()
-: <a class="el" href="classchip_1_1_rendezvous_parameters.html#a78ffd6de04d63d05b37610d01e5cafa4">chip::RendezvousParameters</a>
-</li>
-<li>RendezvousSession()
-: <a class="el" href="classchip_1_1_rendezvous_session.html#a11e82ad96ab7aaf9992e89459a3fc9a3">chip::RendezvousSession</a>
-</li>
 <li>RepackNvm3Flash()
 : <a class="el" href="classchip_1_1_device_layer_1_1_internal_1_1_e_f_r32_config.html#a6dae458d5e03ca68a95e22b25f5f35f5">chip::DeviceLayer::Internal::EFR32Config</a>
 </li>
 <li>ReportAttributeColorTemperature()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a30c2b58acd1242f67ac54d4d6b3f3ca7">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a2d136d7ba7bfd5e4bbcd79d07c9016d9">chip::Controller::ColorControlCluster</a>
+</li>
+<li>ReportAttributeConfigStatus()
+: <a class="el" href="classchip_1_1_controller_1_1_window_covering_cluster.html#a2c70a3b9f20ab0841a640c8c3218dfb8">chip::Controller::WindowCoveringCluster</a>
 </li>
 <li>ReportAttributeCurrentHue()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#aea10451cd7abc2a55465bf45ac1e7c98">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a9c7992357235bdf500d54633166f9ce1">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReportAttributeCurrentLevel()
-: <a class="el" href="classchip_1_1_controller_1_1_level_control_cluster.html#a39caa69068bddc9dd1b8472af8010209">chip::Controller::LevelControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_level_control_cluster.html#a79d9feb217e93d865cf037ec5f54f672">chip::Controller::LevelControlCluster</a>
+</li>
+<li>ReportAttributeCurrentPositionLift()
+: <a class="el" href="classchip_1_1_controller_1_1_window_covering_cluster.html#a6d39ed6e08f4c89aad86f5ca643202b8">chip::Controller::WindowCoveringCluster</a>
+</li>
+<li>ReportAttributeCurrentPositionTilt()
+: <a class="el" href="classchip_1_1_controller_1_1_window_covering_cluster.html#a25801eae983d9fdcffbc49d69085c6dc">chip::Controller::WindowCoveringCluster</a>
 </li>
 <li>ReportAttributeCurrentSaturation()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a01d8f674afe420d64f0af9eb74454f0f">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#ab81262d0a15d88d1a392f0908f8f84b7">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReportAttributeCurrentX()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a392ff8c86d98e60043df802aea90fa6d">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a7e9d12b754b1be6f6617dedb6309ff53">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReportAttributeCurrentY()
-: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a9c7e9037c36c02835798c5b8d1bc6dea">chip::Controller::ColorControlCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a326d57f9964a53a95980f77c70135cbc">chip::Controller::ColorControlCluster</a>
 </li>
 <li>ReportAttributeLockState()
-: <a class="el" href="classchip_1_1_controller_1_1_door_lock_cluster.html#a1bbcc317abfaab308f99a6cf86799c53">chip::Controller::DoorLockCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_door_lock_cluster.html#acff4fc53498545b1daca68bacc9fb4b0">chip::Controller::DoorLockCluster</a>
 </li>
 <li>ReportAttributeMeasuredValue()
-: <a class="el" href="classchip_1_1_controller_1_1_temperature_measurement_cluster.html#a96f72ec281efd4c908d3748939e5e433">chip::Controller::TemperatureMeasurementCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_temperature_measurement_cluster.html#a55b88a705ebf53a8728e83866fd9ff2f">chip::Controller::TemperatureMeasurementCluster</a>
 </li>
 <li>ReportAttributeOnOff()
-: <a class="el" href="classchip_1_1_controller_1_1_on_off_cluster.html#af14115eb8fccdfe0bbf72aa8e7381201">chip::Controller::OnOffCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_on_off_cluster.html#ad9a2b58ee73e38ba7ccc05eb156162b2">chip::Controller::OnOffCluster</a>
+</li>
+<li>ReportAttributeWindowCoveringType()
+: <a class="el" href="classchip_1_1_controller_1_1_window_covering_cluster.html#ac2e02c23bd23a26d87b047cc1a547e10">chip::Controller::WindowCoveringCluster</a>
 </li>
 <li>RequestAttributeReporting()
-: <a class="el" href="classchip_1_1_controller_1_1_cluster_base.html#a15a5b1e0a2200419ad82a67aae50322a">chip::Controller::ClusterBase</a>
+: <a class="el" href="classchip_1_1_controller_1_1_cluster_base.html#af8951402d310215e124c92cd1d2e0bdb">chip::Controller::ClusterBase</a>
 </li>
 <li>RequestedUnicastAnswer()
 : <a class="el" href="classmdns_1_1_minimal_1_1_query_data.html#a51fc4830c06e16af819a48b5cf2176c8">mdns::Minimal::QueryData</a>
@@ -538,6 +667,8 @@ $(document).ready(function(){initNavTree('functions_func_r.html',''); initResiza
 : <a class="el" href="classchip_1_1_controller_1_1_device.html#a1774d84e0431e9cbc50eb1368799cf34">chip::Controller::Device</a>
 , <a class="el" href="classchip_1_1_secure_session.html#a60f20618bc248a0e9f6f0d90302d2560">chip::SecureSession</a>
 , <a class="el" href="classchip_1_1_system_1_1_packet_buffer_t_l_v_writer.html#aa94eb2eb029a00e49c378a2849cfd2d5">chip::System::PacketBufferTLVWriter</a>
+, <a class="el" href="classchip_1_1_transport_1_1_admin_pairing_info.html#aa07258e0a18e98b7986b1aa2e28fb0a9">chip::Transport::AdminPairingInfo</a>
+, <a class="el" href="classchip_1_1_transport_1_1_admin_pairing_table.html#aaef4bb01db27116d7e193fb9f6aa6b89">chip::Transport::AdminPairingTable</a>
 , <a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#a1142a48b3fe9ee84cc3ec596da469fd2">chip::Transport::PeerConnectionState</a>
 , <a class="el" href="classmdns_1_1_minimal_1_1_internal_1_1_response_sending_state.html#a01b94c98beb9fe2c5679f85f3a1480ef">mdns::Minimal::Internal::ResponseSendingState</a>
 , <a class="el" href="classmdns_1_1_minimal_1_1_query_builder.html#a2d26a9ac925bf0d6130217d53b0fe275">mdns::Minimal::QueryBuilder</a>
@@ -546,20 +677,24 @@ $(document).ready(function(){initNavTree('functions_func_r.html',''); initResiza
 <li>ResetAdditionals()
 : <a class="el" href="classmdns_1_1_minimal_1_1_query_responder_base.html#a7c36d767714c55660b733e3a91905651">mdns::Minimal::QueryResponderBase</a>
 </li>
-<li>ResetToFactoryDefaults()
-: <a class="el" href="classchip_1_1_controller_1_1_basic_cluster.html#a521e9cb8977fc2404b33f169db05a025">chip::Controller::BasicCluster</a>
-</li>
 <li>ResetTransport()
 : <a class="el" href="classchip_1_1_transport_mgr.html#aa4709de42037fea62bc10509c038eb29">chip::TransportMgr&lt; TransportTypes &gt;</a>
 </li>
 <li>Resolve()
 : <a class="el" href="classchip_1_1_mdns_1_1_mdns_avahi.html#a5d617cf00e47dda034d4adc43bf44d70">chip::Mdns::MdnsAvahi</a>
 </li>
+<li>ResolveContext()
+: <a class="el" href="structchip_1_1_mdns_1_1_resolve_context.html#a52cf98b3cccefcbd1e2c524b306007e7">chip::Mdns::ResolveContext</a>
+</li>
+<li>ResolveNode()
+: <a class="el" href="classchip_1_1_chip_device_ctrl_1_1_chip_device_controller.html#a05a44333ea131f000d49a2a83fd20459">chip.ChipDeviceCtrl.ChipDeviceController</a>
+</li>
 <li>ResolveNodeId()
-: <a class="el" href="classchip_1_1_mdns_1_1_discovery_impl_platform.html#a4fb497fae490c6be0fe086af2cb49474">chip::Mdns::DiscoveryImplPlatform</a>
+: <a class="el" href="classchip_1_1_mdns_1_1_discovery_impl_platform.html#a18ad3466e0cb296fca6cae3802abb8f2">chip::Mdns::DiscoveryImplPlatform</a>
+, <a class="el" href="classchip_1_1_mdns_1_1_resolver.html#a83fd921a62ceac9db7a996d04cd45293">chip::Mdns::Resolver</a>
 </li>
 <li>ResourceData()
-: <a class="el" href="classmdns_1_1_minimal_1_1_resource_data.html#a066fdbac509f3d3651f83749d188f0b4">mdns::Minimal::ResourceData</a>
+: <a class="el" href="classmdns_1_1_minimal_1_1_resource_data.html#af080a41411c81f39031b4fe37dd34ce8">mdns::Minimal::ResourceData</a>
 </li>
 <li>ResourceRecord()
 : <a class="el" href="classmdns_1_1_minimal_1_1_resource_record.html#a0feb60eb0a87612a4a0a79c8e160c96e">mdns::Minimal::ResourceRecord</a>
@@ -634,7 +769,7 @@ $(document).ready(function(){initNavTree('functions_func_r.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 1 2021 16:49:18 for Connected Home over IP by
+    <li class="footer">Generated on Thu Apr 15 2021 18:57:06 for Connected Home over IP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -12,9 +12,7 @@ var _e_f_r32_2_logging_8cpp =
     [ "__attribute__", "_e_f_r32_2_logging_8cpp.html#a2317ac81b6fb6b5a38488ad9e71c4945", null ],
     [ "efr32Log", "_e_f_r32_2_logging_8cpp.html#aea87dfa0993635e332323ac77ea9f159", null ],
     [ "efr32LogInit", "_e_f_r32_2_logging_8cpp.html#a40b3b4d0a8c446e456a7e31a802dee39", null ],
-    [ "LogV", "_e_f_r32_2_logging_8cpp.html#a30ee062e3005b21c2e8dccca7bdd4f8c", null ],
+    [ "LogV", "_e_f_r32_2_logging_8cpp.html#a7259a872f0b5cb8b70d74f29e23f7367", null ],
     [ "LwIPLog", "_e_f_r32_2_logging_8cpp.html#af0933b5924e6f5418c2f3366b206260c", null ],
-    [ "PrintLog", "_e_f_r32_2_logging_8cpp.html#af00ae743b07e12d9940c0168e7419a14", null ],
-    [ "sLogBuffer", "_e_f_r32_2_logging_8cpp.html#afca1ba28615d79300d2e3d3a9111330a", null ],
-    [ "sLogInitialized", "_e_f_r32_2_logging_8cpp.html#a3d3fc0ca8a1fb9471678af3977c884d4", null ]
+    [ "kMaxCategoryStrLen", "_e_f_r32_2_logging_8cpp.html#aaf454cc463b66711f5888ffb13717b7a", null ]
 ];

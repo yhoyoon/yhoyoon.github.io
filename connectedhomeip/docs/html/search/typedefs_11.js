@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['unittesttriggerfunction_9862',['UnitTestTriggerFunction',['../namespacechip.html#a1cf5a95f92d2b2d87ee6e6635e0aeb43',1,'chip']]],
-  ['unsubscribecharacteristiccallback_9863',['UnsubscribeCharacteristicCallback',['../_android_ble_platform_delegate_8h.html#a38f7cd93540fcf6232c47595828c763f',1,'AndroidBlePlatformDelegate.h']]]
+  ['tbitchunktype_11472',['tBitChunkType',['../classchip_1_1_static_allocator_bitmap.html#a1a2ea2f210df47b88bea87e155e6beac',1,'chip::StaticAllocatorBitmap']]],
+  ['threadstack_11473',['ThreadStack',['../classchip_1_1_device_layer_1_1_internal_1_1_generic_platform_manager_impl___zephyr.html#a4f97285c9ffc0b57a717f04f6bebf30c',1,'chip::DeviceLayer::Internal::GenericPlatformManagerImpl_Zephyr']]],
+  ['timercompletefunct_11474',['TimerCompleteFunct',['../classchip_1_1_system_1_1_layer.html#a5fc8e7d83684dfbf9ebcccd687dde163',1,'chip::System::Layer']]]
 ];

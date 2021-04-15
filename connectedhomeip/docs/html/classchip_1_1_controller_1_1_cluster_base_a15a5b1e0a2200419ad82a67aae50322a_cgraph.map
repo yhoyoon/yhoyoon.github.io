@@ -1,4 +1,0 @@
-<map id="chip::Controller::ClusterBase::RequestAttributeReporting" name="chip::Controller::ClusterBase::RequestAttributeReporting">
-<area shape="rect" id="node1" title="Request attribute reports from the device." alt="" coords="5,5,240,47"/>
-<area shape="rect" id="node2" href="$classchip_1_1_controller_1_1_cluster_base.html#a0b4d305c88f002f417ca466b3ff47741" title="Send the command, contained into the associate buffer, to the device." alt="" coords="288,5,463,47"/>
-</map>

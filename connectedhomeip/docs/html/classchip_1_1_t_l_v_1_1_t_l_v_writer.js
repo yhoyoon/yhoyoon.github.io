@@ -1,6 +1,6 @@
 var classchip_1_1_t_l_v_1_1_t_l_v_writer =
 [
-    [ "kEndOfContainerMarkerSize", "classchip_1_1_t_l_v_1_1_t_l_v_writer.html#aa51da20f66c102bde36dd65be977a7c3a4068caece25bf5a2366b9a75063b0c55", null ],
+    [ "kEndOfContainerMarkerSize", "classchip_1_1_t_l_v_1_1_t_l_v_writer.html#a74263f466a00ae7b73d6949a746d2d89a4068caece25bf5a2366b9a75063b0c55", null ],
     [ "CloseContainer", "classchip_1_1_t_l_v_1_1_t_l_v_writer.html#ad9377875eb4971056b4030b8f12bcbcc", null ],
     [ "CopyContainer", "classchip_1_1_t_l_v_1_1_t_l_v_writer.html#afecdac2015bb760eda3a7901568d606c", null ],
     [ "CopyContainer", "classchip_1_1_t_l_v_1_1_t_l_v_writer.html#a9601eb65bee684e54eacbe60571517a9", null ],
@@ -11,11 +11,13 @@ var classchip_1_1_t_l_v_1_1_t_l_v_writer =
     [ "Finalize", "classchip_1_1_t_l_v_1_1_t_l_v_writer.html#a4e3ec0e51810334b7a76d7bd8826c7be", null ],
     [ "GetContainerType", "classchip_1_1_t_l_v_1_1_t_l_v_writer.html#a1756ce0b7bfda564d7d536c93c43c958", null ],
     [ "GetLengthWritten", "classchip_1_1_t_l_v_1_1_t_l_v_writer.html#af5e29922088d793cf9b94e058f4dfbf6", null ],
+    [ "GetRemainingFreeLength", "classchip_1_1_t_l_v_1_1_t_l_v_writer.html#abf49593a1e20f108b1d1a36944facbdd", null ],
     [ "Init", "classchip_1_1_t_l_v_1_1_t_l_v_writer.html#af1c78c6087dff6a8d3b654d8e5937e92", null ],
     [ "Init", "classchip_1_1_t_l_v_1_1_t_l_v_writer.html#ae2d49ada6ae2a01e2f63e93d9cda2be7", null ],
     [ "IsCloseContainerReserved", "classchip_1_1_t_l_v_1_1_t_l_v_writer.html#a3d67d58f8cdcf3911447eb5ec6d4050c", null ],
     [ "IsContainerOpen", "classchip_1_1_t_l_v_1_1_t_l_v_writer.html#a9b844b7e986f3a07c73e5f9822dd9f63", null ],
     [ "OpenContainer", "classchip_1_1_t_l_v_1_1_t_l_v_writer.html#a98123e902b438d0c25205a49eb514e24", null ],
+    [ "Put", "classchip_1_1_t_l_v_1_1_t_l_v_writer.html#a909eb30263ba33a12f5c1b05e1349e69", null ],
     [ "Put", "classchip_1_1_t_l_v_1_1_t_l_v_writer.html#ae88b5c51967108d98320fd9bfffaebc1", null ],
     [ "Put", "classchip_1_1_t_l_v_1_1_t_l_v_writer.html#a74e2e7a5cd4bade0f03103448e1fc0de", null ],
     [ "Put", "classchip_1_1_t_l_v_1_1_t_l_v_writer.html#a4e62a192f4ed0948dde3ea3df5406ac6", null ],

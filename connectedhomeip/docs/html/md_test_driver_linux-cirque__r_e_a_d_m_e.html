@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Connected Home over IP
-   &#160;<span id="projectnumber">a83086a0</span>
+   &#160;<span id="projectnumber">672cf7684</span>
    </div>
   </td>
  </tr>
@@ -98,7 +98,7 @@ Setting up cirque environment</h1>
 </div><!-- fragment --><p>It will:</p>
 <ol type="1">
 <li>Install necessary packages required by cirque,</li>
-<li>Build <code>chip-cirque-device-base</code> docker image for running devices,</li>
+<li>Build <code>connectedhomeip/chip-cirque-device-base:latest</code> docker image for running devices,</li>
 <li>Build openthread for simulating thread network.</li>
 </ol>
 <blockquote class="doxtable">
@@ -129,13 +129,33 @@ Specify log directory</h1>
 </div><!-- fragment --><p>Or</p>
 <div class="fragment"><div class="line">LOG_DIR=/some/log/directory scripts/tests/cirque_tests.sh run_all_tests</div>
 <div class="line">LOG_DIR=/some/log/directory scripts/tests/cirque_tests.sh run_test OnOffClusterTest</div>
-</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md90"></a>
+Setup test topology only</h1>
+<p>You can run a ManualTest to setup test topology only:</p>
+<div class="fragment"><div class="line">scripts/tests/cirque_tests.sh run_test ManualTest</div>
+</div><!-- fragment --><p>It will print the container id in log, you can execute commands inside them.</p>
+<div class="fragment"><div class="line">2021-04-06 15:01:57,780 [CHIPCirqueTest] INFO Finished setting up environment.</div>
+<div class="line">2021-04-06 15:01:57,780 [CHIPCirqueTest] INFO Device: CHIP-Server (Type: CHIP-Server, Container: 459c901ed9)</div>
+<div class="line">2021-04-06 15:01:57,780 [CHIPCirqueTest] INFO Device: CHIP-Tool (Type: CHIP-Tool, Container: c5831124e7)</div>
+<div class="line">2021-04-06 15:01:57,780 [CHIPCirqueTest] INFO Press Ctrl-C to stop the test.</div>
+<div class="line">2021-04-06 15:01:57,780 [CHIPCirqueTest] INFO Container will be cleaned when the test finished.</div>
+</div><!-- fragment --><blockquote class="doxtable">
+<p>You can run docker commands with these containers, for example, to launch a shell on CHIP-Tool, you can use:</p>
+<div class="fragment"><div class="line">docker exec -it c5831124e7 /bin/bash</div>
+</div><!-- fragment --><p>For detailed command you can use, please refer to <a href="https://docs.docker.com/engine/reference/commandline/cli/">official docker documents</a>. </p>
+</blockquote>
+<blockquote class="doxtable">
+<p>It is not recommanded to run commands that can change the state of the container, for example: <code>attach</code> (will stop container once you exit), <code>stop</code> etc. </p>
+</blockquote>
+<p>After you finished you test, press <code>Ctrl-C</code> and it will clean up testing environment.</p>
+<p>Refer to <code>test-manual.py</code> and <code>ManualTest.sh</code> for detail. </p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 1 2021 16:49:16 for Connected Home over IP by
+    <li class="footer">Generated on Thu Apr 15 2021 18:57:05 for Connected Home over IP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

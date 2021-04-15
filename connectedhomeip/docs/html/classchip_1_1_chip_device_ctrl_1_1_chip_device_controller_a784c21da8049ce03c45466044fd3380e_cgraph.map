@@ -1,5 +1,0 @@
-<map id="chip.ChipDeviceCtrl.ChipDeviceController.ConnectBLE" name="chip.ChipDeviceCtrl.ChipDeviceController.ConnectBLE">
-<area shape="rect" id="node1" title=" " alt="" coords="5,13,217,54"/>
-<area shape="rect" id="node2" href="$_chip_device_controller-_script_binding_8cpp.html#a579cf516faa0efeebad8aa242fc6121d" title=" " alt="" coords="265,13,452,54"/>
-<area shape="rect" id="node3" href="$classchip_1_1_device_controller_1_1_chip_device_controller.html#a49b9d6124c23165cf52ad51cba813764" title="Connect to a CHIP device with the provided Rendezvous connection parameters." alt="" coords="500,5,668,61"/>
-</map>

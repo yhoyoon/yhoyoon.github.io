@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Connected Home over IP
-   &#160;<span id="projectnumber">a83086a0</span>
+   &#160;<span id="projectnumber">672cf7684</span>
    </div>
   </td>
  </tr>
@@ -115,7 +115,9 @@ Prerequisites</h2>
 <h3><a class="anchor" id="autotoc_md42"></a>
 How to install prerequisites on Linux</h3>
 <p>On Debian-based Linux distributions such as Ubuntu, these dependencies can be satisfied with the following:</p>
-<div class="fragment"><div class="line">sudo apt-get install git gcc g++ python pkg-config libssl-dev libdbus-1-dev libglib2.0-dev libavahi-client-dev ninja-build python3-venv python3-dev unzip</div>
+<div class="fragment"><div class="line">sudo apt-get install git gcc g++ python pkg-config libssl-dev libdbus-1-dev \</div>
+<div class="line">     libglib2.0-dev libavahi-client-dev ninja-build python3-venv python3-dev \</div>
+<div class="line">     python3-pip unzip libgirepository1.0-dev libcairo2-dev</div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md43"></a>
 How to install prerequisites on macOS</h3>
 <p>On macOS, first install Xcode from the Mac App Store. The remaining dependencies can be installed and satisfied using <a href="https://brew.sh/">Brew</a>:</p>
@@ -127,11 +129,26 @@ How to install prerequisites on macOS</h3>
 <p>Note: If using MacPorts, <code>port install openssl</code> is sufficient to satisfy this dependency.</p>
 <h3><a class="anchor" id="autotoc_md44"></a>
 How to install prerequisites on Raspberry Pi 4</h3>
-<p>Using <code>rpi-imager</code>, install the Ubuntu 20.04.1 LTS (Raspberry Pi 3/4) 64-bit server OS for arm64 architectures on a micro SD card.</p>
+<p>Using <code>rpi-imager</code>, install the Ubuntu <em>20.10</em> LTS 64-bit <em>server</em> OS for arm64 architectures on a micro SD card. This release will have bluez 5.55 which is required for BLE functionality.</p>
 <p>Boot the SD card, login with the default user account "ubuntu" and password "ubuntu", then proceed with "How to install prerequisites on Linux".</p>
 <p>Finally, install some Raspberry Pi specific dependencies:</p>
 <div class="fragment"><div class="line">sudo apt-get install pi-bluetooth</div>
 </div><!-- fragment --><p>You need to reboot your RPi after install <code>pi-bluetooth</code>.</p>
+<p>By default, wpa_supplicant is not allowed to update (overwrite) configuration, if you want chip app to be able to store the configuration changes permanently, we need to make the following changes.</p>
+<ol type="1">
+<li>Edit the dbus-fi.w1.wpa_supplicant1.service file to use configuration file instead.</li>
+</ol>
+<div class="fragment"><div class="line">sudo nano /etc/systemd/system/dbus-fi.w1.wpa_supplicant1.service</div>
+</div><!-- fragment --><p>Change the wpa_supplicant start parameters to:</p>
+<div class="fragment"><div class="line">ExecStart=/sbin/wpa_supplicant -u -s -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf</div>
+</div><!-- fragment --><ol type="1">
+<li>Add the wpa-supplicant configuration file</li>
+</ol>
+<div class="fragment"><div class="line">sudo nano /etc/wpa_supplicant/wpa_supplicant.conf</div>
+</div><!-- fragment --><p>And add the following content to the file:</p>
+<div class="fragment"><div class="line">ctrl_interface=DIR=/run/wpa_supplicant</div>
+<div class="line">update_config=1</div>
+</div><!-- fragment --><p>Finally, reboot your RPi.</p>
 <h2><a class="anchor" id="autotoc_md45"></a>
 Build Preparation</h2>
 <p>Before running any other build command, the <code>scripts/activate.sh</code> environment setup script should be sourced at the top level. This script takes care of downloading GN, ninja, and setting up a Python environment with libraries used to build and test.</p>
@@ -197,8 +214,8 @@ Unified Builds</h2>
 </div><!-- fragment --><p>For a full list, see the root <code>BUILD.gn</code>.</p>
 <p>Note that in the unified build, targets have multiple instances and need to be disambiguated by adding a <code>(toolchain)</code> suffix. Use <code>gn ls out/debug</code> to list all of the target instances. For example:</p>
 <div class="fragment"><div class="line">gn desc out/unified &#39;//src/controller(//build/toolchain/host:linux_x64_clang)&#39;</div>
-</div><!-- fragment --><p>Note: Some builds are disabled by default as they need extra SDKs. For example, to add the EFR32 examples to the unified build, download the <a href="https://github.com/SiliconLabs/sdk_support">SDK</a> and add the following build arguments:</p>
-<div class="fragment"><div class="line">gn gen out/unified --args=&#39;target_os=&quot;all&quot; enable_efr32_builds=true efr32_sdk_root=&quot;/path/to/sdk&quot; efr32_board=&quot;BRD4161A&quot;&#39;</div>
+</div><!-- fragment --><p>Note: Some platforms that can be build as part of the unified build require downloading additional SDKs. To add these to the build, the location of the SDK installation must be provided as a build argument. For example, to add the Simplelink cc13x2_26x2 examples to the unified build, install the <a href="https://ti.com/chip_sdk">SDK</a> and add the following build arguments:</p>
+<div class="fragment"><div class="line">gn gen out/unified --args=&quot;target_os=\&quot;all\&quot; enable_ti_simplelink_builds=true ti_simplelink_sdk_root=\&quot;/path/to/sdk\&quot; ti_sysconfig_root=\&quot;/path/to/sysconfig\&quot;&quot;</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md50"></a>
 Getting Help</h2>
 <p>GN has builtin help via</p>
@@ -223,6 +240,13 @@ Introspection</h2>
 <div class="fragment"><div class="line">gn desc out/host //:all deps --tree --all</div>
 </div><!-- fragment --><p>To find dependency paths:</p>
 <div class="fragment"><div class="line">gn path out/host //src/transport/tests:tests //src/system</div>
+</div><!-- fragment --><p>To list useful information for linking against libCHIP:</p>
+<div class="fragment"><div class="line">gn desc out/host //src/lib include_dirs</div>
+<div class="line">gn desc out/host //src/lib defines</div>
+<div class="line">gn desc out/host //src/lib outputs</div>
+<div class="line"> </div>
+<div class="line"># everything as JSON</div>
+<div class="line">gn desc out/host //src/lib --format=json</div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md52"></a>
 Maintaining CHIP</h1>
 <p>If you make any change to the GN build system, the next build will regenerate the ninja files automatically. No need to do anything. </p>
@@ -232,7 +256,7 @@ Maintaining CHIP</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 1 2021 16:49:16 for Connected Home over IP by
+    <li class="footer">Generated on Thu Apr 15 2021 18:57:05 for Connected Home over IP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

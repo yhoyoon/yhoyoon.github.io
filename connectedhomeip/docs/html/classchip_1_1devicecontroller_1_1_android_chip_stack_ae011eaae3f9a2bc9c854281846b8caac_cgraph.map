@@ -1,9 +1,0 @@
-<map id="chip.devicecontroller.AndroidChipStack.removeConnection" name="chip.devicecontroller.AndroidChipStack.removeConnection">
-<area shape="rect" id="node1" title=" " alt="" coords="5,27,220,68"/>
-<area shape="rect" id="node2" href="$namespacechip_1_1_logging.html#a8453332a700f03454f4ab20f41d033a6" title="Log, to the platform&#45;specified mechanism, the specified log message, msg, for the specified module,..." alt="" coords="268,34,407,61"/>
-<area shape="rect" id="node3" href="$namespacechip_1_1_logging.html#a30ee062e3005b21c2e8dccca7bdd4f8c" title="CHIP log output functions." alt="" coords="455,34,603,61"/>
-<area shape="rect" id="node4" href="$namespacechip_1_1_logging.html#a23dfd2b5c52970e6895a4931b1bd84aa" title=" " alt="" coords="903,38,1129,65"/>
-<area shape="rect" id="node6" href="$namespacechip_1_1_logging.html#a574c22b780a24267d60ebb8b4fa8aa0d" title=" " alt="" coords="659,27,846,68"/>
-<area shape="rect" id="node7" href="$namespacechip_1_1_logging.html#a8889275d03d70d365e0192071137ab17" title=" " alt="" coords="651,92,855,133"/>
-<area shape="rect" id="node5" href="$_c_h_i_p_device_controller-_j_n_i_8cpp.html#ab52833322402f0f0f1cb68f5ee5d1292" title=" " alt="" coords="1177,38,1256,65"/>
-</map>

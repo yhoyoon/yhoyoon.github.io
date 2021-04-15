@@ -1,5 +1,6 @@
 var _c_h_i_p_device_8h =
 [
+    [ "ControllerDeviceInitParams", "structchip_1_1_controller_1_1_controller_device_init_params.html", "structchip_1_1_controller_1_1_controller_device_init_params" ],
     [ "Device", "classchip_1_1_controller_1_1_device.html", "classchip_1_1_controller_1_1_device" ],
     [ "DeviceStatusDelegate", "classchip_1_1_controller_1_1_device_status_delegate.html", "classchip_1_1_controller_1_1_device_status_delegate" ],
     [ "SerializableDevice", "structchip_1_1_controller_1_1_serializable_device.html", "structchip_1_1_controller_1_1_serializable_device" ],

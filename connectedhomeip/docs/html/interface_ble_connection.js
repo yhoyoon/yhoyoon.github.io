@@ -12,5 +12,6 @@ var interface_ble_connection =
     [ "onConnectionError", "interface_ble_connection.html#a156222207b18dd11ac9cf6c4696e3cfb", null ],
     [ "peripheral", "interface_ble_connection.html#abde1fd7976b85c5afaf075c8db898091", null ],
     [ "shortServiceUUID", "interface_ble_connection.html#af19f86a22efc15760fdc8a0f03bffba1", null ],
+    [ "timer", "interface_ble_connection.html#a38857160c236bfac94da8bb637767dca", null ],
     [ "workQueue", "interface_ble_connection.html#ab77024e05ad2ecad4529935c29693b11", null ]
 ];

@@ -1,6 +1,0 @@
-<map id="chip.ChipDeviceCtrl.ChipDeviceController.ZCLSend" name="chip.ChipDeviceCtrl.ChipDeviceController.ZCLSend">
-<area shape="rect" id="node1" title=" " alt="" coords="5,43,197,84"/>
-<area shape="rect" id="node2" href="$_chip_device_controller-_script_binding_8cpp.html#a5c9e45eb7c28c215dd664a12d394d33e" title=" " alt="" coords="245,50,453,77"/>
-<area shape="rect" id="node3" href="$classchip_1_1_controller_1_1_device_controller.html#a54e09ebc0cc8759b93202eee858d087a" title="This function deserializes the provided deviceInfo object, and initializes and outputs the correspond..." alt="" coords="501,5,676,47"/>
-<area shape="rect" id="node4" href="$classchip_1_1_device_controller_1_1_chip_device_controller.html#a8b8091b989bace7bbbcc63024e1de310" title=" " alt="" coords="505,71,673,127"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="chip::BitFlags::Has" name="chip::BitFlags::Has">
-<area shape="rect" id="node1" title=" " alt="" coords="263,111,405,138"/>
-<area shape="rect" id="node2" href="$classchip_1_1_payload_header.html#a8fc818122731b3c3eaa0e73a4aa91c39" title="Determine whether the current message is an acknowledgment for a previously received message." alt="" coords="32,5,188,47"/>
-<area shape="rect" id="node3" href="$classchip_1_1_payload_header.html#abcca7d48e8053a612b815b4cd2f8bd80" title="Determine whether the initiator of the exchange." alt="" coords="32,71,188,112"/>
-<area shape="rect" id="node4" href="$classchip_1_1_payload_header.html#acee84cfeec62ff8470cfb6cc3b23624c" title="Determine whether current message is requesting an acknowledgment from the recipient." alt="" coords="32,136,188,177"/>
-<area shape="rect" id="node5" href="$classchip_1_1_packet_header.html#a3b57420e14da391787f4ec63e4ce471f" title="Check if it&#39;s a secure session control message." alt="" coords="5,201,215,243"/>
-</map>

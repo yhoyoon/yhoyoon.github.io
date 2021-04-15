@@ -1,5 +1,8 @@
 var classmdns_1_1_minimal_1_1_query_responder_iterator =
 [
+    [ "pointer", "classmdns_1_1_minimal_1_1_query_responder_iterator.html#a40fbf2dad625c1fda4d2a8788ce0a959", null ],
+    [ "reference", "classmdns_1_1_minimal_1_1_query_responder_iterator.html#a7be7daaf88658fead13cfd637f82171e", null ],
+    [ "value_type", "classmdns_1_1_minimal_1_1_query_responder_iterator.html#a10526fc0a8ba43793a448bd90ecb706f", null ],
     [ "QueryResponderIterator", "classmdns_1_1_minimal_1_1_query_responder_iterator.html#af764433a11d8e39f7f274112b54b11ac", null ],
     [ "QueryResponderIterator", "classmdns_1_1_minimal_1_1_query_responder_iterator.html#a82e585e0b2395058d5b04d056fa0077a", null ],
     [ "QueryResponderIterator", "classmdns_1_1_minimal_1_1_query_responder_iterator.html#a7c028595c1dc31cc26d99b1c83d2de36", null ],

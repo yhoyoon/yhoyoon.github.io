@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Connected Home over IP
-   &#160;<span id="projectnumber">a83086a0</span>
+   &#160;<span id="projectnumber">672cf7684</span>
    </div>
   </td>
  </tr>
@@ -98,14 +98,6 @@ $(document).ready(function(){initNavTree('classchip_1_1_inet_1_1_i_p_address.htm
  <a href="classchip_1_1_inet_1_1_i_p_address.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_i_p_address_8h_source.html">inet/IPAddress.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for chip::Inet::IPAddress:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address__coll__graph.png" border="0" usemap="#chip_1_1_inet_1_1_i_p_address_coll__map" alt="Collaboration graph"/></div>
-<map name="chip_1_1_inet_1_1_i_p_address_coll__map" id="chip_1_1_inet_1_1_i_p_address_coll__map">
-<area shape="rect" title="Internet protocol address." alt="" coords="5,5,160,32"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -156,6 +148,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3d6eb785c416b7982b34d5f776ded760"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_inet_1_1_i_p_address.html#a3d6eb785c416b7982b34d5f776ded760">ToString</a> (char *buf, uint32_t bufSize) const</td></tr>
 <tr class="memdesc:a3d6eb785c416b7982b34d5f776ded760"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit the IP address in conventional text presentation format.  <a href="classchip_1_1_inet_1_1_i_p_address.html#a3d6eb785c416b7982b34d5f776ded760">More...</a><br /></td></tr>
 <tr class="separator:a3d6eb785c416b7982b34d5f776ded760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93dfe3ef7d606de24956852780f61569"><td class="memTemplParams" colspan="2">template&lt;uint32_t N&gt; </td></tr>
+<tr class="memitem:a93dfe3ef7d606de24956852780f61569"><td class="memTemplItemLeft" align="right" valign="top">char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classchip_1_1_inet_1_1_i_p_address.html#a93dfe3ef7d606de24956852780f61569">ToString</a> (char(&amp;buf)[N]) const</td></tr>
+<tr class="memdesc:a93dfe3ef7d606de24956852780f61569"><td class="mdescLeft">&#160;</td><td class="mdescRight">A version of ToString that writes to a literal and deduces how much space it as to work with.  <a href="classchip_1_1_inet_1_1_i_p_address.html#a93dfe3ef7d606de24956852780f61569">More...</a><br /></td></tr>
+<tr class="separator:a93dfe3ef7d606de24956852780f61569"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4c886dd85812f5ff0b94dc73636a006"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_inet_1_1_i_p_address.html#ab4c886dd85812f5ff0b94dc73636a006">WriteAddress</a> (uint8_t *&amp;p) const</td></tr>
 <tr class="memdesc:ab4c886dd85812f5ff0b94dc73636a006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit the IP address in standard network representation.  <a href="classchip_1_1_inet_1_1_i_p_address.html#ab4c886dd85812f5ff0b94dc73636a006">More...</a><br /></td></tr>
 <tr class="separator:ab4c886dd85812f5ff0b94dc73636a006"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -322,25 +318,6 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_abb6180cf8ced926a6be9189b53f1d932_icgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_abb6180cf8ced926a6be9189b53f1d932_icgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_abb6180cf8ced926a6be9189b53f1d932_icgraph" id="classchip_1_1_inet_1_1_i_p_address_abb6180cf8ced926a6be9189b53f1d932_icgraph">
-<area shape="rect" title=" " alt="" coords="813,195,968,236"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#ac3c08c50dbef07ba44bcab97f6cd4672" title="Inject the IPv6 address from a POSIX struct sockaddr&amp;" alt="" coords="591,64,745,105"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#a525ecca3300dfad9c1aeab37dc26711d" title="Scan the IP address from its conventional presentation text." alt="" coords="591,129,745,171"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_t_c_p_end_point.html#abb26c26b7274d379884b9682edb23e21" title="Extract IP address and TCP port of local endpoint." alt="" coords="582,195,754,236"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_t_c_p_end_point.html#ad72fbce3a9ca8661546c3dc876511fef" title="Extract IP address and TCP port of remote endpoint." alt="" coords="582,260,754,301"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_end_point_basis.html#ac42711051fa484e3cffe6c3260057948" title=" " alt="" coords="571,325,765,367"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#af9217e8c82fe6c07195b9ab51d3409bf" title="Scan the IP address from its conventional presentation text." alt="" coords="311,5,465,47"/>
-<area shape="rect" href="classchip_1_1_network_provisioning.html#abdc8985d7e49b851d831e3baa8cd970c" title=" " alt="" coords="253,71,523,112"/>
-<area shape="rect" href="_chip_device_controller-_script_binding_8cpp.html#a46219feecf65598e490b8e97209b5c86" title=" " alt="" coords="295,136,481,177"/>
-<area shape="rect" href="namespacechip_1_1_arg_parser.html#a76161c615a4175a3c456d14c4a6c91b5" title="Parse an IP address in text form." alt="" coords="274,202,502,229"/>
-<area shape="rect" href="classchip_1_1_chip_device_ctrl_1_1_chip_device_controller.html#ad3a944e923f75879bd3159613b2c0987" title=" " alt="" coords="5,136,205,177"/>
-<area shape="rect" href="classchip_1_1_transport_1_1_t_c_p_base.html#a4793078b071d2b695af81582376af93b" title="Handle disconnection from the specified peer if currently connected to it." alt="" coords="297,260,479,301"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -399,35 +376,6 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_a51a2c95a399e28425713cfc0e38b850d_cgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_a51a2c95a399e28425713cfc0e38b850d_cgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_a51a2c95a399e28425713cfc0e38b850d_cgraph" id="classchip_1_1_inet_1_1_i_p_address_a51a2c95a399e28425713cfc0e38b850d_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,160,47"/>
-<area shape="rect" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#ab52833322402f0f0f1cb68f5ee5d1292" title=" " alt="" coords="208,13,287,39"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_a51a2c95a399e28425713cfc0e38b850d_icgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_a51a2c95a399e28425713cfc0e38b850d_icgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_a51a2c95a399e28425713cfc0e38b850d_icgraph" id="classchip_1_1_inet_1_1_i_p_address_a51a2c95a399e28425713cfc0e38b850d_icgraph">
-<area shape="rect" title=" " alt="" coords="813,201,968,243"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#ac3c08c50dbef07ba44bcab97f6cd4672" title="Inject the IPv6 address from a POSIX struct sockaddr&amp;" alt="" coords="591,37,745,79"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#a525ecca3300dfad9c1aeab37dc26711d" title="Scan the IP address from its conventional presentation text." alt="" coords="591,103,745,144"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_inet_layer.html#a0d8bc7e057ca3bf42b3e7f599bd92483" title="Get the link local IPv6 address for a specified link or interface." alt="" coords="593,168,743,209"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_t_c_p_end_point.html#abb26c26b7274d379884b9682edb23e21" title="Extract IP address and TCP port of local endpoint." alt="" coords="582,233,754,275"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_t_c_p_end_point.html#ad72fbce3a9ca8661546c3dc876511fef" title="Extract IP address and TCP port of remote endpoint." alt="" coords="582,299,754,340"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_end_point_basis.html#ac42711051fa484e3cffe6c3260057948" title=" " alt="" coords="571,364,765,405"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#af9217e8c82fe6c07195b9ab51d3409bf" title="Scan the IP address from its conventional presentation text." alt="" coords="311,5,465,47"/>
-<area shape="rect" href="classchip_1_1_network_provisioning.html#abdc8985d7e49b851d831e3baa8cd970c" title=" " alt="" coords="253,71,523,112"/>
-<area shape="rect" href="_chip_device_controller-_script_binding_8cpp.html#a46219feecf65598e490b8e97209b5c86" title=" " alt="" coords="295,136,481,177"/>
-<area shape="rect" href="namespacechip_1_1_arg_parser.html#a76161c615a4175a3c456d14c4a6c91b5" title="Parse an IP address in text form." alt="" coords="274,202,502,229"/>
-<area shape="rect" href="classchip_1_1_chip_device_ctrl_1_1_chip_device_controller.html#ad3a944e923f75879bd3159613b2c0987" title=" " alt="" coords="5,136,205,177"/>
-<area shape="rect" href="classchip_1_1_transport_1_1_t_c_p_base.html#a4793078b071d2b695af81582376af93b" title="Handle disconnection from the specified peer if currently connected to it." alt="" coords="297,299,479,340"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -459,15 +407,6 @@ Here is the caller graph for this function:</div>
 <p>Use <code><a class="el" href="classchip_1_1_inet_1_1_i_p_address.html#a51a2c95a399e28425713cfc0e38b850d">FromIPv6(const ip6_addr_t &amp;addr)</a></code> to inject <code>addr</code> as an IPv6 address.</p>
 <p>The argument <code>addr</code> is either of type <code>const struct in6_addr&amp;</code> (on POSIX) or <code>const ip6_addr_t&amp;</code> (on LwIP).</p>
 <dl class="section return"><dt>Returns</dt><dd>The constructed IP address. </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_a82b63717e8cfc374f1a0605bb45e05ff_cgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_a82b63717e8cfc374f1a0605bb45e05ff_cgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_a82b63717e8cfc374f1a0605bb45e05ff_cgraph" id="classchip_1_1_inet_1_1_i_p_address_a82b63717e8cfc374f1a0605bb45e05ff_cgraph">
-<area shape="rect" title="Inject the IPv6 address from a platform data structure." alt="" coords="5,5,160,47"/>
-<area shape="rect" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#ab52833322402f0f0f1cb68f5ee5d1292" title=" " alt="" coords="208,13,287,39"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -498,17 +437,6 @@ Here is the call graph for this function:</div>
 <p>Inject the IPv6 address from a POSIX <code>struct sockaddr&amp;</code> </p>
 <p>Use <code><a class="el" href="classchip_1_1_inet_1_1_i_p_address.html#ac3c08c50dbef07ba44bcab97f6cd4672" title="Inject the IPv6 address from a POSIX struct sockaddr&amp;">FromSockAddr(const struct sockaddr&amp; sockaddr)</a></code> to inject <code>sockaddr.sa_addr</code> as an IPv6 address.</p>
 <dl class="section return"><dt>Returns</dt><dd>The constructed IP address. </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_ac3c08c50dbef07ba44bcab97f6cd4672_cgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_ac3c08c50dbef07ba44bcab97f6cd4672_cgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_ac3c08c50dbef07ba44bcab97f6cd4672_cgraph" id="classchip_1_1_inet_1_1_i_p_address_ac3c08c50dbef07ba44bcab97f6cd4672_cgraph">
-<area shape="rect" title="Inject the IPv6 address from a POSIX struct sockaddr&amp;" alt="" coords="5,39,160,80"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#abb6180cf8ced926a6be9189b53f1d932" title=" " alt="" coords="208,5,363,47"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#a51a2c95a399e28425713cfc0e38b850d" title=" " alt="" coords="208,71,363,112"/>
-<area shape="rect" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#ab52833322402f0f0f1cb68f5ee5d1292" title=" " alt="" coords="411,78,489,105"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -562,30 +490,6 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_a525ecca3300dfad9c1aeab37dc26711d_cgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_a525ecca3300dfad9c1aeab37dc26711d_cgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_a525ecca3300dfad9c1aeab37dc26711d_cgraph" id="classchip_1_1_inet_1_1_i_p_address_a525ecca3300dfad9c1aeab37dc26711d_cgraph">
-<area shape="rect" title="Scan the IP address from its conventional presentation text." alt="" coords="5,39,160,80"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#abb6180cf8ced926a6be9189b53f1d932" title=" " alt="" coords="208,5,363,47"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#a51a2c95a399e28425713cfc0e38b850d" title=" " alt="" coords="208,71,363,112"/>
-<area shape="rect" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#ab52833322402f0f0f1cb68f5ee5d1292" title=" " alt="" coords="411,78,489,105"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_a525ecca3300dfad9c1aeab37dc26711d_icgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_a525ecca3300dfad9c1aeab37dc26711d_icgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_a525ecca3300dfad9c1aeab37dc26711d_icgraph" id="classchip_1_1_inet_1_1_i_p_address_a525ecca3300dfad9c1aeab37dc26711d_icgraph">
-<area shape="rect" title="Scan the IP address from its conventional presentation text." alt="" coords="571,104,725,145"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#af9217e8c82fe6c07195b9ab51d3409bf" title="Scan the IP address from its conventional presentation text." alt="" coords="311,5,465,47"/>
-<area shape="rect" href="classchip_1_1_network_provisioning.html#abdc8985d7e49b851d831e3baa8cd970c" title=" " alt="" coords="253,71,523,112"/>
-<area shape="rect" href="_chip_device_controller-_script_binding_8cpp.html#a46219feecf65598e490b8e97209b5c86" title=" " alt="" coords="295,136,481,177"/>
-<area shape="rect" href="namespacechip_1_1_arg_parser.html#a76161c615a4175a3c456d14c4a6c91b5" title="Parse an IP address in text form." alt="" coords="274,202,502,229"/>
-<area shape="rect" href="classchip_1_1_chip_device_ctrl_1_1_chip_device_controller.html#ad3a944e923f75879bd3159613b2c0987" title=" " alt="" coords="5,136,205,177"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -646,18 +550,6 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_af9217e8c82fe6c07195b9ab51d3409bf_cgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_af9217e8c82fe6c07195b9ab51d3409bf_cgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_af9217e8c82fe6c07195b9ab51d3409bf_cgraph" id="classchip_1_1_inet_1_1_i_p_address_af9217e8c82fe6c07195b9ab51d3409bf_cgraph">
-<area shape="rect" title="Scan the IP address from its conventional presentation text." alt="" coords="5,100,160,141"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#a525ecca3300dfad9c1aeab37dc26711d" title="Scan the IP address from its conventional presentation text." alt="" coords="208,71,363,112"/>
-<area shape="rect" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#ab52833322402f0f0f1cb68f5ee5d1292" title=" " alt="" coords="613,107,692,134"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#abb6180cf8ced926a6be9189b53f1d932" title=" " alt="" coords="411,5,565,47"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#a51a2c95a399e28425713cfc0e38b850d" title=" " alt="" coords="411,71,565,112"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -679,15 +571,6 @@ Here is the call graph for this function:</div>
 <p>Extract the 16-bit global network identifier of an IPv6 ULA address. </p>
 <p>Use this method with an IPv6 unique-local address (ULA) to extract the global network identifier, which is the 40 bits immediately following the distinguished ULA network prefix, i.e. fd00::/8. In other words, the global network identifier is located in the five bytes from the 2nd 2nd through the 6th bytes in the address.</p>
 <dl class="section return"><dt>Returns</dt><dd>40-bit global network identifier, or zero if the IP address is not an IPv6 unique-local address. </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_aa071e7da5c61f57929f370cfe830ecb3_cgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_aa071e7da5c61f57929f370cfe830ecb3_cgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_aa071e7da5c61f57929f370cfe830ecb3_cgraph" id="classchip_1_1_inet_1_1_i_p_address_aa071e7da5c61f57929f370cfe830ecb3_cgraph">
-<area shape="rect" title="Extract the 16&#45;bit global network identifier of an IPv6 ULA address." alt="" coords="5,5,160,47"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#a74dded2b5e93cb25d7631759dd0b444e" title="Test whether address is IPv6 unique&#45;local address (ULA)." alt="" coords="208,5,363,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -709,15 +592,6 @@ Here is the call graph for this function:</div>
 <p>Extract the IID of an IPv6 ULA address. </p>
 <p>Use this method with an IPv6 unique-local address (ULA) to extract the identifier identifier (IID), which is the least significant 64 bits of the address.</p>
 <dl class="section return"><dt>Returns</dt><dd>64-bit interface identifier, or zero if the IP address is not an IPv6 unique-local address. </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_a53f8167319f650d127ee701d36abc513_cgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_a53f8167319f650d127ee701d36abc513_cgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_a53f8167319f650d127ee701d36abc513_cgraph" id="classchip_1_1_inet_1_1_i_p_address_a53f8167319f650d127ee701d36abc513_cgraph">
-<area shape="rect" title="Extract the IID of an IPv6 ULA address." alt="" coords="5,5,160,47"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#a74dded2b5e93cb25d7631759dd0b444e" title="Test whether address is IPv6 unique&#45;local address (ULA)." alt="" coords="208,5,363,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -745,30 +619,6 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_aeac484acfe3fc021f4571a9fef378ff1_icgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_aeac484acfe3fc021f4571a9fef378ff1_icgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_aeac484acfe3fc021f4571a9fef378ff1_icgraph" id="classchip_1_1_inet_1_1_i_p_address_aeac484acfe3fc021f4571a9fef378ff1_icgraph">
-<area shape="rect" title="Test whether address is IPv4 compatible." alt="" coords="1093,201,1248,243"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_i_pv4_responder.html#ab07b0537c64211fcbe40194708994d81" title="Report all reponses maintained by this responder." alt="" coords="821,5,1045,47"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#acd8a68ba31e03c02fcab53314ad6cfe0" title="Test whether address is IPv4 broadcast." alt="" coords="856,71,1011,112"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#aa8445c2654297783d999e287fe5e1bcb" title="Test whether address is IPv4 multicast." alt="" coords="856,136,1011,177"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#ab44c05f8c38176d20f15ec056c0eeb1e" title="Test whether address is IPv6 compatible." alt="" coords="856,201,1011,243"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_inet_layer.html#a8db5ddc6886ac4a31c989e6e64956497" title="Check if there is a prefix match between the specified IPv6 address and any of the locally configured..." alt="" coords="845,267,1022,308"/>
-<area shape="rect" href="namespacechip_1_1_inet.html#a4652dca754204ecd3679ce212b9f54bb" title=" " alt="" coords="837,332,1029,373"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#a3d6eb785c416b7982b34d5f776ded760" title="Emit the IP address in conventional text presentation format." alt="" coords="856,401,1011,443"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#ab6a67ca011acd35b80876a45993ca930" title="Test whether address is IPv4 or IPv6 multicast." alt="" coords="581,132,735,173"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_i_pv6_responder.html#a471f0f86603b9b10f08925868f0b9b4e" title="Report all reponses maintained by this responder." alt="" coords="546,197,770,239"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_i_p_resource_record.html#afc94f2e84518ed81d363c70ee8455139" title="Output the data portion of the resource record." alt="" coords="559,263,757,304"/>
-<area shape="rect" href="namespacechip_1_1_device_layer_1_1_internal.html#abe2e4fe3d95c4b243c964c09f46ccd30" title=" " alt="" coords="545,328,771,369"/>
-<area shape="rect" href="namespacechip_1_1_device_layer_1_1_internal.html#ad7a9636d2100061afbd79471fbdf7d89" title="Log information related to a state change in the OpenThread stack." alt="" coords="550,394,766,450"/>
-<area shape="rect" href="classchip_1_1_transport_1_1_peer_address.html#a915e1f32a1bc1d399c259506cf56c6c3" title=" " alt="" coords="555,475,761,516"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_internal_1_1_generic_thread_stack_manager_impl___open_thread___lw_i_p.html#a4d3fb9ed100bdd543a01e4a239a29662" title=" " alt="" coords="543,541,773,626"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_internal_1_1_generic_thread_stack_manager_impl___open_thread.html#ab30e6c389c12687d751882a83442feed" title=" " alt="" coords="284,387,495,457"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_internal_1_1_generic_thread_stack_manager_impl___open_thread___lw_i_p.html#af13088d0df3274b4ed128237646e1556" title=" " alt="" coords="5,379,236,465"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -796,15 +646,6 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_acd8a68ba31e03c02fcab53314ad6cfe0_cgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_acd8a68ba31e03c02fcab53314ad6cfe0_cgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_acd8a68ba31e03c02fcab53314ad6cfe0_cgraph" id="classchip_1_1_inet_1_1_i_p_address_acd8a68ba31e03c02fcab53314ad6cfe0_cgraph">
-<area shape="rect" title="Test whether address is IPv4 broadcast." alt="" coords="5,5,160,47"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#aeac484acfe3fc021f4571a9fef378ff1" title="Test whether address is IPv4 compatible." alt="" coords="208,5,363,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -832,24 +673,6 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_aa8445c2654297783d999e287fe5e1bcb_cgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_aa8445c2654297783d999e287fe5e1bcb_cgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_aa8445c2654297783d999e287fe5e1bcb_cgraph" id="classchip_1_1_inet_1_1_i_p_address_aa8445c2654297783d999e287fe5e1bcb_cgraph">
-<area shape="rect" title="Test whether address is IPv4 multicast." alt="" coords="5,5,160,47"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#aeac484acfe3fc021f4571a9fef378ff1" title="Test whether address is IPv4 compatible." alt="" coords="208,5,363,47"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_aa8445c2654297783d999e287fe5e1bcb_icgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_aa8445c2654297783d999e287fe5e1bcb_icgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_aa8445c2654297783d999e287fe5e1bcb_icgraph" id="classchip_1_1_inet_1_1_i_p_address_aa8445c2654297783d999e287fe5e1bcb_icgraph">
-<area shape="rect" title="Test whether address is IPv4 multicast." alt="" coords="208,5,363,47"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#ab6a67ca011acd35b80876a45993ca930" title="Test whether address is IPv4 or IPv6 multicast." alt="" coords="5,5,160,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -877,25 +700,6 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_ab44c05f8c38176d20f15ec056c0eeb1e_cgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_ab44c05f8c38176d20f15ec056c0eeb1e_cgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_ab44c05f8c38176d20f15ec056c0eeb1e_cgraph" id="classchip_1_1_inet_1_1_i_p_address_ab44c05f8c38176d20f15ec056c0eeb1e_cgraph">
-<area shape="rect" title="Test whether address is IPv6 compatible." alt="" coords="5,5,160,47"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#aeac484acfe3fc021f4571a9fef378ff1" title="Test whether address is IPv4 compatible." alt="" coords="208,5,363,47"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_ab44c05f8c38176d20f15ec056c0eeb1e_icgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_ab44c05f8c38176d20f15ec056c0eeb1e_icgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_ab44c05f8c38176d20f15ec056c0eeb1e_icgraph" id="classchip_1_1_inet_1_1_i_p_address_ab44c05f8c38176d20f15ec056c0eeb1e_icgraph">
-<area shape="rect" title="Test whether address is IPv6 compatible." alt="" coords="277,39,432,80"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_i_pv6_responder.html#a471f0f86603b9b10f08925868f0b9b4e" title="Report all reponses maintained by this responder." alt="" coords="5,5,229,47"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_i_p_resource_record.html#afc94f2e84518ed81d363c70ee8455139" title="Output the data portion of the resource record." alt="" coords="18,71,217,112"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -923,16 +727,6 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_a4523d2bf5b27518bf5c00272ed13f750_icgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_a4523d2bf5b27518bf5c00272ed13f750_icgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_a4523d2bf5b27518bf5c00272ed13f750_icgraph" id="classchip_1_1_inet_1_1_i_p_address_a4523d2bf5b27518bf5c00272ed13f750_icgraph">
-<area shape="rect" title="Test whether address is IPv6 global unicast address." alt="" coords="516,27,676,69"/>
-<area shape="rect" href="namespacechip_1_1_device_layer.html#a49019e4f1b06ad698466a79d5ecb92a7" title=" " alt="" coords="284,27,468,69"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_internal_1_1_generic_thread_stack_manager_impl___open_thread___lw_i_p.html#a4d3fb9ed100bdd543a01e4a239a29662" title=" " alt="" coords="5,5,236,91"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -960,19 +754,6 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_ae4fcb4c5b36e14b3b3e97f748dd7b74d_icgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_ae4fcb4c5b36e14b3b3e97f748dd7b74d_icgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_ae4fcb4c5b36e14b3b3e97f748dd7b74d_icgraph" id="classchip_1_1_inet_1_1_i_p_address_ae4fcb4c5b36e14b3b3e97f748dd7b74d_icgraph">
-<area shape="rect" title="Test whether address is IPv6 link&#45;local address (LL)." alt="" coords="516,129,671,171"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_raw_end_point.html#a6e1c6ec9a6359d56a2ee865f4f8c3572" title="Bind the raw endpoint to an IPv6 link&#45;local scope address at the specified interface index." alt="" coords="289,5,463,47"/>
-<area shape="rect" href="namespacechip_1_1_device_layer.html#a49019e4f1b06ad698466a79d5ecb92a7" title=" " alt="" coords="284,71,468,112"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_internal_1_1_generic_thread_stack_manager_impl___open_thread___lw_i_p.html#a4d3fb9ed100bdd543a01e4a239a29662" title=" " alt="" coords="5,78,236,163"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_t_c_p_end_point.html#a0020508efa72ed087366ad3620fcf9c1" title="Initiate a TCP connection." alt="" coords="290,188,462,229"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_inet_layer.html#a8db5ddc6886ac4a31c989e6e64956497" title="Check if there is a prefix match between the specified IPv6 address and any of the locally configured..." alt="" coords="287,253,465,295"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1000,15 +781,6 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_aadad121900f90d056554c35d02cee512_icgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_aadad121900f90d056554c35d02cee512_icgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_aadad121900f90d056554c35d02cee512_icgraph" id="classchip_1_1_inet_1_1_i_p_address_aadad121900f90d056554c35d02cee512_icgraph">
-<area shape="rect" title="Test whether address is IPv6 multicast." alt="" coords="208,5,363,47"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#ab6a67ca011acd35b80876a45993ca930" title="Test whether address is IPv4 or IPv6 multicast." alt="" coords="5,5,160,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1036,19 +808,6 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_a74dded2b5e93cb25d7631759dd0b444e_icgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_a74dded2b5e93cb25d7631759dd0b444e_icgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_a74dded2b5e93cb25d7631759dd0b444e_icgraph" id="classchip_1_1_inet_1_1_i_p_address_a74dded2b5e93cb25d7631759dd0b444e_icgraph">
-<area shape="rect" title="Test whether address is IPv6 unique&#45;local address (ULA)." alt="" coords="516,126,671,167"/>
-<area shape="rect" href="namespacechip_1_1_device_layer.html#a49019e4f1b06ad698466a79d5ecb92a7" title=" " alt="" coords="284,27,468,69"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#aa071e7da5c61f57929f370cfe830ecb3" title="Extract the 16&#45;bit global network identifier of an IPv6 ULA address." alt="" coords="299,93,453,134"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#a53f8167319f650d127ee701d36abc513" title="Extract the IID of an IPv6 ULA address." alt="" coords="299,158,453,199"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#a51cd69799f6c6efa1f0e23a84fed1c32" title="Extract the 16&#45;bit subnet identifier of an IPv6 ULA address." alt="" coords="299,223,453,265"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_internal_1_1_generic_thread_stack_manager_impl___open_thread___lw_i_p.html#a4d3fb9ed100bdd543a01e4a239a29662" title=" " alt="" coords="5,5,236,91"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1076,17 +835,6 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_ab6a67ca011acd35b80876a45993ca930_cgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_ab6a67ca011acd35b80876a45993ca930_cgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_ab6a67ca011acd35b80876a45993ca930_cgraph" id="classchip_1_1_inet_1_1_i_p_address_ab6a67ca011acd35b80876a45993ca930_cgraph">
-<area shape="rect" title="Test whether address is IPv4 or IPv6 multicast." alt="" coords="5,39,160,80"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#aa8445c2654297783d999e287fe5e1bcb" title="Test whether address is IPv4 multicast." alt="" coords="208,5,363,47"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#aadad121900f90d056554c35d02cee512" title="Test whether address is IPv6 multicast." alt="" coords="208,71,363,112"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#aeac484acfe3fc021f4571a9fef378ff1" title="Test whether address is IPv4 compatible." alt="" coords="411,5,565,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1161,18 +909,6 @@ Here is the call graph for this function:</div>
 <p>Construct an IPv6 multicast address from its parts. </p>
 <p>Use <code>MakeIPv6Multicast(uint8_t flags, uint8_t scope, uint8_t groupId[14])</code> to construct an IPv6 multicast address with <code>flags</code> for routing scope <code>scope</code> and group identifier octets <code>groupId</code>.</p>
 <dl class="section return"><dt>Returns</dt><dd>The constructed IP address. </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_af86c332e12596db51af53ff59da71211_icgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_af86c332e12596db51af53ff59da71211_icgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_af86c332e12596db51af53ff59da71211_icgraph" id="classchip_1_1_inet_1_1_i_p_address_af86c332e12596db51af53ff59da71211_icgraph">
-<area shape="rect" title="Construct an IPv6 multicast address from its parts." alt="" coords="519,71,673,112"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#ac701945cb65e92ef930cf750baf685f6" title="Construct an IPv6 multicast address from its parts." alt="" coords="280,5,435,47"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#af93d52e38ad9a9f30f731f331be1711b" title="Construct a transient IPv6 multicast address from its parts." alt="" coords="251,71,464,112"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#a59beb523c451e410951ff1dc47e23417" title="Construct a well&#45;known IPv6 multicast address from its parts." alt="" coords="244,136,471,177"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#acdc35bb04877b7d73976409083b9c854" title="Construct a transient, prefix IPv6 multicast address from its parts." alt="" coords="5,71,196,112"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1219,15 +955,6 @@ Here is the caller graph for this function:</div>
 <p>Construct an IPv6 multicast address from its parts. </p>
 <p>Use <code>MakeIPv6Multicast(uint8_t flags, uint8_t scope, uint32_t groupId)</code> to construct an IPv6 multicast address with <code>flags</code> for routing scope <code>scope</code> and group identifier <code>groupId</code>.</p>
 <dl class="section return"><dt>Returns</dt><dd>The constructed IP address. </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_ac701945cb65e92ef930cf750baf685f6_cgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_ac701945cb65e92ef930cf750baf685f6_cgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_ac701945cb65e92ef930cf750baf685f6_cgraph" id="classchip_1_1_inet_1_1_i_p_address_ac701945cb65e92ef930cf750baf685f6_cgraph">
-<area shape="rect" title="Construct an IPv6 multicast address from its parts." alt="" coords="5,5,160,47"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#af86c332e12596db51af53ff59da71211" title="Construct an IPv6 multicast address from its parts." alt="" coords="208,5,363,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1280,16 +1007,6 @@ Here is the call graph for this function:</div>
 <p>Construct a transient, prefix IPv6 multicast address from its parts. </p>
 <p>Use <code>MakeIPv6PrefixMulticast(uint8_t scope, uint8_t prefixlen, const uint64_t prefix, uint32_t groupId)</code> to construct a transient, prefix IPv6 multicast address with for routing scope <code>scope</code> and group identifier octets <code>groupId</code>, qualified by the prefix <code>prefix</code> of length <code>prefixlen</code> bits.</p>
 <dl class="section return"><dt>Returns</dt><dd>The constructed IP address. </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_acdc35bb04877b7d73976409083b9c854_cgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_acdc35bb04877b7d73976409083b9c854_cgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_acdc35bb04877b7d73976409083b9c854_cgraph" id="classchip_1_1_inet_1_1_i_p_address_acdc35bb04877b7d73976409083b9c854_cgraph">
-<area shape="rect" title="Construct a transient, prefix IPv6 multicast address from its parts." alt="" coords="5,5,196,47"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#af93d52e38ad9a9f30f731f331be1711b" title="Construct a transient IPv6 multicast address from its parts." alt="" coords="244,5,457,47"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#af86c332e12596db51af53ff59da71211" title="Construct an IPv6 multicast address from its parts." alt="" coords="505,5,660,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1336,24 +1053,6 @@ Here is the call graph for this function:</div>
 <p>Construct a transient IPv6 multicast address from its parts. </p>
 <p>Use <code>MakeIPv6TransientMulticast(uint8_t flags, uint8_t scope, uint8_t groupId[14])</code> to construct a transient IPv6 multicast address with <code>flags</code> for routing scope <code>scope</code> and group identifier octets <code>groupId</code>.</p>
 <dl class="section return"><dt>Returns</dt><dd>The constructed IP address. </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_af93d52e38ad9a9f30f731f331be1711b_cgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_af93d52e38ad9a9f30f731f331be1711b_cgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_af93d52e38ad9a9f30f731f331be1711b_cgraph" id="classchip_1_1_inet_1_1_i_p_address_af93d52e38ad9a9f30f731f331be1711b_cgraph">
-<area shape="rect" title="Construct a transient IPv6 multicast address from its parts." alt="" coords="5,5,219,47"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#af86c332e12596db51af53ff59da71211" title="Construct an IPv6 multicast address from its parts." alt="" coords="267,5,421,47"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_af93d52e38ad9a9f30f731f331be1711b_icgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_af93d52e38ad9a9f30f731f331be1711b_icgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_af93d52e38ad9a9f30f731f331be1711b_icgraph" id="classchip_1_1_inet_1_1_i_p_address_af93d52e38ad9a9f30f731f331be1711b_icgraph">
-<area shape="rect" title="Construct a transient IPv6 multicast address from its parts." alt="" coords="244,5,457,47"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#acdc35bb04877b7d73976409083b9c854" title="Construct a transient, prefix IPv6 multicast address from its parts." alt="" coords="5,5,196,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1394,15 +1093,6 @@ Here is the caller graph for this function:</div>
 <p>Construct a well-known IPv6 multicast address from its parts. </p>
 <p>Use <code>MakeIPv6WellKnownMulticast(uint8_t scope, uint32_t groupId)</code> to construct an IPv6 multicast address for routing scope <code>scope</code> and group identifier <code>groupId</code>.</p>
 <dl class="section return"><dt>Returns</dt><dd>The constructed IP address. </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_a59beb523c451e410951ff1dc47e23417_cgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_a59beb523c451e410951ff1dc47e23417_cgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_a59beb523c451e410951ff1dc47e23417_cgraph" id="classchip_1_1_inet_1_1_i_p_address_a59beb523c451e410951ff1dc47e23417_cgraph">
-<area shape="rect" title="Construct a well&#45;known IPv6 multicast address from its parts." alt="" coords="5,5,232,47"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#af86c332e12596db51af53ff59da71211" title="Construct an IPv6 multicast address from its parts." alt="" coords="280,5,435,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1618,24 +1308,6 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <p>Use <code>ReadAddress(uint8_t *&amp;p, IPAddress &amp;output)</code> to decode the IP address at <code>p</code> to the object <code>output</code>. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_a754433df2941d22c556c7dc19697c6d1_cgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_a754433df2941d22c556c7dc19697c6d1_cgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_a754433df2941d22c556c7dc19697c6d1_cgraph" id="classchip_1_1_inet_1_1_i_p_address_a754433df2941d22c556c7dc19697c6d1_cgraph">
-<area shape="rect" title="Emit the IP address in standard network representation." alt="" coords="5,5,160,47"/>
-<area shape="rect" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#ab52833322402f0f0f1cb68f5ee5d1292" title=" " alt="" coords="208,13,287,39"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_a754433df2941d22c556c7dc19697c6d1_icgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_a754433df2941d22c556c7dc19697c6d1_icgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_a754433df2941d22c556c7dc19697c6d1_icgraph" id="classchip_1_1_inet_1_1_i_p_address_a754433df2941d22c556c7dc19697c6d1_icgraph">
-<area shape="rect" title="Emit the IP address in standard network representation." alt="" coords="297,5,452,47"/>
-<area shape="rect" href="namespacemdns_1_1_minimal.html#a40ded0289bd6bc55f15cc40b9b61721c" title="Parses an IPV6 (AAAA) record data https://tools.ietf.org/html/rfc3596." alt="" coords="5,13,249,39"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1657,15 +1329,6 @@ Here is the caller graph for this function:</div>
 <p>Extract the 16-bit subnet identifier of an IPv6 ULA address. </p>
 <p>Use this method with an IPv6 unique-local address (ULA) to extract the subnet identifier, which is the least significant 16 bits of the network prefix. The network prefix is the most significant 64 bits of of the address. In other words, the subnet identifier is located in the 7th and 8th bytes of a 16-byte address.</p>
 <dl class="section return"><dt>Returns</dt><dd>16-bit subnet identifier, or zero if the IP address is not an IPv6 unique-local address. </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_a51cd69799f6c6efa1f0e23a84fed1c32_cgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_a51cd69799f6c6efa1f0e23a84fed1c32_cgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_a51cd69799f6c6efa1f0e23a84fed1c32_cgraph" id="classchip_1_1_inet_1_1_i_p_address_a51cd69799f6c6efa1f0e23a84fed1c32_cgraph">
-<area shape="rect" title="Extract the 16&#45;bit subnet identifier of an IPv6 ULA address." alt="" coords="5,5,160,47"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#a74dded2b5e93cb25d7631759dd0b444e" title="Test whether address is IPv6 unique&#45;local address (ULA)." alt="" coords="208,5,363,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1706,36 +1369,6 @@ Here is the call graph for this function:</div>
 <p>Use <code><a class="el" href="classchip_1_1_inet_1_1_i_p_address.html#a0c4bca75cfcc8c89ceae160bc395ae2d" title="Extract the IPv4 address as a platform data structure.">ToIPv4() const</a></code> to extract the content as an IPv4 address, if possible. IPv6 addresses and the unspecified address are extracted as <code>0.0.0.0</code>.</p>
 <p>The result is either of type <code>struct in_addr</code> (on POSIX) or <code>ip4_addr_t</code> (on LwIP).</p>
 <dl class="section return"><dt>Returns</dt><dd>The encapsulated IPv4 address, or <code>0.0.0.0</code> if the address is either unspecified or not an IPv4 address. </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_a0c4bca75cfcc8c89ceae160bc395ae2d_cgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_a0c4bca75cfcc8c89ceae160bc395ae2d_cgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_a0c4bca75cfcc8c89ceae160bc395ae2d_cgraph" id="classchip_1_1_inet_1_1_i_p_address_a0c4bca75cfcc8c89ceae160bc395ae2d_cgraph">
-<area shape="rect" title="Extract the IPv4 address as a platform data structure." alt="" coords="5,5,160,47"/>
-<area shape="rect" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#ab52833322402f0f0f1cb68f5ee5d1292" title=" " alt="" coords="208,13,287,39"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_a0c4bca75cfcc8c89ceae160bc395ae2d_icgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_a0c4bca75cfcc8c89ceae160bc395ae2d_icgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_a0c4bca75cfcc8c89ceae160bc395ae2d_icgraph" id="classchip_1_1_inet_1_1_i_p_address_a0c4bca75cfcc8c89ceae160bc395ae2d_icgraph">
-<area shape="rect" title="Extract the IPv4 address as a platform data structure." alt="" coords="1064,165,1219,207"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_u_d_p_end_point.html#af8e927e83842b1be121f1e284c7622fd" title="Bind the endpoint to an interface IP address." alt="" coords="831,5,1006,47"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_raw_end_point.html#a78f2d3f55307f23bb9de06e470560486" title="Bind the endpoint to an interface IP address." alt="" coords="831,71,1006,112"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_t_c_p_end_point.html#a856f915e764592b461f04ca166ba4911" title="Bind the endpoint to an interface IP address." alt="" coords="833,136,1005,177"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_t_c_p_end_point.html#a0020508efa72ed087366ad3620fcf9c1" title="Initiate a TCP connection." alt="" coords="572,147,744,188"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_end_point_basis.html#ade6367f6d3a12bf1e002fa9b69b48ee2" title=" " alt="" coords="821,253,1016,295"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#a3d6eb785c416b7982b34d5f776ded760" title="Emit the IP address in conventional text presentation format." alt="" coords="841,319,996,360"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_server_base.html#af920838a902438c0c1f10553b8518933" title="Listen on the given interfaces/address types." alt="" coords="557,5,759,47"/>
-<area shape="rect" href="namespacechip_1_1_device_layer_1_1_internal.html#abe2e4fe3d95c4b243c964c09f46ccd30" title=" " alt="" coords="545,233,771,275"/>
-<area shape="rect" href="namespacechip_1_1_device_layer_1_1_internal.html#ad7a9636d2100061afbd79471fbdf7d89" title="Log information related to a state change in the OpenThread stack." alt="" coords="550,299,766,355"/>
-<area shape="rect" href="classchip_1_1_transport_1_1_peer_address.html#a915e1f32a1bc1d399c259506cf56c6c3" title=" " alt="" coords="555,380,761,421"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_internal_1_1_generic_thread_stack_manager_impl___open_thread___lw_i_p.html#a4d3fb9ed100bdd543a01e4a239a29662" title=" " alt="" coords="543,446,773,531"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_internal_1_1_generic_thread_stack_manager_impl___open_thread.html#ab30e6c389c12687d751882a83442feed" title=" " alt="" coords="284,292,495,363"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_internal_1_1_generic_thread_stack_manager_impl___open_thread___lw_i_p.html#af13088d0df3274b4ed128237646e1556" title=" " alt="" coords="5,285,236,370"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1776,42 +1409,11 @@ Here is the caller graph for this function:</div>
 <p>Use <code><a class="el" href="classchip_1_1_inet_1_1_i_p_address.html#ac4ef678239032c27915f5896ffeae86a" title="Extract the IPv6 address as a platform data structure.">ToIPv6() const</a></code> to extract the content as an IPv6 address, if possible. IPv4 addresses and the unspecified address are extracted as <code>[::]</code>.</p>
 <p>The result is either of type <code>struct in6_addr</code> (on POSIX) or <code>ip6_addr_t</code> (on LwIP).</p>
 <dl class="section return"><dt>Returns</dt><dd>The encapsulated IPv4 address, or <code></code>[::] if the address is either unspecified or not an IPv4 address. </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_ac4ef678239032c27915f5896ffeae86a_cgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_ac4ef678239032c27915f5896ffeae86a_cgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_ac4ef678239032c27915f5896ffeae86a_cgraph" id="classchip_1_1_inet_1_1_i_p_address_ac4ef678239032c27915f5896ffeae86a_cgraph">
-<area shape="rect" title="Extract the IPv6 address as a platform data structure." alt="" coords="5,5,160,47"/>
-<area shape="rect" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#ab52833322402f0f0f1cb68f5ee5d1292" title=" " alt="" coords="208,13,287,39"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_ac4ef678239032c27915f5896ffeae86a_icgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_ac4ef678239032c27915f5896ffeae86a_icgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_ac4ef678239032c27915f5896ffeae86a_icgraph" id="classchip_1_1_inet_1_1_i_p_address_ac4ef678239032c27915f5896ffeae86a_icgraph">
-<area shape="rect" title="Extract the IPv6 address as a platform data structure." alt="" coords="1064,195,1219,236"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_u_d_p_end_point.html#af8e927e83842b1be121f1e284c7622fd" title="Bind the endpoint to an interface IP address." alt="" coords="831,5,1006,47"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_raw_end_point.html#a78f2d3f55307f23bb9de06e470560486" title="Bind the endpoint to an interface IP address." alt="" coords="831,71,1006,112"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_t_c_p_end_point.html#a856f915e764592b461f04ca166ba4911" title="Bind the endpoint to an interface IP address." alt="" coords="833,136,1005,177"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_t_c_p_end_point.html#a0020508efa72ed087366ad3620fcf9c1" title="Initiate a TCP connection." alt="" coords="572,165,744,207"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_end_point_basis.html#ade6367f6d3a12bf1e002fa9b69b48ee2" title=" " alt="" coords="821,253,1016,295"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_raw_end_point.html#a6e1c6ec9a6359d56a2ee865f4f8c3572" title="Bind the raw endpoint to an IPv6 link&#45;local scope address at the specified interface index." alt="" coords="831,319,1006,360"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#a3d6eb785c416b7982b34d5f776ded760" title="Emit the IP address in conventional text presentation format." alt="" coords="841,384,996,425"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_server_base.html#af920838a902438c0c1f10553b8518933" title="Listen on the given interfaces/address types." alt="" coords="557,5,759,47"/>
-<area shape="rect" href="namespacechip_1_1_device_layer_1_1_internal.html#abe2e4fe3d95c4b243c964c09f46ccd30" title=" " alt="" coords="545,273,771,315"/>
-<area shape="rect" href="namespacechip_1_1_device_layer_1_1_internal.html#ad7a9636d2100061afbd79471fbdf7d89" title="Log information related to a state change in the OpenThread stack." alt="" coords="550,339,766,395"/>
-<area shape="rect" href="classchip_1_1_transport_1_1_peer_address.html#a915e1f32a1bc1d399c259506cf56c6c3" title=" " alt="" coords="555,420,761,461"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_internal_1_1_generic_thread_stack_manager_impl___open_thread___lw_i_p.html#a4d3fb9ed100bdd543a01e4a239a29662" title=" " alt="" coords="543,486,773,571"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_internal_1_1_generic_thread_stack_manager_impl___open_thread.html#ab30e6c389c12687d751882a83442feed" title=" " alt="" coords="284,332,495,403"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_internal_1_1_generic_thread_stack_manager_impl___open_thread___lw_i_p.html#af13088d0df3274b4ed128237646e1556" title=" " alt="" coords="5,325,236,410"/>
-</map>
-</div>
 
 </div>
 </div>
 <a id="a3d6eb785c416b7982b34d5f776ded760"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d6eb785c416b7982b34d5f776ded760">&#9670;&nbsp;</a></span>ToString()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d6eb785c416b7982b34d5f776ded760">&#9670;&nbsp;</a></span>ToString() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1847,34 +1449,36 @@ Here is the caller graph for this function:</div>
 <p>Use <code><a class="el" href="classchip_1_1_inet_1_1_i_p_address.html#a3d6eb785c416b7982b34d5f776ded760" title="Emit the IP address in conventional text presentation format.">ToString(char *buf, uint32_t bufSize) const</a></code> to write the conventional text presentation form of the IP address to the memory located at <code>buf</code> and extending as much as <code>bufSize</code> bytes, including its NUL termination character.</p>
 <p>Note Well: not compliant with RFC 5952 on some platforms. Specifically, zero compression may not be applied according to section 4.2.</p>
 <dl class="section return"><dt>Returns</dt><dd>The argument <code>buf</code> if no formatting error, or zero otherwise. </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_a3d6eb785c416b7982b34d5f776ded760_cgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_a3d6eb785c416b7982b34d5f776ded760_cgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_a3d6eb785c416b7982b34d5f776ded760_cgraph" id="classchip_1_1_inet_1_1_i_p_address_a3d6eb785c416b7982b34d5f776ded760_cgraph">
-<area shape="rect" title="Emit the IP address in conventional text presentation format." alt="" coords="5,115,160,156"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#aeac484acfe3fc021f4571a9fef378ff1" title="Test whether address is IPv4 compatible." alt="" coords="208,5,363,47"/>
-<area shape="rect" href="namespacechip.html#a7b161ecab2491e5a21adac0b527c532f" title=" " alt="" coords="242,71,329,98"/>
-<area shape="rect" href="namespacechip.html#ae511356285bd0562e7563e77b562d938" title=" " alt="" coords="244,122,327,149"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#a0c4bca75cfcc8c89ceae160bc395ae2d" title="Extract the IPv4 address as a platform data structure." alt="" coords="208,173,363,215"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#ac4ef678239032c27915f5896ffeae86a" title="Extract the IPv6 address as a platform data structure." alt="" coords="208,239,363,280"/>
-<area shape="rect" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#ab52833322402f0f0f1cb68f5ee5d1292" title=" " alt="" coords="411,214,489,241"/>
-</map>
+
 </div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_a3d6eb785c416b7982b34d5f776ded760_icgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_a3d6eb785c416b7982b34d5f776ded760_icgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_a3d6eb785c416b7982b34d5f776ded760_icgraph" id="classchip_1_1_inet_1_1_i_p_address_a3d6eb785c416b7982b34d5f776ded760_icgraph">
-<area shape="rect" title="Emit the IP address in conventional text presentation format." alt="" coords="821,116,976,157"/>
-<area shape="rect" href="namespacechip_1_1_device_layer_1_1_internal.html#abe2e4fe3d95c4b243c964c09f46ccd30" title=" " alt="" coords="545,5,771,47"/>
-<area shape="rect" href="namespacechip_1_1_device_layer_1_1_internal.html#ad7a9636d2100061afbd79471fbdf7d89" title="Log information related to a state change in the OpenThread stack." alt="" coords="550,71,766,127"/>
-<area shape="rect" href="classchip_1_1_transport_1_1_peer_address.html#a915e1f32a1bc1d399c259506cf56c6c3" title=" " alt="" coords="555,152,761,193"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_internal_1_1_generic_thread_stack_manager_impl___open_thread___lw_i_p.html#a4d3fb9ed100bdd543a01e4a239a29662" title=" " alt="" coords="543,218,773,303"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_internal_1_1_generic_thread_stack_manager_impl___open_thread.html#ab30e6c389c12687d751882a83442feed" title=" " alt="" coords="284,64,495,135"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_internal_1_1_generic_thread_stack_manager_impl___open_thread___lw_i_p.html#af13088d0df3274b4ed128237646e1556" title=" " alt="" coords="5,57,236,142"/>
-</map>
 </div>
+<a id="a93dfe3ef7d606de24956852780f61569"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93dfe3ef7d606de24956852780f61569">&#9670;&nbsp;</a></span>ToString() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint32_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* chip::Inet::IPAddress::ToString </td>
+          <td>(</td>
+          <td class="paramtype">char(&amp;)&#160;</td>
+          <td class="paramname"><em>buf</em>[N]</td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A version of ToString that writes to a literal and deduces how much space it as to work with. </p>
 
 </div>
 </div>
@@ -1903,28 +1507,6 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_afa108447daa9f0061d68efd2f0a8d28a_icgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_afa108447daa9f0061d68efd2f0a8d28a_icgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_afa108447daa9f0061d68efd2f0a8d28a_icgraph" id="classchip_1_1_inet_1_1_i_p_address_afa108447daa9f0061d68efd2f0a8d28a_icgraph">
-<area shape="rect" title="Extract the type of the IP address." alt="" coords="504,287,659,328"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_u_d_p_end_point.html#af8e927e83842b1be121f1e284c7622fd" title="Bind the endpoint to an interface IP address." alt="" coords="268,5,443,47"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_raw_end_point.html#a78f2d3f55307f23bb9de06e470560486" title="Bind the endpoint to an interface IP address." alt="" coords="268,71,443,112"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_t_c_p_end_point.html#a856f915e764592b461f04ca166ba4911" title="Bind the endpoint to an interface IP address." alt="" coords="269,136,441,177"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_t_c_p_end_point.html#a0020508efa72ed087366ad3620fcf9c1" title="Initiate a TCP connection." alt="" coords="20,165,192,207"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_raw_end_point.html#a6e1c6ec9a6359d56a2ee865f4f8c3572" title="Bind the raw endpoint to an IPv6 link&#45;local scope address at the specified interface index." alt="" coords="268,253,443,295"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_server_base.html#af6b4f7d2958dc0c884ed414361ddd0c4" title="Send the specified packet to a destination IP address over the specified address." alt="" coords="255,319,456,360"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_end_point_basis.html#a69abc0bb4e80ff46ced8eec1529dff5b" title="Join an IP multicast group." alt="" coords="258,384,453,425"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_end_point_basis.html#a5c1a58c153547e99e1156b9cb58f0579" title="Leave an IP multicast group." alt="" coords="258,449,453,491"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_u_d_p_end_point.html#abb42a38f5e0cb7d26f013a63032eca18" title="Send a UDP message to a specified destination." alt="" coords="268,515,443,556"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_raw_end_point.html#aac4f5cf512c976842613f1391931ab0b" title="Send an ICMP message to the specified destination." alt="" coords="268,580,443,621"/>
-<area shape="rect" href="classmdns_1_1_minimal_1_1_server_base.html#af920838a902438c0c1f10553b8518933" title="Listen on the given interfaces/address types." alt="" coords="5,5,207,47"/>
-<area shape="rect" href="classchip_1_1_transport_1_1_u_d_p.html#ac103028dea48b3b17323e5b6cd5a27ac" title="Send a message to the specified target." alt="" coords="29,449,183,491"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_u_d_p_end_point.html#a2339161f021bc5c4f11d334fc8d89256" title="Send a UDP message to the specified destination address." alt="" coords="19,515,193,556"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_raw_end_point.html#a45d2e4ea620bb8bb0d023d76bf3d2612" title="Send an ICMP message to the specified destination address." alt="" coords="19,580,193,621"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1953,15 +1535,6 @@ Here is the caller graph for this function:</div>
 </dl>
 <p>Use <code>WriteAddress(uint8_t *&amp;p)</code> to encode the IP address in the binary format defined by RFC 4291 for IPv6 addresses. IPv4 addresses are encoded according to section 2.5.5.1 "IPv4-Compatible
  IPv6 Address" (V4COMPAT). </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_inet_1_1_i_p_address_ab4c886dd85812f5ff0b94dc73636a006_cgraph.png" border="0" usemap="#classchip_1_1_inet_1_1_i_p_address_ab4c886dd85812f5ff0b94dc73636a006_cgraph" alt=""/></div>
-<map name="classchip_1_1_inet_1_1_i_p_address_ab4c886dd85812f5ff0b94dc73636a006_cgraph" id="classchip_1_1_inet_1_1_i_p_address_ab4c886dd85812f5ff0b94dc73636a006_cgraph">
-<area shape="rect" title="Emit the IP address in standard network representation." alt="" coords="5,5,160,47"/>
-<area shape="rect" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#ab52833322402f0f0f1cb68f5ee5d1292" title=" " alt="" coords="208,13,287,39"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -2019,7 +1592,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="namespacechip_1_1_inet.html">Inet</a></li><li class="navelem"><a class="el" href="classchip_1_1_inet_1_1_i_p_address.html">IPAddress</a></li>
-    <li class="footer">Generated on Mon Feb 1 2021 16:49:17 for Connected Home over IP by
+    <li class="footer">Generated on Thu Apr 15 2021 18:57:06 for Connected Home over IP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

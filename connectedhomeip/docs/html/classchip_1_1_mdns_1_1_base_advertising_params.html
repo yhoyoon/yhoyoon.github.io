@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Connected Home over IP
-   &#160;<span id="projectnumber">a83086a0</span>
+   &#160;<span id="projectnumber">672cf7684</span>
    </div>
   </td>
  </tr>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('classchip_1_1_mdns_1_1_base_advertisin
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a619db4f56d6a3a12259f655a5d12e47c"><td class="memItemLeft" align="right" valign="top">Derived &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_mdns_1_1_base_advertising_params.html#a619db4f56d6a3a12259f655a5d12e47c">SetPort</a> (uint16_t port)</td></tr>
+<tr class="memitem:a619db4f56d6a3a12259f655a5d12e47c"><td class="memItemLeft" align="right" valign="top">Derived &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_mdns_1_1_base_advertising_params.html#a619db4f56d6a3a12259f655a5d12e47c">SetPort</a> (uint16_t <a class="el" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#a8e0798404bf2cf5dabb84c5ba9a4f236">port</a>)</td></tr>
 <tr class="separator:a619db4f56d6a3a12259f655a5d12e47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac582cedbe753918a06a70b41cac21bf2"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_mdns_1_1_base_advertising_params.html#ac582cedbe753918a06a70b41cac21bf2">GetPort</a> () const</td></tr>
 <tr class="separator:ac582cedbe753918a06a70b41cac21bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -103,6 +103,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a76fc51da68f21ee102e58679dacb4c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa81148dff5b0343b6e5e46cb908b5515"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_mdns_1_1_base_advertising_params.html#aa81148dff5b0343b6e5e46cb908b5515">IsIPv4Enabled</a> () const</td></tr>
 <tr class="separator:aa81148dff5b0343b6e5e46cb908b5515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f1437a9d0a5a14dd765c707e10bbb3a"><td class="memItemLeft" align="right" valign="top">Derived &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_mdns_1_1_base_advertising_params.html#a5f1437a9d0a5a14dd765c707e10bbb3a">SetMac</a> (<a class="el" href="namespacechip.html#a96f429e9adf7dbc278167a45674cb1b3">chip::ByteSpan</a> mac)</td></tr>
+<tr class="separator:a5f1437a9d0a5a14dd765c707e10bbb3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a328c14ae4f829ffc2da3bd872707816b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacechip.html#a96f429e9adf7dbc278167a45674cb1b3">chip::ByteSpan</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_mdns_1_1_base_advertising_params.html#a328c14ae4f829ffc2da3bd872707816b">GetMac</a> () const</td></tr>
+<tr class="separator:a328c14ae4f829ffc2da3bd872707816b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a76fc51da68f21ee102e58679dacb4c44"></a>
@@ -122,6 +126,33 @@ template&lt;class Derived &gt; </div>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>enable</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a328c14ae4f829ffc2da3bd872707816b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a328c14ae4f829ffc2da3bd872707816b">&#9670;&nbsp;</a></span>GetMac()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacechip.html#a96f429e9adf7dbc278167a45674cb1b3">chip::ByteSpan</a> <a class="el" href="classchip_1_1_mdns_1_1_base_advertising_params.html">chip::Mdns::BaseAdvertisingParams</a>&lt; Derived &gt;::GetMac </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -187,6 +218,34 @@ template&lt;class Derived &gt; </div>
 
 </div>
 </div>
+<a id="a5f1437a9d0a5a14dd765c707e10bbb3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f1437a9d0a5a14dd765c707e10bbb3a">&#9670;&nbsp;</a></span>SetMac()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Derived&amp; <a class="el" href="classchip_1_1_mdns_1_1_base_advertising_params.html">chip::Mdns::BaseAdvertisingParams</a>&lt; Derived &gt;::SetMac </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a96f429e9adf7dbc278167a45674cb1b3">chip::ByteSpan</a>&#160;</td>
+          <td class="paramname"><em>mac</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a619db4f56d6a3a12259f655a5d12e47c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a619db4f56d6a3a12259f655a5d12e47c">&#9670;&nbsp;</a></span>SetPort()</h2>
 
@@ -224,7 +283,7 @@ template&lt;class Derived &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="namespacechip_1_1_mdns.html">Mdns</a></li><li class="navelem"><a class="el" href="classchip_1_1_mdns_1_1_base_advertising_params.html">BaseAdvertisingParams</a></li>
-    <li class="footer">Generated on Mon Feb 1 2021 16:49:17 for Connected Home over IP by
+    <li class="footer">Generated on Thu Apr 15 2021 18:57:06 for Connected Home over IP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

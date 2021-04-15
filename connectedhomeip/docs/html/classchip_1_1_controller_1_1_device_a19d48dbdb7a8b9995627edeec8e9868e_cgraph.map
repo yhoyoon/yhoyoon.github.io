@@ -1,5 +1,0 @@
-<map id="chip::Controller::Device::AddReportHandler" name="chip::Controller::Device::AddReportHandler">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,180,47"/>
-<area shape="rect" id="node2" href="$classchip_1_1_callback_1_1_callback.html#a30a6f6aeb0456fbc6a9d1c66c4d91e6f" title="Cancel, i.e." alt="" coords="228,5,405,47"/>
-<area shape="rect" id="node3" href="$classchip_1_1_callback_1_1_cancelable.html#a741ee7f3ebb708de9a3b8c973ace2cb2" title="run whatever function the callee/registrar has specified in order to clean up any resource allocation..." alt="" coords="453,5,647,47"/>
-</map>

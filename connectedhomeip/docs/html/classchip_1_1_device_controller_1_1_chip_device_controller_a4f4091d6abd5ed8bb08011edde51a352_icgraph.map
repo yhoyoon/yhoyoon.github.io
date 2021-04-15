@@ -1,5 +1,0 @@
-<map id="chip::DeviceController::ChipDeviceController::IsConnected" name="chip::DeviceController::ChipDeviceController::IsConnected">
-<area shape="rect" id="node1" title="Check if there&#39;s an active connection." alt="" coords="503,5,671,61"/>
-<area shape="rect" id="node2" href="$_chip_device_controller-_script_binding_8cpp.html#a359082f926c6e1b8657290934b8f1c0c" title=" " alt="" coords="268,13,455,54"/>
-<area shape="rect" id="node3" href="$classchip_1_1_chip_device_ctrl_1_1_chip_device_controller.html#aa7a87fc296f94a59e2dd02945dbc0c2b" title=" " alt="" coords="5,13,220,54"/>
-</map>

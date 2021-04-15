@@ -1,7 +1,7 @@
 var _linux_2_mdns_impl_8cpp =
 [
     [ "ChipMdnsBrowse", "_linux_2_mdns_impl_8cpp.html#a0754a398f1b32ce97bb2158f0e632975", null ],
-    [ "ChipMdnsInit", "_linux_2_mdns_impl_8cpp.html#a097b521f09570a49356fe429cbc1024b", null ],
+    [ "ChipMdnsInit", "_linux_2_mdns_impl_8cpp.html#ac0b5927f16f9acfc238f7698f78b7f82", null ],
     [ "ChipMdnsPublishService", "_linux_2_mdns_impl_8cpp.html#afbba98fa3de45e9cd065838017c724e9", null ],
     [ "ChipMdnsResolve", "_linux_2_mdns_impl_8cpp.html#a92918bc47fadde76f386ab039d196c7c", null ],
     [ "ChipMdnsSetHostname", "_linux_2_mdns_impl_8cpp.html#a49bd665343abea118d41b69f96604e37", null ],

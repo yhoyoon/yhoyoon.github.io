@@ -1,5 +1,0 @@
-<map id="chip::Controller::ColorControlCluster::ReportAttributeColorTemperature" name="chip::Controller::ColorControlCluster::ReportAttributeColorTemperature">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,297,47"/>
-<area shape="rect" id="node2" href="$classchip_1_1_controller_1_1_cluster_base.html#a15a5b1e0a2200419ad82a67aae50322a" title="Request attribute reports from the device." alt="" coords="345,5,580,47"/>
-<area shape="rect" id="node3" href="$classchip_1_1_controller_1_1_cluster_base.html#a0b4d305c88f002f417ca466b3ff47741" title="Send the command, contained into the associate buffer, to the device." alt="" coords="628,5,803,47"/>
-</map>

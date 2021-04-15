@@ -1,7 +1,0 @@
-<map id="chip::DaysSinceEpochToCalendarDate" name="chip::DaysSinceEpochToCalendarDate">
-<area shape="rect" id="node1" title=" " alt="" coords="701,35,968,61"/>
-<area shape="rect" id="node2" href="$namespacechip.html#a2d8757e10f72f2d3e980f0af4a06400c" title=" " alt="" coords="461,5,647,32"/>
-<area shape="rect" id="node3" href="$namespacechip.html#a4ac30453978e0d1409365b42db562ab5" title=" " alt="" coords="455,57,653,98"/>
-<area shape="rect" id="node4" href="$namespacechip_1_1_system_1_1_platform_1_1_layer.html#aa46848ca7d4fdc8ad8ce933ea8ebedf3" title="Platform&#45;specific function for setting the current real (civil) time." alt="" coords="208,57,407,98"/>
-<area shape="rect" id="node5" href="$classchip_1_1_system_1_1_layer.html#a3d037a56e901fdf68e5007470710ec34" title="Sets the platform&#39;s notion of current real (civil) time." alt="" coords="5,57,160,98"/>
-</map>

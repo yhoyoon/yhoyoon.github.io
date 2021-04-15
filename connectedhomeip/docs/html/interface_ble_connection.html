@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Connected Home over IP
-   &#160;<span id="projectnumber">a83086a0</span>
+   &#160;<span id="projectnumber">672cf7684</span>
    </div>
   </td>
  </tr>
@@ -94,29 +94,9 @@ $(document).ready(function(){initNavTree('interface_ble_connection.html',''); in
 <div class="dynheader">
 Inheritance diagram for BleConnection:</div>
 <div class="dyncontent">
-<div class="center"><img src="interface_ble_connection__inherit__graph.png" border="0" usemap="#_ble_connection_inherit__map" alt="Inheritance graph"/></div>
-<map name="_ble_connection_inherit__map" id="_ble_connection_inherit__map">
-<area shape="rect" title=" " alt="" coords="167,80,283,107"/>
-<area shape="rect" title=" " alt="" coords="5,5,88,32"/>
-<area shape="rect" title=" " alt="" coords="113,5,338,32"/>
-<area shape="rect" title=" " alt="" coords="363,5,549,32"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for BleConnection:</div>
-<div class="dyncontent">
-<div class="center"><img src="interface_ble_connection__coll__graph.png" border="0" usemap="#_ble_connection_coll__map" alt="Collaboration graph"/></div>
-<map name="_ble_connection_coll__map" id="_ble_connection_coll__map">
-<area shape="rect" title=" " alt="" coords="229,184,345,211"/>
-<area shape="rect" title=" " alt="" coords="5,95,88,121"/>
-<area shape="rect" title=" " alt="" coords="113,95,338,121"/>
-<area shape="rect" title=" " alt="" coords="363,95,549,121"/>
-<area shape="rect" href="classchip_1_1_ble_1_1_ble_layer.html" title="This class provides an interface for a single thread to drive data either up the stack via the BleLay..." alt="" coords="583,95,726,121"/>
-<area shape="rect" href="classchip_1_1_ble_1_1_ble_layer_object.html" title=" " alt="" coords="425,184,610,211"/>
-<area shape="rect" href="classchip_1_1_ble_1_1_b_l_e_end_point.html" title=" " alt="" coords="575,269,742,295"/>
-<area shape="rect" title=" " alt="" coords="741,5,800,32"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+ <div class="center">
+  <img src="interface_ble_connection.png" alt=""/>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
@@ -139,6 +119,8 @@ Properties</h2></td></tr>
 <tr class="separator:abde1fd7976b85c5afaf075c8db898091"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af19f86a22efc15760fdc8a0f03bffba1"><td class="memItemLeft" align="right" valign="top">CBUUID *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_ble_connection.html#af19f86a22efc15760fdc8a0f03bffba1">shortServiceUUID</a></td></tr>
 <tr class="separator:af19f86a22efc15760fdc8a0f03bffba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38857160c236bfac94da8bb637767dca"><td class="memItemLeft" align="right" valign="top">dispatch_source_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_ble_connection.html#a38857160c236bfac94da8bb637767dca">timer</a></td></tr>
+<tr class="separator:a38857160c236bfac94da8bb637767dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a205f1985f88274ad39d955a65d4315c0"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_ble_connection.html#a205f1985f88274ad39d955a65d4315c0">deviceDiscriminator</a></td></tr>
 <tr class="separator:a205f1985f88274ad39d955a65d4315c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75e0af4c5771b01a4cbf2c51746d976e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_ble_connection.html#a75e0af4c5771b01a4cbf2c51746d976e">appState</a></td></tr>
@@ -184,15 +166,6 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="interface_ble_connection_a871f5c4fb86f2e0b754f039906c74d92_icgraph.png" border="0" usemap="#interface_ble_connection_a871f5c4fb86f2e0b754f039906c74d92_icgraph" alt=""/></div>
-<map name="interface_ble_connection_a871f5c4fb86f2e0b754f039906c74d92_icgraph" id="interface_ble_connection_a871f5c4fb86f2e0b754f039906c74d92_icgraph">
-<area shape="rect" title=" " alt="" coords="287,20,503,47"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_internal_1_1_ble_connection_delegate_impl.html#af480436c633b51c00f0a8920c7babf05" title=" " alt="" coords="5,5,239,61"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -407,6 +380,28 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a38857160c236bfac94da8bb637767dca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38857160c236bfac94da8bb637767dca">&#9670;&nbsp;</a></span>timer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (dispatch_source_t) timer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab77024e05ad2ecad4529935c29693b11"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab77024e05ad2ecad4529935c29693b11">&#9670;&nbsp;</a></span>workQueue</h2>
 
@@ -438,7 +433,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_ble_connection.html">BleConnection</a></li>
-    <li class="footer">Generated on Mon Feb 1 2021 16:49:16 for Connected Home over IP by
+    <li class="footer">Generated on Thu Apr 15 2021 18:57:05 for Connected Home over IP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

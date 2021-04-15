@@ -1,6 +1,6 @@
 var classchip_device_ctrl_1_1_device_mgr_cmd =
 [
-    [ "__init__", "classchip-device-ctrl_1_1_device_mgr_cmd.html#a0d3baec2eb15d44ff47a1f7b678ed66b", null ],
+    [ "__init__", "classchip-device-ctrl_1_1_device_mgr_cmd.html#a80210bb3fa40f09aa91bec713cd1e55c", null ],
     [ "completenames", "classchip-device-ctrl_1_1_device_mgr_cmd.html#ae352bd8376700b11da66440d36f4b042", null ],
     [ "do_bleadapterprint", "classchip-device-ctrl_1_1_device_mgr_cmd.html#a76dc0e493d09d47aae31675c19f4def7", null ],
     [ "do_bleadapterselect", "classchip-device-ctrl_1_1_device_mgr_cmd.html#a8fbd42f6c4ec1e4486a57d9adcfc5d6a", null ],
@@ -15,9 +15,12 @@ var classchip_device_ctrl_1_1_device_mgr_cmd =
     [ "do_history", "classchip-device-ctrl_1_1_device_mgr_cmd.html#ace15288ad10334c2a425cd31ecf1998e", null ],
     [ "do_q", "classchip-device-ctrl_1_1_device_mgr_cmd.html#af5bcadd6a122b28cb67fd4b1d3a74f97", null ],
     [ "do_quit", "classchip-device-ctrl_1_1_device_mgr_cmd.html#a2b9150e466142b0289de513c3c83de9b", null ],
+    [ "do_resolve", "classchip-device-ctrl_1_1_device_mgr_cmd.html#a587c20711728da0447dada1956825015", null ],
     [ "do_setlogoutput", "classchip-device-ctrl_1_1_device_mgr_cmd.html#af68d0aa3fd2cf69f81959adc43fe7fba", null ],
+    [ "do_setpairingthreadcredential", "classchip-device-ctrl_1_1_device_mgr_cmd.html#a5f89f2fb7d5b435ff802b9f8f34cd99d", null ],
     [ "do_setpairingwificredential", "classchip-device-ctrl_1_1_device_mgr_cmd.html#acb38262c0e1422beaf93597339b12d44", null ],
     [ "do_zcl", "classchip-device-ctrl_1_1_device_mgr_cmd.html#afd2eb5ebf10693305318020904c2c3f6", null ],
+    [ "do_zclread", "classchip-device-ctrl_1_1_device_mgr_cmd.html#ab8ef8ccb204ea655c835affc23e18c2a", null ],
     [ "emptyline", "classchip-device-ctrl_1_1_device_mgr_cmd.html#a493412881fa4d7cde2bcfc34356ec06f", null ],
     [ "parseline", "classchip-device-ctrl_1_1_device_mgr_cmd.html#a0c159f7821ab6f8c08be20d04e198f7e", null ],
     [ "postcmd", "classchip-device-ctrl_1_1_device_mgr_cmd.html#aa14a53106faddadc9c91bf5219700d4c", null ],

@@ -1,5 +1,6 @@
 var _free_r_t_o_s_config_8h =
 [
+    [ "configAPPLICATION_ALLOCATED_HEAP", "_free_r_t_o_s_config_8h.html#ae1a85802d42764830d47abe43a3d9a5e", null ],
     [ "configASSERT", "_free_r_t_o_s_config_8h.html#a228c70cd48927d6ab730ed1a6dfbe35f", null ],
     [ "configCHECK_FOR_STACK_OVERFLOW", "_free_r_t_o_s_config_8h.html#a847511ee433494b1e32c90602c967ae7", null ],
     [ "configCPU_CLOCK_HZ", "_free_r_t_o_s_config_8h.html#aa68082df879e6fc96bcb9b26513639e7", null ],

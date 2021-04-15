@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Connected Home over IP
-   &#160;<span id="projectnumber">a83086a0</span>
+   &#160;<span id="projectnumber">672cf7684</span>
    </div>
   </td>
  </tr>
@@ -122,6 +122,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7f6e6aa587452b5663ffb9e677d0e171"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0862d16c8dfdad7291bc5075181584e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1_transport_1_1_base.html">Transport::Base</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#a0862d16c8dfdad7291bc5075181584e2">GetTransport</a> ()</td></tr>
 <tr class="separator:a0862d16c8dfdad7291bc5075181584e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0da7b0b212a668b40db4ac8b1009349e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#a0da7b0b212a668b40db4ac8b1009349e">IsPeerMsgCounterSynced</a> ()</td></tr>
+<tr class="separator:a0da7b0b212a668b40db4ac8b1009349e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5575892eddf1ce32dd31bef94115fb89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#a5575892eddf1ce32dd31bef94115fb89">SetPeerMessageIndex</a> (uint32_t id)</td></tr>
+<tr class="separator:a5575892eddf1ce32dd31bef94115fb89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c823a60ddb4b2b4d81b297aaecec6fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip.html#a911a83fdf89daee3f71f39da9e743e01">NodeId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#a9c823a60ddb4b2b4d81b297aaecec6fd">GetPeerNodeId</a> () const</td></tr>
 <tr class="separator:a9c823a60ddb4b2b4d81b297aaecec6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a40eee3bfa060504f1414482e58fdf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#a5a40eee3bfa060504f1414482e58fdf9">SetPeerNodeId</a> (<a class="el" href="namespacechip.html#a911a83fdf89daee3f71f39da9e743e01">NodeId</a> peerNodeId)</td></tr>
@@ -142,15 +146,27 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae72a1331744f89b500e41935e1cc7a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87016188f3725d49d639873141e43edf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#a87016188f3725d49d639873141e43edf">SetLastActivityTimeMs</a> (uint64_t <a class="el" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#ac50abae6d98e9974b60124d04929c51e">value</a>)</td></tr>
 <tr class="separator:a87016188f3725d49d639873141e43edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac3113f4fca574dbd7cb950997e9ce85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1_secure_session.html">SecureSession</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#aac3113f4fca574dbd7cb950997e9ce85">GetSecureSession</a> ()</td></tr>
-<tr class="separator:aac3113f4fca574dbd7cb950997e9ce85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae867e56b8fccb137eb480b09833061c8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classchip_1_1_secure_session.html">SecureSession</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#ae867e56b8fccb137eb480b09833061c8">GetSecureSession</a> () const</td></tr>
-<tr class="separator:ae867e56b8fccb137eb480b09833061c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86303267279cf1a946c120d5a2cb8f8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1_secure_session.html">SecureSession</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#a86303267279cf1a946c120d5a2cb8f8d">GetSenderSecureSession</a> ()</td></tr>
+<tr class="separator:a86303267279cf1a946c120d5a2cb8f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7377c56b80df261492455d67c0d5af2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1_secure_session.html">SecureSession</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#a7377c56b80df261492455d67c0d5af2b">GetReceiverSecureSession</a> ()</td></tr>
+<tr class="separator:a7377c56b80df261492455d67c0d5af2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaacd443f6358f1f39d4d9e3b60c9fe6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip_1_1_transport.html#a989454069ce6e05e756eee6dfbf358d9">Transport::AdminId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#abaacd443f6358f1f39d4d9e3b60c9fe6">GetAdminId</a> () const</td></tr>
+<tr class="separator:abaacd443f6358f1f39d4d9e3b60c9fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8940f480d6a8d57483ee4430a51fa0d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#a8940f480d6a8d57483ee4430a51fa0d4">SetAdminId</a> (<a class="el" href="namespacechip_1_1_transport.html#a989454069ce6e05e756eee6dfbf358d9">Transport::AdminId</a> admin)</td></tr>
+<tr class="separator:a8940f480d6a8d57483ee4430a51fa0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8f8d0f18e728d9502386dac02ea6b5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#ab8f8d0f18e728d9502386dac02ea6b5f">SetMsgCounterSyncInProgress</a> (bool <a class="el" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#ac50abae6d98e9974b60124d04929c51e">value</a>)</td></tr>
+<tr class="separator:ab8f8d0f18e728d9502386dac02ea6b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee71f955df99df466d4c83eed62026c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#aee71f955df99df466d4c83eed62026c4">IsInitialized</a> ()</td></tr>
 <tr class="separator:aee71f955df99df466d4c83eed62026c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c12e6e2521f49051d037b7a2929de14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#a5c12e6e2521f49051d037b7a2929de14">IsMsgCounterSyncInProgress</a> ()</td></tr>
+<tr class="separator:a5c12e6e2521f49051d037b7a2929de14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1142a48b3fe9ee84cc3ec596da469fd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#a1142a48b3fe9ee84cc3ec596da469fd2">Reset</a> ()</td></tr>
 <tr class="memdesc:a1142a48b3fe9ee84cc3ec596da469fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the connection state to a completely uninitialized status.  <a href="classchip_1_1_transport_1_1_peer_connection_state.html#a1142a48b3fe9ee84cc3ec596da469fd2">More...</a><br /></td></tr>
 <tr class="separator:a1142a48b3fe9ee84cc3ec596da469fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad81fe9688c3ffa0c975fbf6fd806069e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#ad81fe9688c3ffa0c975fbf6fd806069e">EncryptBeforeSend</a> (const uint8_t *input, size_t input_length, uint8_t *output, <a class="el" href="classchip_1_1_packet_header.html">PacketHeader</a> &amp;header, <a class="el" href="classchip_1_1_message_authentication_code.html">MessageAuthenticationCode</a> &amp;mac) const</td></tr>
+<tr class="separator:ad81fe9688c3ffa0c975fbf6fd806069e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c0f143f5fcbd492287662a7462b04e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#a0c0f143f5fcbd492287662a7462b04e1">DecryptOnReceive</a> (const uint8_t *input, size_t input_length, uint8_t *output, const <a class="el" href="classchip_1_1_packet_header.html">PacketHeader</a> &amp;header, const <a class="el" href="classchip_1_1_message_authentication_code.html">MessageAuthenticationCode</a> &amp;mac) const</td></tr>
+<tr class="separator:a0c0f143f5fcbd492287662a7462b04e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines state of a peer connection at a transport layer. </p>
@@ -293,6 +309,139 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0c0f143f5fcbd492287662a7462b04e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c0f143f5fcbd492287662a7462b04e1">&#9670;&nbsp;</a></span>DecryptOnReceive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> chip::Transport::PeerConnectionState::DecryptOnReceive </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>input_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1_packet_header.html">PacketHeader</a> &amp;&#160;</td>
+          <td class="paramname"><em>header</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classchip_1_1_message_authentication_code.html">MessageAuthenticationCode</a> &amp;&#160;</td>
+          <td class="paramname"><em>mac</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad81fe9688c3ffa0c975fbf6fd806069e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad81fe9688c3ffa0c975fbf6fd806069e">&#9670;&nbsp;</a></span>EncryptBeforeSend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> chip::Transport::PeerConnectionState::EncryptBeforeSend </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>input_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classchip_1_1_packet_header.html">PacketHeader</a> &amp;&#160;</td>
+          <td class="paramname"><em>header</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classchip_1_1_message_authentication_code.html">MessageAuthenticationCode</a> &amp;&#160;</td>
+          <td class="paramname"><em>mac</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abaacd443f6358f1f39d4d9e3b60c9fe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaacd443f6358f1f39d4d9e3b60c9fe6">&#9670;&nbsp;</a></span>GetAdminId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacechip_1_1_transport.html#a989454069ce6e05e756eee6dfbf358d9">Transport::AdminId</a> chip::Transport::PeerConnectionState::GetAdminId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae72a1331744f89b500e41935e1cc7a6c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae72a1331744f89b500e41935e1cc7a6c">&#9670;&nbsp;</a></span>GetLastActivityTimeMs()</h2>
 
@@ -315,15 +464,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_transport_1_1_peer_connection_state_ae72a1331744f89b500e41935e1cc7a6c_icgraph.png" border="0" usemap="#classchip_1_1_transport_1_1_peer_connection_state_ae72a1331744f89b500e41935e1cc7a6c_icgraph" alt=""/></div>
-<map name="classchip_1_1_transport_1_1_peer_connection_state_ae72a1331744f89b500e41935e1cc7a6c_icgraph" id="classchip_1_1_transport_1_1_peer_connection_state_ae72a1331744f89b500e41935e1cc7a6c_icgraph">
-<area shape="rect" title=" " alt="" coords="349,13,577,54"/>
-<area shape="rect" href="classchip_1_1_transport_1_1_peer_connections.html#af3fb7eaf4212a92f4e7f0fb01bf75496" title="Iterates through all active connections and expires any connection with an idle time larger than the ..." alt="" coords="5,5,301,61"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -349,16 +489,6 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_transport_1_1_peer_connection_state_add16da422be4e11a71613c97fe55dfc8_icgraph.png" border="0" usemap="#classchip_1_1_transport_1_1_peer_connection_state_add16da422be4e11a71613c97fe55dfc8_icgraph" alt=""/></div>
-<map name="classchip_1_1_transport_1_1_peer_connection_state_add16da422be4e11a71613c97fe55dfc8_icgraph" id="classchip_1_1_transport_1_1_peer_connection_state_add16da422be4e11a71613c97fe55dfc8_icgraph">
-<area shape="rect" title=" " alt="" coords="356,45,584,87"/>
-<area shape="rect" href="namespacechip_1_1_secure_message_codec.html#ab4b26d118b04e9a3aeecd8ea55c82b72" title="Attach payload header to the message and encrypt the message buffer using key from the connection sta..." alt="" coords="57,5,256,47"/>
-<area shape="rect" href="classchip_1_1_transport_1_1_peer_connections.html#a0188b8748e6625edbc1f9983fc9f3278" title="Get a peer connection state given a Node Id and Peer&#39;s Encryption Key Id." alt="" coords="5,71,308,141"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -409,16 +539,6 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_transport_1_1_peer_connection_state_a34d477138e340e25bef7d0e628ea1178_icgraph.png" border="0" usemap="#classchip_1_1_transport_1_1_peer_connection_state_a34d477138e340e25bef7d0e628ea1178_icgraph" alt=""/></div>
-<map name="classchip_1_1_transport_1_1_peer_connection_state_a34d477138e340e25bef7d0e628ea1178_icgraph" id="classchip_1_1_transport_1_1_peer_connection_state_a34d477138e340e25bef7d0e628ea1178_icgraph">
-<area shape="rect" title=" " alt="" coords="339,50,567,91"/>
-<area shape="rect" href="classchip_1_1_transport_1_1_peer_connections.html#ab818c2293f611703a51e34ddecbbfc13" title="Get a peer connection state given a Peer address." alt="" coords="5,5,291,61"/>
-<area shape="rect" href="classchip_1_1_secure_session_mgr.html#a1afe5195fb02dd83aa60abeed035bc72" title="Return the transport type of current connection to the node with id peerNodeId." alt="" coords="60,86,236,127"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -444,16 +564,6 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_transport_1_1_peer_connection_state_a478b7e8f583c23f65be9a0ff9c01b3f5_icgraph.png" border="0" usemap="#classchip_1_1_transport_1_1_peer_connection_state_a478b7e8f583c23f65be9a0ff9c01b3f5_icgraph" alt=""/></div>
-<map name="classchip_1_1_transport_1_1_peer_connection_state_a478b7e8f583c23f65be9a0ff9c01b3f5_icgraph" id="classchip_1_1_transport_1_1_peer_connection_state_a478b7e8f583c23f65be9a0ff9c01b3f5_icgraph">
-<area shape="rect" title=" " alt="" coords="339,50,567,91"/>
-<area shape="rect" href="classchip_1_1_transport_1_1_peer_connections.html#a4767a048ac007a9b23d4a4bedf262368" title="Get a peer connection state given a Node Id and Peer&#39;s Encryption Key Id." alt="" coords="5,5,291,61"/>
-<area shape="rect" href="classchip_1_1_secure_session_mgr.html#a73f56b6894673360488af9d71ebfb1bf" title="Establish a new pairing with a peer node." alt="" coords="60,86,236,127"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -479,23 +589,11 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_transport_1_1_peer_connection_state_a9c823a60ddb4b2b4d81b297aaecec6fd_icgraph.png" border="0" usemap="#classchip_1_1_transport_1_1_peer_connection_state_a9c823a60ddb4b2b4d81b297aaecec6fd_icgraph" alt=""/></div>
-<map name="classchip_1_1_transport_1_1_peer_connection_state_a9c823a60ddb4b2b4d81b297aaecec6fd_icgraph" id="classchip_1_1_transport_1_1_peer_connection_state_a9c823a60ddb4b2b4d81b297aaecec6fd_icgraph">
-<area shape="rect" title=" " alt="" coords="356,123,584,164"/>
-<area shape="rect" href="namespacechip_1_1_secure_message_codec.html#ab4b26d118b04e9a3aeecd8ea55c82b72" title="Attach payload header to the message and encrypt the message buffer using key from the connection sta..." alt="" coords="57,5,256,47"/>
-<area shape="rect" href="classchip_1_1_transport_1_1_peer_connections.html#ab3be6d2c4e7dc7b5248af4a33769d395" title="Get a peer connection state given a Node Id." alt="" coords="14,71,299,127"/>
-<area shape="rect" href="classchip_1_1_transport_1_1_peer_connections.html#a0188b8748e6625edbc1f9983fc9f3278" title="Get a peer connection state given a Node Id and Peer&#39;s Encryption Key Id." alt="" coords="5,152,308,223"/>
-<area shape="rect" href="classchip_1_1_secure_session_mgr.html#a73f56b6894673360488af9d71ebfb1bf" title="Establish a new pairing with a peer node." alt="" coords="69,247,245,288"/>
-</map>
-</div>
 
 </div>
 </div>
-<a id="aac3113f4fca574dbd7cb950997e9ce85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac3113f4fca574dbd7cb950997e9ce85">&#9670;&nbsp;</a></span>GetSecureSession() <span class="overload">[1/2]</span></h2>
+<a id="a7377c56b80df261492455d67c0d5af2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7377c56b80df261492455d67c0d5af2b">&#9670;&nbsp;</a></span>GetReceiverSecureSession()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -504,7 +602,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classchip_1_1_secure_session.html">SecureSession</a>&amp; chip::Transport::PeerConnectionState::GetSecureSession </td>
+          <td class="memname"><a class="el" href="classchip_1_1_secure_session.html">SecureSession</a>&amp; chip::Transport::PeerConnectionState::GetReceiverSecureSession </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -516,22 +614,11 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_transport_1_1_peer_connection_state_aac3113f4fca574dbd7cb950997e9ce85_icgraph.png" border="0" usemap="#classchip_1_1_transport_1_1_peer_connection_state_aac3113f4fca574dbd7cb950997e9ce85_icgraph" alt=""/></div>
-<map name="classchip_1_1_transport_1_1_peer_connection_state_aac3113f4fca574dbd7cb950997e9ce85_icgraph" id="classchip_1_1_transport_1_1_peer_connection_state_aac3113f4fca574dbd7cb950997e9ce85_icgraph">
-<area shape="rect" title=" " alt="" coords="252,71,480,112"/>
-<area shape="rect" href="namespacechip_1_1_secure_message_codec.html#a8c74f179b64643d01e43d3ea231ef3b7" title="Decrypt the message, perform message integrity check, and decode the payload header." alt="" coords="5,5,204,47"/>
-<area shape="rect" href="namespacechip_1_1_secure_message_codec.html#ab4b26d118b04e9a3aeecd8ea55c82b72" title="Attach payload header to the message and encrypt the message buffer using key from the connection sta..." alt="" coords="5,71,204,112"/>
-<area shape="rect" href="classchip_1_1_secure_session_mgr.html#a73f56b6894673360488af9d71ebfb1bf" title="Establish a new pairing with a peer node." alt="" coords="17,136,193,177"/>
-</map>
-</div>
 
 </div>
 </div>
-<a id="ae867e56b8fccb137eb480b09833061c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae867e56b8fccb137eb480b09833061c8">&#9670;&nbsp;</a></span>GetSecureSession() <span class="overload">[2/2]</span></h2>
+<a id="a86303267279cf1a946c120d5a2cb8f8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86303267279cf1a946c120d5a2cb8f8d">&#9670;&nbsp;</a></span>GetSenderSecureSession()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -540,10 +627,10 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classchip_1_1_secure_session.html">SecureSession</a>&amp; chip::Transport::PeerConnectionState::GetSecureSession </td>
+          <td class="memname"><a class="el" href="classchip_1_1_secure_session.html">SecureSession</a>&amp; chip::Transport::PeerConnectionState::GetSenderSecureSession </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -577,15 +664,6 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_transport_1_1_peer_connection_state_a6aee04ae7be7dbee230f6bb535ae18fd_icgraph.png" border="0" usemap="#classchip_1_1_transport_1_1_peer_connection_state_a6aee04ae7be7dbee230f6bb535ae18fd_icgraph" alt=""/></div>
-<map name="classchip_1_1_transport_1_1_peer_connection_state_a6aee04ae7be7dbee230f6bb535ae18fd_icgraph" id="classchip_1_1_transport_1_1_peer_connection_state_a6aee04ae7be7dbee230f6bb535ae18fd_icgraph">
-<area shape="rect" title=" " alt="" coords="252,5,480,47"/>
-<area shape="rect" href="namespacechip_1_1_secure_message_codec.html#ab4b26d118b04e9a3aeecd8ea55c82b72" title="Attach payload header to the message and encrypt the message buffer using key from the connection sta..." alt="" coords="5,5,204,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -636,15 +714,6 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_transport_1_1_peer_connection_state_a60f4e52446e466c8e367c1e1111ef8ab_icgraph.png" border="0" usemap="#classchip_1_1_transport_1_1_peer_connection_state_a60f4e52446e466c8e367c1e1111ef8ab_icgraph" alt=""/></div>
-<map name="classchip_1_1_transport_1_1_peer_connection_state_a60f4e52446e466c8e367c1e1111ef8ab_icgraph" id="classchip_1_1_transport_1_1_peer_connection_state_a60f4e52446e466c8e367c1e1111ef8ab_icgraph">
-<area shape="rect" title=" " alt="" coords="252,5,508,47"/>
-<area shape="rect" href="namespacechip_1_1_secure_message_codec.html#ab4b26d118b04e9a3aeecd8ea55c82b72" title="Attach payload header to the message and encrypt the message buffer using key from the connection sta..." alt="" coords="5,5,204,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -670,25 +739,56 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_transport_1_1_peer_connection_state_aee71f955df99df466d4c83eed62026c4_cgraph.png" border="0" usemap="#classchip_1_1_transport_1_1_peer_connection_state_aee71f955df99df466d4c83eed62026c4_cgraph" alt=""/></div>
-<map name="classchip_1_1_transport_1_1_peer_connection_state_aee71f955df99df466d4c83eed62026c4_cgraph" id="classchip_1_1_transport_1_1_peer_connection_state_aee71f955df99df466d4c83eed62026c4_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,233,47"/>
-<area shape="rect" href="classchip_1_1_transport_1_1_peer_address.html#acfeea8dd646fd5ea29cc3d4448e3da7c" title=" " alt="" coords="281,5,488,47"/>
-</map>
+
 </div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_transport_1_1_peer_connection_state_aee71f955df99df466d4c83eed62026c4_icgraph.png" border="0" usemap="#classchip_1_1_transport_1_1_peer_connection_state_aee71f955df99df466d4c83eed62026c4_icgraph" alt=""/></div>
-<map name="classchip_1_1_transport_1_1_peer_connection_state_aee71f955df99df466d4c83eed62026c4_icgraph" id="classchip_1_1_transport_1_1_peer_connection_state_aee71f955df99df466d4c83eed62026c4_icgraph">
-<area shape="rect" title=" " alt="" coords="356,57,584,98"/>
-<area shape="rect" href="classchip_1_1_transport_1_1_peer_connections.html#ab3be6d2c4e7dc7b5248af4a33769d395" title="Get a peer connection state given a Node Id." alt="" coords="14,5,299,61"/>
-<area shape="rect" href="classchip_1_1_transport_1_1_peer_connections.html#a0188b8748e6625edbc1f9983fc9f3278" title="Get a peer connection state given a Node Id and Peer&#39;s Encryption Key Id." alt="" coords="5,86,308,157"/>
-</map>
 </div>
+<a id="a5c12e6e2521f49051d037b7a2929de14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c12e6e2521f49051d037b7a2929de14">&#9670;&nbsp;</a></span>IsMsgCounterSyncInProgress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::Transport::PeerConnectionState::IsMsgCounterSyncInProgress </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0da7b0b212a668b40db4ac8b1009349e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0da7b0b212a668b40db4ac8b1009349e">&#9670;&nbsp;</a></span>IsPeerMsgCounterSynced()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool chip::Transport::PeerConnectionState::IsPeerMsgCounterSynced </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -768,17 +868,32 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Reset the connection state to a completely uninitialized status. </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_transport_1_1_peer_connection_state_a1142a48b3fe9ee84cc3ec596da469fd2_cgraph.png" border="0" usemap="#classchip_1_1_transport_1_1_peer_connection_state_a1142a48b3fe9ee84cc3ec596da469fd2_cgraph" alt=""/></div>
-<map name="classchip_1_1_transport_1_1_peer_connection_state_a1142a48b3fe9ee84cc3ec596da469fd2_cgraph" id="classchip_1_1_transport_1_1_peer_connection_state_a1142a48b3fe9ee84cc3ec596da469fd2_cgraph">
-<area shape="rect" title="Reset the connection state to a completely uninitialized status." alt="" coords="5,39,233,80"/>
-<area shape="rect" href="classchip_1_1_secure_session.html#a60f20618bc248a0e9f6f0d90302d2560" title="Clears the internal state of secure session back to the state of a new object." alt="" coords="309,5,460,47"/>
-<area shape="rect" href="classchip_1_1_transport_1_1_peer_address.html#ac22cdc60cce102f92fcbd1d5b47a62dc" title=" " alt="" coords="281,71,488,112"/>
-<area shape="rect" href="classchip_1_1_transport_1_1_peer_address.html#ac8fcd6c441f24d1594d2a589178dd1d8" title=" " alt="" coords="536,71,743,112"/>
-</map>
+
 </div>
+</div>
+<a id="a8940f480d6a8d57483ee4430a51fa0d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8940f480d6a8d57483ee4430a51fa0d4">&#9670;&nbsp;</a></span>SetAdminId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Transport::PeerConnectionState::SetAdminId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip_1_1_transport.html#a989454069ce6e05e756eee6dfbf358d9">Transport::AdminId</a>&#160;</td>
+          <td class="paramname"><em>admin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -805,16 +920,6 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_transport_1_1_peer_connection_state_a87016188f3725d49d639873141e43edf_icgraph.png" border="0" usemap="#classchip_1_1_transport_1_1_peer_connection_state_a87016188f3725d49d639873141e43edf_icgraph" alt=""/></div>
-<map name="classchip_1_1_transport_1_1_peer_connection_state_a87016188f3725d49d639873141e43edf_icgraph" id="classchip_1_1_transport_1_1_peer_connection_state_a87016188f3725d49d639873141e43edf_icgraph">
-<area shape="rect" title=" " alt="" coords="384,53,612,94"/>
-<area shape="rect" href="classchip_1_1_transport_1_1_peer_connections.html#a928d085424f4f59e5360e6582af6f9b7" title="Allocates a new peer connection state state object out of the internal resource pool." alt="" coords="5,5,336,61"/>
-<area shape="rect" href="classchip_1_1_transport_1_1_peer_connections.html#aafee387c874ba13aa52856115620554a" title="Convenience method to mark a peer connection state as active." alt="" coords="35,85,306,141"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -841,15 +946,32 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_transport_1_1_peer_connection_state_ae8d87274b9e95341e0913fadf7143bb9_icgraph.png" border="0" usemap="#classchip_1_1_transport_1_1_peer_connection_state_ae8d87274b9e95341e0913fadf7143bb9_icgraph" alt=""/></div>
-<map name="classchip_1_1_transport_1_1_peer_connection_state_ae8d87274b9e95341e0913fadf7143bb9_icgraph" id="classchip_1_1_transport_1_1_peer_connection_state_ae8d87274b9e95341e0913fadf7143bb9_icgraph">
-<area shape="rect" title=" " alt="" coords="384,13,612,54"/>
-<area shape="rect" href="classchip_1_1_transport_1_1_peer_connections.html#a825e445808a3003a2ed5072469e92360" title="Allocates a new peer connection state state object out of the internal resource pool." alt="" coords="5,5,336,61"/>
-</map>
+
 </div>
+</div>
+<a id="ab8f8d0f18e728d9502386dac02ea6b5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8f8d0f18e728d9502386dac02ea6b5f">&#9670;&nbsp;</a></span>SetMsgCounterSyncInProgress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Transport::PeerConnectionState::SetMsgCounterSyncInProgress </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -876,15 +998,6 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_transport_1_1_peer_connection_state_aba4255f6fc43caf60cd18f88ae7c4a19_icgraph.png" border="0" usemap="#classchip_1_1_transport_1_1_peer_connection_state_aba4255f6fc43caf60cd18f88ae7c4a19_icgraph" alt=""/></div>
-<map name="classchip_1_1_transport_1_1_peer_connection_state_aba4255f6fc43caf60cd18f88ae7c4a19_icgraph" id="classchip_1_1_transport_1_1_peer_connection_state_aba4255f6fc43caf60cd18f88ae7c4a19_icgraph">
-<area shape="rect" title=" " alt="" coords="229,5,457,47"/>
-<area shape="rect" href="classchip_1_1_secure_session_mgr.html#a73f56b6894673360488af9d71ebfb1bf" title="Establish a new pairing with a peer node." alt="" coords="5,5,181,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -911,15 +1024,32 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_transport_1_1_peer_connection_state_a5ce54e9798ea8239a1f87a81f016e38c_icgraph.png" border="0" usemap="#classchip_1_1_transport_1_1_peer_connection_state_a5ce54e9798ea8239a1f87a81f016e38c_icgraph" alt=""/></div>
-<map name="classchip_1_1_transport_1_1_peer_connection_state_a5ce54e9798ea8239a1f87a81f016e38c_icgraph" id="classchip_1_1_transport_1_1_peer_connection_state_a5ce54e9798ea8239a1f87a81f016e38c_icgraph">
-<area shape="rect" title=" " alt="" coords="384,13,612,54"/>
-<area shape="rect" href="classchip_1_1_transport_1_1_peer_connections.html#a825e445808a3003a2ed5072469e92360" title="Allocates a new peer connection state state object out of the internal resource pool." alt="" coords="5,5,336,61"/>
-</map>
+
 </div>
+</div>
+<a id="a5575892eddf1ce32dd31bef94115fb89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5575892eddf1ce32dd31bef94115fb89">&#9670;&nbsp;</a></span>SetPeerMessageIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void chip::Transport::PeerConnectionState::SetPeerMessageIndex </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -946,15 +1076,6 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_transport_1_1_peer_connection_state_a5a40eee3bfa060504f1414482e58fdf9_icgraph.png" border="0" usemap="#classchip_1_1_transport_1_1_peer_connection_state_a5a40eee3bfa060504f1414482e58fdf9_icgraph" alt=""/></div>
-<map name="classchip_1_1_transport_1_1_peer_connection_state_a5a40eee3bfa060504f1414482e58fdf9_icgraph" id="classchip_1_1_transport_1_1_peer_connection_state_a5a40eee3bfa060504f1414482e58fdf9_icgraph">
-<area shape="rect" title=" " alt="" coords="384,13,612,54"/>
-<area shape="rect" href="classchip_1_1_transport_1_1_peer_connections.html#a825e445808a3003a2ed5072469e92360" title="Allocates a new peer connection state state object out of the internal resource pool." alt="" coords="5,5,336,61"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -981,15 +1102,6 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_transport_1_1_peer_connection_state_a7f6e6aa587452b5663ffb9e677d0e171_icgraph.png" border="0" usemap="#classchip_1_1_transport_1_1_peer_connection_state_a7f6e6aa587452b5663ffb9e677d0e171_icgraph" alt=""/></div>
-<map name="classchip_1_1_transport_1_1_peer_connection_state_a7f6e6aa587452b5663ffb9e677d0e171_icgraph" id="classchip_1_1_transport_1_1_peer_connection_state_a7f6e6aa587452b5663ffb9e677d0e171_icgraph">
-<area shape="rect" title=" " alt="" coords="229,5,457,47"/>
-<area shape="rect" href="classchip_1_1_secure_session_mgr.html#a73f56b6894673360488af9d71ebfb1bf" title="Establish a new pairing with a peer node." alt="" coords="5,5,181,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1002,7 +1114,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="namespacechip_1_1_transport.html">Transport</a></li><li class="navelem"><a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html">PeerConnectionState</a></li>
-    <li class="footer">Generated on Mon Feb 1 2021 16:49:18 for Connected Home over IP by
+    <li class="footer">Generated on Thu Apr 15 2021 18:57:06 for Connected Home over IP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

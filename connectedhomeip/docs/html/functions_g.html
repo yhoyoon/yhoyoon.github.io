@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Connected Home over IP
-   &#160;<span id="projectnumber">a83086a0</span>
+   &#160;<span id="projectnumber">672cf7684</span>
    </div>
   </td>
  </tr>
@@ -98,11 +98,17 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>gattCharacteristic_unregister_signal()
 : <a class="el" href="classchip_1_1_chip_bluez_mgr_1_1_bluez_dbus_gatt_characteristic.html#a4dbede37047019584a9fb3106f33d982">chip.ChipBluezMgr.BluezDbusGattCharacteristic</a>
 </li>
-<li>General
-: <a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html#a7673ea613ba75a09d1120df079b2895e">chip::DeviceController::ChipDeviceController</a>
+<li>GeneralCommissioningCluster()
+: <a class="el" href="classchip_1_1_controller_1_1_general_commissioning_cluster.html#a035290177d46b27bdf2d581c5a9773c9">chip::Controller::GeneralCommissioningCluster</a>
+</li>
+<li>generateAdditionalDataPayload()
+: <a class="el" href="classchip_1_1_additional_data_payload_generator.html#a251e4fb292fb802ab490bb13f9a36ae5">chip::AdditionalDataPayloadGenerator</a>
 </li>
 <li>GenerateKeys()
 : <a class="el" href="classchip_1_1_crypto_1_1_spake2p.html#abdaa37839d68af182525ed4e0c6f4750">chip::Crypto::Spake2p</a>
+</li>
+<li>generateRotatingDeviceId()
+: <a class="el" href="classchip_1_1_additional_data_payload_generator.html#ab84dff175c8ff21fac80f2839223e8df">chip::AdditionalDataPayloadGenerator</a>
 </li>
 <li>GenericDeviceNetworkProvisioningDelegateImpl&lt; DeviceNetworkProvisioningDelegateImpl &gt;
 : <a class="el" href="classchip_1_1_device_layer_1_1_device_network_provisioning_delegate_impl.html#a45c7c279c4497e22e5cb0659b26c6312">chip::DeviceLayer::DeviceNetworkProvisioningDelegateImpl</a>
@@ -111,15 +117,17 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 : <a class="el" href="classchip_1_1_device_layer_1_1_internal_1_1_generic_platform_manager_impl___zephyr.html#acc3885cd6bec648a4a7e0cd31fd1e04a">chip::DeviceLayer::Internal::GenericPlatformManagerImpl_Zephyr&lt; ImplClass &gt;</a>
 </li>
 <li>get()
-: <a class="el" href="classchip_1_1_chip_t_l_v_1_1_t_l_v_reader.html#a05c1d0afa935347c9f441949de74be77">chip.ChipTLV.TLVReader</a>
+: <a class="el" href="classchip_1_1devicecontroller_1_1_key_value_store_manager.html#a60160e97f66ca7d7e30130bb70c77fa0">chip.devicecontroller.KeyValueStoreManager</a>
+, <a class="el" href="classchip_1_1tlv_1_1_t_l_v_reader.html#a6a4ae6c93e1a8e7bf4b43191383d986e">chip.tlv.TLVReader</a>
 </li>
 <li>Get()
 : <a class="el" href="classchip_1_1_ble_1_1_ble_end_point_pool.html#a6514186cf5c7e37bc87b1b97df5d2557">chip::Ble::BleEndPointPool</a>
 , <a class="el" href="classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager.html#a4b1e419d49f9b4dc6f2baa15a8790fe3">chip::DeviceLayer::PersistedStorage::KeyValueStoreManager</a>
+, <a class="el" href="classchip_1_1_mdns_1_1_mdns_contexts.html#af019e3a249af18c33ae7796ba9b25c94">chip::Mdns::MdnsContexts</a>
 , <a class="el" href="classchip_1_1_platform_1_1_scoped_memory_buffer.html#a0de72ecf5e25a932a1e9b8518defe934">chip::Platform::ScopedMemoryBuffer&lt; T, MemoryManagement &gt;</a>
 , <a class="el" href="classchip_1_1_system_1_1_object_pool.html#a186c402a2b6eaffbe8f72e411062ee55">chip::System::ObjectPool&lt; T, N &gt;</a>
-, <a class="el" href="classchip_1_1_t_l_v_1_1_t_l_v_reader.html#a5cc51ca03c5c98a02949dfdfa1b3bcbd">chip::TLV::TLVReader</a>
-, <a class="el" href="classchip_1_1_t_l_v_1_1_t_l_v_updater.html#acd99aa3e69a3b397046abec55d7453c2">chip::TLV::TLVUpdater</a>
+, <a class="el" href="classchip_1_1_t_l_v_1_1_t_l_v_reader.html#aa03468972ce342df9fa667940d67e6c6">chip::TLV::TLVReader</a>
+, <a class="el" href="classchip_1_1_t_l_v_1_1_t_l_v_updater.html#ad2245525c76322f3619699600e8b922c">chip::TLV::TLVUpdater</a>
 </li>
 <li>Get16At()
 : <a class="el" href="classmdns_1_1_minimal_1_1_const_header_ref.html#addf62d8d8e0f5250678c6194132de4b6">mdns::Minimal::ConstHeaderRef</a>
@@ -127,17 +135,27 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>get_adapter_by_addr()
 : <a class="el" href="classchip_1_1_chip_bluez_mgr_1_1_bluez_manager.html#af1be9faff4a24e4daf3e32e4e1810d7f">chip.ChipBluezMgr.BluezManager</a>
 </li>
+<li>get_adapters()
+: <a class="el" href="classchip_1_1_chip_bluez_mgr_1_1_bluez_manager.html#ac7c38edfe17d8b7e61be63fd2e222444">chip.ChipBluezMgr.BluezManager</a>
+</li>
 <li>get_peripheral_devIdInfo()
 : <a class="el" href="classchip_1_1_chip_bluez_mgr_1_1_bluez_manager.html#a2af007834107648aa2e210eaca78c704">chip.ChipBluezMgr.BluezManager</a>
 </li>
 <li>GetAckId()
 : <a class="el" href="classchip_1_1_payload_header.html#aadbb14a4b9f048d0ae4b1ee032eceda9">chip::PayloadHeader</a>
 </li>
+<li>GetACL()
+: <a class="el" href="classchip_1_1_transport_1_1_admin_pairing_info.html#a881b220200ab982f8d3fc898ff560a0e">chip::Transport::AdminPairingInfo</a>
+</li>
 <li>GetAdditionalCount()
 : <a class="el" href="classmdns_1_1_minimal_1_1_const_header_ref.html#a87596ef551ae124dbde4514929745c9b">mdns::Minimal::ConstHeaderRef</a>
 </li>
 <li>GetAddress()
-: <a class="el" href="classchip_1_1_inet_1_1_interface_address_iterator.html#ad3c8d14a0b52c845467beda6113761ab">chip::Inet::InterfaceAddressIterator</a>
+: <a class="el" href="classchip_1_1_controller_1_1_device.html#a082fcc4b306c12a7d730b4b4df914531">chip::Controller::Device</a>
+, <a class="el" href="classchip_1_1_inet_1_1_interface_address_iterator.html#ad3c8d14a0b52c845467beda6113761ab">chip::Inet::InterfaceAddressIterator</a>
+</li>
+<li>GetAddressAndPort()
+: <a class="el" href="classchip_1_1_chip_device_ctrl_1_1_chip_device_controller.html#aafde73d016fb6c398e37eabd6e8b7725">chip.ChipDeviceCtrl.ChipDeviceController</a>
 </li>
 <li>GetAddressType()
 : <a class="el" href="classchip_1_1_transport_1_1_tcp_listen_parameters.html#abe377ce6debd14b466d3718396ac7308">chip::Transport::TcpListenParameters</a>
@@ -145,6 +163,14 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 </li>
 <li>GetAddressWithPrefix()
 : <a class="el" href="classchip_1_1_inet_1_1_interface_address_iterator.html#aa9f2a7d680727777a4096c87c8b05b5b">chip::Inet::InterfaceAddressIterator</a>
+</li>
+<li>GetAddrInfoContext()
+: <a class="el" href="structchip_1_1_mdns_1_1_get_addr_info_context.html#a7f8a22e0b448aaf0c380f897de81f1ed">chip::Mdns::GetAddrInfoContext</a>
+</li>
+<li>GetAdminId()
+: <a class="el" href="classchip_1_1_secure_session_handle.html#a436b14f36d7bc77f6094ff4799a789ca">chip::SecureSessionHandle</a>
+, <a class="el" href="classchip_1_1_transport_1_1_admin_pairing_info.html#ad0ce7eea83642593614d59d3fa4bc650">chip::Transport::AdminPairingInfo</a>
+, <a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#abaacd443f6358f1f39d4d9e3b60c9fe6">chip::Transport::PeerConnectionState</a>
 </li>
 <li>getAllOptionalVendorData()
 : <a class="el" href="classchip_1_1_setup_payload.html#a1349bc8c7bde0fa7c492a3f320d1e708">chip::SetupPayload</a>
@@ -196,7 +222,6 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 </li>
 <li>GetBleLayer()
 : <a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#a810834e8f952859c906a4a2732105171">chip::DeviceLayer::ConnectivityManager</a>
-, <a class="el" href="classchip_1_1_rendezvous_parameters.html#a902ed09dc977f5ca1847919316e88b6d">chip::RendezvousParameters</a>
 </li>
 <li>getBluetoothGatt()
 : <a class="el" href="classchip_1_1devicecontroller_1_1_chip_device_controller.html#ac491d788d5a1eca05c5a47a493d84955">chip.devicecontroller.ChipDeviceController</a>
@@ -252,9 +277,6 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>getConnection()
 : <a class="el" href="classchip_1_1devicecontroller_1_1_android_chip_stack.html#ab7f806d5d1f3de37888862ce4364c04e">chip.devicecontroller.AndroidChipStack</a>
 </li>
-<li>GetConnectionObject()
-: <a class="el" href="classchip_1_1_rendezvous_parameters.html#a3c0f9ba893435755403dd87d249a5a59">chip::RendezvousParameters</a>
-</li>
 <li>getConnId()
 : <a class="el" href="classchip_1_1devicecontroller_1_1_android_chip_stack.html#ae41e29a5700613c7c7f6cc9753880f42">chip.devicecontroller.AndroidChipStack</a>
 </li>
@@ -266,6 +288,12 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>GetControlByte()
 : <a class="el" href="classchip_1_1_t_l_v_1_1_t_l_v_reader.html#a611fcc82487e96c05da765d6b8d4bf08">chip::TLV::TLVReader</a>
 </li>
+<li>GetControllerDeviceInitParams()
+: <a class="el" href="classchip_1_1_controller_1_1_device_controller.html#aeb143242a3e55252043a2decee1aac21">chip::Controller::DeviceController</a>
+</li>
+<li>GetCRMPRetryIntervals()
+: <a class="el" href="classchip_1_1_mdns_1_1_operational_advertising_parameters.html#a7be46d4aab8b2a7b055318b776abf8c1">chip::Mdns::OperationalAdvertisingParameters</a>
+</li>
 <li>GetCurrentEpoch()
 : <a class="el" href="classchip_1_1_system_1_1_timer.html#a2188f59a55006505705544b570a543e7">chip::System::Timer</a>
 </li>
@@ -273,9 +301,6 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 : <a class="el" href="classchip_1_1_time_1_1_time_source.html#a069d71f83349bfdbb13092415fb79b2b">chip::Time::TimeSource&lt; kSource &gt;</a>
 , <a class="el" href="classchip_1_1_time_1_1_time_source_3_01_source_1_1k_system_01_4.html#afd34a41afca90b4d6b9575e06803ae6e">chip::Time::TimeSource&lt; Source::kSystem &gt;</a>
 , <a class="el" href="classchip_1_1_time_1_1_time_source_3_01_source_1_1k_test_01_4.html#a6996a095d0049fe33bbca9eb9a4916c3">chip::Time::TimeSource&lt; Source::kTest &gt;</a>
-</li>
-<li>GetCurrentOp()
-: <a class="el" href="classchip_1_1_device_layer_1_1_internal_1_1_generic_network_provisioning_server_impl.html#abc994f0439854273a748732b1bd2e3dd">chip::DeviceLayer::Internal::GenericNetworkProvisioningServerImpl&lt; ImplClass &gt;</a>
 </li>
 <li>GetData()
 : <a class="el" href="classmdns_1_1_minimal_1_1_resource_data.html#a4e5ca2991140011af5a8da2d44519891">mdns::Minimal::ResourceData</a>
@@ -293,9 +318,6 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>GetDeviceCertificate()
 : <a class="el" href="classchip_1_1_device_layer_1_1_configuration_manager.html#a824245551d1b382c68d69a115ba34bc8">chip::DeviceLayer::ConfigurationManager</a>
 </li>
-<li>GetDeviceController()
-: <a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html#a8b8091b989bace7bbbcc63024e1de310">chip::DeviceController::ChipDeviceController</a>
-</li>
 <li>GetDeviceDiscriminator()
 : <a class="el" href="structchip_1_1_ble_1_1_chip_b_l_e_device_identification_info.html#a5403b14baeeb4c096dd2fea41269f061">chip::Ble::ChipBLEDeviceIdentificationInfo</a>
 </li>
@@ -309,9 +331,6 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>GetDevicePrivateKey()
 : <a class="el" href="classchip_1_1_device_layer_1_1_configuration_manager.html#ac47dfd6e85995e5774c3221adf961fdb">chip::DeviceLayer::ConfigurationManager</a>
 </li>
-<li>GetDiscriminator()
-: <a class="el" href="classchip_1_1_rendezvous_parameters.html#a4e8d0a93b68661877f091d3a49125ade">chip::RendezvousParameters</a>
-</li>
 <li>GetElementHeadLength()
 : <a class="el" href="classchip_1_1_t_l_v_1_1_t_l_v_reader.html#a39420eb9c2a49f04d59ad01f6cdd8235">chip::TLV::TLVReader</a>
 </li>
@@ -320,6 +339,12 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 </li>
 <li>GetEncryptionType()
 : <a class="el" href="classchip_1_1_packet_header.html#a58849becd9037c14ab8652dc4e54fe5c">chip::PacketHeader</a>
+</li>
+<li>GetEndpointCount()
+: <a class="el" href="classmdns_1_1_minimal_1_1_server_base.html#aacb123ec789400ea89c4768f7202a246">mdns::Minimal::ServerBase</a>
+</li>
+<li>GetEndpoints()
+: <a class="el" href="classmdns_1_1_minimal_1_1_server_base.html#a84ed05e2c8f8b60a944be5a556947d57">mdns::Minimal::ServerBase</a>
 </li>
 <li>GetEpochKeyId()
 : <a class="el" href="classchip_1_1_chip_key_id.html#ac8fa2edd6e546cacab610e252fb8a139">chip::ChipKeyId</a>
@@ -333,15 +358,24 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>GetExchangeID()
 : <a class="el" href="classchip_1_1_payload_header.html#ab8ba24fffdd755267d6784fc5992f348">chip::PayloadHeader</a>
 </li>
+<li>GetExternalIPv6Address()
+: <a class="el" href="classchip_1_1_device_layer_1_1_thread_stack_manager.html#ada5fd462f402d77306d094b36d5c8903">chip::DeviceLayer::ThreadStackManager</a>
+</li>
 <li>GetFabricId()
 : <a class="el" href="classchip_1_1_device_layer_1_1_configuration_manager.html#a31bd5d16c48b0f50e74556fe718327a3">chip::DeviceLayer::ConfigurationManager</a>
 , <a class="el" href="classchip_1_1_mdns_1_1_operational_advertising_parameters.html#adb6aff2b4d940b32da0b7de08379ae80">chip::Mdns::OperationalAdvertisingParameters</a>
+</li>
+<li>GetFactoryAssignedEUI64()
+: <a class="el" href="classchip_1_1_device_layer_1_1_thread_stack_manager.html#ad06eb520b7f85e6c130314b5367154a7">chip::DeviceLayer::ThreadStackManager</a>
 </li>
 <li>GetFirmwareBuildTime()
 : <a class="el" href="classchip_1_1_device_layer_1_1_configuration_manager.html#a3d1dacd2fd27b3b175e0713062cb00b8">chip::DeviceLayer::ConfigurationManager</a>
 </li>
 <li>GetFirmwareRevision()
-: <a class="el" href="classchip_1_1_device_layer_1_1_configuration_manager.html#a573ba13806412ced7beda2b3bde15240">chip::DeviceLayer::ConfigurationManager</a>
+: <a class="el" href="classchip_1_1_device_layer_1_1_configuration_manager.html#a6bef9da9d0b29679598f625b66edce5e">chip::DeviceLayer::ConfigurationManager</a>
+</li>
+<li>GetFirmwareRevisionString()
+: <a class="el" href="classchip_1_1_device_layer_1_1_configuration_manager.html#a62be68f46aa8e96f23b3aab23e06eb72">chip::DeviceLayer::ConfigurationManager</a>
 </li>
 <li>GetFlags()
 : <a class="el" href="classchip_1_1_packet_header.html#ab45d286e2d1ad8ff032fcda297f83250">chip::PacketHeader</a>
@@ -351,10 +385,16 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 : <a class="el" href="classchip_1_1_ble_1_1_ble_end_point_pool.html#a822fe7354fbeb619c12fc811416f682e">chip::Ble::BleEndPointPool</a>
 </li>
 <li>GetGroupMembership()
-: <a class="el" href="classchip_1_1_controller_1_1_groups_cluster.html#ad7fcc7e83c8629dde74c5841c6abb961">chip::Controller::GroupsCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_groups_cluster.html#a44515f93a9a039c1cce0639c49081522">chip::Controller::GroupsCluster</a>
 </li>
 <li>GetHolidaySchedule()
-: <a class="el" href="classchip_1_1_controller_1_1_door_lock_cluster.html#aec451b30940ec9a9286eba9bb0bbab7f">chip::Controller::DoorLockCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_door_lock_cluster.html#afe70233da19763e022cd8086b981d283">chip::Controller::DoorLockCluster</a>
+</li>
+<li>GetHostname()
+: <a class="el" href="classchip_1_1_mdns_1_1_mdns_contexts.html#acd95be908897c991692141bb91915c3d">chip::Mdns::MdnsContexts</a>
+</li>
+<li>GetI2RSessionInfo()
+: <a class="el" href="classchip_1_1_pairing_session.html#a294d0cbccdb2fc2dec943e2e3ca90141">chip::PairingSession</a>
 </li>
 <li>GetImplicitProfileId()
 : <a class="el" href="classchip_1_1_t_l_v_1_1_t_l_v_updater.html#aebeef1b426660374f50156d153ab5b5b">chip::TLV::TLVUpdater</a>
@@ -370,8 +410,9 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 : <a class="el" href="classchip_1_1devicecontroller_1_1_android_chip_stack.html#a549f0d37eb6d9e0c793aec8f0d55fcbf">chip.devicecontroller.AndroidChipStack</a>
 </li>
 <li>GetInstance()
-: <a class="el" href="classchip_1_1_mdns_1_1_discovery_impl_platform.html#af636ce6fe38f3f1cac947cdcc53a072d">chip::Mdns::DiscoveryImplPlatform</a>
+: <a class="el" href="classchip_1_1_mdns_1_1_discovery_impl_platform.html#a19d5a9174437b347f9bc0ef9af58bc67">chip::Mdns::DiscoveryImplPlatform</a>
 , <a class="el" href="classchip_1_1_mdns_1_1_mdns_avahi.html#a68647bb2a96a93c4b8f9025dae586488">chip::Mdns::MdnsAvahi</a>
+, <a class="el" href="classchip_1_1_mdns_1_1_mdns_contexts.html#a2e8a95c025efe9dcb06b44bfc5fa4bbf">chip::Mdns::MdnsContexts</a>
 </li>
 <li>GetInterface()
 : <a class="el" href="classchip_1_1_inet_1_1_interface_address_iterator.html#a65731c4d03c320cfbbe8c7493e72f9e1">chip::Inet::InterfaceAddressIterator</a>
@@ -395,16 +436,10 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 : <a class="el" href="classmdns_1_1_minimal_1_1_query_responder_iterator.html#ab8541e895658118ed14a03b93eae19cf">mdns::Minimal::QueryResponderIterator</a>
 </li>
 <li>getIpAddress()
-: <a class="el" href="classchip_1_1devicecontroller_1_1_chip_device_controller.html#a0b2eecc7eab104d9f14119d85cd34da5">chip.devicecontroller.ChipDeviceController</a>
-</li>
-<li>GetIpAddress()
-: <a class="el" href="classchip_1_1_controller_1_1_device.html#a9ab8b0af1875151e99d2e78f22b8bd9f">chip::Controller::Device</a>
-, <a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html#a2e0f4f3aebeedb049df351e09e23c798">chip::DeviceController::ChipDeviceController</a>
+: <a class="el" href="classchip_1_1devicecontroller_1_1_chip_device_controller.html#afb8f2468b96417bc8e46c0343a85625b">chip.devicecontroller.ChipDeviceController</a>
 </li>
 <li>GetIPAddress()
-: <a class="el" href="classchip_1_1_network_provisioning.html#ad67a3c9320f8d446f2023a34165f27ac">chip::NetworkProvisioning</a>
-, <a class="el" href="classchip_1_1_rendezvous_session.html#a2d285744e54f959b30f235db4a7dd32a">chip::RendezvousSession</a>
-, <a class="el" href="classchip_1_1_transport_1_1_peer_address.html#afa331bac06afdb26b5929c8640c8400d">chip::Transport::PeerAddress</a>
+: <a class="el" href="classchip_1_1_transport_1_1_peer_address.html#afa331bac06afdb26b5929c8640c8400d">chip::Transport::PeerAddress</a>
 </li>
 <li>GetIPv6PrefixLength()
 : <a class="el" href="classchip_1_1_inet_1_1_interface_address_iterator.html#a84c3d3ba0308d1ba2c1e91ca1f3446a2">chip::Inet::InterfaceAddressIterator</a>
@@ -412,12 +447,15 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>GetKeys()
 : <a class="el" href="classchip_1_1_crypto_1_1_spake2p.html#aa5b191ac6c28a5269212c3fa54fc8d24">chip::Crypto::Spake2p</a>
 </li>
-<li>GetKeyValue()
-: <a class="el" href="classchip_1_1_controller_1_1_persistent_storage_delegate.html#a1ca8d76a6f2ad6fec2db9eba01b98766">chip::Controller::PersistentStorageDelegate</a>
-, <a class="el" href="classchip_1_1_controller_1_1_python_persistent_storage_delegate.html#a20f0c72ae4d7b6ea00e29c6863b6f912">chip::Controller::PythonPersistentStorageDelegate</a>
+<li>getKeyValue()
+: <a class="el" href="interfacechip_1_1devicecontroller_1_1_android_persistent_storage_delegate.html#a542684c3eefd1456634d5856cd13ec59">chip.devicecontroller.AndroidPersistentStorageDelegate</a>
+, <a class="el" href="classchip_1_1devicecontroller_1_1_persistent_storage.html#a74ebbf2092da6e68bbbf3f17c68ae6c4">chip.devicecontroller.PersistentStorage</a>
 </li>
 <li>GetLastActivityTimeMs()
 : <a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#ae72a1331744f89b500e41935e1cc7a6c">chip::Transport::PeerConnectionState</a>
+</li>
+<li>GetLastNetworkCommissioningResult()
+: <a class="el" href="classchip_1_1_controller_1_1_network_commissioning_cluster.html#a0e09e4bdb86a6b25e01eb06e2443353d">chip::Controller::NetworkCommissioningCluster</a>
 </li>
 <li>GetLastReceivedSequenceNumber()
 : <a class="el" href="classchip_1_1_ble_1_1_btp_engine.html#aea26e1b1611e2ca2f416d11af5823e41">chip::Ble::BtpEngine</a>
@@ -446,26 +484,28 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 </li>
 <li>GetLocalKeyId()
 : <a class="el" href="classchip_1_1_c_a_s_e_session.html#a122403178e97f20833661d8051983c85">chip::CASESession</a>
-, <a class="el" href="classchip_1_1_p_a_s_e_session.html#afc781550e81b1804a51b84dc87e7799d">chip::PASESession</a>
+, <a class="el" href="classchip_1_1_pairing_session.html#aace0f4125136f4301984f3650e00ca00">chip::PairingSession</a>
 </li>
 <li>GetLocalKeyID()
 : <a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#add16da422be4e11a71613c97fe55dfc8">chip::Transport::PeerConnectionState</a>
 </li>
 <li>GetLocalNodeId()
-: <a class="el" href="classchip_1_1_rendezvous_parameters.html#a83d17f345cfe5481d7eca89834f372fe">chip::RendezvousParameters</a>
-, <a class="el" href="classchip_1_1_rendezvous_session.html#ae3b18e22f033e53deef1fdf6d4e7450a">chip::RendezvousSession</a>
+: <a class="el" href="classchip_1_1_secure_session_mgr.html#ab4ba2e6d227f964c01e7a8bc49dd6fc7">chip::SecureSessionMgr</a>
 </li>
 <li>GetLogFilter()
 : <a class="el" href="classchip_1_1_chip_device_ctrl_1_1_chip_device_controller.html#aaf2b71a421aa6f760d18b0baba64ec99">chip.ChipDeviceCtrl.ChipDeviceController</a>
 </li>
 <li>GetLogRecord()
-: <a class="el" href="classchip_1_1_controller_1_1_door_lock_cluster.html#aa08a144505b9a917d244756ae0916ec0">chip::Controller::DoorLockCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_door_lock_cluster.html#afd71f0f935ccba0dacd1eb563804e2c2">chip::Controller::DoorLockCluster</a>
 </li>
 <li>GetLongDiscriminator()
 : <a class="el" href="classchip_1_1_mdns_1_1_commission_advertising_parameters.html#a05d6ec71c7dacadb6bc1a3999e57fe7a">chip::Mdns::CommissionAdvertisingParameters</a>
 </li>
 <li>GetLwIPpbuf()
 : <a class="el" href="classchip_1_1_system_1_1_packet_buffer_handle.html#a969b989269644ed8222cf725c8cde641">chip::System::PacketBufferHandle</a>
+</li>
+<li>GetMac()
+: <a class="el" href="classchip_1_1_mdns_1_1_base_advertising_params.html#a328c14ae4f829ffc2da3bd872707816b">chip::Mdns::BaseAdvertisingParams&lt; Derived &gt;</a>
 </li>
 <li>GetManufacturerDeviceCertificate()
 : <a class="el" href="classchip_1_1_device_layer_1_1_configuration_manager.html#ab90f5237ba7a29baef8950caac17b47f">chip::DeviceLayer::ConfigurationManager</a>
@@ -523,11 +563,18 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 , <a class="el" href="classchip_1_1_t_l_v_1_1_c_h_i_p_circular_t_l_v_buffer.html#aa15966168f66c8cef02b46e9ae0262fe">chip::TLV::CHIPCircularTLVBuffer</a>
 , <a class="el" href="classchip_1_1_t_l_v_1_1_t_l_v_backing_store.html#aded5adde20a902f1db1e26dc0f518019">chip::TLV::TLVBackingStore</a>
 </li>
+<li>GetNextSequenceNumber()
+: <a class="el" href="classchip_1_1_controller_1_1_device.html#a5bb0f9c5991f2c0367685c7f15ac6603">chip::Controller::Device</a>
+</li>
 <li>GetNodeId()
 : <a class="el" href="classchip_1_1_mdns_1_1_operational_advertising_parameters.html#a32ce72046cb9bd7f2728aba5379bdef7">chip::Mdns::OperationalAdvertisingParameters</a>
+, <a class="el" href="classchip_1_1_transport_1_1_admin_pairing_info.html#a1c337ebcce075563c1ac1796884b3f5f">chip::Transport::AdminPairingInfo</a>
 </li>
 <li>GetNotifFD()
 : <a class="el" href="classchip_1_1_system_1_1_system_wake_event.html#a9c5b8eef0c84b981f3c21d36320f1415">chip::System::SystemWakeEvent</a>
+</li>
+<li>GetOperationalCreds()
+: <a class="el" href="classchip_1_1_transport_1_1_admin_pairing_info.html#a59a205f3d51dafdb12689d196651b1d1">chip::Transport::AdminPairingInfo</a>
 </li>
 <li>GetPacketInfo()
 : <a class="el" href="classchip_1_1_inet_1_1_i_p_end_point_basis.html#aa78d7d6a5b4cf87ad58569df772a7a8b">chip::Inet::IPEndPointBasis</a>
@@ -544,18 +591,11 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>GetPairingInstr()
 : <a class="el" href="classchip_1_1_mdns_1_1_commission_advertising_parameters.html#a3d677fadb97d3031eaee9246f7f98380">chip::Mdns::CommissionAdvertisingParameters</a>
 </li>
-<li>GetPairingSession()
-: <a class="el" href="classchip_1_1_rendezvous_session.html#acba509ad51e325e912252bda2b45af4d">chip::RendezvousSession</a>
-</li>
-<li>GetPayloadLength()
-: <a class="el" href="classchip_1_1_packet_header.html#a9b473b9fe9b8fbe7960b0b992a1b7d85">chip::PacketHeader</a>
-</li>
 <li>GetPDMId()
 : <a class="el" href="classchip_1_1_device_layer_1_1_internal_1_1_k32_w_config.html#a70b50f73eec2f0addb68db38a0aae0e7">chip::DeviceLayer::Internal::K32WConfig</a>
 </li>
 <li>GetPeerAddress()
-: <a class="el" href="classchip_1_1_rendezvous_parameters.html#ab3b7090bc4ba35a8c739cf4bf4b39c0c">chip::RendezvousParameters</a>
-, <a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#a34d477138e340e25bef7d0e628ea1178">chip::Transport::PeerConnectionState</a>
+: <a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#a34d477138e340e25bef7d0e628ea1178">chip::Transport::PeerConnectionState</a>
 </li>
 <li>GetPeerConnectionState()
 : <a class="el" href="classchip_1_1_secure_session_mgr.html#af692e736011b076d82659336c35ac714">chip::SecureSessionMgr</a>
@@ -565,21 +605,22 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 </li>
 <li>GetPeerKeyId()
 : <a class="el" href="classchip_1_1_c_a_s_e_session.html#a63a9be2d074b270724abb158bc492515">chip::CASESession</a>
-, <a class="el" href="classchip_1_1_p_a_s_e_session.html#af90ac586425132c07a2088e655689ece">chip::PASESession</a>
+, <a class="el" href="classchip_1_1_pairing_session.html#a879a02bf0ad3d882b8f2d7322b37f6e2">chip::PairingSession</a>
+, <a class="el" href="classchip_1_1_secure_session_handle.html#a76243e3a7991747d140c2de49e49b9b0">chip::SecureSessionHandle</a>
 </li>
 <li>GetPeerKeyID()
 : <a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#a478b7e8f583c23f65be9a0ff9c01b3f5">chip::Transport::PeerConnectionState</a>
 </li>
 <li>GetPeerNodeId()
 : <a class="el" href="classchip_1_1_c_a_s_e_session.html#a54bf984cfe919f13144c35d194bbca04">chip::CASESession</a>
-, <a class="el" href="classchip_1_1_p_a_s_e_session.html#accaa1db8af5f8b53b08be0f7da1baef5">chip::PASESession</a>
+, <a class="el" href="classchip_1_1_secure_session_handle.html#addc676180f5c3c11c8b9e83071889289">chip::SecureSessionHandle</a>
 , <a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#a9c823a60ddb4b2b4d81b297aaecec6fd">chip::Transport::PeerConnectionState</a>
 </li>
 <li>getPeripheralDevIdInfo()
 : <a class="el" href="classchip_1_1_chip_core_bluetooth_mgr_1_1_ble_peripheral.html#a51c24ff7bf1c70de380a8db636bdcc15">chip.ChipCoreBluetoothMgr.BlePeripheral</a>
 </li>
 <li>GetPin()
-: <a class="el" href="classchip_1_1_controller_1_1_door_lock_cluster.html#a487b1695a1ab36d6e41fbcb282b9f589">chip::Controller::DoorLockCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_door_lock_cluster.html#add2c0d7a42e2cdfb52f12f0550405c7a">chip::Controller::DoorLockCluster</a>
 </li>
 <li>GetPlatformData()
 : <a class="el" href="classchip_1_1_inet_1_1_inet_layer.html#a6f95153e930ffed58ded0d530be17458">chip::Inet::InetLayer</a>
@@ -587,6 +628,9 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 </li>
 <li>GetPoller()
 : <a class="el" href="classchip_1_1_mdns_1_1_mdns_avahi.html#a0804f2c4a879accea023c290bc5ed6d1">chip::Mdns::MdnsAvahi</a>
+</li>
+<li>GetPollPeriod()
+: <a class="el" href="classchip_1_1_device_layer_1_1_thread_stack_manager.html#a709f97586487291eca07c53f21feddff">chip::DeviceLayer::ThreadStackManager</a>
 </li>
 <li>GetPort()
 : <a class="el" href="classchip_1_1_mdns_1_1_base_advertising_params.html#ac582cedbe753918a06a70b41cac21bf2">chip::Mdns::BaseAdvertisingParams&lt; Derived &gt;</a>
@@ -613,11 +657,17 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 , <a class="el" href="classchip_1_1_device_layer_1_1_configuration_manager.html#abb8e4caec99a6534513b175cb4c0797d">chip::DeviceLayer::ConfigurationManager</a>
 , <a class="el" href="classchip_1_1_mdns_1_1_commission_advertising_parameters.html#aa97d3a9d80d2474418c280ebdc81f0ef">chip::Mdns::CommissionAdvertisingParameters</a>
 </li>
+<li>GetProductName()
+: <a class="el" href="classchip_1_1_device_layer_1_1_configuration_manager.html#a41699f799f0bcfb9ea7dc2534e21992d">chip::DeviceLayer::ConfigurationManager</a>
+</li>
 <li>GetProductRevision()
 : <a class="el" href="classchip_1_1_device_layer_1_1_configuration_manager.html#ac582c9ca40e36167dc22001e3b86bbab">chip::DeviceLayer::ConfigurationManager</a>
 </li>
+<li>GetProductRevisionString()
+: <a class="el" href="classchip_1_1_device_layer_1_1_configuration_manager.html#a7407e7989b3e00e7c1715aa1e30aa837">chip::DeviceLayer::ConfigurationManager</a>
+</li>
 <li>GetProtocolID()
-: <a class="el" href="classchip_1_1_payload_header.html#abb24e7abd597a153272e3621bbbb14f9">chip::PayloadHeader</a>
+: <a class="el" href="classchip_1_1_payload_header.html#a2300970df701ef27c3ff4bbd4bef6d6d">chip::PayloadHeader</a>
 </li>
 <li>GetPtr()
 : <a class="el" href="classmdns_1_1_minimal_1_1_ptr_resource_record.html#ae3b140a3e6014929ad4bc034ae99b6ea">mdns::Minimal::PtrResourceRecord</a>
@@ -646,6 +696,9 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>GetQueueSize()
 : <a class="el" href="classchip_1_1_t_l_v_1_1_c_h_i_p_circular_t_l_v_buffer.html#ab4a2d0dd974990583b0641fb9790c754">chip::TLV::CHIPCircularTLVBuffer</a>
 </li>
+<li>GetR2ISessionInfo()
+: <a class="el" href="classchip_1_1_pairing_session.html#aba288a57f35e0966275a6dcba158db1d">chip::PairingSession</a>
+</li>
 <li>GetRawFlags()
 : <a class="el" href="classmdns_1_1_minimal_1_1_const_header_ref.html#aef26553938b28e4a4479228726a4d0ed">mdns::Minimal::ConstHeaderRef</a>
 </li>
@@ -655,6 +708,9 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>GetReadPoint()
 : <a class="el" href="classchip_1_1_t_l_v_1_1_t_l_v_reader.html#ac62281b457a10b4385d933b1f372fc02">chip::TLV::TLVReader</a>
 </li>
+<li>GetReceiverSecureSession()
+: <a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#a7377c56b80df261492455d67c0d5af2b">chip::Transport::PeerConnectionState</a>
+</li>
 <li>GetRecordKey()
 : <a class="el" href="classchip_1_1_device_layer_1_1_internal_1_1_k32_w_config.html#a8149513f54a10aa57eee3edd21ac4917">chip::DeviceLayer::Internal::K32WConfig</a>
 </li>
@@ -663,20 +719,17 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 </li>
 <li>GetRemainingFreeLength()
 : <a class="el" href="classchip_1_1_t_l_v_1_1_t_l_v_updater.html#abafdf2ce68874abae350ff49b42f01f8">chip::TLV::TLVUpdater</a>
+, <a class="el" href="classchip_1_1_t_l_v_1_1_t_l_v_writer.html#abf49593a1e20f108b1d1a36944facbdd">chip::TLV::TLVWriter</a>
 </li>
 <li>GetRemainingLength()
 : <a class="el" href="classchip_1_1_t_l_v_1_1_t_l_v_reader.html#a9b87f3063b7ceb1fc956ca2840cec91d">chip::TLV::TLVReader</a>
 , <a class="el" href="classchip_1_1_t_l_v_1_1_t_l_v_updater.html#a09ca9a303b3bda650af4cc61ca669905">chip::TLV::TLVUpdater</a>
 </li>
-<li>GetRemoteNodeId()
-: <a class="el" href="classchip_1_1_rendezvous_parameters.html#a9b6ab1a40516c6a6a1cf7c502b2d87a0">chip::RendezvousParameters</a>
-, <a class="el" href="classchip_1_1_rendezvous_session.html#af9eddc30e4612a5346f61a0e960a3526">chip::RendezvousSession</a>
-</li>
 <li>GetResourceType()
 : <a class="el" href="classmdns_1_1_minimal_1_1_internal_1_1_response_sending_state.html#a9310f5f1822a259a1dc5269a08ff907d">mdns::Minimal::Internal::ResponseSendingState</a>
 </li>
 <li>GetRfid()
-: <a class="el" href="classchip_1_1_controller_1_1_door_lock_cluster.html#a94943b1a0fb54c0dd39597a560840fc8">chip::Controller::DoorLockCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_door_lock_cluster.html#a9a7cf613f1ab2b6f1fb3fc1ae6996c27">chip::Controller::DoorLockCluster</a>
 </li>
 <li>GetRootKeyId()
 : <a class="el" href="classchip_1_1_chip_key_id.html#ac8f7304c6afbc5f209a58db04c2956a3">chip::ChipKeyId</a>
@@ -688,10 +741,10 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 : <a class="el" href="classchip_1_1_ble_1_1_btp_engine.html#a743e5567b9c33d00d3665aca054ca7cc">chip::Ble::BtpEngine</a>
 </li>
 <li>GetSceneMembership()
-: <a class="el" href="classchip_1_1_controller_1_1_scenes_cluster.html#ae3d7c1fc3efd21b7ffa26825fb8f6328">chip::Controller::ScenesCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_scenes_cluster.html#ab1bfa8a9eabe6b0a52181996f7f069d7">chip::Controller::ScenesCluster</a>
 </li>
-<li>GetSecureSession()
-: <a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#aac3113f4fca574dbd7cb950997e9ce85">chip::Transport::PeerConnectionState</a>
+<li>GetSenderSecureSession()
+: <a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#a86303267279cf1a946c120d5a2cb8f8d">chip::Transport::PeerConnectionState</a>
 </li>
 <li>GetSendMessageIndex()
 : <a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#a6aee04ae7be7dbee230f6bb535ae18fd">chip::Transport::PeerConnectionState</a>
@@ -720,17 +773,11 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>GetSetupPinCode()
 : <a class="el" href="classchip_1_1_device_layer_1_1_configuration_manager.html#adb418e09785e739d7fe44caac0b77504">chip::DeviceLayer::ConfigurationManager</a>
 </li>
-<li>GetSetupPINCode()
-: <a class="el" href="classchip_1_1_rendezvous_parameters.html#a1edaed6797aba9e6f9d006777572a441">chip::RendezvousParameters</a>
-</li>
 <li>GetShortDiscriminator()
 : <a class="el" href="classchip_1_1_mdns_1_1_commission_advertising_parameters.html#a32d0eea979dba0b6e80f76c6d114df7f">chip::Mdns::CommissionAdvertisingParameters</a>
 </li>
 <li>GetShortestServiceUUID:
 : <a class="el" href="interface_u_u_i_d_helper.html#a89a0275aeaa277fef84b84a617849e3d">UUIDHelper</a>
-</li>
-<li>GetSlaacIPv6Address()
-: <a class="el" href="classchip_1_1_device_layer_1_1_thread_stack_manager.html#a196e591ebeed7b78501c290c6f913c1c">chip::DeviceLayer::ThreadStackManager</a>
 </li>
 <li>GetSocket()
 : <a class="el" href="classchip_1_1_inet_1_1_i_p_end_point_basis.html#ad614a1884ff36d03bd145c58d67737ea">chip::Inet::IPEndPointBasis</a>
@@ -787,12 +834,15 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>GetTransport()
 : <a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html#a0862d16c8dfdad7291bc5075181584e2">chip::Transport::PeerConnectionState</a>
 </li>
+<li>GetTransportManager()
+: <a class="el" href="classchip_1_1_secure_session_mgr.html#a9c39e62cab983c2040ed7dc31712d816">chip::SecureSessionMgr</a>
+</li>
 <li>GetTransportType()
 : <a class="el" href="classchip_1_1_secure_session_mgr.html#a1afe5195fb02dd83aa60abeed035bc72">chip::SecureSessionMgr</a>
 , <a class="el" href="classchip_1_1_transport_1_1_peer_address.html#aa204619aea73e80e2e42d87e97dc9eaf">chip::Transport::PeerAddress</a>
 </li>
 <li>GetTtl()
-: <a class="el" href="classmdns_1_1_minimal_1_1_resource_record.html#a6a6d6b4a548368b457e93d670c98e01b">mdns::Minimal::ResourceRecord</a>
+: <a class="el" href="classmdns_1_1_minimal_1_1_resource_record.html#a3a1de9e26d38381fdd51df770aceb982">mdns::Minimal::ResourceRecord</a>
 </li>
 <li>GetTtlSeconds()
 : <a class="el" href="classmdns_1_1_minimal_1_1_resource_data.html#a17b421b87a6a61087beda835fdfb0b23">mdns::Minimal::ResourceData</a>
@@ -823,7 +873,7 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 , <a class="el" href="classchip_1_1_device_layer_1_1_internal_1_1_device_description_server.html#a4742502090e5df3e4bbb128c5553031d">chip::DeviceLayer::Internal::DeviceDescriptionServer</a>
 </li>
 <li>GetUserType()
-: <a class="el" href="classchip_1_1_controller_1_1_door_lock_cluster.html#a2d3428d15c71c77217932d786a9373a3">chip::Controller::DoorLockCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_door_lock_cluster.html#ab3010985e85e5cd9175ebaf4a9c4a8ad">chip::Controller::DoorLockCluster</a>
 </li>
 <li>getValue()
 : <a class="el" href="enumchip_1_1devicecontroller_1_1_chip_command_type.html#a15f61a40a2da8952691c57fbd46506bd">chip.devicecontroller.ChipCommandType</a>
@@ -836,10 +886,12 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 : <a class="el" href="structchip_1_1_ble_1_1_chip_b_l_e_device_identification_info.html#abb50b51b3e05157b55ba66abcf6e6a5c">chip::Ble::ChipBLEDeviceIdentificationInfo</a>
 , <a class="el" href="classchip_1_1_device_layer_1_1_configuration_manager.html#aa91627dd235cecb5487c8cd55ae28a7a">chip::DeviceLayer::ConfigurationManager</a>
 , <a class="el" href="classchip_1_1_mdns_1_1_commission_advertising_parameters.html#a42633769648bb1202577b196b8f44f79">chip::Mdns::CommissionAdvertisingParameters</a>
-, <a class="el" href="classchip_1_1_payload_header.html#a5a5aae6e1070a2d658a3807701045903">chip::PayloadHeader</a>
+</li>
+<li>GetVendorName()
+: <a class="el" href="classchip_1_1_device_layer_1_1_configuration_manager.html#ac99ff2edd3fc7ee0b0bec9a2f1158d62">chip::DeviceLayer::ConfigurationManager</a>
 </li>
 <li>GetWeekdaySchedule()
-: <a class="el" href="classchip_1_1_controller_1_1_door_lock_cluster.html#adbec723afa8816b1101c8f7bcfeb3694">chip::Controller::DoorLockCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_door_lock_cluster.html#ad0ecdb6efc1e95b14fbae63795acce3c">chip::Controller::DoorLockCluster</a>
 </li>
 <li>GetWeight()
 : <a class="el" href="classmdns_1_1_minimal_1_1_srv_record.html#a6ea433672d42553c61e0dafde9216d31">mdns::Minimal::SrvRecord</a>
@@ -864,11 +916,11 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 : <a class="el" href="classchip_1_1_device_layer_1_1_connectivity_manager.html#a2cdc4f1f63397eb9faf29ad0e7cd61a3">chip::DeviceLayer::ConnectivityManager</a>
 </li>
 <li>GetYeardaySchedule()
-: <a class="el" href="classchip_1_1_controller_1_1_door_lock_cluster.html#ad4934a921b33d6194e8d495b68ec03ab">chip::Controller::DoorLockCluster</a>
+: <a class="el" href="classchip_1_1_controller_1_1_door_lock_cluster.html#af0c2ab06bb352b26dc0444625d1649cf">chip::Controller::DoorLockCluster</a>
 </li>
 <li>given
-: <a class="el" href="classchip_1_1_chip_exceptions_1_1_invalid_argument_count.html#aa654c418a653b9b7624a1e70cd2d55e9">chip.ChipExceptions.InvalidArgumentCount</a>
-, <a class="el" href="classchip_1_1_chip_exceptions_1_1_invalid_argument_type.html#a7e1714e7680b31d8b6bac0120669fe60">chip.ChipExceptions.InvalidArgumentType</a>
+: <a class="el" href="classchip_1_1exceptions_1_1_invalid_argument_count.html#a59b0ea296d2cab84ecaf3f6bfa7d9360">chip.exceptions.InvalidArgumentCount</a>
+, <a class="el" href="classchip_1_1exceptions_1_1_invalid_argument_type.html#af7c03b8aa16660eb104f92974af1abf9">chip.exceptions.InvalidArgumentType</a>
 </li>
 <li>GlobalId
 : <a class="el" href="classchip_1_1_device_layer_1_1_internal_1_1_chip_group_key.html#a7d7556e50cd9b019a4948b80737e9702">chip::DeviceLayer::Internal::ChipGroupKey</a>
@@ -876,6 +928,9 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 </li>
 <li>Gmainloop
 : <a class="el" href="classchip_1_1_chip_bluez_mgr_1_1_bluez_manager.html#a7be6792d2bab34339070dd4f0d7a9484">chip.ChipBluezMgr.BluezManager</a>
+</li>
+<li>GroupKeyManagementCluster()
+: <a class="el" href="classchip_1_1_controller_1_1_group_key_management_cluster.html#a88dd93bcea2b15d9c397aba3d6e46fed">chip::Controller::GroupKeyManagementCluster</a>
 </li>
 <li>GroupsCluster()
 : <a class="el" href="classchip_1_1_controller_1_1_groups_cluster.html#a87740275be3aa4a663e3f5e7cc84f2c6">chip::Controller::GroupsCluster</a>
@@ -886,7 +941,7 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 1 2021 16:49:18 for Connected Home over IP by
+    <li class="footer">Generated on Thu Apr 15 2021 18:57:06 for Connected Home over IP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

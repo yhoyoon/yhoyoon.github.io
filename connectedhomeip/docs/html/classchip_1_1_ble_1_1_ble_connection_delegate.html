@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Connected Home over IP
-   &#160;<span id="projectnumber">a83086a0</span>
+   &#160;<span id="projectnumber">672cf7684</span>
    </div>
   </td>
  </tr>
@@ -97,17 +97,17 @@ $(document).ready(function(){initNavTree('classchip_1_1_ble_1_1_ble_connection_d
 <div class="dynheader">
 Inheritance diagram for chip::Ble::BleConnectionDelegate:</div>
 <div class="dyncontent">
-<div class="center"><img src="classchip_1_1_ble_1_1_ble_connection_delegate__inherit__graph.png" border="0" usemap="#chip_1_1_ble_1_1_ble_connection_delegate_inherit__map" alt="Inheritance graph"/></div>
-<map name="chip_1_1_ble_1_1_ble_connection_delegate_inherit__map" id="chip_1_1_ble_1_1_ble_connection_delegate_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,27,185,69"/>
-<area shape="rect" href="class_android_ble_connection_delegate.html" title=" " alt="" coords="252,5,477,32"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_internal_1_1_ble_connection_delegate_impl.html" title=" " alt="" coords="233,57,496,98"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+ <div class="center">
+  <img src="classchip_1_1_ble_1_1_ble_connection_delegate.png" usemap="#chip::Ble::BleConnectionDelegate_map" alt=""/>
+  <map id="chip::Ble::BleConnectionDelegate_map" name="chip::Ble::BleConnectionDelegate_map">
+<area href="class_android_ble_connection_delegate.html" alt="AndroidBleConnectionDelegate" shape="rect" coords="0,56,323,80"/>
+<area href="classchip_1_1_device_layer_1_1_internal_1_1_ble_connection_delegate_impl.html" alt="chip::DeviceLayer::Internal::BleConnectionDelegateImpl" shape="rect" coords="333,56,656,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ab6fdb641bcfcbbf32b49e7dc6a77e8ec"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_ble_1_1_ble_connection_delegate.html#ab6fdb641bcfcbbf32b49e7dc6a77e8ec">OnConnectionCompleteFunct</a>) (void *appState, <a class="el" href="qpg6100_2_ble_platform_config_8h.html#a733cdf268d79c0e6edf76a3c2a809727">BLE_CONNECTION_OBJECT</a> <a class="el" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#a0edbfeb6b90b54efe962e12d3c644fa5">connObj</a>)</td></tr>
+<tr class="memitem:ab6fdb641bcfcbbf32b49e7dc6a77e8ec"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_ble_1_1_ble_connection_delegate.html#ab6fdb641bcfcbbf32b49e7dc6a77e8ec">OnConnectionCompleteFunct</a>) (void *appState, <a class="el" href="qpg6100_2_ble_platform_config_8h.html#a733cdf268d79c0e6edf76a3c2a809727">BLE_CONNECTION_OBJECT</a> <a class="el" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#a00524b6f9b75a2adfa57a7da9163480c">connObj</a>)</td></tr>
 <tr class="separator:ab6fdb641bcfcbbf32b49e7dc6a77e8ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae02c59ce1888cddac9202f68f57d96ec"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_ble_1_1_ble_connection_delegate.html#ae02c59ce1888cddac9202f68f57d96ec">OnConnectionErrorFunct</a>) (void *appState, <a class="el" href="_ble_error_8h.html#a1f45d237ce15da480e78d3f16a05b602">BLE_ERROR</a> <a class="el" href="_setup_payload_parser-_j_n_i_8cpp.html#a52482fdd3721e7db69dc740aefee8ad4">err</a>)</td></tr>
 <tr class="separator:ae02c59ce1888cddac9202f68f57d96ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,6 +118,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6127f5c0da94a9a5b7698e89277c7bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a930a64d53fed3d0c529a14f11cc38a9d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_ble_1_1_ble_connection_delegate.html#a930a64d53fed3d0c529a14f11cc38a9d">NewConnection</a> (<a class="el" href="classchip_1_1_ble_1_1_ble_layer.html">BleLayer</a> *bleLayer, void *appState, uint16_t connDiscriminator)=0</td></tr>
 <tr class="separator:a930a64d53fed3d0c529a14f11cc38a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5648e6cd0c1afe32fcd276c3445c2fb4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_ble_error_8h.html#a1f45d237ce15da480e78d3f16a05b602">BLE_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1_ble_1_1_ble_connection_delegate.html#a5648e6cd0c1afe32fcd276c3445c2fb4">CancelConnection</a> ()=0</td></tr>
+<tr class="separator:a5648e6cd0c1afe32fcd276c3445c2fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -134,7 +136,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* chip::Ble::BleConnectionDelegate::OnConnectionCompleteFunct) (void *appState, <a class="el" href="qpg6100_2_ble_platform_config_8h.html#a733cdf268d79c0e6edf76a3c2a809727">BLE_CONNECTION_OBJECT</a> <a class="el" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#a0edbfeb6b90b54efe962e12d3c644fa5">connObj</a>)</td>
+          <td class="memname">typedef void(* chip::Ble::BleConnectionDelegate::OnConnectionCompleteFunct) (void *appState, <a class="el" href="qpg6100_2_ble_platform_config_8h.html#a733cdf268d79c0e6edf76a3c2a809727">BLE_CONNECTION_OBJECT</a> <a class="el" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#a00524b6f9b75a2adfa57a7da9163480c">connObj</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -182,6 +184,33 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5648e6cd0c1afe32fcd276c3445c2fb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5648e6cd0c1afe32fcd276c3445c2fb4">&#9670;&nbsp;</a></span>CancelConnection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="_ble_error_8h.html#a1f45d237ce15da480e78d3f16a05b602">BLE_ERROR</a> chip::Ble::BleConnectionDelegate::CancelConnection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classchip_1_1_device_layer_1_1_internal_1_1_ble_connection_delegate_impl.html#adc126e918f7b4f86962b0610c9cb709c">chip::DeviceLayer::Internal::BleConnectionDelegateImpl</a>, and <a class="el" href="class_android_ble_connection_delegate.html#a432424ac45658699abcd3209f4c61364">AndroidBleConnectionDelegate</a>.</p>
+
+</div>
+</div>
 <a id="a930a64d53fed3d0c529a14f11cc38a9d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a930a64d53fed3d0c529a14f11cc38a9d">&#9670;&nbsp;</a></span>NewConnection()</h2>
 
@@ -264,7 +293,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="namespacechip_1_1_ble.html">Ble</a></li><li class="navelem"><a class="el" href="classchip_1_1_ble_1_1_ble_connection_delegate.html">BleConnectionDelegate</a></li>
-    <li class="footer">Generated on Mon Feb 1 2021 16:49:17 for Connected Home over IP by
+    <li class="footer">Generated on Thu Apr 15 2021 18:57:05 for Connected Home over IP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

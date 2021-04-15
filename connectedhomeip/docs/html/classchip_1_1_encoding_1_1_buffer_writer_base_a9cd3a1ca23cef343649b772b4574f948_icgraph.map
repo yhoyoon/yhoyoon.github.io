@@ -1,4 +1,0 @@
-<map id="chip::Encoding::BufferWriterBase::Available" name="chip::Encoding::BufferWriterBase::Available">
-<area shape="rect" id="node1" title="Number of bytes still available for writing." alt="" coords="257,5,461,47"/>
-<area shape="rect" id="node2" href="$classchip_1_1_encoding_1_1_buffer_writer_base.html#a8f6b131fe73c5c774dd23c847e2fbed1" title="Raw append a buffer, regardless of endianess." alt="" coords="5,5,209,47"/>
-</map>

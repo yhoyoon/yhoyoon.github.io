@@ -1,4 +1,0 @@
-<map id="chip::PacketHeader::Decode" name="chip::PacketHeader::Decode">
-<area shape="rect" id="node1" title="Decodes a header from the given buffer." alt="" coords="239,5,385,47"/>
-<area shape="rect" id="node2" href="$classchip_1_1_secure_session_mgr.html#a174d96c2c6c606695c69cbbd75ce72b1" title=" " alt="" coords="5,5,191,47"/>
-</map>

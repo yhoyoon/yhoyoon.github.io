@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Connected Home over IP
-   &#160;<span id="projectnumber">a83086a0</span>
+   &#160;<span id="projectnumber">672cf7684</span>
    </div>
   </td>
  </tr>
@@ -93,6 +93,7 @@ $(document).ready(function(){initNavTree('_chip_device_controller-_script_bindin
 <div class="contents">
 <div class="textblock"><code>#include &lt;errno.h&gt;</code><br />
 <code>#include &lt;fcntl.h&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;sys/time.h&gt;</code><br />
@@ -101,143 +102,20 @@ $(document).ready(function(){initNavTree('_chip_device_controller-_script_bindin
 <code>#include &lt;<a class="el" href="_system_layer_8h_source.html">system/SystemLayer.h</a>&gt;</code><br />
 <code>#include &lt;inttypes.h&gt;</code><br />
 <code>#include &lt;net/if.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_chip_device_controller-_script_device_address_update_delegate_8h_source.html">ChipDeviceController-ScriptDeviceAddressUpdateDelegate.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_chip_device_controller-_script_device_pairing_delegate_8h_source.html">ChipDeviceController-ScriptDevicePairingDelegate.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_chip_device_controller-_storage_delegate_8h_source.html">ChipDeviceController-StorageDelegate.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_delegate_8h_source.html">chip/interaction_model/Delegate.h</a>&quot;</code><br />
 <code>#include &lt;app/CommandSender.h&gt;</code><br />
 <code>#include &lt;app/InteractionModelEngine.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_c_h_i_p_device_8h_source.html">controller/CHIPDevice.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_c_h_i_p_device_controller__deprecated_8h_source.html">controller/CHIPDeviceController_deprecated.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_c_h_i_p_device_controller_8h_source.html">controller/CHIPDeviceController.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_device_address_updater_8h_source.html">controller/DeviceAddressUpdater.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_resolver_8h_source.html">mdns/Resolver.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_c_h_i_p_mem_8h_source.html">support/CHIPMem.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_code_utils_8h_source.html">support/CodeUtils.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_d_l_l_util_8h_source.html">support/DLLUtil.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_return_macros_8h_source.html">support/ReturnMacros.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_c_h_i_p_logging_8h_source.html">support/logging/CHIPLogging.h</a>&gt;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for ChipDeviceController-ScriptBinding.cpp:</div>
-<div class="dyncontent">
-<div class="center"><img src="_chip_device_controller-_script_binding_8cpp__incl.png" border="0" usemap="#controller_2python_2_chip_device_controller-_script_binding_8cpp" alt=""/></div>
-<map name="controller_2python_2_chip_device_controller-_script_binding_8cpp" id="controller_2python_2_chip_device_controller-_script_binding_8cpp">
-<area shape="rect" title=" " alt="" coords="5358,5,5569,47"/>
-<area shape="rect" title=" " alt="" coords="5,102,73,129"/>
-<area shape="rect" title=" " alt="" coords="97,102,160,129"/>
-<area shape="rect" title=" " alt="" coords="2790,869,2857,896"/>
-<area shape="rect" title=" " alt="" coords="6052,1168,6123,1195"/>
-<area shape="rect" title=" " alt="" coords="6577,102,6667,129"/>
-<area shape="rect" title=" " alt="" coords="3529,1243,3603,1269"/>
-<area shape="rect" href="_system_error_8h.html" title=" " alt="" coords="936,1243,1103,1269"/>
-<area shape="rect" href="_system_layer_8h.html" title=" " alt="" coords="1867,1093,2038,1120"/>
-<area shape="rect" href="_d_l_l_util_8h.html" title=" " alt="" coords="2651,1317,2785,1344"/>
-<area shape="rect" title=" " alt="" coords="6692,102,6779,129"/>
-<area shape="rect" title=" " alt="" coords="2881,1243,2947,1269"/>
-<area shape="rect" href="_chip_device_controller-_script_device_pairing_delegate_8h.html" title=" " alt="" coords="5720,95,5945,136"/>
-<area shape="rect" href="_c_h_i_p_device_controller__deprecated_8h.html" title=" " alt="" coords="3455,184,3683,225"/>
-<area shape="rect" href="_c_h_i_p_device_8h.html" title=" " alt="" coords="4702,355,4878,382"/>
-<area shape="rect" title=" " alt="" coords="5376,437,5551,464"/>
-<area shape="rect" title=" " alt="" coords="5575,437,5791,464"/>
-<area shape="rect" href="_code_utils_8h.html" title=" " alt="" coords="4633,1168,4784,1195"/>
-<area shape="rect" href="_c_h_i_p_logging_8h.html" title=" " alt="" coords="5545,1243,5766,1269"/>
-<area shape="rect" href="_chip_device_controller-_storage_delegate_8h.html" title=" " alt="" coords="6197,95,6357,136"/>
-<area shape="rect" href="_c_h_i_p_mem_8h.html" title=" " alt="" coords="6097,1093,6248,1120"/>
-<area shape="rect" href="_return_macros_8h.html" title=" " alt="" coords="6103,273,6280,300"/>
-<area shape="rect" href="_system_config_8h.html" title=" " alt="" coords="1103,1467,1280,1493"/>
-<area shape="rect" title=" " alt="" coords="1057,1317,1139,1344"/>
-<area shape="rect" title=" " alt="" coords="4901,1541,4972,1568"/>
-<area shape="rect" title=" " alt="" coords="2159,1541,2245,1568"/>
-<area shape="rect" href="_c_h_i_p_callback_8h.html" title=" " alt="" coords="4860,1168,5013,1195"/>
-<area shape="rect" href="_system_event_8h.html" title=" " alt="" coords="652,1168,824,1195"/>
-<area shape="rect" href="_system_object_8h.html" title=" " alt="" coords="3185,1168,3363,1195"/>
-<area shape="rect" href="_system_wake_event_8h.html" title=" " alt="" coords="950,1168,1158,1195"/>
-<area shape="rect" title=" " alt="" coords="2403,1168,2502,1195"/>
-<area shape="rect" title=" " alt="" coords="3779,1243,3854,1269"/>
-<area shape="rect" href="_system_stats_8h.html" title=" " alt="" coords="4251,1243,4419,1269"/>
-<area shape="rect" href="_c_h_i_p_config_8h.html" title=" " alt="" coords="4543,1317,4682,1344"/>
-<area shape="rect" href="_inet_config_8h.html" title=" " alt="" coords="426,1317,557,1344"/>
-<area shape="rect" title=" " alt="" coords="3779,1317,3878,1344"/>
-<area shape="rect" title=" " alt="" coords="4374,1317,4467,1344"/>
-<area shape="rect" href="_ble_config_8h.html" title=" " alt="" coords="3656,1392,3777,1419"/>
-<area shape="rect" href="_device_network_info_8h.html" title=" " alt="" coords="5410,780,5591,821"/>
-<area shape="rect" href="_rendezvous_session_delegate_8h.html" title=" " alt="" coords="4161,691,4376,732"/>
-<area shape="rect" href="_c_h_i_p_device_controller_8h.html" title=" " alt="" coords="3449,273,3689,300"/>
-<area shape="rect" href="_c_h_i_p_core_8h.html" title=" " alt="" coords="3431,787,3557,814"/>
-<area shape="rect" href="_secure_session_mgr_8h.html" title=" " alt="" coords="3179,437,3395,464"/>
-<area shape="rect" href="_u_d_p_8h.html" title=" " alt="" coords="2264,609,2415,635"/>
-<area shape="rect" href="_c_h_i_p_persistent_storage_delegate_8h.html" title=" " alt="" coords="2219,348,2403,389"/>
-<area shape="rect" href="_c_h_i_p_t_l_v_8h.html" title=" " alt="" coords="5808,1093,5927,1120"/>
-<area shape="rect" href="_rendezvous_session_8h.html" title=" " alt="" coords="4181,437,4407,464"/>
-<area shape="rect" href="_transport_mgr_8h.html" title=" " alt="" coords="3500,519,3683,546"/>
-<area shape="rect" title=" " alt="" coords="3538,355,3735,382"/>
-<area shape="rect" href="_serializable_integer_set_8h.html" title=" " alt="" coords="5722,512,5919,553"/>
-<area shape="rect" title=" " alt="" coords="4650,437,4813,464"/>
-<area shape="rect" href="_base64_8h.html" title=" " alt="" coords="5784,609,5919,635"/>
-<area shape="rect" href="_p_a_s_e_session_8h.html" title=" " alt="" coords="4760,519,4940,546"/>
-<area shape="rect" href="_message_header_8h.html" title=" " alt="" coords="4785,787,5016,814"/>
-<area shape="rect" href="_ble_layer_8h.html" title=" " alt="" coords="3379,869,3494,896"/>
-<area shape="rect" href="_c_h_i_p_error_8h.html" title=" " alt="" coords="5291,1243,5419,1269"/>
-<area shape="rect" href="_inet_layer_8h.html" title=" " alt="" coords="2287,1019,2411,1045"/>
-<area shape="rect" href="_system_packet_buffer_8h.html" title=" " alt="" coords="3977,1093,4195,1120"/>
-<area shape="rect" href="ble_2_ble_application_delegate_8h.html" title=" " alt="" coords="2942,944,3153,971"/>
-<area shape="rect" href="ble_2_ble_connection_delegate_8h.html" title=" " alt="" coords="3233,1019,3443,1045"/>
-<area shape="rect" href="_ble_error_8h.html" title=" " alt="" coords="3399,1093,3509,1120"/>
-<area shape="rect" href="ble_2_ble_platform_delegate_8h.html" title=" " alt="" coords="3822,944,4017,971"/>
-<area shape="rect" href="_ble_u_u_i_d_8h.html" title=" " alt="" coords="4631,1019,4744,1045"/>
-<area shape="rect" href="_b_l_e_end_point_8h.html" title=" " alt="" coords="3227,944,3342,971"/>
-<area shape="rect" href="_system_align_size_8h.html" title=" " alt="" coords="4030,1168,4225,1195"/>
-<area shape="rect" title=" " alt="" coords="4249,1168,4355,1195"/>
-<area shape="rect" href="_error_str_8h.html" title=" " alt="" coords="4091,1243,4227,1269"/>
-<area shape="rect" title=" " alt="" coords="3929,1243,4016,1269"/>
-<area shape="rect" title=" " alt="" coords="5489,1317,5563,1344"/>
-<area shape="rect" href="_system_mutex_8h.html" title=" " alt="" coords="1478,1168,1654,1195"/>
-<area shape="rect" href="_btp_engine_8h.html" title=" " alt="" coords="4380,1019,4504,1045"/>
-<area shape="rect" title=" " alt="" coords="5180,1093,5251,1120"/>
-<area shape="rect" href="_bit_flags_8h.html" title=" " alt="" coords="4481,1093,4621,1120"/>
-<area shape="rect" title=" " alt="" coords="3895,1168,3955,1195"/>
-<area shape="rect" href="_i_a_n_a_constants_8h.html" title=" " alt="" coords="1381,1243,1541,1269"/>
-<area shape="rect" href="_i_p_address_8h.html" title=" " alt="" coords="2052,1168,2179,1195"/>
-<area shape="rect" href="_i_p_prefix_8h.html" title=" " alt="" coords="2164,1093,2277,1120"/>
-<area shape="rect" href="_inet_error_8h.html" title=" " alt="" coords="457,1168,576,1195"/>
-<area shape="rect" href="_inet_interface_8h.html" title=" " alt="" coords="1393,1093,1539,1120"/>
-<area shape="rect" href="_inet_layer_basis_8h.html" title=" " alt="" coords="2455,1093,2613,1120"/>
-<area shape="rect" href="_inet_layer_events_8h.html" title=" " alt="" coords="877,1093,1045,1120"/>
-<area shape="rect" title=" " alt="" coords="1565,1243,1652,1269"/>
-<area shape="rect" title=" " alt="" coords="1728,1243,1841,1269"/>
-<area shape="rect" title=" " alt="" coords="1865,1243,1987,1269"/>
-<area shape="rect" title=" " alt="" coords="2011,1243,2102,1269"/>
-<area shape="rect" title=" " alt="" coords="2126,1243,2222,1269"/>
-<area shape="rect" title=" " alt="" coords="2247,1243,2349,1269"/>
-<area shape="rect" title=" " alt="" coords="236,1168,331,1195"/>
-<area shape="rect" href="_c_h_i_p_crypto_p_a_l_8h.html" title=" " alt="" coords="5023,1019,5200,1045"/>
-<area shape="rect" title=" " alt="" coords="4861,601,5047,643"/>
-<area shape="rect" href="_peer_connection_state_8h.html" title=" " alt="" coords="4397,601,4583,643"/>
-<area shape="rect" href="_secure_session_8h.html" title=" " alt="" coords="4805,698,4996,725"/>
-<area shape="rect" href="_peer_address_8h.html" title=" " alt="" coords="2977,787,3184,814"/>
-<area shape="rect" href="_session_establishment_delegate_8h.html" title=" " alt="" coords="4400,691,4628,732"/>
-<area shape="rect" href="_base_8h.html" title=" " alt="" coords="3118,698,3275,725"/>
-<area shape="rect" title=" " alt="" coords="4799,869,4869,896"/>
-<area shape="rect" title=" " alt="" coords="4894,869,4961,896"/>
-<area shape="rect" title=" " alt="" coords="4529,869,4621,896"/>
-<area shape="rect" href="_optional_8h.html" title=" " alt="" coords="4985,869,5107,896"/>
-<area shape="rect" title=" " alt="" coords="5588,869,5747,896"/>
-<area shape="rect" title=" " alt="" coords="5009,944,5083,971"/>
-<area shape="rect" href="_u_d_p_end_point_8h.html" title=" " alt="" coords="2263,869,2411,896"/>
-<area shape="rect" href="_i_p_end_point_basis_8h.html" title=" " alt="" coords="1767,944,1933,971"/>
-<area shape="rect" href="_end_point_basis_8h.html" title=" " alt="" coords="1227,1019,1382,1045"/>
-<area shape="rect" href="_peer_connections_8h.html" title=" " alt="" coords="4013,519,4220,546"/>
-<area shape="rect" href="_tuple_8h.html" title=" " alt="" coords="3196,609,3355,635"/>
-<area shape="rect" href="_time_source_8h.html" title=" " alt="" coords="3686,1093,3849,1120"/>
-<area shape="rect" href="_system_clock_8h.html" title=" " alt="" coords="1233,1168,1403,1195"/>
-<area shape="rect" title=" " alt="" coords="3300,698,3355,725"/>
-<area shape="rect" href="_c_h_i_p_t_l_v_tags_8h.html" title=" " alt="" coords="5777,1168,5926,1195"/>
-<area shape="rect" href="_c_h_i_p_t_l_v_types_8h.html" title=" " alt="" coords="5595,1168,5753,1195"/>
-<area shape="rect" href="_buf_bound_8h.html" title=" " alt="" coords="5683,698,5833,725"/>
-<area shape="rect" href="_network_provisioning_8h.html" title=" " alt="" coords="5274,609,5506,635"/>
-<area shape="rect" href="_rendezvous_parameters_8h.html" title=" " alt="" coords="3531,609,3782,635"/>
-<area shape="rect" title=" " alt="" coords="5767,787,5834,814"/>
-<area shape="rect" href="ble_2_ble_8h.html" title=" " alt="" coords="3619,787,3697,814"/>
-<area shape="rect" title=" " alt="" coords="6217,191,6267,218"/>
-<area shape="rect" title=" " alt="" coords="6291,191,6350,218"/>
-<area shape="rect" title=" " alt="" coords="6199,1168,6248,1195"/>
-</map>
-</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -245,65 +123,63 @@ Typedefs</h2></td></tr>
 <tr class="separator:a3724ea5adf2091ee863138afbb7e64e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0183729f89e769be5b0e1e1f370dd1c"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#ae0183729f89e769be5b0e1e1f370dd1c">LogMessageFunct</a>) (uint64_t time, uint64_t timeUS, const char *moduleName, uint8_t category, const char *msg)</td></tr>
 <tr class="separator:ae0183729f89e769be5b0e1e1f370dd1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e16029ad6da3337312b31994bde585b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a1e16029ad6da3337312b31994bde585b">OnConnectFunct</a>) (<a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html">chip::DeviceController::ChipDeviceController</a> *dc, const <a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html">chip::Transport::PeerConnectionState</a> *state, void *appReqState)</td></tr>
-<tr class="separator:a1e16029ad6da3337312b31994bde585b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af645ffbe4d1c17af533e04d2a71a648b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#af645ffbe4d1c17af533e04d2a71a648b">OnErrorFunct</a>) (<a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html">chip::DeviceController::ChipDeviceController</a> *dc, void *appReqState, <a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> <a class="el" href="_setup_payload_parser-_j_n_i_8cpp.html#a52482fdd3721e7db69dc740aefee8ad4">err</a>, const <a class="el" href="classchip_1_1_inet_1_1_i_p_packet_info.html">chip::Inet::IPPacketInfo</a> *pi)</td></tr>
-<tr class="separator:af645ffbe4d1c17af533e04d2a71a648b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd998000a7cf1e791a84b1321074d8ea"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#acd998000a7cf1e791a84b1321074d8ea">OnMessageFunct</a>) (<a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html">chip::DeviceController::ChipDeviceController</a> *dc, void *appReqState, <a class="el" href="classchip_1_1_system_1_1_packet_buffer_handle.html">chip::System::PacketBufferHandle</a> <a class="el" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#a0c1b800f8e945f2a4544cb4008ffb418">buffer</a>)</td></tr>
-<tr class="separator:acd998000a7cf1e791a84b1321074d8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2000672f4bf4414622e732bee43013f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a2000672f4bf4414622e732bee43013f7">nl_Chip_DeviceController_DriveIO</a> (uint32_t sleepTimeMS)</td></tr>
-<tr class="separator:a2000672f4bf4414622e732bee43013f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae327d2d0f9fbf9e27df4f2ee723e3e5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#ae327d2d0f9fbf9e27df4f2ee723e3e5b">nl_Chip_DeviceController_NewDeviceController</a> (<a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html">chip::DeviceController::ChipDeviceController</a> **outDevCtrl)</td></tr>
-<tr class="separator:ae327d2d0f9fbf9e27df4f2ee723e3e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20ca63f643ca382dbf760543df554d67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a20ca63f643ca382dbf760543df554d67">nl_Chip_DeviceController_DeleteDeviceController</a> (<a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html">chip::DeviceController::ChipDeviceController</a> *devCtrl)</td></tr>
-<tr class="separator:a20ca63f643ca382dbf760543df554d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a579cf516faa0efeebad8aa242fc6121d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a579cf516faa0efeebad8aa242fc6121d">nl_Chip_DeviceController_ConnectBLE</a> (<a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html">chip::DeviceController::ChipDeviceController</a> *devCtrl, uint16_t discriminator, uint32_t setupPINCode, <a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a1e16029ad6da3337312b31994bde585b">OnConnectFunct</a> onConnect, <a class="el" href="_chip_device_controller-_script_binding_8cpp.html#acd998000a7cf1e791a84b1321074d8ea">OnMessageFunct</a> onMessage, <a class="el" href="_chip_device_controller-_script_binding_8cpp.html#af645ffbe4d1c17af533e04d2a71a648b">OnErrorFunct</a> onError)</td></tr>
-<tr class="separator:a579cf516faa0efeebad8aa242fc6121d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46219feecf65598e490b8e97209b5c86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a46219feecf65598e490b8e97209b5c86">nl_Chip_DeviceController_ConnectIP</a> (<a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html">chip::DeviceController::ChipDeviceController</a> *devCtrl, const char *peerAddrStr, uint32_t setupPINCode, <a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a1e16029ad6da3337312b31994bde585b">OnConnectFunct</a> onConnect, <a class="el" href="_chip_device_controller-_script_binding_8cpp.html#acd998000a7cf1e791a84b1321074d8ea">OnMessageFunct</a> onMessage, <a class="el" href="_chip_device_controller-_script_binding_8cpp.html#af645ffbe4d1c17af533e04d2a71a648b">OnErrorFunct</a> onError)</td></tr>
-<tr class="separator:a46219feecf65598e490b8e97209b5c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66bd344f5424f7dbfcd05c17959e3bb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a66bd344f5424f7dbfcd05c17959e3bb5">nl_Chip_ScriptDevicePairingDelegate_NewPairingDelegate</a> (<a class="el" href="classchip_1_1_device_controller_1_1_script_device_pairing_delegate.html">chip::DeviceController::ScriptDevicePairingDelegate</a> **pairingDelegate)</td></tr>
-<tr class="separator:a66bd344f5424f7dbfcd05c17959e3bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ede2ce3d2ec5ff5e814b8543268109f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a2ede2ce3d2ec5ff5e814b8543268109f">nl_Chip_ScriptDevicePairingDelegate_SetWifiCredential</a> (<a class="el" href="classchip_1_1_device_controller_1_1_script_device_pairing_delegate.html">chip::DeviceController::ScriptDevicePairingDelegate</a> *pairingDelegate, const char *<a class="el" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#ae993739fa1aaab9569e83bb7e06ca469">ssid</a>, const char *<a class="el" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#af6d6bbd7c0fcde728c8aeda8e047100e">password</a>)</td></tr>
-<tr class="separator:a2ede2ce3d2ec5ff5e814b8543268109f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67e8682c168d52b2ea019c5de34093b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a67e8682c168d52b2ea019c5de34093b5">nl_Chip_DeviceController_SetDevicePairingDelegate</a> (<a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html">chip::DeviceController::ChipDeviceController</a> *devCtrl, <a class="el" href="classchip_1_1_controller_1_1_device_pairing_delegate.html">chip::Controller::DevicePairingDelegate</a> *pairingDelegate)</td></tr>
-<tr class="separator:a67e8682c168d52b2ea019c5de34093b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a359082f926c6e1b8657290934b8f1c0c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a359082f926c6e1b8657290934b8f1c0c">nl_Chip_DeviceController_IsConnected</a> (<a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html">chip::DeviceController::ChipDeviceController</a> *devCtrl)</td></tr>
-<tr class="separator:a359082f926c6e1b8657290934b8f1c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16417f0fce6c96b1913c0b9bf2bc9822"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a16417f0fce6c96b1913c0b9bf2bc9822">nl_Chip_DeviceController_Close</a> (<a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html">chip::DeviceController::ChipDeviceController</a> *devCtrl)</td></tr>
-<tr class="separator:a16417f0fce6c96b1913c0b9bf2bc9822"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a817ac1844eeb02b79b6c3434f7b0e50a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a817ac1844eeb02b79b6c3434f7b0e50a">nl_Chip_DeviceController_GetLogFilter</a> ()</td></tr>
-<tr class="separator:a817ac1844eeb02b79b6c3434f7b0e50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95e31574b850e1c7f299438077dc4110"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a95e31574b850e1c7f299438077dc4110">nl_Chip_DeviceController_SetLogFilter</a> (uint8_t category)</td></tr>
-<tr class="separator:a95e31574b850e1c7f299438077dc4110"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c1dffc327c53cd1cb73306917b08bc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a3c1dffc327c53cd1cb73306917b08bc6">nl_Chip_Stack_Init</a> ()</td></tr>
-<tr class="separator:a3c1dffc327c53cd1cb73306917b08bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedf34f6c63641b60d61787041fb30f7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#aedf34f6c63641b60d61787041fb30f7c">nl_Chip_Stack_Shutdown</a> ()</td></tr>
-<tr class="separator:aedf34f6c63641b60d61787041fb30f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa76ca9bf5f5e511ba257c0a5f7f28639"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#aa76ca9bf5f5e511ba257c0a5f7f28639">nl_Chip_Stack_ErrorToString</a> (<a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> <a class="el" href="_setup_payload_parser-_j_n_i_8cpp.html#a52482fdd3721e7db69dc740aefee8ad4">err</a>)</td></tr>
-<tr class="separator:aa76ca9bf5f5e511ba257c0a5f7f28639"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03a2fd8581ea1fe62e137d51dba0d20e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a03a2fd8581ea1fe62e137d51dba0d20e">nl_Chip_Stack_StatusReportToString</a> (uint32_t profileId, uint16_t statusCode)</td></tr>
-<tr class="separator:a03a2fd8581ea1fe62e137d51dba0d20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a173fa090b1a32526aec315774336eb5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a173fa090b1a32526aec315774336eb5a">nl_Chip_Stack_SetLogFunct</a> (<a class="el" href="_chip_device_controller-_script_binding_8cpp.html#ae0183729f89e769be5b0e1e1f370dd1c">LogMessageFunct</a> logFunct)</td></tr>
-<tr class="separator:a173fa090b1a32526aec315774336eb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c9e45eb7c28c215dd664a12d394d33e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a5c9e45eb7c28c215dd664a12d394d33e">nl_Chip_GetDeviceByNodeId</a> (<a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html">chip::DeviceController::ChipDeviceController</a> *devCtrl, <a class="el" href="namespacechip.html#a911a83fdf89daee3f71f39da9e743e01">chip::NodeId</a> nodeId, <a class="el" href="classchip_1_1_controller_1_1_device.html">chip::Controller::Device</a> **device)</td></tr>
-<tr class="separator:a5c9e45eb7c28c215dd664a12d394d33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad5708ba0a46e2fab97097bb0a6e38a8"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#aad5708ba0a46e2fab97097bb0a6e38a8">nl_Chip_DeviceController_ErrorToString</a> (<a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> <a class="el" href="_setup_payload_parser-_j_n_i_8cpp.html#a52482fdd3721e7db69dc740aefee8ad4">err</a>)</td></tr>
-<tr class="separator:aad5708ba0a46e2fab97097bb0a6e38a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb286e178b2c82d6f9f839d7dbd82c5e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#aeb286e178b2c82d6f9f839d7dbd82c5e">nl_Chip_DeviceController_StatusReportToString</a> (uint32_t profileId, uint16_t statusCode)</td></tr>
-<tr class="separator:aeb286e178b2c82d6f9f839d7dbd82c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a541ecec8389028855d8287afaf5f2a36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a541ecec8389028855d8287afaf5f2a36">nl_Chip_DeviceController_Connect</a> (<a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html">chip::DeviceController::ChipDeviceController</a> *devCtrl, <a class="el" href="qpg6100_2_ble_platform_config_8h.html#a733cdf268d79c0e6edf76a3c2a809727">BLE_CONNECTION_OBJECT</a> <a class="el" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#a0edbfeb6b90b54efe962e12d3c644fa5">connObj</a>, uint32_t setupPINCode, <a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a1e16029ad6da3337312b31994bde585b">OnConnectFunct</a> onConnect, <a class="el" href="_chip_device_controller-_script_binding_8cpp.html#acd998000a7cf1e791a84b1321074d8ea">OnMessageFunct</a> onMessage, <a class="el" href="_chip_device_controller-_script_binding_8cpp.html#af645ffbe4d1c17af533e04d2a71a648b">OnErrorFunct</a> onError)</td></tr>
-<tr class="separator:a541ecec8389028855d8287afaf5f2a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b2721abe1e5ed6911eb5db3715a7b55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a3b2721abe1e5ed6911eb5db3715a7b55">pychip_DeviceController_NewDeviceController</a> (<a class="el" href="classchip_1_1_controller_1_1_device_commissioner.html">chip::Controller::DeviceCommissioner</a> **outDevCtrl, <a class="el" href="namespacechip.html#a911a83fdf89daee3f71f39da9e743e01">chip::NodeId</a> localDeviceId)</td></tr>
+<tr class="separator:a3b2721abe1e5ed6911eb5db3715a7b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fb7af2e02abe3528f22498f05ebc4f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a0fb7af2e02abe3528f22498f05ebc4f4">pychip_DeviceController_DeleteDeviceController</a> (<a class="el" href="classchip_1_1_controller_1_1_device_commissioner.html">chip::Controller::DeviceCommissioner</a> *devCtrl, <a class="el" href="classchip_1_1_controller_1_1_device_address_updater.html">chip::Controller::DeviceAddressUpdater</a> *addressUpdater)</td></tr>
+<tr class="separator:a0fb7af2e02abe3528f22498f05ebc4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cb12c5a805beef9e9d0eddca0192e61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a2cb12c5a805beef9e9d0eddca0192e61">pychip_DeviceController_GetAddressAndPort</a> (<a class="el" href="classchip_1_1_controller_1_1_device_commissioner.html">chip::Controller::DeviceCommissioner</a> *devCtrl, <a class="el" href="namespacechip.html#a911a83fdf89daee3f71f39da9e743e01">chip::NodeId</a> nodeId, char *outAddress, uint64_t maxAddressLen, uint16_t *outPort)</td></tr>
+<tr class="separator:a2cb12c5a805beef9e9d0eddca0192e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addba9c13155f8930afaa5f69f7086e0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#addba9c13155f8930afaa5f69f7086e0e">pychip_DeviceController_ConnectBLE</a> (<a class="el" href="classchip_1_1_controller_1_1_device_commissioner.html">chip::Controller::DeviceCommissioner</a> *devCtrl, uint16_t discriminator, uint32_t setupPINCode, <a class="el" href="namespacechip.html#a911a83fdf89daee3f71f39da9e743e01">chip::NodeId</a> nodeid)</td></tr>
+<tr class="separator:addba9c13155f8930afaa5f69f7086e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbfff72704e7aea1c4696167032493a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#adbfff72704e7aea1c4696167032493a6">pychip_DeviceController_ConnectIP</a> (<a class="el" href="classchip_1_1_controller_1_1_device_commissioner.html">chip::Controller::DeviceCommissioner</a> *devCtrl, const char *peerAddrStr, uint32_t setupPINCode, <a class="el" href="namespacechip.html#a911a83fdf89daee3f71f39da9e743e01">chip::NodeId</a> nodeid)</td></tr>
+<tr class="separator:adbfff72704e7aea1c4696167032493a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13c6338a9fe1c89a1c365a1a9db09f36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a13c6338a9fe1c89a1c365a1a9db09f36">pychip_ScriptDevicePairingDelegate_SetWifiCredential</a> (<a class="el" href="classchip_1_1_controller_1_1_device_commissioner.html">chip::Controller::DeviceCommissioner</a> *devCtrl, const char *<a class="el" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#ae993739fa1aaab9569e83bb7e06ca469">ssid</a>, const char *<a class="el" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#af6d6bbd7c0fcde728c8aeda8e047100e">password</a>)</td></tr>
+<tr class="separator:a13c6338a9fe1c89a1c365a1a9db09f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac396fe6b29e171ae2414b60e72132f93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#ac396fe6b29e171ae2414b60e72132f93">pychip_ScriptDevicePairingDelegate_SetThreadCredential</a> (<a class="el" href="classchip_1_1_controller_1_1_device_commissioner.html">chip::Controller::DeviceCommissioner</a> *devCtrl, int <a class="el" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#af3965ccdfc573b047dd5a95c7fe3022d">channel</a>, int <a class="el" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#a5a0b9cf8d043df08f8f96ca7e36f2fce">panId</a>, const char *<a class="el" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#acd151046870b67c43dcda6d101f9ec86">masterKey</a>)</td></tr>
+<tr class="separator:ac396fe6b29e171ae2414b60e72132f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee010b39d830d04223089e9c2ba6ba4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a9ee010b39d830d04223089e9c2ba6ba4">pychip_ScriptDevicePairingDelegate_SetKeyExchangeCallback</a> (<a class="el" href="classchip_1_1_controller_1_1_device_commissioner.html">chip::Controller::DeviceCommissioner</a> *devCtrl, <a class="el" href="namespacechip_1_1_controller.html#a3fc15c5e43ea7b58c96e0b85768a6274">chip::Controller::DevicePairingDelegate_OnPairingCompleteFunct</a> <a class="el" href="_chip_thread_work_8cpp.html#a91b6c1a5164ca0b5a5ee39d0b77d452a">callback</a>)</td></tr>
+<tr class="separator:a9ee010b39d830d04223089e9c2ba6ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e3098ab78e010299ceaffdbfb0a9324"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a5e3098ab78e010299ceaffdbfb0a9324">pychip_DeviceAddressUpdater_New</a> (<a class="el" href="classchip_1_1_controller_1_1_device_address_updater.html">chip::Controller::DeviceAddressUpdater</a> **outAddressUpdater, <a class="el" href="classchip_1_1_controller_1_1_device_commissioner.html">chip::Controller::DeviceCommissioner</a> *devCtrl)</td></tr>
+<tr class="separator:a5e3098ab78e010299ceaffdbfb0a9324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80cbb5c76d170e57f566e8bdc8683bb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a80cbb5c76d170e57f566e8bdc8683bb8">pychip_DeviceAddressUpdater_Delete</a> (<a class="el" href="classchip_1_1_controller_1_1_device_address_updater.html">chip::Controller::DeviceAddressUpdater</a> *addressUpdater)</td></tr>
+<tr class="separator:a80cbb5c76d170e57f566e8bdc8683bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aced2a98cbe78009de9ccc181f3870b19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#aced2a98cbe78009de9ccc181f3870b19">pychip_ScriptDeviceAddressUpdateDelegate_SetOnAddressUpdateComplete</a> (<a class="el" href="namespacechip_1_1_controller.html#a40bf162aa1d4d5914b4f46acb34db7ca">chip::Controller::DeviceAddressUpdateDelegate_OnUpdateComplete</a> <a class="el" href="_chip_thread_work_8cpp.html#a91b6c1a5164ca0b5a5ee39d0b77d452a">callback</a>)</td></tr>
+<tr class="separator:aced2a98cbe78009de9ccc181f3870b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a444d573b9736ff2bbc3c0feca06be1ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a444d573b9736ff2bbc3c0feca06be1ac">pychip_Resolver_ResolveNode</a> (uint64_t fabricid, <a class="el" href="namespacechip.html#a911a83fdf89daee3f71f39da9e743e01">chip::NodeId</a> nodeid)</td></tr>
+<tr class="separator:a444d573b9736ff2bbc3c0feca06be1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4e8250c9271ca9f09f9441a894b4677"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#aa4e8250c9271ca9f09f9441a894b4677">pychip_DeviceController_GetLogFilter</a> ()</td></tr>
+<tr class="separator:aa4e8250c9271ca9f09f9441a894b4677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5480478a67cc6aea4720609bf1e57417"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a5480478a67cc6aea4720609bf1e57417">pychip_DeviceController_SetLogFilter</a> (uint8_t category)</td></tr>
+<tr class="separator:a5480478a67cc6aea4720609bf1e57417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e6645b3e754d96a2d543425d9d94364"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a4e6645b3e754d96a2d543425d9d94364">pychip_Stack_Init</a> ()</td></tr>
+<tr class="separator:a4e6645b3e754d96a2d543425d9d94364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f0c9f7f36ac0849d6fef4eae515eae2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a5f0c9f7f36ac0849d6fef4eae515eae2">pychip_Stack_Shutdown</a> ()</td></tr>
+<tr class="separator:a5f0c9f7f36ac0849d6fef4eae515eae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f82e308e27c05546c2be041de47b61c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a5f82e308e27c05546c2be041de47b61c">pychip_Stack_ErrorToString</a> (<a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> <a class="el" href="_setup_payload_parser-_j_n_i_8cpp.html#a52482fdd3721e7db69dc740aefee8ad4">err</a>)</td></tr>
+<tr class="separator:a5f82e308e27c05546c2be041de47b61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5c438bc645ad01df5da48ee03db8853"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#aa5c438bc645ad01df5da48ee03db8853">pychip_Stack_StatusReportToString</a> (uint32_t profileId, uint16_t statusCode)</td></tr>
+<tr class="separator:aa5c438bc645ad01df5da48ee03db8853"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70eaa39d057b8e5d6167115ba564de0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a70eaa39d057b8e5d6167115ba564de0d">pychip_Stack_SetLogFunct</a> (<a class="el" href="_chip_device_controller-_script_binding_8cpp.html#ae0183729f89e769be5b0e1e1f370dd1c">LogMessageFunct</a> logFunct)</td></tr>
+<tr class="separator:a70eaa39d057b8e5d6167115ba564de0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e91806ce9876f72ca7be58e983395c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a3e91806ce9876f72ca7be58e983395c2">pychip_GetDeviceByNodeId</a> (<a class="el" href="classchip_1_1_controller_1_1_device_commissioner.html">chip::Controller::DeviceCommissioner</a> *devCtrl, <a class="el" href="namespacechip.html#a911a83fdf89daee3f71f39da9e743e01">chip::NodeId</a> nodeId, <a class="el" href="classchip_1_1_controller_1_1_device.html">chip::Controller::Device</a> **device)</td></tr>
+<tr class="separator:a3e91806ce9876f72ca7be58e983395c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa652f62b19767bb490381fe3a535ed4a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#aa652f62b19767bb490381fe3a535ed4a">pychip_GetCommandSenderHandle</a> (<a class="el" href="classchip_1_1_controller_1_1_device.html">chip::Controller::Device</a> *device)</td></tr>
+<tr class="separator:aa652f62b19767bb490381fe3a535ed4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa74eb4e30ad59af7991cd0769c9a8aac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#aa74eb4e30ad59af7991cd0769c9a8aac">pychip_BLEMgrImpl_ConfigureBle</a> (uint32_t bluetoothAdapterId)</td></tr>
+<tr class="separator:aa74eb4e30ad59af7991cd0769c9a8aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1495fa03d781698b9cb07f48253da9da"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a1495fa03d781698b9cb07f48253da9da">pychip_DeviceController_ErrorToString</a> (<a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> <a class="el" href="_setup_payload_parser-_j_n_i_8cpp.html#a52482fdd3721e7db69dc740aefee8ad4">err</a>)</td></tr>
+<tr class="separator:a1495fa03d781698b9cb07f48253da9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88c7c81572a81014994fd5ef0b104b2c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a88c7c81572a81014994fd5ef0b104b2c">pychip_DeviceController_StatusReportToString</a> (uint32_t profileId, uint16_t statusCode)</td></tr>
+<tr class="separator:a88c7c81572a81014994fd5ef0b104b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ae524c5fd8dd6be89c457be0838212f19"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classchip_1_1_controller_1_1_python_persistent_storage_delegate.html">chip::Controller::PythonPersistentStorageDelegate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#ae524c5fd8dd6be89c457be0838212f19">sStorageDelegate</a></td></tr>
-<tr class="separator:ae524c5fd8dd6be89c457be0838212f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b7f6d2dfab2928065bfbf4f623b8d4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip.html#a911a83fdf89daee3f71f39da9e743e01">chip::NodeId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a4b7f6d2dfab2928065bfbf4f623b8d4b">kLocalDeviceId</a> = <a class="el" href="namespacechip.html#ac3d75093c316efb068cf1f4e540b355d">chip::kTestControllerNodeId</a></td></tr>
-<tr class="separator:a4b7f6d2dfab2928065bfbf4f623b8d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53e9bde5cf8287a35187018db5b20ea2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip.html#a911a83fdf89daee3f71f39da9e743e01">chip::NodeId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a53e9bde5cf8287a35187018db5b20ea2">kRemoteDeviceId</a> = <a class="el" href="namespacechip.html#a64369a00f61fc166da14a307ff6765b5">chip::kTestDeviceNodeId</a></td></tr>
+<tr class="memitem:af8e9d8e1718d714b8cfb10a8fe411252"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip.html#a911a83fdf89daee3f71f39da9e743e01">chip::NodeId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#af8e9d8e1718d714b8cfb10a8fe411252">kDefaultLocalDeviceId</a> = chip::kTestControllerNodeId</td></tr>
+<tr class="separator:af8e9d8e1718d714b8cfb10a8fe411252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53e9bde5cf8287a35187018db5b20ea2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacechip.html#a911a83fdf89daee3f71f39da9e743e01">chip::NodeId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a53e9bde5cf8287a35187018db5b20ea2">kRemoteDeviceId</a> = chip::kTestDeviceNodeId</td></tr>
 <tr class="separator:a53e9bde5cf8287a35187018db5b20ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -337,117 +213,60 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a1e16029ad6da3337312b31994bde585b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e16029ad6da3337312b31994bde585b">&#9670;&nbsp;</a></span>OnConnectFunct</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* OnConnectFunct) (<a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html">chip::DeviceController::ChipDeviceController</a> *dc, const <a class="el" href="classchip_1_1_transport_1_1_peer_connection_state.html">chip::Transport::PeerConnectionState</a> *state, void *appReqState)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af645ffbe4d1c17af533e04d2a71a648b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af645ffbe4d1c17af533e04d2a71a648b">&#9670;&nbsp;</a></span>OnErrorFunct</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* OnErrorFunct) (<a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html">chip::DeviceController::ChipDeviceController</a> *dc, void *appReqState, <a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> <a class="el" href="_setup_payload_parser-_j_n_i_8cpp.html#a52482fdd3721e7db69dc740aefee8ad4">err</a>, const <a class="el" href="classchip_1_1_inet_1_1_i_p_packet_info.html">chip::Inet::IPPacketInfo</a> *pi)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acd998000a7cf1e791a84b1321074d8ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd998000a7cf1e791a84b1321074d8ea">&#9670;&nbsp;</a></span>OnMessageFunct</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* OnMessageFunct) (<a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html">chip::DeviceController::ChipDeviceController</a> *dc, void *appReqState, <a class="el" href="classchip_1_1_system_1_1_packet_buffer_handle.html">chip::System::PacketBufferHandle</a> <a class="el" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#a0c1b800f8e945f2a4544cb4008ffb418">buffer</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a16417f0fce6c96b1913c0b9bf2bc9822"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16417f0fce6c96b1913c0b9bf2bc9822">&#9670;&nbsp;</a></span>nl_Chip_DeviceController_Close()</h2>
+<a id="aa74eb4e30ad59af7991cd0769c9a8aac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa74eb4e30ad59af7991cd0769c9a8aac">&#9670;&nbsp;</a></span>pychip_BLEMgrImpl_ConfigureBle()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void nl_Chip_DeviceController_Close </td>
+          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> pychip_BLEMgrImpl_ConfigureBle </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html">chip::DeviceController::ChipDeviceController</a> *&#160;</td>
-          <td class="paramname"><em>devCtrl</em></td><td>)</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>bluetoothAdapterId</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_chip_device_controller-_script_binding_8cpp_a16417f0fce6c96b1913c0b9bf2bc9822_icgraph.png" border="0" usemap="#_chip_device_controller-_script_binding_8cpp_a16417f0fce6c96b1913c0b9bf2bc9822_icgraph" alt=""/></div>
-<map name="_chip_device_controller-_script_binding_8cpp_a16417f0fce6c96b1913c0b9bf2bc9822_icgraph" id="_chip_device_controller-_script_binding_8cpp_a16417f0fce6c96b1913c0b9bf2bc9822_icgraph">
-<area shape="rect" title=" " alt="" coords="236,5,423,47"/>
-<area shape="rect" href="classchip_1_1_chip_device_ctrl_1_1_chip_device_controller.html#a5e247ba594e21f7618c5dc031d7d4abb" title=" " alt="" coords="5,5,188,47"/>
-</map>
-</div>
 
 </div>
 </div>
-<a id="a541ecec8389028855d8287afaf5f2a36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a541ecec8389028855d8287afaf5f2a36">&#9670;&nbsp;</a></span>nl_Chip_DeviceController_Connect()</h2>
+<a id="a80cbb5c76d170e57f566e8bdc8683bb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80cbb5c76d170e57f566e8bdc8683bb8">&#9670;&nbsp;</a></span>pychip_DeviceAddressUpdater_Delete()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> nl_Chip_DeviceController_Connect </td>
+          <td class="memname">void pychip_DeviceAddressUpdater_Delete </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html">chip::DeviceController::ChipDeviceController</a> *&#160;</td>
-          <td class="paramname"><em>devCtrl</em>, </td>
+          <td class="paramtype"><a class="el" href="classchip_1_1_controller_1_1_device_address_updater.html">chip::Controller::DeviceAddressUpdater</a> *&#160;</td>
+          <td class="paramname"><em>addressUpdater</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e3098ab78e010299ceaffdbfb0a9324"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e3098ab78e010299ceaffdbfb0a9324">&#9670;&nbsp;</a></span>pychip_DeviceAddressUpdater_New()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> pychip_DeviceAddressUpdater_New </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1_controller_1_1_device_address_updater.html">chip::Controller::DeviceAddressUpdater</a> **&#160;</td>
+          <td class="paramname"><em>outAddressUpdater</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="qpg6100_2_ble_platform_config_8h.html#a733cdf268d79c0e6edf76a3c2a809727">BLE_CONNECTION_OBJECT</a>&#160;</td>
-          <td class="paramname"><em>connObj</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>setupPINCode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a1e16029ad6da3337312b31994bde585b">OnConnectFunct</a>&#160;</td>
-          <td class="paramname"><em>onConnect</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#acd998000a7cf1e791a84b1321074d8ea">OnMessageFunct</a>&#160;</td>
-          <td class="paramname"><em>onMessage</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#af645ffbe4d1c17af533e04d2a71a648b">OnErrorFunct</a>&#160;</td>
-          <td class="paramname"><em>onError</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1_controller_1_1_device_commissioner.html">chip::Controller::DeviceCommissioner</a> *&#160;</td>
+          <td class="paramname"><em>devCtrl</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -459,16 +278,16 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a579cf516faa0efeebad8aa242fc6121d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a579cf516faa0efeebad8aa242fc6121d">&#9670;&nbsp;</a></span>nl_Chip_DeviceController_ConnectBLE()</h2>
+<a id="addba9c13155f8930afaa5f69f7086e0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addba9c13155f8930afaa5f69f7086e0e">&#9670;&nbsp;</a></span>pychip_DeviceController_ConnectBLE()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> nl_Chip_DeviceController_ConnectBLE </td>
+          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> pychip_DeviceController_ConnectBLE </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html">chip::DeviceController::ChipDeviceController</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1_controller_1_1_device_commissioner.html">chip::Controller::DeviceCommissioner</a> *&#160;</td>
           <td class="paramname"><em>devCtrl</em>, </td>
         </tr>
         <tr>
@@ -486,20 +305,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a1e16029ad6da3337312b31994bde585b">OnConnectFunct</a>&#160;</td>
-          <td class="paramname"><em>onConnect</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#acd998000a7cf1e791a84b1321074d8ea">OnMessageFunct</a>&#160;</td>
-          <td class="paramname"><em>onMessage</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#af645ffbe4d1c17af533e04d2a71a648b">OnErrorFunct</a>&#160;</td>
-          <td class="paramname"><em>onError</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a911a83fdf89daee3f71f39da9e743e01">chip::NodeId</a>&#160;</td>
+          <td class="paramname"><em>nodeid</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -508,37 +315,19 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_chip_device_controller-_script_binding_8cpp_a579cf516faa0efeebad8aa242fc6121d_cgraph.png" border="0" usemap="#_chip_device_controller-_script_binding_8cpp_a579cf516faa0efeebad8aa242fc6121d_cgraph" alt=""/></div>
-<map name="_chip_device_controller-_script_binding_8cpp_a579cf516faa0efeebad8aa242fc6121d_cgraph" id="_chip_device_controller-_script_binding_8cpp_a579cf516faa0efeebad8aa242fc6121d_cgraph">
-<area shape="rect" title=" " alt="" coords="5,13,192,54"/>
-<area shape="rect" href="classchip_1_1_device_controller_1_1_chip_device_controller.html#a49b9d6124c23165cf52ad51cba813764" title="Connect to a CHIP device with the provided Rendezvous connection parameters." alt="" coords="240,5,408,61"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_chip_device_controller-_script_binding_8cpp_a579cf516faa0efeebad8aa242fc6121d_icgraph.png" border="0" usemap="#_chip_device_controller-_script_binding_8cpp_a579cf516faa0efeebad8aa242fc6121d_icgraph" alt=""/></div>
-<map name="_chip_device_controller-_script_binding_8cpp_a579cf516faa0efeebad8aa242fc6121d_icgraph" id="_chip_device_controller-_script_binding_8cpp_a579cf516faa0efeebad8aa242fc6121d_icgraph">
-<area shape="rect" title=" " alt="" coords="265,5,452,47"/>
-<area shape="rect" href="classchip_1_1_chip_device_ctrl_1_1_chip_device_controller.html#a784c21da8049ce03c45466044fd3380e" title=" " alt="" coords="5,5,217,47"/>
-</map>
-</div>
 
 </div>
 </div>
-<a id="a46219feecf65598e490b8e97209b5c86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46219feecf65598e490b8e97209b5c86">&#9670;&nbsp;</a></span>nl_Chip_DeviceController_ConnectIP()</h2>
+<a id="adbfff72704e7aea1c4696167032493a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbfff72704e7aea1c4696167032493a6">&#9670;&nbsp;</a></span>pychip_DeviceController_ConnectIP()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> nl_Chip_DeviceController_ConnectIP </td>
+          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> pychip_DeviceController_ConnectIP </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html">chip::DeviceController::ChipDeviceController</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1_controller_1_1_device_commissioner.html">chip::Controller::DeviceCommissioner</a> *&#160;</td>
           <td class="paramname"><em>devCtrl</em>, </td>
         </tr>
         <tr>
@@ -556,20 +345,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#a1e16029ad6da3337312b31994bde585b">OnConnectFunct</a>&#160;</td>
-          <td class="paramname"><em>onConnect</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#acd998000a7cf1e791a84b1321074d8ea">OnMessageFunct</a>&#160;</td>
-          <td class="paramname"><em>onMessage</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#af645ffbe4d1c17af533e04d2a71a648b">OnErrorFunct</a>&#160;</td>
-          <td class="paramname"><em>onError</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a911a83fdf89daee3f71f39da9e743e01">chip::NodeId</a>&#160;</td>
+          <td class="paramname"><em>nodeid</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -578,96 +355,45 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_chip_device_controller-_script_binding_8cpp_a46219feecf65598e490b8e97209b5c86_cgraph.png" border="0" usemap="#_chip_device_controller-_script_binding_8cpp_a46219feecf65598e490b8e97209b5c86_cgraph" alt=""/></div>
-<map name="_chip_device_controller-_script_binding_8cpp_a46219feecf65598e490b8e97209b5c86_cgraph" id="_chip_device_controller-_script_binding_8cpp_a46219feecf65598e490b8e97209b5c86_cgraph">
-<area shape="rect" title=" " alt="" coords="5,151,192,193"/>
-<area shape="rect" href="classchip_1_1_device_controller_1_1_chip_device_controller.html#a49b9d6124c23165cf52ad51cba813764" title="Connect to a CHIP device with the provided Rendezvous connection parameters." alt="" coords="261,5,429,61"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#a525ecca3300dfad9c1aeab37dc26711d" title="Scan the IP address from its conventional presentation text." alt="" coords="268,86,423,127"/>
-<area shape="rect" href="classchip_1_1_rendezvous_parameters.html#a53e3c3f17425edd4c700788405e35ad1" title=" " alt="" coords="240,151,451,193"/>
-<area shape="rect" href="classchip_1_1_rendezvous_parameters.html#aadebca26d378f9973c7a4bcb2b76b294" title=" " alt="" coords="240,217,451,258"/>
-<area shape="rect" href="classchip_1_1_rendezvous_parameters.html#a365fa186e5e05298fa5641dad366f87b" title=" " alt="" coords="240,282,451,323"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#abb6180cf8ced926a6be9189b53f1d932" title=" " alt="" coords="499,54,653,95"/>
-<area shape="rect" href="classchip_1_1_inet_1_1_i_p_address.html#a51a2c95a399e28425713cfc0e38b850d" title=" " alt="" coords="499,119,653,161"/>
-<area shape="rect" href="_c_h_i_p_device_controller-_j_n_i_8cpp.html#ab52833322402f0f0f1cb68f5ee5d1292" title=" " alt="" coords="701,127,780,153"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_chip_device_controller-_script_binding_8cpp_a46219feecf65598e490b8e97209b5c86_icgraph.png" border="0" usemap="#_chip_device_controller-_script_binding_8cpp_a46219feecf65598e490b8e97209b5c86_icgraph" alt=""/></div>
-<map name="_chip_device_controller-_script_binding_8cpp_a46219feecf65598e490b8e97209b5c86_icgraph" id="_chip_device_controller-_script_binding_8cpp_a46219feecf65598e490b8e97209b5c86_icgraph">
-<area shape="rect" title=" " alt="" coords="253,5,440,47"/>
-<area shape="rect" href="classchip_1_1_chip_device_ctrl_1_1_chip_device_controller.html#ad3a944e923f75879bd3159613b2c0987" title=" " alt="" coords="5,5,205,47"/>
-</map>
-</div>
 
 </div>
 </div>
-<a id="a20ca63f643ca382dbf760543df554d67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20ca63f643ca382dbf760543df554d67">&#9670;&nbsp;</a></span>nl_Chip_DeviceController_DeleteDeviceController()</h2>
+<a id="a0fb7af2e02abe3528f22498f05ebc4f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fb7af2e02abe3528f22498f05ebc4f4">&#9670;&nbsp;</a></span>pychip_DeviceController_DeleteDeviceController()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> nl_Chip_DeviceController_DeleteDeviceController </td>
+          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> pychip_DeviceController_DeleteDeviceController </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html">chip::DeviceController::ChipDeviceController</a> *&#160;</td>
-          <td class="paramname"><em>devCtrl</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="classchip_1_1_controller_1_1_device_commissioner.html">chip::Controller::DeviceCommissioner</a> *&#160;</td>
+          <td class="paramname"><em>devCtrl</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_chip_device_controller-_script_binding_8cpp_a20ca63f643ca382dbf760543df554d67_cgraph.png" border="0" usemap="#_chip_device_controller-_script_binding_8cpp_a20ca63f643ca382dbf760543df554d67_cgraph" alt=""/></div>
-<map name="_chip_device_controller-_script_binding_8cpp_a20ca63f643ca382dbf760543df554d67_cgraph" id="_chip_device_controller-_script_binding_8cpp_a20ca63f643ca382dbf760543df554d67_cgraph">
-<area shape="rect" title=" " alt="" coords="5,13,192,54"/>
-<area shape="rect" href="classchip_1_1_device_controller_1_1_chip_device_controller.html#a80e48f8bab5590714707f0f1e953950a" title=" " alt="" coords="240,5,408,61"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_chip_device_controller-_script_binding_8cpp_a20ca63f643ca382dbf760543df554d67_icgraph.png" border="0" usemap="#_chip_device_controller-_script_binding_8cpp_a20ca63f643ca382dbf760543df554d67_icgraph" alt=""/></div>
-<map name="_chip_device_controller-_script_binding_8cpp_a20ca63f643ca382dbf760543df554d67_icgraph" id="_chip_device_controller-_script_binding_8cpp_a20ca63f643ca382dbf760543df554d67_icgraph">
-<area shape="rect" title=" " alt="" coords="236,5,423,47"/>
-<area shape="rect" href="classchip_1_1_chip_device_ctrl_1_1_chip_device_controller.html#ad8e28f0606984aad6b2a4be30dd16fb0" title=" " alt="" coords="5,5,188,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a2000672f4bf4414622e732bee43013f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2000672f4bf4414622e732bee43013f7">&#9670;&nbsp;</a></span>nl_Chip_DeviceController_DriveIO()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> nl_Chip_DeviceController_DriveIO </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>sleepTimeMS</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classchip_1_1_controller_1_1_device_address_updater.html">chip::Controller::DeviceAddressUpdater</a> *&#160;</td>
+          <td class="paramname"><em>addressUpdater</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aad5708ba0a46e2fab97097bb0a6e38a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad5708ba0a46e2fab97097bb0a6e38a8">&#9670;&nbsp;</a></span>nl_Chip_DeviceController_ErrorToString()</h2>
+<a id="a1495fa03d781698b9cb07f48253da9da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1495fa03d781698b9cb07f48253da9da">&#9670;&nbsp;</a></span>pychip_DeviceController_ErrorToString()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* nl_Chip_DeviceController_ErrorToString </td>
+          <td class="memname">const char* pychip_DeviceController_ErrorToString </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td>
           <td class="paramname"><em>err</em></td><td>)</td>
@@ -675,125 +401,44 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_chip_device_controller-_script_binding_8cpp_aad5708ba0a46e2fab97097bb0a6e38a8_cgraph.png" border="0" usemap="#_chip_device_controller-_script_binding_8cpp_aad5708ba0a46e2fab97097bb0a6e38a8_cgraph" alt=""/></div>
-<map name="_chip_device_controller-_script_binding_8cpp_aad5708ba0a46e2fab97097bb0a6e38a8_cgraph" id="_chip_device_controller-_script_binding_8cpp_aad5708ba0a46e2fab97097bb0a6e38a8_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,192,47"/>
-<area shape="rect" href="namespacechip.html#ae43b53bef8897cb48d4b8173e5c01b09" title="This routine returns a human&#45;readable NULL&#45;terminated C string describing the provided error." alt="" coords="240,13,347,39"/>
-<area shape="rect" href="namespacechip.html#a94dcfc9993bc165d7620d8bbfa93724e" title="Generates a human&#45;readable NULL&#45;terminated C string describing the provided error." alt="" coords="395,13,529,39"/>
-</map>
-</div>
 
 </div>
 </div>
-<a id="a817ac1844eeb02b79b6c3434f7b0e50a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a817ac1844eeb02b79b6c3434f7b0e50a">&#9670;&nbsp;</a></span>nl_Chip_DeviceController_GetLogFilter()</h2>
+<a id="a2cb12c5a805beef9e9d0eddca0192e61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cb12c5a805beef9e9d0eddca0192e61">&#9670;&nbsp;</a></span>pychip_DeviceController_GetAddressAndPort()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t nl_Chip_DeviceController_GetLogFilter </td>
+          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> pychip_DeviceController_GetAddressAndPort </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_chip_device_controller-_script_binding_8cpp_a817ac1844eeb02b79b6c3434f7b0e50a_cgraph.png" border="0" usemap="#_chip_device_controller-_script_binding_8cpp_a817ac1844eeb02b79b6c3434f7b0e50a_cgraph" alt=""/></div>
-<map name="_chip_device_controller-_script_binding_8cpp_a817ac1844eeb02b79b6c3434f7b0e50a_cgraph" id="_chip_device_controller-_script_binding_8cpp_a817ac1844eeb02b79b6c3434f7b0e50a_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,192,47"/>
-<area shape="rect" href="namespacechip_1_1_logging.html#a9ba354f3e87cab41000690e0de14d82f" title=" " alt="" coords="240,13,435,39"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_chip_device_controller-_script_binding_8cpp_a817ac1844eeb02b79b6c3434f7b0e50a_icgraph.png" border="0" usemap="#_chip_device_controller-_script_binding_8cpp_a817ac1844eeb02b79b6c3434f7b0e50a_icgraph" alt=""/></div>
-<map name="_chip_device_controller-_script_binding_8cpp_a817ac1844eeb02b79b6c3434f7b0e50a_icgraph" id="_chip_device_controller-_script_binding_8cpp_a817ac1844eeb02b79b6c3434f7b0e50a_icgraph">
-<area shape="rect" title=" " alt="" coords="267,5,453,47"/>
-<area shape="rect" href="classchip_1_1_chip_device_ctrl_1_1_chip_device_controller.html#aaf2b71a421aa6f760d18b0baba64ec99" title=" " alt="" coords="5,5,219,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a359082f926c6e1b8657290934b8f1c0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a359082f926c6e1b8657290934b8f1c0c">&#9670;&nbsp;</a></span>nl_Chip_DeviceController_IsConnected()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool nl_Chip_DeviceController_IsConnected </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html">chip::DeviceController::ChipDeviceController</a> *&#160;</td>
-          <td class="paramname"><em>devCtrl</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_chip_device_controller-_script_binding_8cpp_a359082f926c6e1b8657290934b8f1c0c_cgraph.png" border="0" usemap="#_chip_device_controller-_script_binding_8cpp_a359082f926c6e1b8657290934b8f1c0c_cgraph" alt=""/></div>
-<map name="_chip_device_controller-_script_binding_8cpp_a359082f926c6e1b8657290934b8f1c0c_cgraph" id="_chip_device_controller-_script_binding_8cpp_a359082f926c6e1b8657290934b8f1c0c_cgraph">
-<area shape="rect" title=" " alt="" coords="5,13,192,54"/>
-<area shape="rect" href="classchip_1_1_device_controller_1_1_chip_device_controller.html#a4f4091d6abd5ed8bb08011edde51a352" title="Check if there&#39;s an active connection." alt="" coords="240,5,408,61"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_chip_device_controller-_script_binding_8cpp_a359082f926c6e1b8657290934b8f1c0c_icgraph.png" border="0" usemap="#_chip_device_controller-_script_binding_8cpp_a359082f926c6e1b8657290934b8f1c0c_icgraph" alt=""/></div>
-<map name="_chip_device_controller-_script_binding_8cpp_a359082f926c6e1b8657290934b8f1c0c_icgraph" id="_chip_device_controller-_script_binding_8cpp_a359082f926c6e1b8657290934b8f1c0c_icgraph">
-<area shape="rect" title=" " alt="" coords="268,5,455,47"/>
-<area shape="rect" href="classchip_1_1_chip_device_ctrl_1_1_chip_device_controller.html#aa7a87fc296f94a59e2dd02945dbc0c2b" title=" " alt="" coords="5,5,220,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ae327d2d0f9fbf9e27df4f2ee723e3e5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae327d2d0f9fbf9e27df4f2ee723e3e5b">&#9670;&nbsp;</a></span>nl_Chip_DeviceController_NewDeviceController()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> nl_Chip_DeviceController_NewDeviceController </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html">chip::DeviceController::ChipDeviceController</a> **&#160;</td>
-          <td class="paramname"><em>outDevCtrl</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a67e8682c168d52b2ea019c5de34093b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67e8682c168d52b2ea019c5de34093b5">&#9670;&nbsp;</a></span>nl_Chip_DeviceController_SetDevicePairingDelegate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> nl_Chip_DeviceController_SetDevicePairingDelegate </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html">chip::DeviceController::ChipDeviceController</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1_controller_1_1_device_commissioner.html">chip::Controller::DeviceCommissioner</a> *&#160;</td>
           <td class="paramname"><em>devCtrl</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classchip_1_1_controller_1_1_device_pairing_delegate.html">chip::Controller::DevicePairingDelegate</a> *&#160;</td>
-          <td class="paramname"><em>pairingDelegate</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a911a83fdf89daee3f71f39da9e743e01">chip::NodeId</a>&#160;</td>
+          <td class="paramname"><em>nodeId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>outAddress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>maxAddressLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>outPort</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -805,14 +450,59 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a95e31574b850e1c7f299438077dc4110"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95e31574b850e1c7f299438077dc4110">&#9670;&nbsp;</a></span>nl_Chip_DeviceController_SetLogFilter()</h2>
+<a id="aa4e8250c9271ca9f09f9441a894b4677"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4e8250c9271ca9f09f9441a894b4677">&#9670;&nbsp;</a></span>pychip_DeviceController_GetLogFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void nl_Chip_DeviceController_SetLogFilter </td>
+          <td class="memname">uint8_t pychip_DeviceController_GetLogFilter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b2721abe1e5ed6911eb5db3715a7b55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b2721abe1e5ed6911eb5db3715a7b55">&#9670;&nbsp;</a></span>pychip_DeviceController_NewDeviceController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> pychip_DeviceController_NewDeviceController </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1_controller_1_1_device_commissioner.html">chip::Controller::DeviceCommissioner</a> **&#160;</td>
+          <td class="paramname"><em>outDevCtrl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a911a83fdf89daee3f71f39da9e743e01">chip::NodeId</a>&#160;</td>
+          <td class="paramname"><em>localDeviceId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5480478a67cc6aea4720609bf1e57417"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5480478a67cc6aea4720609bf1e57417">&#9670;&nbsp;</a></span>pychip_DeviceController_SetLogFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pychip_DeviceController_SetLogFilter </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>category</em></td><td>)</td>
@@ -820,35 +510,17 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_chip_device_controller-_script_binding_8cpp_a95e31574b850e1c7f299438077dc4110_cgraph.png" border="0" usemap="#_chip_device_controller-_script_binding_8cpp_a95e31574b850e1c7f299438077dc4110_cgraph" alt=""/></div>
-<map name="_chip_device_controller-_script_binding_8cpp_a95e31574b850e1c7f299438077dc4110_cgraph" id="_chip_device_controller-_script_binding_8cpp_a95e31574b850e1c7f299438077dc4110_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,192,47"/>
-<area shape="rect" href="namespacechip_1_1_logging.html#a77c23a8060321896e858ad5c2baa2d06" title=" " alt="" coords="240,13,432,39"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_chip_device_controller-_script_binding_8cpp_a95e31574b850e1c7f299438077dc4110_icgraph.png" border="0" usemap="#_chip_device_controller-_script_binding_8cpp_a95e31574b850e1c7f299438077dc4110_icgraph" alt=""/></div>
-<map name="_chip_device_controller-_script_binding_8cpp_a95e31574b850e1c7f299438077dc4110_icgraph" id="_chip_device_controller-_script_binding_8cpp_a95e31574b850e1c7f299438077dc4110_icgraph">
-<area shape="rect" title=" " alt="" coords="264,5,451,47"/>
-<area shape="rect" href="classchip_1_1_chip_device_ctrl_1_1_chip_device_controller.html#a38d181ff5f993ddc9f6a558238cf9670" title=" " alt="" coords="5,5,216,47"/>
-</map>
-</div>
 
 </div>
 </div>
-<a id="aeb286e178b2c82d6f9f839d7dbd82c5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb286e178b2c82d6f9f839d7dbd82c5e">&#9670;&nbsp;</a></span>nl_Chip_DeviceController_StatusReportToString()</h2>
+<a id="a88c7c81572a81014994fd5ef0b104b2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88c7c81572a81014994fd5ef0b104b2c">&#9670;&nbsp;</a></span>pychip_DeviceController_StatusReportToString()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* nl_Chip_DeviceController_StatusReportToString </td>
+          <td class="memname">const char* pychip_DeviceController_StatusReportToString </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>profileId</em>, </td>
@@ -869,16 +541,34 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a5c9e45eb7c28c215dd664a12d394d33e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c9e45eb7c28c215dd664a12d394d33e">&#9670;&nbsp;</a></span>nl_Chip_GetDeviceByNodeId()</h2>
+<a id="aa652f62b19767bb490381fe3a535ed4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa652f62b19767bb490381fe3a535ed4a">&#9670;&nbsp;</a></span>pychip_GetCommandSenderHandle()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> nl_Chip_GetDeviceByNodeId </td>
+          <td class="memname">uint64_t pychip_GetCommandSenderHandle </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classchip_1_1_device_controller_1_1_chip_device_controller.html">chip::DeviceController::ChipDeviceController</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1_controller_1_1_device.html">chip::Controller::Device</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e91806ce9876f72ca7be58e983395c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e91806ce9876f72ca7be58e983395c2">&#9670;&nbsp;</a></span>pychip_GetDeviceByNodeId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> pychip_GetDeviceByNodeId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1_controller_1_1_device_commissioner.html">chip::Controller::DeviceCommissioner</a> *&#160;</td>
           <td class="paramname"><em>devCtrl</em>, </td>
         </tr>
         <tr>
@@ -900,39 +590,48 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_chip_device_controller-_script_binding_8cpp_a5c9e45eb7c28c215dd664a12d394d33e_cgraph.png" border="0" usemap="#_chip_device_controller-_script_binding_8cpp_a5c9e45eb7c28c215dd664a12d394d33e_cgraph" alt=""/></div>
-<map name="_chip_device_controller-_script_binding_8cpp_a5c9e45eb7c28c215dd664a12d394d33e_cgraph" id="_chip_device_controller-_script_binding_8cpp_a5c9e45eb7c28c215dd664a12d394d33e_cgraph">
-<area shape="rect" title=" " alt="" coords="5,50,213,77"/>
-<area shape="rect" href="classchip_1_1_controller_1_1_device_controller.html#a54e09ebc0cc8759b93202eee858d087a" title="This function deserializes the provided deviceInfo object, and initializes and outputs the correspond..." alt="" coords="261,5,436,47"/>
-<area shape="rect" href="classchip_1_1_device_controller_1_1_chip_device_controller.html#a8b8091b989bace7bbbcc63024e1de310" title=" " alt="" coords="265,71,433,127"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_chip_device_controller-_script_binding_8cpp_a5c9e45eb7c28c215dd664a12d394d33e_icgraph.png" border="0" usemap="#_chip_device_controller-_script_binding_8cpp_a5c9e45eb7c28c215dd664a12d394d33e_icgraph" alt=""/></div>
-<map name="_chip_device_controller-_script_binding_8cpp_a5c9e45eb7c28c215dd664a12d394d33e_icgraph" id="_chip_device_controller-_script_binding_8cpp_a5c9e45eb7c28c215dd664a12d394d33e_icgraph">
-<area shape="rect" title=" " alt="" coords="245,13,453,39"/>
-<area shape="rect" href="classchip_1_1_chip_device_ctrl_1_1_chip_device_controller.html#a7e26fb4d18362bf8f5e078d11146219d" title=" " alt="" coords="5,5,197,47"/>
-</map>
-</div>
 
 </div>
 </div>
-<a id="a66bd344f5424f7dbfcd05c17959e3bb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66bd344f5424f7dbfcd05c17959e3bb5">&#9670;&nbsp;</a></span>nl_Chip_ScriptDevicePairingDelegate_NewPairingDelegate()</h2>
+<a id="a444d573b9736ff2bbc3c0feca06be1ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a444d573b9736ff2bbc3c0feca06be1ac">&#9670;&nbsp;</a></span>pychip_Resolver_ResolveNode()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> nl_Chip_ScriptDevicePairingDelegate_NewPairingDelegate </td>
+          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> pychip_Resolver_ResolveNode </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classchip_1_1_device_controller_1_1_script_device_pairing_delegate.html">chip::DeviceController::ScriptDevicePairingDelegate</a> **&#160;</td>
-          <td class="paramname"><em>pairingDelegate</em></td><td>)</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>fabricid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacechip.html#a911a83fdf89daee3f71f39da9e743e01">chip::NodeId</a>&#160;</td>
+          <td class="paramname"><em>nodeid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aced2a98cbe78009de9ccc181f3870b19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aced2a98cbe78009de9ccc181f3870b19">&#9670;&nbsp;</a></span>pychip_ScriptDeviceAddressUpdateDelegate_SetOnAddressUpdateComplete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pychip_ScriptDeviceAddressUpdateDelegate_SetOnAddressUpdateComplete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacechip_1_1_controller.html#a40bf162aa1d4d5914b4f46acb34db7ca">chip::Controller::DeviceAddressUpdateDelegate_OnUpdateComplete</a>&#160;</td>
+          <td class="paramname"><em>callback</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -940,17 +639,85 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a2ede2ce3d2ec5ff5e814b8543268109f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ede2ce3d2ec5ff5e814b8543268109f">&#9670;&nbsp;</a></span>nl_Chip_ScriptDevicePairingDelegate_SetWifiCredential()</h2>
+<a id="a9ee010b39d830d04223089e9c2ba6ba4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ee010b39d830d04223089e9c2ba6ba4">&#9670;&nbsp;</a></span>pychip_ScriptDevicePairingDelegate_SetKeyExchangeCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> nl_Chip_ScriptDevicePairingDelegate_SetWifiCredential </td>
+          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> pychip_ScriptDevicePairingDelegate_SetKeyExchangeCallback </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classchip_1_1_device_controller_1_1_script_device_pairing_delegate.html">chip::DeviceController::ScriptDevicePairingDelegate</a> *&#160;</td>
-          <td class="paramname"><em>pairingDelegate</em>, </td>
+          <td class="paramtype"><a class="el" href="classchip_1_1_controller_1_1_device_commissioner.html">chip::Controller::DeviceCommissioner</a> *&#160;</td>
+          <td class="paramname"><em>devCtrl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacechip_1_1_controller.html#a3fc15c5e43ea7b58c96e0b85768a6274">chip::Controller::DevicePairingDelegate_OnPairingCompleteFunct</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac396fe6b29e171ae2414b60e72132f93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac396fe6b29e171ae2414b60e72132f93">&#9670;&nbsp;</a></span>pychip_ScriptDevicePairingDelegate_SetThreadCredential()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> pychip_ScriptDevicePairingDelegate_SetThreadCredential </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1_controller_1_1_device_commissioner.html">chip::Controller::DeviceCommissioner</a> *&#160;</td>
+          <td class="paramname"><em>devCtrl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>channel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>panId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>masterKey</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a13c6338a9fe1c89a1c365a1a9db09f36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13c6338a9fe1c89a1c365a1a9db09f36">&#9670;&nbsp;</a></span>pychip_ScriptDevicePairingDelegate_SetWifiCredential()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> pychip_ScriptDevicePairingDelegate_SetWifiCredential </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classchip_1_1_controller_1_1_device_commissioner.html">chip::Controller::DeviceCommissioner</a> *&#160;</td>
+          <td class="paramname"><em>devCtrl</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -971,26 +738,17 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_chip_device_controller-_script_binding_8cpp_a2ede2ce3d2ec5ff5e814b8543268109f_icgraph.png" border="0" usemap="#_chip_device_controller-_script_binding_8cpp_a2ede2ce3d2ec5ff5e814b8543268109f_icgraph" alt=""/></div>
-<map name="_chip_device_controller-_script_binding_8cpp_a2ede2ce3d2ec5ff5e814b8543268109f_icgraph" id="_chip_device_controller-_script_binding_8cpp_a2ede2ce3d2ec5ff5e814b8543268109f_icgraph">
-<area shape="rect" title=" " alt="" coords="303,5,507,47"/>
-<area shape="rect" href="classchip_1_1_chip_device_ctrl_1_1_chip_device_controller.html#a42ae30534c4f7ee5b43d118d857bd155" title=" " alt="" coords="5,5,255,47"/>
-</map>
-</div>
 
 </div>
 </div>
-<a id="aa76ca9bf5f5e511ba257c0a5f7f28639"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa76ca9bf5f5e511ba257c0a5f7f28639">&#9670;&nbsp;</a></span>nl_Chip_Stack_ErrorToString()</h2>
+<a id="a5f82e308e27c05546c2be041de47b61c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f82e308e27c05546c2be041de47b61c">&#9670;&nbsp;</a></span>pychip_Stack_ErrorToString()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char * nl_Chip_Stack_ErrorToString </td>
+          <td class="memname">const char * pychip_Stack_ErrorToString </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a>&#160;</td>
           <td class="paramname"><em>err</em></td><td>)</td>
@@ -998,64 +756,34 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_chip_device_controller-_script_binding_8cpp_aa76ca9bf5f5e511ba257c0a5f7f28639_cgraph.png" border="0" usemap="#_chip_device_controller-_script_binding_8cpp_aa76ca9bf5f5e511ba257c0a5f7f28639_cgraph" alt=""/></div>
-<map name="_chip_device_controller-_script_binding_8cpp_aa76ca9bf5f5e511ba257c0a5f7f28639_cgraph" id="_chip_device_controller-_script_binding_8cpp_aa76ca9bf5f5e511ba257c0a5f7f28639_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,208,32"/>
-<area shape="rect" href="namespacechip.html#ae43b53bef8897cb48d4b8173e5c01b09" title="This routine returns a human&#45;readable NULL&#45;terminated C string describing the provided error." alt="" coords="256,5,363,32"/>
-<area shape="rect" href="namespacechip.html#a94dcfc9993bc165d7620d8bbfa93724e" title="Generates a human&#45;readable NULL&#45;terminated C string describing the provided error." alt="" coords="411,5,545,32"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_chip_device_controller-_script_binding_8cpp_aa76ca9bf5f5e511ba257c0a5f7f28639_icgraph.png" border="0" usemap="#_chip_device_controller-_script_binding_8cpp_aa76ca9bf5f5e511ba257c0a5f7f28639_icgraph" alt=""/></div>
-<map name="_chip_device_controller-_script_binding_8cpp_aa76ca9bf5f5e511ba257c0a5f7f28639_icgraph" id="_chip_device_controller-_script_binding_8cpp_aa76ca9bf5f5e511ba257c0a5f7f28639_icgraph">
-<area shape="rect" title=" " alt="" coords="483,13,685,39"/>
-<area shape="rect" href="classchip_1_1_chip_stack_1_1_chip_stack.html#a3deda087dd74ec9c393d2cf0bf73a3ac" title=" " alt="" coords="244,5,435,47"/>
-<area shape="rect" href="classchip_1_1_chip_stack_1_1_chip_stack.html#a85aa87807d284be1ff38b44d15c8a836" title=" " alt="" coords="5,5,196,47"/>
-</map>
-</div>
 
 </div>
 </div>
-<a id="a3c1dffc327c53cd1cb73306917b08bc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c1dffc327c53cd1cb73306917b08bc6">&#9670;&nbsp;</a></span>nl_Chip_Stack_Init()</h2>
+<a id="a4e6645b3e754d96a2d543425d9d94364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e6645b3e754d96a2d543425d9d94364">&#9670;&nbsp;</a></span>pychip_Stack_Init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> nl_Chip_Stack_Init </td>
+          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> pychip_Stack_Init </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_chip_device_controller-_script_binding_8cpp_a3c1dffc327c53cd1cb73306917b08bc6_cgraph.png" border="0" usemap="#_chip_device_controller-_script_binding_8cpp_a3c1dffc327c53cd1cb73306917b08bc6_cgraph" alt=""/></div>
-<map name="_chip_device_controller-_script_binding_8cpp_a3c1dffc327c53cd1cb73306917b08bc6_cgraph" id="_chip_device_controller-_script_binding_8cpp_a3c1dffc327c53cd1cb73306917b08bc6_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,147,32"/>
-<area shape="rect" href="namespacechip_1_1_platform.html#a93cd137a84802c233858f319af2551a7" title="This function is called by CHIP layer to initialize memory and resources required for proper function..." alt="" coords="195,5,391,32"/>
-<area shape="rect" href="namespacechip_1_1_platform.html#aa95ce41639f01a45b9f1fa33029cbf03" title=" " alt="" coords="439,5,693,32"/>
-</map>
-</div>
 
 </div>
 </div>
-<a id="a173fa090b1a32526aec315774336eb5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a173fa090b1a32526aec315774336eb5a">&#9670;&nbsp;</a></span>nl_Chip_Stack_SetLogFunct()</h2>
+<a id="a70eaa39d057b8e5d6167115ba564de0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70eaa39d057b8e5d6167115ba564de0d">&#9670;&nbsp;</a></span>pychip_Stack_SetLogFunct()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void nl_Chip_Stack_SetLogFunct </td>
+          <td class="memname">void pychip_Stack_SetLogFunct </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html#ae0183729f89e769be5b0e1e1f370dd1c">LogMessageFunct</a>&#160;</td>
           <td class="paramname"><em>logFunct</em></td><td>)</td>
@@ -1063,52 +791,34 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_chip_device_controller-_script_binding_8cpp_a173fa090b1a32526aec315774336eb5a_icgraph.png" border="0" usemap="#_chip_device_controller-_script_binding_8cpp_a173fa090b1a32526aec315774336eb5a_icgraph" alt=""/></div>
-<map name="_chip_device_controller-_script_binding_8cpp_a173fa090b1a32526aec315774336eb5a_icgraph" id="_chip_device_controller-_script_binding_8cpp_a173fa090b1a32526aec315774336eb5a_icgraph">
-<area shape="rect" title=" " alt="" coords="264,13,463,39"/>
-<area shape="rect" href="classchip_1_1_chip_stack_1_1_chip_stack.html#ad45d7a670a2073722fde71d96aa89676" title=" " alt="" coords="5,5,216,47"/>
-</map>
-</div>
 
 </div>
 </div>
-<a id="aedf34f6c63641b60d61787041fb30f7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedf34f6c63641b60d61787041fb30f7c">&#9670;&nbsp;</a></span>nl_Chip_Stack_Shutdown()</h2>
+<a id="a5f0c9f7f36ac0849d6fef4eae515eae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f0c9f7f36ac0849d6fef4eae515eae2">&#9670;&nbsp;</a></span>pychip_Stack_Shutdown()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> nl_Chip_Stack_Shutdown </td>
+          <td class="memname"><a class="el" href="_c_h_i_p_error_8h.html#ab17a41277f81480d902cc2f8bb6d87d1">CHIP_ERROR</a> pychip_Stack_Shutdown </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_chip_device_controller-_script_binding_8cpp_aedf34f6c63641b60d61787041fb30f7c_icgraph.png" border="0" usemap="#_chip_device_controller-_script_binding_8cpp_aedf34f6c63641b60d61787041fb30f7c_icgraph" alt=""/></div>
-<map name="_chip_device_controller-_script_binding_8cpp_aedf34f6c63641b60d61787041fb30f7c_icgraph" id="_chip_device_controller-_script_binding_8cpp_aedf34f6c63641b60d61787041fb30f7c_icgraph">
-<area shape="rect" title=" " alt="" coords="244,13,428,39"/>
-<area shape="rect" href="classchip_1_1_chip_stack_1_1_chip_stack.html#aa1e385629b1214c834f2a990330a28d9" title=" " alt="" coords="5,5,196,47"/>
-</map>
-</div>
 
 </div>
 </div>
-<a id="a03a2fd8581ea1fe62e137d51dba0d20e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03a2fd8581ea1fe62e137d51dba0d20e">&#9670;&nbsp;</a></span>nl_Chip_Stack_StatusReportToString()</h2>
+<a id="aa5c438bc645ad01df5da48ee03db8853"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5c438bc645ad01df5da48ee03db8853">&#9670;&nbsp;</a></span>pychip_Stack_StatusReportToString()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char * nl_Chip_Stack_StatusReportToString </td>
+          <td class="memname">const char * pychip_Stack_StatusReportToString </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>profileId</em>, </td>
@@ -1126,28 +836,18 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_chip_device_controller-_script_binding_8cpp_a03a2fd8581ea1fe62e137d51dba0d20e_icgraph.png" border="0" usemap="#_chip_device_controller-_script_binding_8cpp_a03a2fd8581ea1fe62e137d51dba0d20e_icgraph" alt=""/></div>
-<map name="_chip_device_controller-_script_binding_8cpp_a03a2fd8581ea1fe62e137d51dba0d20e_icgraph" id="_chip_device_controller-_script_binding_8cpp_a03a2fd8581ea1fe62e137d51dba0d20e_icgraph">
-<area shape="rect" title=" " alt="" coords="483,5,687,47"/>
-<area shape="rect" href="classchip_1_1_chip_stack_1_1_chip_stack.html#a3deda087dd74ec9c393d2cf0bf73a3ac" title=" " alt="" coords="244,5,435,47"/>
-<area shape="rect" href="classchip_1_1_chip_stack_1_1_chip_stack.html#a85aa87807d284be1ff38b44d15c8a836" title=" " alt="" coords="5,5,196,47"/>
-</map>
-</div>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a4b7f6d2dfab2928065bfbf4f623b8d4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b7f6d2dfab2928065bfbf4f623b8d4b">&#9670;&nbsp;</a></span>kLocalDeviceId</h2>
+<a id="af8e9d8e1718d714b8cfb10a8fe411252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8e9d8e1718d714b8cfb10a8fe411252">&#9670;&nbsp;</a></span>kDefaultLocalDeviceId</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacechip.html#a911a83fdf89daee3f71f39da9e743e01">chip::NodeId</a> kLocalDeviceId = <a class="el" href="namespacechip.html#ac3d75093c316efb068cf1f4e540b355d">chip::kTestControllerNodeId</a></td>
+          <td class="memname"><a class="el" href="namespacechip.html#a911a83fdf89daee3f71f39da9e743e01">chip::NodeId</a> kDefaultLocalDeviceId = chip::kTestControllerNodeId</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1161,31 +861,9 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacechip.html#a911a83fdf89daee3f71f39da9e743e01">chip::NodeId</a> kRemoteDeviceId = <a class="el" href="namespacechip.html#a64369a00f61fc166da14a307ff6765b5">chip::kTestDeviceNodeId</a></td>
+          <td class="memname"><a class="el" href="namespacechip.html#a911a83fdf89daee3f71f39da9e743e01">chip::NodeId</a> kRemoteDeviceId = chip::kTestDeviceNodeId</td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae524c5fd8dd6be89c457be0838212f19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae524c5fd8dd6be89c457be0838212f19">&#9670;&nbsp;</a></span>sStorageDelegate</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classchip_1_1_controller_1_1_python_persistent_storage_delegate.html">chip::Controller::PythonPersistentStorageDelegate</a> sStorageDelegate</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -1196,7 +874,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_41ef5d8a90b9cc03a02949a5c062e6f0.html">controller</a></li><li class="navelem"><a class="el" href="dir_222316c22a317cf9f0602db9df3fe8e5.html">python</a></li><li class="navelem"><a class="el" href="_chip_device_controller-_script_binding_8cpp.html">ChipDeviceController-ScriptBinding.cpp</a></li>
-    <li class="footer">Generated on Mon Feb 1 2021 16:49:15 for Connected Home over IP by
+    <li class="footer">Generated on Thu Apr 15 2021 18:57:04 for Connected Home over IP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

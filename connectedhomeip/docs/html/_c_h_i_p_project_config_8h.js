@@ -8,6 +8,6 @@ var _c_h_i_p_project_config_8h =
     [ "CHIP_CONFIG_LEGACY_KEY_EXPORT_DELEGATE", "_c_h_i_p_project_config_8h.html#add663a3c7b3b3b99e515361428b984de", null ],
     [ "CHIP_CONFIG_MAX_SOFTWARE_VERSION_LENGTH", "_c_h_i_p_project_config_8h.html#aaf6137fe99cd258a5fefda75ea0e6f73", null ],
     [ "CHIP_CONFIG_SUPPORT_PASSCODE_CONFIG1_TEST_ONLY", "_c_h_i_p_project_config_8h.html#ad89bd472b11657f09902c663028e8758", null ],
-    [ "CHIP_SYSTEM_CONFIG_PACKETBUFFER_MAXALLOC", "_c_h_i_p_project_config_8h.html#a704a7af71267c06839214faa4aea55d9", null ],
+    [ "CHIP_SYSTEM_CONFIG_PACKETBUFFER_POOL_SIZE", "_c_h_i_p_project_config_8h.html#a403d227152d1cd7e1989438d33efd8ba", null ],
     [ "INET_CONFIG_OVERRIDE_SYSTEM_TCP_USER_TIMEOUT", "_c_h_i_p_project_config_8h.html#a925bea92dc532c50ff23ebd57e5c2eef", null ]
 ];

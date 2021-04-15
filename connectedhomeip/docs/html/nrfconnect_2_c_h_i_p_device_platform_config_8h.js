@@ -6,6 +6,7 @@ var nrfconnect_2_c_h_i_p_device_platform_config_8h =
     [ "CHIP_DEVICE_CONFIG_CHIPOBLE_ENABLE_ADVERTISING_AUTOSTART", "nrfconnect_2_c_h_i_p_device_platform_config_8h.html#a66145c1b40a752120e05ce2ed15249af", null ],
     [ "CHIP_DEVICE_CONFIG_ENABLE_CHIP_TIME_SERVICE_TIME_SYNC", "nrfconnect_2_c_h_i_p_device_platform_config_8h.html#a3456816d0bc8c4408b0807d5feaa7fa2", null ],
     [ "CHIP_DEVICE_CONFIG_ENABLE_CHIPOBLE", "nrfconnect_2_c_h_i_p_device_platform_config_8h.html#a7eb537e0f4aa1407f231867b27e798bc", null ],
+    [ "CHIP_DEVICE_CONFIG_ENABLE_PAIRING_AUTOSTART", "nrfconnect_2_c_h_i_p_device_platform_config_8h.html#a1b1b0bd39deaca1675c4353a35d4e398", null ],
     [ "CHIP_DEVICE_CONFIG_ENABLE_THREAD", "nrfconnect_2_c_h_i_p_device_platform_config_8h.html#a034d03cc01b1cb09f3f85767fce8b11b", null ],
     [ "CHIP_DEVICE_CONFIG_ENABLE_THREAD_TELEMETRY", "nrfconnect_2_c_h_i_p_device_platform_config_8h.html#a2e0e2d7e88fb0465575b2b6697dbf831", null ],
     [ "CHIP_DEVICE_CONFIG_ENABLE_THREAD_TELEMETRY_FULL", "nrfconnect_2_c_h_i_p_device_platform_config_8h.html#a1a08e34432ba21fab7d9c754f9b3ef85", null ],

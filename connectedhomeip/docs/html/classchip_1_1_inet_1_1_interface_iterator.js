@@ -10,5 +10,6 @@ var classchip_1_1_inet_1_1_interface_iterator =
     [ "IsUp", "classchip_1_1_inet_1_1_interface_iterator.html#a2603be5408af8a30f8ac998df24b8749", null ],
     [ "Next", "classchip_1_1_inet_1_1_interface_iterator.html#a33ffb9c58f61e0bf0769c6761038eb68", null ],
     [ "SupportsMulticast", "classchip_1_1_inet_1_1_interface_iterator.html#a8ccd8ef57046aeb2ef11c464144b3a3d", null ],
+    [ "kMaxIfNameLength", "classchip_1_1_inet_1_1_interface_iterator.html#a66e8bfc90e14b71eb9f07bbf24b46ff1", null ],
     [ "mCurNetif", "classchip_1_1_inet_1_1_interface_iterator.html#a0ac59dd892ba000f5a78ee2e02eb7dd7", null ]
 ];

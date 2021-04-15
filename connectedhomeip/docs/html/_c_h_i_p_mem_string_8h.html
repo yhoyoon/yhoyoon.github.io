@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Connected Home over IP
-   &#160;<span id="projectnumber">a83086a0</span>
+   &#160;<span id="projectnumber">672cf7684</span>
    </div>
   </td>
  </tr>
@@ -94,37 +94,6 @@ $(document).ready(function(){initNavTree('_c_h_i_p_mem_string_8h.html',''); init
 <div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_scoped_buffer_8h_source.html">support/ScopedBuffer.h</a>&gt;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for CHIPMemString.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="_c_h_i_p_mem_string_8h__incl.png" border="0" usemap="#lib_2support_2_c_h_i_p_mem_string_8h" alt=""/></div>
-<map name="lib_2support_2_c_h_i_p_mem_string_8h" id="lib_2support_2_c_h_i_p_mem_string_8h">
-<area shape="rect" title=" " alt="" coords="75,5,284,32"/>
-<area shape="rect" title=" " alt="" coords="23,229,93,256"/>
-<area shape="rect" title=" " alt="" coords="144,80,215,107"/>
-<area shape="rect" href="_scoped_buffer_8h.html" title=" " alt="" coords="245,80,420,107"/>
-<area shape="rect" href="_c_h_i_p_mem_8h.html" title=" " alt="" coords="131,155,302,181"/>
-<area shape="rect" title=" " alt="" coords="344,229,404,256"/>
-<area shape="rect" title=" " alt="" coords="377,155,469,181"/>
-<area shape="rect" href="_c_h_i_p_error_8h.html" title=" " alt="" coords="118,229,246,256"/>
-<area shape="rect" title=" " alt="" coords="271,229,320,256"/>
-<area shape="rect" href="_c_h_i_p_config_8h.html" title=" " alt="" coords="113,304,251,331"/>
-<area shape="rect" href="_ble_config_8h.html" title=" " alt="" coords="121,379,243,405"/>
-<area shape="rect" href="_system_config_8h.html" title=" " alt="" coords="5,453,183,480"/>
-<area shape="rect" title=" " alt="" coords="185,528,256,555"/>
-<area shape="rect" title=" " alt="" coords="51,528,137,555"/>
-</map>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="_c_h_i_p_mem_string_8h__dep__incl.png" border="0" usemap="#lib_2support_2_c_h_i_p_mem_string_8hdep" alt=""/></div>
-<map name="lib_2support_2_c_h_i_p_mem_string_8hdep" id="lib_2support_2_c_h_i_p_mem_string_8hdep">
-<area shape="rect" title=" " alt="" coords="92,5,301,32"/>
-<area shape="rect" href="_inet_interface_8cpp.html" title=" " alt="" coords="5,80,167,107"/>
-<area shape="rect" href="_e_s_p32_config_8cpp.html" title=" " alt="" coords="191,80,426,107"/>
-</map>
-</div>
 </div>
 <p><a href="_c_h_i_p_mem_string_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -147,8 +116,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a3e0f7bf473695f636ba4bfd38fbe88d6"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1_platform.html#a3e0f7bf473695f636ba4bfd38fbe88d6">chip::Platform::CopyString</a> (char *dest, const char *source, size_t length)</td></tr>
 <tr class="memdesc:a3e0f7bf473695f636ba4bfd38fbe88d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a C-style string.  <a href="namespacechip_1_1_platform.html#a3e0f7bf473695f636ba4bfd38fbe88d6">More...</a><br /></td></tr>
 <tr class="separator:a3e0f7bf473695f636ba4bfd38fbe88d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2df3dad9efdb3feeb75743f7f5411db4"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
+<tr class="memitem:a2df3dad9efdb3feeb75743f7f5411db4"><td class="memTemplItemLeft" align="right" valign="top">char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacechip_1_1_platform.html#a2df3dad9efdb3feeb75743f7f5411db4">chip::Platform::CopyString</a> (char(&amp;dest)[N], const char *source)</td></tr>
+<tr class="memdesc:a2df3dad9efdb3feeb75743f7f5411db4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience method for CopyString to auto-detect destination size.  <a href="namespacechip_1_1_platform.html#a2df3dad9efdb3feeb75743f7f5411db4">More...</a><br /></td></tr>
+<tr class="separator:a2df3dad9efdb3feeb75743f7f5411db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3d02605a2e4318d0229e0642e1fef2f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacechip_1_1_platform.html#aa3d02605a2e4318d0229e0642e1fef2f">chip::Platform::MemoryAllocString</a> (const char *string, size_t length)</td></tr>
-<tr class="memdesc:aa3d02605a2e4318d0229e0642e1fef2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function copies a C-style string to memory newly allocated by <a class="el" href="namespacechip_1_1_platform.html#abcb5d3dbb8c986f9d6e84c7dcd3e8db7" title="This function is called by the CHIP layer to allocate a block of memory of &quot;size&quot; bytes.">Platform::MemoryAlloc()</a>.  <a href="namespacechip_1_1_platform.html#aa3d02605a2e4318d0229e0642e1fef2f">More...</a><br /></td></tr>
+<tr class="memdesc:aa3d02605a2e4318d0229e0642e1fef2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function copies a C-style string to memory newly allocated by <a class="el" href="namespacechip_1_1_platform.html#af1a25352e7486414fa03671cb9da8af1" title="This function is called by the CHIP layer to allocate a block of memory of &quot;size&quot; bytes.">Platform::MemoryAlloc()</a>.  <a href="namespacechip_1_1_platform.html#aa3d02605a2e4318d0229e0642e1fef2f">More...</a><br /></td></tr>
 <tr class="separator:aa3d02605a2e4318d0229e0642e1fef2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -159,7 +132,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c85d3e3c5052e9ad9ce18c6863244a25.html">lib</a></li><li class="navelem"><a class="el" href="dir_07debba6119e8fae289f5c0650c95439.html">support</a></li><li class="navelem"><a class="el" href="_c_h_i_p_mem_string_8h.html">CHIPMemString.h</a></li>
-    <li class="footer">Generated on Mon Feb 1 2021 16:49:16 for Connected Home over IP by
+    <li class="footer">Generated on Thu Apr 15 2021 18:57:04 for Connected Home over IP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

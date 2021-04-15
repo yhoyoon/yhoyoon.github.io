@@ -14,6 +14,8 @@ var dir_7ae360e695567cbf3cfa082ce2da24e7 =
       [ "DeviceNetworkProvisioningDelegateImpl", "classchip_1_1_device_layer_1_1_device_network_provisioning_delegate_impl.html", "classchip_1_1_device_layer_1_1_device_network_provisioning_delegate_impl" ]
     ] ],
     [ "InetPlatformConfig.h", "nrfconnect_2_inet_platform_config_8h.html", "nrfconnect_2_inet_platform_config_8h" ],
+    [ "KeyValueStoreManagerImpl.h", "nrfconnect_2_key_value_store_manager_impl_8h.html", null ],
+    [ "NFCManagerImpl.h", "nrfconnect_2_n_f_c_manager_impl_8h.html", null ],
     [ "PlatformManagerImpl.h", "nrfconnect_2_platform_manager_impl_8h.html", null ],
     [ "SystemPlatformConfig.h", "nrfconnect_2_system_platform_config_8h.html", "nrfconnect_2_system_platform_config_8h" ],
     [ "ThreadStackManagerImpl.h", "nrfconnect_2_thread_stack_manager_impl_8h.html", null ]

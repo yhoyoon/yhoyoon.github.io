@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Connected Home over IP
-   &#160;<span id="projectnumber">a83086a0</span>
+   &#160;<span id="projectnumber">672cf7684</span>
    </div>
   </td>
  </tr>
@@ -96,12 +96,12 @@ $(document).ready(function(){initNavTree('classchip_1_1_device_layer_1_1_persist
 <div class="dynheader">
 Inheritance diagram for chip::DeviceLayer::PersistedStorage::KeyValueStoreManager:</div>
 <div class="dyncontent">
-<div class="center"><img src="classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager__inherit__graph.png" border="0" usemap="#chip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager_inherit__map" alt="Inheritance graph"/></div>
-<map name="chip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager_inherit__map" id="chip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,5,207,61"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager_impl.html" title=" " alt="" coords="5,109,207,165"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+ <div class="center">
+  <img src="classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager.png" usemap="#chip::DeviceLayer::PersistedStorage::KeyValueStoreManager_map" alt=""/>
+  <map id="chip::DeviceLayer::PersistedStorage::KeyValueStoreManager_map" name="chip::DeviceLayer::PersistedStorage::KeyValueStoreManager_map">
+<area href="classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager_impl.html" alt="chip::DeviceLayer::PersistedStorage::KeyValueStoreManagerImpl" shape="rect" coords="0,56,381,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -321,15 +321,6 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>CHIP_NO_ERROR the entry was successfully read CHIP_ERROR_PERSISTED_STORAGE_VALUE_NOT_FOUND the key is not present in the KVS CHIP_ERROR_INTEGRITY_CHECK_FAILED found the entry, but the data was corrupted CHIP_ERROR_BUFFER_TOO_SMALL the buffer could not fit the entire value, but as many bytes as possible were written to it CHIP_ERROR_WELL_UNINITIALIZED the KVS is not initialized CHIP_ERROR_INVALID_ARGUMENT key is empty or too long or value is too large </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager_acf8dbcc3b16fff247a4af982ad2a9c59_cgraph.png" border="0" usemap="#classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager_acf8dbcc3b16fff247a4af982ad2a9c59_cgraph" alt=""/></div>
-<map name="classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager_acf8dbcc3b16fff247a4af982ad2a9c59_cgraph" id="classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager_acf8dbcc3b16fff247a4af982ad2a9c59_cgraph">
-<area shape="rect" title="This overload of Get accepts a pointer to a trivially copyable object." alt="" coords="5,5,207,61"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager.html#a4b1e419d49f9b4dc6f2baa15a8790fe3" title="Reads the value of an entry in the KVS." alt="" coords="255,5,456,61"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -400,15 +391,6 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>CHIP_NO_ERROR the entry was successfully read CHIP_ERROR_PERSISTED_STORAGE_VALUE_NOT_FOUND the key is not present in the KVS CHIP_ERROR_INTEGRITY_CHECK_FAILED found the entry, but the data was corrupted CHIP_ERROR_BUFFER_TOO_SMALL the buffer could not fit the entire value, but as many bytes as possible were written to it CHIP_ERROR_WELL_UNINITIALIZED the KVS is not initialized CHIP_ERROR_INVALID_ARGUMENT key is empty or too long or value is too large </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager_a4b1e419d49f9b4dc6f2baa15a8790fe3_icgraph.png" border="0" usemap="#classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager_a4b1e419d49f9b4dc6f2baa15a8790fe3_icgraph" alt=""/></div>
-<map name="classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager_a4b1e419d49f9b4dc6f2baa15a8790fe3_icgraph" id="classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager_a4b1e419d49f9b4dc6f2baa15a8790fe3_icgraph">
-<area shape="rect" title="Reads the value of an entry in the KVS." alt="" coords="255,5,456,61"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager.html#acf8dbcc3b16fff247a4af982ad2a9c59" title="This overload of Get accepts a pointer to a trivially copyable object." alt="" coords="5,5,207,61"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -484,15 +466,6 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>CHIP_NO_ERROR the entry was successfully added or updated CHIP_ERROR_INTEGRITY_CHECK_FAILED checksum validation failed after writing the data CHIP_ERROR_PERSISTED_STORAGE_FAILED failed to write the value. CHIP_ERROR_WELL_UNINITIALIZED the KVS is not initialized CHIP_ERROR_INVALID_ARGUMENT key is empty or too long or value is too large </dd></dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager_ad7a5662785859f49a1d5f2e5c8dc61af_cgraph.png" border="0" usemap="#classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager_ad7a5662785859f49a1d5f2e5c8dc61af_cgraph" alt=""/></div>
-<map name="classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager_ad7a5662785859f49a1d5f2e5c8dc61af_cgraph" id="classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager_ad7a5662785859f49a1d5f2e5c8dc61af_cgraph">
-<area shape="rect" title="This overload of Put accepts a reference to a trivially copyable object." alt="" coords="5,5,207,61"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager.html#a3fba0c47d410187505e918c5720fb66c" title="Adds a key&#45;value entry to the KVS." alt="" coords="255,5,456,61"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -547,15 +520,6 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>CHIP_NO_ERROR the entry was successfully added or updated CHIP_ERROR_INTEGRITY_CHECK_FAILED checksum validation failed after writing the data CHIP_ERROR_PERSISTED_STORAGE_FAILED failed to write the value. CHIP_ERROR_WELL_UNINITIALIZED the KVS is not initialized CHIP_ERROR_INVALID_ARGUMENT key is empty or too long or value is too large </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager_a3fba0c47d410187505e918c5720fb66c_icgraph.png" border="0" usemap="#classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager_a3fba0c47d410187505e918c5720fb66c_icgraph" alt=""/></div>
-<map name="classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager_a3fba0c47d410187505e918c5720fb66c_icgraph" id="classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager_a3fba0c47d410187505e918c5720fb66c_icgraph">
-<area shape="rect" title="Adds a key&#45;value entry to the KVS." alt="" coords="255,5,456,61"/>
-<area shape="rect" href="classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager.html#ad7a5662785859f49a1d5f2e5c8dc61af" title="This overload of Put accepts a reference to a trivially copyable object." alt="" coords="5,5,207,61"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -568,7 +532,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="namespacechip_1_1_device_layer.html">DeviceLayer</a></li><li class="navelem"><a class="el" href="namespacechip_1_1_device_layer_1_1_persisted_storage.html">PersistedStorage</a></li><li class="navelem"><a class="el" href="classchip_1_1_device_layer_1_1_persisted_storage_1_1_key_value_store_manager.html">KeyValueStoreManager</a></li>
-    <li class="footer">Generated on Mon Feb 1 2021 16:49:17 for Connected Home over IP by
+    <li class="footer">Generated on Thu Apr 15 2021 18:57:06 for Connected Home over IP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
